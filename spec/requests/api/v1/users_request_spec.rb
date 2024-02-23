@@ -9,23 +9,22 @@ RSpec.describe 'Api::V1::Users', type: :request do
 
       expect(response).to be_successful
 
-      users = JSON.parse(response.body, symbolize_names: true)
+      users_data = JSON.parse(response.body, symbolize_names: true)
+      users = users_data[:data]
       expect(users.count).to eq(5)
 
       users.each do |user|
         expect(users).to be_an(Array)
 
         expect(user).to have_key(:id)
-        expect(user[:id]).to be_an(Integer)
+        expect(user[:id]).to be_an(String)
 
-        expect(user).to have_key(:name)
-        expect(user[:name]).to be_a(String)
+        expect(user[:attributes]).to have_key(:name)
+        expect(user[:attributes][:name]).to be_a(String)
 
-        expect(user).to have_key(:email)
-        expect(user[:email]).to be_a(String)
+        expect(user[:attributes]).to have_key(:email)
+        expect(user[:attributes][:email]).to be_a(String)
 
-        expect(user).to have_key(:password_digest)
-        expect(user[:password_digest]).to be_a(String)
       end
     end
   end
@@ -73,6 +72,22 @@ RSpec.describe 'Api::V1::Users', type: :request do
       expect(new_user.name).to eq(user_params[:name])
       expect(new_user.email).to eq(user_params[:email])
       expect(new_user.password).to eq(user_params[:password_digest])
+    end
+
+    it "sad path; will send an error if user is not created" do 
+      user_params = ({
+        name: '',
+        email: 'bob123@gmail.com',
+        role: 1,
+        password: "likearollingstone123"
+      })
+      
+      headers = {"CONTENT_TYPE" => "application/json"}
+
+      post api_v1_users_path, headers: headers, params: JSON.generate(user: user_params)
+
+      expect(response).to_not be_successful 
+      expect(response).to have_http_status(401)
     end
   end
 end
