@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-describe "Dates API", type: :request do
-  describe "Dates Index" do
-    xit "sends a list of dates" do
+describe "User Dates API", type: :request do
+  describe "User Dates Index" do
+    xit "sends a list of the users dates" do
       user = create(:user)
       date_list = create_list(:date, 5, user: user)
 
@@ -30,10 +30,10 @@ describe "Dates API", type: :request do
         expect(date[:attributes][:location]).to be_a(Integer)
 
         expect(date[:attributes]).to have_key(:start_time)
-        expect(date[:attributes][:start_time]).to be_a(Integer)
+        expect(date[:attributes][:start_time]).to be_a(String)
 
         expect(date[:attributes]).to have_key(:end_time)
-        expect(date[:attributes][:end_time]).to be_a(Integer)
+        expect(date[:attributes][:end_time]).to be_a(String)
 
         expect(date[:attributes]).to have_key(:first_date)
         expect(date[:attributes][:first_date]).to be_a(TrueClass).or be_a(FalseClass)
