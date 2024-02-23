@@ -6,7 +6,7 @@ class EventSerializer
     {
       "data": 
         events.each do |event|
-        { name: event[:name], location: event[:location] }
+          { name: event[:name], location: event[:location] }
         end
     }
   end
