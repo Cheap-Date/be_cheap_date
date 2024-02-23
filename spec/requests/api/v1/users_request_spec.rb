@@ -92,14 +92,24 @@ RSpec.describe 'Api::V1::Users', type: :request do
   end
   describe "User Update" do
     it "can update an existing user" do
-      id = create(:user).id
+      user_params = ({
+        name: 'Bob Dylan',
+        email: 'bob123@gmail.com',
+        password: "likearollingstone123"
+      })
+      headers = {"CONTENT_TYPE" => "application/json"}
+
+      post api_v1_users_path, headers: headers, params: JSON.generate(user: user_params)
+
+      id = User.last.id
       previous_name = User.last.name
+      # require 'pry'; binding.pry
       expect(previous_name).to eq("Bob Dylan")
       
       user_params = { name: "Paul McCartney" }
       headers = {"CONTENT_TYPE" => "application/json"}
 
-      patch api_v1_users_path(id), headers: headers, params: JSON.generate(user: user_params)
+      patch "/api/v1/users/#{id}", headers: headers, params: JSON.generate(user: user_params)
 
       user = User.find_by(id: id)
 
