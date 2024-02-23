@@ -11,9 +11,9 @@ class YelpSearchFacade
 
   def parsed_results
     result = search_results.map do |event_obj|
-      { 
+      {
         name: event_obj[:name],
-        location: event_obj[:location][:address1]
+        location: event_obj[:location][:display_address]
       }
     end
   end
