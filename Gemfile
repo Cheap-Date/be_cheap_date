@@ -37,6 +37,7 @@ gem "bootsnap", require: false
 
 gem "faraday"
 gem 'jsonapi-serializer'
+gem 'figaro'
 
 group :test do
   gem "rspec-rails"

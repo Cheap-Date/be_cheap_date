@@ -116,6 +116,8 @@ GEM
       faraday-net_http (>= 2.0, < 3.2)
     faraday-net_http (3.1.0)
       net-http
+    figaro (1.2.0)
+      thor (>= 0.14.0, < 2)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.1)
@@ -263,6 +265,7 @@ GEM
 
 PLATFORMS
   aarch64-linux
+  arm64-darwin-21
   arm64-darwin-22
   x86_64-linux
 
@@ -274,6 +277,7 @@ DEPENDENCIES
   factory_bot_rails
   faker
   faraday
+  figaro
   jsonapi-serializer
   launchy
   orderly
