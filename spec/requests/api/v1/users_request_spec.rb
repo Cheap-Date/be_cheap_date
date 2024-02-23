@@ -90,4 +90,22 @@ RSpec.describe 'Api::V1::Users', type: :request do
       expect(response).to have_http_status(401)
     end
   end
+  describe "User Update" do
+    it "can update an existing user" do
+      id = create(:user).id
+      previous_name = User.last.name
+      expect(previous_name).to eq("Bob Dylan")
+      
+      user_params = { name: "Paul McCartney" }
+      headers = {"CONTENT_TYPE" => "application/json"}
+
+      patch api_v1_users_path(id), headers: headers, params: JSON.generate(user: user_params)
+
+      user = User.find_by(id: id)
+
+      expect(response).to be_successful
+      expect(user.name).to_not eq(previous_name)
+      expect(user.name).to eq("Paul McCartney")
+    end
+  end
 end
