@@ -1,8 +1,8 @@
 require "faraday"
 
 class EventService
-  def get_all_events(location, price, limit)
-    res = conn.get("businesses/search?sort_by=best_match&location=#{location}&limit=#{limit}&price=#{price}")
+  def get_events(location, limit)
+    res = conn.get("businesses/search?sort_by=best_match&location=#{location}&price=1&limit=#{limit}")
     JSON.parse(res.body, symbolize_names: true)[:businesses]
   end
 
