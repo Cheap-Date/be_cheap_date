@@ -1,21 +1,14 @@
 class YelpSearchFacade
-  def initialize(attributes)
-    @location = attributes[:location]
-    @price = attributes[:price]
-    @limit = attributes[:limit]
+  def initialize(location, limit)
+    @location = location
+    @limit = limit
   end
 
-  def search_results
-    event_service = EventService.new
-    res = event_service.get_all_events(@location, @price, @limit)
-  end
-
-  def parsed_results
-    result = search_results.map do |event_obj|
-      {
-        name: event_obj[:name],
-        location: event_obj[:location][:display_address]
-      }
+  def event_search
+    service = EventService.new
+    json = service.get_events(@location, @limit)
+    events = json.map do |event_data|
+      Event.new(event_data)
     end
   end
 end
