@@ -90,6 +90,7 @@ RSpec.describe 'Api::V1::Users', type: :request do
       expect(response).to have_http_status(401)
     end
   end
+
   describe "User Update" do
     it "can update an existing user" do
       user_params = ({
@@ -116,6 +117,56 @@ RSpec.describe 'Api::V1::Users', type: :request do
       expect(response).to be_successful
       expect(user.name).to_not eq(previous_name)
       expect(user.name).to eq("Paul McCartney")
+    end
+  end
+
+  describe 'Find user by email' do
+    it 'can login a user' do
+      user = User.create!(name: 'Bob Dylan', email: 'bob123@gmail.com', password: "likearollingstone123")
+
+      get api_v1_find_by_email_path, params: { email: user.email, password: user.password }
+      json = JSON.parse(response.body, symbolize_names: true)
+      
+      expect(response).to be_successful
+      expect(response.status).to eq(200)
+      expect(json[:data][:attributes][:name]).to eq('Bob Dylan')
+    
+    end
+
+    it 'sad path for user login, wrong password' do
+      user = User.create!(name: 'Bob Dylan', email: 'bob123@gmail.com', password: "likearollingstone123")
+
+      get api_v1_find_by_email_path, params: { email: user.email, password: 'wrong_password' }
+      json = JSON.parse(response.body, symbolize_names: true)
+
+      expect(response).to_not be_successful
+      expect(response.status).to eq(401)
+      expect(json[:error]).to eq('Sorry, your credentials are bad')
+    end
+
+    it 'sad path for user login, wrong email' do
+      user = User.create!(name: 'Bob Dylan', email: 'bob123@gmail.com', password: "likearollingstone123")
+
+      get api_v1_find_by_email_path, params: { email: 'wrong_email', password: user.password }
+      json = JSON.parse(response.body, symbolize_names: true)
+
+      expect(response).to_not be_successful
+      expect(response.status).to eq(404)
+      expect(json[:error]).to eq('This email is not associated with an account')
+    end
+  end
+
+  describe 'User destroy' do
+    it 'can destroy an user' do
+      user = create(:user)
+
+      expect(User.count).to eq(1)
+
+      delete api_v1_user_path(user.id)
+
+      expect(response).to be_successful
+      expect(User.count).to eq(0)
+      expect{User.find(user.id)}.to raise_error(ActiveRecord::RecordNotFound)
     end
   end
 end
