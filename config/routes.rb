@@ -9,7 +9,8 @@ Rails.application.routes.draw do
   # root "posts#index"
   namespace :api do
     namespace :v1 do
-      resources :users, only: [:index, :show, :create, :update] do
+      get '/find_by_email', to: 'users#user_by_email'
+      resources :users do
         resources :meetups, only: [:index]
       end
       resources :events, only: [:index]
