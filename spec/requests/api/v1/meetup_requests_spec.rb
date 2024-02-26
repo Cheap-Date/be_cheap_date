@@ -90,7 +90,7 @@ describe "User Meetups API", type: :request do
     end
 
     describe "Meetup Update" do
-      xit "can update an existing date" do
+      it "can update an existing date" do
         user = create(:user)
         meetup = create(:meetup, user: user)
         previous_title = Meetup.last.title
@@ -98,13 +98,13 @@ describe "User Meetups API", type: :request do
         headers = {"CONTENT_TYPE" => "application/json"}
   
         patch api_v1_user_meetup_path(user.id, meetup.id), params: meetup_param
-        new_meetup = meetup.find_by(id: meetup.id)
+        new_meetup = Meetup.find(meetup.id)
         expect(response).to be_successful
         expect(new_meetup.title).to_not eq(previous_title)
-        expect(new_meetup.title).to eq("P. Sherman")
+        expect(new_meetup.title).to eq("Dance Class")
       end
   
-      xit "sad path; will send an error if meetup is not created" do 
+      it "sad path; will send an error if meetup is not created" do 
         user = create(:user)
         meetup = create(:meetup, user: user)
         previous_title = Meetup.last.title

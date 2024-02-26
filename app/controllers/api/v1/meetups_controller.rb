@@ -22,7 +22,7 @@ class Api::V1::MeetupsController < ApplicationController
     if @user_meetup.update(meetup_params)
       render json: MeetupSerializer.new(@user_meetup)
     else
-      render json: { error: @user_meetup.errors.full_messages }, status: :unprocessible_entity
+      render json: { error: @user_meetup.errors.full_messages }, status: :unprocessable_entity
     end
   end
 
