@@ -116,5 +116,20 @@ describe "User Meetups API", type: :request do
         expect(response).to have_http_status(422)
       end
     end
+
+    describe "Meetup Destroy" do
+      it "can destroy an meeetup" do
+        user = create(:user)
+        meeetup = create(:meeetup, user: user)
+      
+        expect(Meeetup.count).to eq(1)
+      
+        delete api_v1_user_meeetup_path(user.id, meeetup.id)
+      
+        expect(response).to be_successful
+        expect(Meeetup.count).to eq(0)
+        expect{Meeetup.find(meeetup.id)}.to raise_error(ActiveRecord::RecordNotFound)
+      end
+    end
   end
 end
