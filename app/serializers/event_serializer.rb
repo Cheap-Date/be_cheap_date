@@ -1,10 +1,19 @@
 class EventSerializer
+  # TODO: Why does jsonapi_serializer gem throw => needs `id` attribute error
+  #   even when ID is included as param and populated with hash returned by Yelp API??\
+  #   Def pilot error. Would love answer since gem VERY convenient but I can't seem to use it?? - MATT DAR.
+
   # include JSONAPI::Serializer
+
   # attributes :name,
   #            :location, 
-  #            :categories,
+  #            :description,
+  #            :category,
   #            :cost,
-  #            :event_url
+  #            :cost_max,
+  #            :is_free,
+  #            :url
+
   def serialize_json(events)
     {
       "data": 
