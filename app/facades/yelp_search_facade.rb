@@ -5,9 +5,22 @@ class YelpSearchFacade
   end
 
   def event_search
+    if @location
+      location = @location
+    else
+      location = "90210" # default value unless provided by user
+    end
+
+    if @limit
+      limit = @limit
+    else
+      limit = "5" # default value unless provided by user
+    end
+
     service = EventService.new
-    json = service.get_events(@location, @limit)
-    events = json.map do |event_data|
+    json = service.get_events(location, limit)
+
+    events = json[:events].map do |event_data|
       Event.new(event_data)
     end
   end
