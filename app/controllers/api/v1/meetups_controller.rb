@@ -25,6 +25,11 @@ class Api::V1::MeetupsController < ApplicationController
       render json: { error: @user_meetup.errors.full_messages }, status: :unprocessible_entity
     end
   end
+
+  def destroy
+    @meetup = Meetup.find(params[:id])
+    @meetup.destroy!
+  end
   
 
   private

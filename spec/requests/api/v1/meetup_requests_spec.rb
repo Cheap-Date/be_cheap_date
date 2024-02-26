@@ -118,17 +118,17 @@ describe "User Meetups API", type: :request do
     end
 
     describe "Meetup Destroy" do
-      it "can destroy an meeetup" do
+      it "can destroy an meetup" do
         user = create(:user)
-        meeetup = create(:meeetup, user: user)
+        meetup = create(:meetup, user: user)
       
-        expect(Meeetup.count).to eq(1)
+        expect(Meetup.count).to eq(1)
       
-        delete api_v1_user_meeetup_path(user.id, meeetup.id)
+        delete api_v1_user_meetup_path(user.id, meetup.id)
       
         expect(response).to be_successful
-        expect(Meeetup.count).to eq(0)
-        expect{Meeetup.find(meeetup.id)}.to raise_error(ActiveRecord::RecordNotFound)
+        expect(Meetup.count).to eq(0)
+        expect{Meetup.find(meetup.id)}.to raise_error(ActiveRecord::RecordNotFound)
       end
     end
   end
