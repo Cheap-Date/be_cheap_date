@@ -16,6 +16,22 @@ class Api::V1::MeetupsController < ApplicationController
     end
   end
 
+  def update
+    @user = User.find(params[:user_id])
+    @user_meetup = @user.meetups.find(params[:id])
+    if @user_meetup.update(meetup_params)
+      render json: MeetupSerializer.new(@user_meetup)
+    else
+      render json: { error: @user_meetup.errors.full_messages }, status: :unprocessable_entity
+    end
+  end
+
+  def destroy
+    @meetup = Meetup.find(params[:id])
+    @meetup.destroy!
+  end
+  
+
   private
 
   def meetup_params
