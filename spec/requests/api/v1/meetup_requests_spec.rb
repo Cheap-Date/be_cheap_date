@@ -88,5 +88,33 @@ describe "User Meetups API", type: :request do
         expect(response).to have_http_status(401)
       end
     end
+
+    describe "Meetup Update" do
+      it "can update an existing date" do
+        user = create(:user)
+        meetup = create(:meetup, user: user)
+        previous_name = Meetup.last.name
+        meetup_param = { name: "Dance Class" }
+        headers = {"CONTENT_TYPE" => "application/json"}
+  
+        patch api_v1_user_meetups_path(user.id, meetup.id), params: meetup_param
+        new_meetup = meetup.find_by(id: meetup.id)
+        expect(response).to be_successful
+        expect(new_meetup.name).to_not eq(previous_name)
+        expect(new_meetup.name).to eq("P. Sherman")
+      end
+  
+      it "sad path; will send an error if meetup is not created" do 
+        user = create(:user)
+        meetup = create(:meetup, user: user)
+        previous_name = Meetup.last.name
+        meetup_param = { name: "" }
+        headers = {"CONTENT_TYPE" => "application/json"}
+    
+        patch api_v1_user_meetups_path(user.id, meetup.id), params: meetup_param
+        expect(response).to_not be_successful 
+        expect(response).to have_http_status(422)
+      end
+    end
   end
 end

@@ -16,6 +16,8 @@ class Api::V1::MeetupsController < ApplicationController
     end
   end
 
+  
+
   private
 
   def meetup_params
