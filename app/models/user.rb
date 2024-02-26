@@ -6,6 +6,7 @@ class User < ApplicationRecord
   validates_presence_of :password_digest
 
   has_many :meetups
+  has_many :locations
 
   has_secure_password
 end
