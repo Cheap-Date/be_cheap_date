@@ -1,0 +1,282 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=7&location=90210&price=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Routing-Service:
+      - routing-main--useast1-7d94c5566-ghnv2; site=public_api_v3
+      Ratelimit-Resettime:
+      - '2024-02-27T00:00:00+00:00'
+      X-Zipkin-Id:
+      - 5b51d2c841ad83cd
+      Server:
+      - envoy
+      Ratelimit-Dailylimit:
+      - '500.0'
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Remaining:
+      - '370.0'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-82-75-useast1aprod
+      X-Extlb:
+      - 10-65-82-75-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Mon, 26 Feb 2024 19:54:48 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8249-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 772, "category": "visual-arts", "cost":
+        12.0, "cost_max": 20.0, "description": "From Beetlejuice to Batman, from Ed
+        Wood to Willy Wonka, the characters that Tim Burton has brought to movie screens
+        are notable for their dark...", "event_site_url": "https://www.yelp.com/events/los-angeles-tim-burton-exhibit-at-lacma-may-29-oct-31-2011?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-tim-burton-exhibit-at-lacma-may-29-oct-31-2011", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/kLVznA_spGTYTfU5PU_5Dw/o.jpg", "interested_count":
+        216, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        34.063931, "longitude": -118.35923, "name": "Tim Burton Exhibit at LACMA May
+        29- Oct 31, 2011", "tickets_url": "", "time_end": null, "time_start": "2011-05-29T10:00:00-07:00",
+        "location": {"address1": "5905 Wilshire Blvd", "address2": "", "address3":
+        "", "city": "Los Angeles", "zip_code": "90036", "country": "US", "state":
+        "CA", "display_address": ["5905 Wilshire Blvd", "Los Angeles, CA 90036"],
+        "cross_streets": ""}, "business_id": "los-angeles-county-museum-of-art-los-angeles-11"},
+        {"attending_count": 138, "category": "film", "cost": null, "cost_max": null,
+        "description": "\"Alice in Wonderland\" final Friday\n\nTim Burton films under
+        the stars at the Tar Pits.\nFilms start at sundown (between 8 and 8:30 pm).\n\n4
+        Friday Outdoor Film...", "event_site_url": "https://www.yelp.com/events/los-angeles-tim-burton-free-film-screenings-outdooors-at-lacma-fridays-free-jazz-if-you-arrive-early-see-full-schedule-below?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-tim-burton-free-film-screenings-outdooors-at-lacma-fridays-free-jazz-if-you-arrive-early-see-full-schedule-below",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/GIY7Gy9vuIlGgiKNpYoHOg/o.jpg",
+        "interested_count": 174, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 34.063931, "longitude": -118.35923, "name": "Tim Burton
+        Free Film Screenings - Outdooors at LACMA - Fridays + Free Jazz if You Arrive
+        Early.  See Full Schedule Below.", "tickets_url": null, "time_end": "2011-08-26T22:00:00-07:00",
+        "time_start": "2011-08-26T20:00:00-07:00", "location": {"address1": "5905
+        Wilshire Blvd", "address2": "", "address3": "", "city": "Los Angeles", "zip_code":
+        "90036", "country": "US", "state": "CA", "display_address": ["5905 Wilshire
+        Blvd", "Los Angeles, CA 90036"], "cross_streets": ""}, "business_id": "los-angeles-county-museum-of-art-los-angeles-11"},
+        {"attending_count": 1, "category": "festivals-fairs", "cost": null, "cost_max":
+        null, "description": "---RSVPs are now closed.---\nConfirmation emails will
+        go out on Wednesday, May 16.\nYou should receive a confirmation or waitlist
+        email. If you are unsure of...", "event_site_url": "https://www.yelp.com/events/los-angeles-yelps-100-days-of-summer-kickoff-party-3?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-yelps-100-days-of-summer-kickoff-party-3", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/Rc5DsjQ6twtEY7GfWgGs4A/o.jpg", "interested_count":
+        467, "is_canceled": false, "is_free": true, "is_official": false, "latitude":
+        34.0977214, "longitude": -118.3688055, "name": "Yelp''s 100 Days of Summer
+        - Kickoff Party 3", "tickets_url": null, "time_end": "2012-05-28T14:00:00-07:00",
+        "time_start": "2012-05-28T11:00:00-07:00", "location": {"address1": "8225
+        Sunset Blvd", "address2": "", "address3": "", "city": "Los Angeles", "zip_code":
+        "90046", "country": "US", "state": "CA", "display_address": ["8225 Sunset
+        Blvd, Los Angeles, CA 90046"], "cross_streets": ""}, "business_id": null},
+        {"attending_count": 943, "category": "visual-arts", "cost": 10.0, "cost_max":
+        40.0, "description": "The Rain Room allows you to experience the seemingly
+        impossible with Random International''s Rain Room (2012). This immersive environment
+        features...", "event_site_url": "https://www.yelp.com/events/los-angeles-rain-room?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-rain-room", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/W5OvUIsVIPuhnLpsNjKoTg/o.jpg",
+        "interested_count": 776, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 34.063931, "longitude": -118.35923, "name": "Rain Room",
+        "tickets_url": "http://tx1.lacma.org/default.asp", "time_end": "2015-11-30T17:00:00-08:00",
+        "time_start": "2015-11-01T11:00:00-08:00", "location": {"address1": "5905
+        Wilshire Blvd", "address2": "", "address3": "", "city": "Los Angeles", "zip_code":
+        "90036", "country": "US", "state": "CA", "display_address": ["5905 Wilshire
+        Blvd", "Los Angeles, CA 90036"], "cross_streets": ""}, "business_id": "los-angeles-county-museum-of-art-los-angeles-11"},
+        {"attending_count": 492, "category": "festivals-fairs", "cost": 87.0, "cost_max":
+        95.0, "description": "The Wizarding World of Harry Potter, based on J.K. Rowling''s
+        magical creations, will open at Universal Studios Hollywood on April 7, 2016.\n\nIf
+        you''ve been...", "event_site_url": "https://www.yelp.com/events/universal-city-the-wizarding-world-of-harry-potter-grand-opening-on-april-7-2016?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "universal-city-the-wizarding-world-of-harry-potter-grand-opening-on-april-7-2016",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/7XloL5tPCmSEZC3ig-_d2A/o.jpg",
+        "interested_count": 442, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 34.13621020562252, "longitude": -118.35522638220861, "name":
+        "The Wizarding World of Harry Potter Grand Opening on April 7, 2016", "tickets_url":
+        "http://www.universalstudioshollywood.com/tickets/", "time_end": "2016-05-07T00:00:00-07:00",
+        "time_start": "2016-04-07T08:00:00-07:00", "location": {"address1": "100 Universal
+        City Plz", "address2": "", "address3": "", "city": "Universal City", "zip_code":
+        "91608", "country": "US", "state": "CA", "display_address": ["100 Universal
+        City Plz", "Universal City, CA 91608"], "cross_streets": ""}, "business_id":
+        "universal-studios-hollywood-universal-city"}, {"attending_count": 1353, "category":
+        "visual-arts", "cost": 10.0, "cost_max": 40.0, "description": "*UPDATE* The
+        Rain Room will reopen on Thursday, May 19, for a limited engagement. \n\nThe
+        first block of tickets for this date is SOLD OUT, but the museum...", "event_site_url":
+        "https://www.yelp.com/events/los-angeles-lacma-rain-room-tickets-on-sale-now?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-lacma-rain-room-tickets-on-sale-now", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/P13fMJJMKKZ-4OpMrzPBAA/o.jpg",
+        "interested_count": 576, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 34.063931, "longitude": -118.35923, "name": "LACMA Rain
+        Room Tickets On Sale Now!", "tickets_url": "http://www.lacma.org/public-ticketing-information-rain-room",
+        "time_end": "2016-05-19T00:00:00-07:00", "time_start": "2016-04-25T00:00:00-07:00",
+        "location": {"address1": "5905 Wilshire Blvd", "address2": "", "address3":
+        "", "city": "Los Angeles", "zip_code": "90036", "country": "US", "state":
+        "CA", "display_address": ["5905 Wilshire Blvd", "Los Angeles, CA 90036"],
+        "cross_streets": ""}, "business_id": "los-angeles-county-museum-of-art-los-angeles-11"},
+        {"attending_count": 1272, "category": "visual-arts", "cost": null, "cost_max":
+        null, "description": "This is an ongoing monthly event for 2018 but Yelp limits
+        event postings for 30 days. It''s also nationwide. Here''s your chance to
+        get your culture on for...", "event_site_url": "https://www.yelp.com/events/los-angeles-free-museum-entrance-every-first-weekend-of-the-month-for-boa-cardholders?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-free-museum-entrance-every-first-weekend-of-the-month-for-boa-cardholders",
+        "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/oa1j1P5mljr8gfrPXkQrBg/o.jpg",
+        "interested_count": 438, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 34.063931, "longitude": -118.35923, "name": "Free museum
+        entrance every first weekend of the month for BOA cardholders", "tickets_url":
+        null, "time_end": "2018-03-04T00:00:00-08:00", "time_start": "2018-02-03T00:00:00-08:00",
+        "location": {"address1": "5905 Wilshire Blvd", "address2": "", "address3":
+        "", "city": "Los Angeles", "zip_code": "90036", "country": "US", "state":
+        "CA", "display_address": ["5905 Wilshire Blvd", "Los Angeles, CA 90036"],
+        "cross_streets": ""}, "business_id": "los-angeles-county-museum-of-art-los-angeles-11"}],
+        "total": 7}'
+  recorded_at: Mon, 26 Feb 2024 19:54:48 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=4&location=80212&price=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Ratelimit-Dailylimit:
+      - '500.0'
+      Ratelimit-Resettime:
+      - '2024-02-27T00:00:00+00:00'
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Remaining:
+      - '369.0'
+      Server:
+      - envoy
+      X-Routing-Service:
+      - routing-main--useast1-7d94c5566-xrwkh; site=public_api_v3
+      X-Zipkin-Id:
+      - 49827e87d4300da6
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-82-75-useast1aprod
+      X-Extlb:
+      - 10-65-82-75-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Mon, 26 Feb 2024 19:54:48 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8271-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 1, "category": "nightlife", "cost":
+        null, "cost_max": null, "description": "**The guest list is now closed**\n\nAre
+        you ready to paaaaaaaaarty? You and a guest are invited to Yelpapalooza 2.0,
+        our second annual Denver Yelp open party...", "event_site_url": "https://www.yelp.com/events/denver-yelpapalooza-2-0?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "denver-yelpapalooza-2-0", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/yJTk08Jl1CyTv-LbP4d8ng/o.jpg",
+        "interested_count": 484, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 39.7401642172446, "longitude": -105.016385999975, "name":
+        "Yelpapalooza 2.0", "tickets_url": "", "time_end": "2010-05-12T22:00:00-06:00",
+        "time_start": "2010-05-12T19:00:00-06:00", "location": {"address1": "2027
+        W Colfax Ave", "address2": "", "address3": null, "city": "Denver", "zip_code":
+        "80204", "country": "US", "state": "CO", "display_address": ["2027 W Colfax
+        Ave", "Denver, CO 80204"], "cross_streets": ""}, "business_id": "mile-high-station-denver"},
+        {"attending_count": 27, "category": "food-and-drink", "cost": 25.0, "cost_max":
+        null, "description": "**PLEASE NOTE: This dinner has currently SOLD OUT! \n\nOur
+        next Secret Supper will be happening on 2/21 and you can find the details
+        and buy tickets for that...", "event_site_url": "https://www.yelp.com/events/denver-yelps-secret-supper-club-january-edition-sold-out?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "denver-yelps-secret-supper-club-january-edition-sold-out", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/4c8O7UEkyh7obCBhhDkVIw/o.jpg", "interested_count":
+        52, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        39.7621372, "longitude": -105.0348283, "name": "Yelp''s Secret Supper Club
+        - January Edition (SOLD OUT)", "tickets_url": "http://densecretsupperjanuary.eventbrite.com/",
+        "time_end": null, "time_start": "2012-01-31T19:00:00-07:00", "location": {"address1":
+        "3609 W 32nd Ave", "address2": "", "address3": "", "city": "Denver", "zip_code":
+        "80211", "country": "US", "state": "CO", "display_address": ["3609 W 32nd
+        Ave", "Denver, CO 80211"], "cross_streets": ""}, "business_id": "venue-denver"},
+        {"attending_count": 35, "category": "sports-active-life", "cost": 23.0, "cost_max":
+        50.0, "description": "Yeah sports! Cheer on the Denver Nuggets against the
+        New York Knicks and enjoy a special VIP experience with your fellow local
+        Yelpers. Tickets must be...", "event_site_url": "https://www.yelp.com/events/denver-yelp-denver-nuggets-x-knicks-game?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "denver-yelp-denver-nuggets-x-knicks-game", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/haAsfyyFu5xmLYP7-o_TOg/o.jpg",
+        "interested_count": 50, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 39.7485498, "longitude": -105.0077106, "name": "Yelp Denver
+        Nuggets x Knicks Game", "tickets_url": "https://ticketing.axs.com/PickASection.aspx?t=6A4164F08D52BA648CF94F7&og=-1",
+        "time_end": null, "time_start": "2018-01-25T19:00:00-07:00", "location": {"address1":
+        "1000 Chopper Cir", "address2": "", "address3": "", "city": "Denver", "zip_code":
+        "80204", "country": "US", "state": "CO", "display_address": ["1000 Chopper
+        Cir", "Denver, CO 80204"], "cross_streets": ""}, "business_id": "ball-arena-denver"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "*You must receive confirmation via email to attend this
+        event.*\n\nBFD, am I right? Oh wait, we''re talking Breakfast For Dinner!
+        First Watch is no stranger to...", "event_site_url": "https://www.yelp.com/events/arvada-yelp-brunches-so-hard-at-first-watch-denver?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "arvada-yelp-brunches-so-hard-at-first-watch-denver", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/vy-2C2xSrUqCQakuwNu0AA/o.jpg",
+        "interested_count": 72, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 39.78959866, "longitude": -105.08063678, "name": "Yelp Brunches
+        So Hard at First Watch (Denver)", "tickets_url": null, "time_end": "2019-08-28T20:00:00-06:00",
+        "time_start": "2019-08-28T18:00:00-06:00", "location": {"address1": "7450B
+        West 52nd Ave", "address2": "Ste 200", "address3": null, "city": "Arvada",
+        "zip_code": "80002", "country": "US", "state": "CO", "display_address": ["7450B
+        West 52nd Ave", "Ste 200", "Arvada, CO 80002"], "cross_streets": ""}, "business_id":
+        "first-watch-arvada-8"}], "total": 4}'
+  recorded_at: Mon, 26 Feb 2024 19:54:48 GMT
+recorded_with: VCR 6.2.0

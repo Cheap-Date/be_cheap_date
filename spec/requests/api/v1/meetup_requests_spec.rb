@@ -88,5 +88,48 @@ describe "User Meetups API", type: :request do
         expect(response).to have_http_status(401)
       end
     end
+
+    describe "Meetup Update" do
+      it "can update an existing date" do
+        user = create(:user)
+        meetup = create(:meetup, user: user)
+        previous_title = Meetup.last.title
+        meetup_param = { title: "Dance Class" }
+        headers = {"CONTENT_TYPE" => "application/json"}
+  
+        patch api_v1_user_meetup_path(user.id, meetup.id), params: meetup_param
+        new_meetup = Meetup.find(meetup.id)
+        expect(response).to be_successful
+        expect(new_meetup.title).to_not eq(previous_title)
+        expect(new_meetup.title).to eq("Dance Class")
+      end
+  
+      it "sad path; will send an error if meetup is not created" do 
+        user = create(:user)
+        meetup = create(:meetup, user: user)
+        previous_title = Meetup.last.title
+        meetup_param = { title: "" }
+        headers = {"CONTENT_TYPE" => "application/json"}
+    
+        patch api_v1_user_meetup_path(user.id, meetup.id), params: meetup_param
+        expect(response).to_not be_successful 
+        expect(response).to have_http_status(422)
+      end
+    end
+
+    describe "Meetup Destroy" do
+      it "can destroy an meetup" do
+        user = create(:user)
+        meetup = create(:meetup, user: user)
+      
+        expect(Meetup.count).to eq(1)
+      
+        delete api_v1_user_meetup_path(user.id, meetup.id)
+      
+        expect(response).to be_successful
+        expect(Meetup.count).to eq(0)
+        expect{Meetup.find(meetup.id)}.to raise_error(ActiveRecord::RecordNotFound)
+      end
+    end
   end
 end

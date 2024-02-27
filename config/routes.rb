@@ -12,7 +12,7 @@ Rails.application.routes.draw do
       post 'locations', to: 'locations#create'
       get '/find_by_email', to: 'users#user_by_email'
       resources :users do
-        resources :meetups, only: [:index, :create]
+        resources :meetups, only: [:index, :create, :update, :destroy]
       end
       resources :events, only: [:index]
     end
