@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.yelp.com/v3/events?limit=7&location=90210&price=1
+    uri: https://api.yelp.com/v3/events?limit=25&location=90210&price=1
     body:
       encoding: US-ASCII
       string: ''
@@ -24,36 +24,36 @@ http_interactions:
       - keep-alive
       Content-Type:
       - application/json
-      X-Routing-Service:
-      - routing-main--useast1-7d94c5566-ghnv2; site=public_api_v3
+      Ratelimit-Remaining:
+      - '500.0'
       Ratelimit-Resettime:
-      - '2024-02-27T00:00:00+00:00'
-      X-Zipkin-Id:
-      - 5b51d2c841ad83cd
+      - '2024-02-28T00:00:00+00:00'
+      X-Routing-Service:
+      - routing-main--useast1-7d94c5566-kw6pt; site=public_api_v3
       Server:
       - envoy
       Ratelimit-Dailylimit:
       - '500.0'
+      X-Zipkin-Id:
+      - c35b9cf0cdc8578b
       X-B3-Sampled:
       - '0'
-      Ratelimit-Remaining:
-      - '370.0'
       X-Mode:
       - ro
       X-Proxied:
-      - 10-65-82-75-useast1aprod
+      - 10-65-92-107-useast1aprod
       X-Extlb:
-      - 10-65-82-75-useast1aprod
+      - 10-65-92-107-useast1aprod
       Cache-Control:
       - max-age=0, no-store, private, no-transform
       Accept-Ranges:
       - bytes
       Date:
-      - Mon, 26 Feb 2024 19:54:48 GMT
+      - Tue, 27 Feb 2024 01:50:22 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-den8249-DEN
+      - cache-pdk-katl1840032-PDK
       X-Cache:
       - MISS
       X-Cache-Hits:
@@ -66,10 +66,21 @@ http_interactions:
       - chunked
     body:
       encoding: ASCII-8BIT
-      string: '{"events": [{"attending_count": 772, "category": "visual-arts", "cost":
-        12.0, "cost_max": 20.0, "description": "From Beetlejuice to Batman, from Ed
-        Wood to Willy Wonka, the characters that Tim Burton has brought to movie screens
-        are notable for their dark...", "event_site_url": "https://www.yelp.com/events/los-angeles-tim-burton-exhibit-at-lacma-may-29-oct-31-2011?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+      string: '{"events": [{"attending_count": 98, "category": "food-and-drink", "cost":
+        15.0, "cost_max": 30.0, "description": "How''s the dining? Let us know! Review
+        Restaurant Week here:\nhttp://www.yelp.com/biz/yelp-restaurant-week-2009-los-angeles\n\no-o-o-o-o\n\nReal
+        People, Real...", "event_site_url": "https://www.yelp.com/events/park-la-brea-1st-annual-yelp-restaurant-week?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "park-la-brea-1st-annual-yelp-restaurant-week", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/pJmXKJ6Anw6fTSw1xi5zZw/o.jpg",
+        "interested_count": 132, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 34.069358, "longitude": -118.350583, "name": "1st Annual
+        Yelp Restaurant Week!", "tickets_url": "", "time_end": null, "time_start":
+        "2009-06-05T12:00:00-07:00", "location": {"address1": "See List Below", "address2":
+        "", "address3": "", "city": "Park La Brea", "zip_code": "90036", "country":
+        "US", "state": "CA", "display_address": ["Park La Brea, CA 90036"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 772, "category": "visual-arts",
+        "cost": 12.0, "cost_max": 20.0, "description": "From Beetlejuice to Batman,
+        from Ed Wood to Willy Wonka, the characters that Tim Burton has brought to
+        movie screens are notable for their dark...", "event_site_url": "https://www.yelp.com/events/los-angeles-tim-burton-exhibit-at-lacma-may-29-oct-31-2011?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
         "id": "los-angeles-tim-burton-exhibit-at-lacma-may-29-oct-31-2011", "image_url":
         "https://s3-media2.fl.yelpcdn.com/ephoto/kLVznA_spGTYTfU5PU_5Dw/o.jpg", "interested_count":
         216, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
@@ -79,10 +90,47 @@ http_interactions:
         "", "city": "Los Angeles", "zip_code": "90036", "country": "US", "state":
         "CA", "display_address": ["5905 Wilshire Blvd", "Los Angeles, CA 90036"],
         "cross_streets": ""}, "business_id": "los-angeles-county-museum-of-art-los-angeles-11"},
-        {"attending_count": 138, "category": "film", "cost": null, "cost_max": null,
-        "description": "\"Alice in Wonderland\" final Friday\n\nTim Burton films under
-        the stars at the Tar Pits.\nFilms start at sundown (between 8 and 8:30 pm).\n\n4
-        Friday Outdoor Film...", "event_site_url": "https://www.yelp.com/events/los-angeles-tim-burton-free-film-screenings-outdooors-at-lacma-fridays-free-jazz-if-you-arrive-early-see-full-schedule-below?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        {"attending_count": 82, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "Ready for another food frenzy? Coming right up! Grab
+        your pals and come on out to 3rd Street (not the Santa Monica one, though)
+        and get Thaied up like...", "event_site_url": "https://www.yelp.com/events/los-angeles-yelp-o-rama-restaurant-cmye?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-yelp-o-rama-restaurant-cmye", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/RSlb3piJrj0OLtZL6zHvPA/o.jpg",
+        "interested_count": 60, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 34.0714891, "longitude": -118.3620243, "name": "Yelp-O-Rama
+        Restaurant CMYE", "tickets_url": "", "time_end": "2010-10-06T21:30:00-07:00",
+        "time_start": "2010-10-06T19:30:00-07:00", "location": {"address1": "7910
+        W 3rd St", "address2": null, "address3": "", "city": "Los Angeles", "zip_code":
+        "90048", "country": "US", "state": "CA", "display_address": ["7910 W 3rd St",
+        "Los Angeles, CA 90048"], "cross_streets": ""}, "business_id": "rama-los-angeles-3"},
+        {"attending_count": 123, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "Free Cone Day @ Ben & Jerry''s.\n\nTuesday, April 12\n12:00pm
+        - 8:00pm\n\nThis is at ALL Ben & Jerry''s not just the one posted above! :)\n\nGet
+        in line as many...", "event_site_url": "https://www.yelp.com/events/los-angeles-free-cone-day-ben-and-jerrys-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-free-cone-day-ben-and-jerrys-ice-cream", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/XX29pYPaa881Le3Ly8p-Ug/o.jpg",
+        "interested_count": 39, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 34.0571327, "longitude": -118.4148498, "name": "FREE Cone
+        Day @ Ben & Jerry''s Ice Cream", "tickets_url": "", "time_end": null, "time_start":
+        "2011-04-12T10:00:00-07:00", "location": {"address1": "Westfield Century City",
+        "address2": "10250 Santa Monica Blvd", "address3": "", "city": "Los Angeles",
+        "zip_code": "90067", "country": "US", "state": "CA", "display_address": ["Westfield
+        Century City", "10250 Santa Monica Blvd", "Los Angeles, CA 90067"], "cross_streets":
+        ""}, "business_id": "ben-and-jerrys-ice-cream-los-angeles"}, {"attending_count":
+        1, "category": "nightlife", "cost": null, "cost_max": null, "description":
+        "---This event is now closed for RSVPs. Plenty of yelpers have extra plus
+        ones, so use the thread below to try and score yourself a spot on the RSVP...",
+        "event_site_url": "https://www.yelp.com/events/los-angeles-yelp-masquerade-ball-at-voyeur?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-yelp-masquerade-ball-at-voyeur", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/J2Nu-MXcSnh0glzzS8e7uA/o.jpg",
+        "interested_count": 257, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 34.0909522, "longitude": -118.3636104, "name": "Yelp Masquerade
+        Ball at Voyeur", "tickets_url": "", "time_end": "2011-04-08T22:00:00-07:00",
+        "time_start": "2011-04-08T19:00:00-07:00", "location": {"address1": "7969
+        Santa Monica Blvd", "address2": "", "address3": "", "city": "Los Angeles",
+        "zip_code": "90046", "country": "US", "state": "CA", "display_address": ["7969
+        Santa Monica Blvd", "Los Angeles, CA 90046"], "cross_streets": ""}, "business_id":
+        "voyeur-los-angeles"}, {"attending_count": 138, "category": "film", "cost":
+        null, "cost_max": null, "description": "\"Alice in Wonderland\" final Friday\n\nTim
+        Burton films under the stars at the Tar Pits.\nFilms start at sundown (between
+        8 and 8:30 pm).\n\n4 Friday Outdoor Film...", "event_site_url": "https://www.yelp.com/events/los-angeles-tim-burton-free-film-screenings-outdooors-at-lacma-fridays-free-jazz-if-you-arrive-early-see-full-schedule-below?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
         "id": "los-angeles-tim-burton-free-film-screenings-outdooors-at-lacma-fridays-free-jazz-if-you-arrive-early-see-full-schedule-below",
         "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/GIY7Gy9vuIlGgiKNpYoHOg/o.jpg",
         "interested_count": 174, "is_canceled": false, "is_free": true, "is_official":
@@ -93,10 +141,24 @@ http_interactions:
         Wilshire Blvd", "address2": "", "address3": "", "city": "Los Angeles", "zip_code":
         "90036", "country": "US", "state": "CA", "display_address": ["5905 Wilshire
         Blvd", "Los Angeles, CA 90036"], "cross_streets": ""}, "business_id": "los-angeles-county-museum-of-art-los-angeles-11"},
-        {"attending_count": 1, "category": "festivals-fairs", "cost": null, "cost_max":
-        null, "description": "---RSVPs are now closed.---\nConfirmation emails will
-        go out on Wednesday, May 16.\nYou should receive a confirmation or waitlist
-        email. If you are unsure of...", "event_site_url": "https://www.yelp.com/events/los-angeles-yelps-100-days-of-summer-kickoff-party-3?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        {"attending_count": 80, "category": "festivals-fairs", "cost": null, "cost_max":
+        null, "description": "Brazilian Day in Los Angeles has teamed up with the
+        Brazilian Street Carnaval of Long Beach to put on possibly the biggest and
+        best Brazilian Day yet! \n\nThe...", "event_site_url": "https://www.yelp.com/events/los-angeles-brazilian-carnival-at-the-tar-pits-free?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-brazilian-carnival-at-the-tar-pits-free", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/Ypc2wNXRQp46qJvulyoIBQ/o.jpg", "interested_count":
+        101, "is_canceled": false, "is_free": true, "is_official": false, "latitude":
+        34.0630679, "longitude": -118.3554125, "name": "Brazilian Carnival at the
+        Tar Pits - Free", "tickets_url": null, "time_end": "2011-09-10T18:00:00-07:00",
+        "time_start": "2011-09-10T12:00:00-07:00", "location": {"address1": "5801
+        Wilshire Blvd", "address2": "", "address3": "La Brea Tar Pits", "city": "Los
+        Angeles", "zip_code": "90036", "country": "US", "state": "CA", "display_address":
+        ["5801 Wilshire Blvd", "La Brea Tar Pits", "Los Angeles, CA 90036"], "cross_streets":
+        ""}, "business_id": "la-brea-tar-pits-and-museum-los-angeles"}, {"attending_count":
+        1, "category": "festivals-fairs", "cost": null, "cost_max": null, "description":
+        "---RSVPs are now closed.---\nConfirmation emails will go out on Wednesday,
+        May 16.\nYou should receive a confirmation or waitlist email. If you are unsure
+        of...", "event_site_url": "https://www.yelp.com/events/los-angeles-yelps-100-days-of-summer-kickoff-party-3?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
         "id": "los-angeles-yelps-100-days-of-summer-kickoff-party-3", "image_url":
         "https://s3-media2.fl.yelpcdn.com/ephoto/Rc5DsjQ6twtEY7GfWgGs4A/o.jpg", "interested_count":
         467, "is_canceled": false, "is_free": true, "is_official": false, "latitude":
@@ -106,6 +168,68 @@ http_interactions:
         Sunset Blvd", "address2": "", "address3": "", "city": "Los Angeles", "zip_code":
         "90046", "country": "US", "state": "CA", "display_address": ["8225 Sunset
         Blvd, Los Angeles, CA 90046"], "cross_streets": ""}, "business_id": null},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "Come see why yelpers are raving about Beverly Hills
+        newcomer BierBeisl!  Chef and owner Bernhard Mairinger is opening his authentic
+        Austrian restaurant just...", "event_site_url": "https://www.yelp.com/events/beverly-hills-cmye-at-bierbeisl?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "beverly-hills-cmye-at-bierbeisl", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/MBkZVo0LpyAAaTNI0tSFkQ/o.jpg",
+        "interested_count": 160, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 34.069254, "longitude": -118.40687, "name": "CMYE at BierBeisl",
+        "tickets_url": null, "time_end": "2012-07-22T16:30:00-07:00", "time_start":
+        "2012-07-22T15:00:00-07:00", "location": {"address1": "9669 S Santa Monica
+        Blvd", "address2": "", "address3": "", "city": "Beverly Hills", "zip_code":
+        "90210", "country": "US", "state": "CA", "display_address": ["9669 S Santa
+        Monica Blvd", "Beverly Hills, CA 90210"], "cross_streets": ""}, "business_id":
+        "bierbeisl-beverly-hills"}, {"attending_count": 1, "category": "charities",
+        "cost": null, "cost_max": null, "description": "In conjunction with Yelp''s
+        Passport to Beverly Hills http://www.yelp.com/events/beverly-hills-passport-to-beverly-hills,
+        join us for some burgers, organic...", "event_site_url": "https://www.yelp.com/events/beverly-hills-burgers-in-beverly-hills?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "beverly-hills-burgers-in-beverly-hills", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/-DVeDiQYENQ7rVQ4VPYemw/o.jpg",
+        "interested_count": 170, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 34.0623159, "longitude": -118.3994745, "name": "Burgers
+        in Beverly Hills!", "tickets_url": null, "time_end": "2013-05-14T20:00:00-07:00",
+        "time_start": "2013-05-14T18:30:00-07:00", "location": {"address1": "281 S
+        Beverly Dr", "address2": "", "address3": "", "city": "Beverly Hills", "zip_code":
+        "90212", "country": "US", "state": "CA", "display_address": ["281 S Beverly
+        Dr", "Beverly Hills, CA 90212"], "cross_streets": ""}, "business_id": "burger-lounge-beverly-hills"},
+        {"attending_count": 1, "category": "charities", "cost": null, "cost_max":
+        null, "description": "In conjunction with Yelp''s Passport to Beverly Hills
+        http://www.yelp.com/events/beverly-hills-passport-to-beverly-hills, join us
+        for some technologically...", "event_site_url": "https://www.yelp.com/events/beverly-hills-experimental-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "beverly-hills-experimental-ice-cream", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/Pz9FygI-cXaniT6wbCUtRA/o.jpg",
+        "interested_count": 175, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 34.0712164, "longitude": -118.4034718, "name": "Experimental
+        Ice Cream", "tickets_url": null, "time_end": "2013-05-21T22:00:00-07:00",
+        "time_start": "2013-05-21T20:30:00-07:00", "location": {"address1": "9461
+        S Santa Monica Blvd", "address2": "", "address3": "", "city": "Beverly Hills",
+        "zip_code": "90210", "country": "US", "state": "CA", "display_address": ["9461
+        S Santa Monica Blvd", "Beverly Hills, CA 90210"], "cross_streets": ""}, "business_id":
+        "ice-cream-lab-beverly-hills-2"}, {"attending_count": 1, "category": "food-and-drink",
+        "cost": null, "cost_max": null, "description": "In conjunction with Yelp''s
+        Passport to Beverly Hills http://www.yelp.com/events/beverly-hills-passport-to-beverly-hills,
+        join us for some gourmet appetizers...", "event_site_url": "https://www.yelp.com/events/beverly-hills-happy-hour-at-flemings-beverly-hills?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "beverly-hills-happy-hour-at-flemings-beverly-hills", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/Zj4ht8CohilCE9qaSsCqYQ/o.jpg",
+        "interested_count": 305, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 34.0682675, "longitude": -118.3998491, "name": "Happy Hour
+        at Fleming''s Beverly Hills!", "tickets_url": null, "time_end": "2013-05-20T20:30:00-07:00",
+        "time_start": "2013-05-20T18:30:00-07:00", "location": {"address1": "252 N
+        Beverly Dr", "address2": "", "address3": "", "city": "Beverly Hills", "zip_code":
+        "90210", "country": "US", "state": "CA", "display_address": ["252 N Beverly
+        Dr", "Beverly Hills, CA 90210"], "cross_streets": ""}, "business_id": "flemings-prime-steakhouse-and-wine-bar-beverly-hills"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "In conjunction with Yelp''s Passport to Beverly Hills
+        http://www.yelp.com/events/beverly-hills-passport-to-beverly-hills, join us
+        to bring the promotion to...", "event_site_url": "https://www.yelp.com/events/beverly-hills-yelps-passport-to-beverly-hills-chocolate-tasting-vosges-haut-chocolat?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "beverly-hills-yelps-passport-to-beverly-hills-chocolate-tasting-vosges-haut-chocolat",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/2Ojc1GZGHduohfVn_8qsvQ/o.jpg",
+        "interested_count": 158, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 34.0687222033739, "longitude": -118.40085580945, "name":
+        "Yelp''s Passport to Beverly Hills Chocolate Tasting @ Vosges Haut-Chocolat",
+        "tickets_url": null, "time_end": "2013-05-22T20:00:00-07:00", "time_start":
+        "2013-05-22T18:30:00-07:00", "location": {"address1": "311 N Beverly Dr",
+        "address2": "", "address3": "", "city": "Beverly Hills", "zip_code": "90210",
+        "country": "US", "state": "CA", "display_address": ["311 N Beverly Dr", "Beverly
+        Hills, CA 90210"], "cross_streets": ""}, "business_id": "vosges-haut-chocolat-beverly-hills"},
         {"attending_count": 943, "category": "visual-arts", "cost": 10.0, "cost_max":
         40.0, "description": "The Rain Room allows you to experience the seemingly
         impossible with Random International''s Rain Room (2012). This immersive environment
@@ -146,6 +270,30 @@ http_interactions:
         "", "city": "Los Angeles", "zip_code": "90036", "country": "US", "state":
         "CA", "display_address": ["5905 Wilshire Blvd", "Los Angeles, CA 90036"],
         "cross_streets": ""}, "business_id": "los-angeles-county-museum-of-art-los-angeles-11"},
+        {"attending_count": 201, "category": "music", "cost": null, "cost_max": null,
+        "description": "Jazz at LACMA features the art of jazz as practiced by leading
+        Southern California artists. Celebrating over twenty years at LACMA, the program
+        continues to...", "event_site_url": "https://www.yelp.com/events/los-angeles-lacma-jazz-series?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-lacma-jazz-series", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/C6to_1_9L3udX4le-8fOVw/o.jpg",
+        "interested_count": 284, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 34.063931, "longitude": -118.35923, "name": "LACMA Jazz
+        Series", "tickets_url": null, "time_end": "2016-09-02T18:00:00-07:00", "time_start":
+        "2016-08-04T18:00:00-07:00", "location": {"address1": "5905 Wilshire Blvd",
+        "address2": "", "address3": "", "city": "Los Angeles", "zip_code": "90036",
+        "country": "US", "state": "CA", "display_address": ["5905 Wilshire Blvd",
+        "Los Angeles, CA 90036"], "cross_streets": ""}, "business_id": "los-angeles-county-museum-of-art-los-angeles-11"},
+        {"attending_count": 339, "category": "visual-arts", "cost": null, "cost_max":
+        null, "description": "Over thirty museums--presenting art, cultural heritage,
+        natural history, and science--will open their doors and invite visitors to
+        attend their museums free...", "event_site_url": "https://www.yelp.com/events/los-angeles-museums-free-for-all-6?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-museums-free-for-all-6", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/hUUnbeLBwji8mbynMQ8WtA/o.jpg",
+        "interested_count": 166, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 34.0581092683145, "longitude": -118.414823674345, "name":
+        "Museums Free-For-All", "tickets_url": null, "time_end": null, "time_start":
+        "2017-01-29T00:00:00-08:00", "location": {"address1": "2000 Ave Of The Stars",
+        "address2": "", "address3": "", "city": "Los Angeles", "zip_code": "90067",
+        "country": "US", "state": "CA", "display_address": ["2000 Ave Of The Stars",
+        "Los Angeles, CA 90067"], "cross_streets": ""}, "business_id": "annenberg-space-for-photography-los-angeles"},
         {"attending_count": 1272, "category": "visual-arts", "cost": null, "cost_max":
         null, "description": "This is an ongoing monthly event for 2018 but Yelp limits
         event postings for 30 days. It''s also nationwide. Here''s your chance to
@@ -159,12 +307,89 @@ http_interactions:
         "location": {"address1": "5905 Wilshire Blvd", "address2": "", "address3":
         "", "city": "Los Angeles", "zip_code": "90036", "country": "US", "state":
         "CA", "display_address": ["5905 Wilshire Blvd", "Los Angeles, CA 90036"],
-        "cross_streets": ""}, "business_id": "los-angeles-county-museum-of-art-los-angeles-11"}],
-        "total": 7}'
-  recorded_at: Mon, 26 Feb 2024 19:54:48 GMT
+        "cross_streets": ""}, "business_id": "los-angeles-county-museum-of-art-los-angeles-11"},
+        {"attending_count": 277, "category": "fashion", "cost": null, "cost_max":
+        null, "description": "Louis Vuitton presents Time Capsule, a journey through
+        the history of the House that revisits its landmark innovations in technology
+        and design in Los...", "event_site_url": "https://www.yelp.com/events/los-angeles-louis-vuittons-time-capsule-exhibition?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-louis-vuittons-time-capsule-exhibition", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/cfekqMiIWo43o384WDFEOQ/o.jpg",
+        "interested_count": 222, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 34.0590031, "longitude": -118.418866, "name": "Louis Vuitton''s
+        Time Capsule Exhibition", "tickets_url": "", "time_end": "2018-06-10T21:00:00-07:00",
+        "time_start": "2018-05-18T10:00:00-07:00", "location": {"address1": "10250
+        Santa Monica Blvd", "address2": "", "address3": "", "city": "Los Angeles",
+        "zip_code": "90067", "country": "US", "state": "CA", "display_address": ["10250
+        Santa Monica Blvd", "Los Angeles, CA 90067"], "cross_streets": ""}, "business_id":
+        "westfield-century-city-los-angeles-2"}, {"attending_count": 189, "category":
+        "visual-arts", "cost": null, "cost_max": null, "description": "Louis Vuitton
+        will soon stage an exhibit exploring the house''s 160-year history of collaborations.
+        Titled Louis Vuitton X, the show will feature over 180...", "event_site_url":
+        "https://www.yelp.com/events/beverly-hills-louis-vuitton-x-exhibition?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "beverly-hills-louis-vuitton-x-exhibition", "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/YG17A9a7eG4JU2EoHfzRFQ/o.jpg",
+        "interested_count": 122, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 34.0706111, "longitude": -118.4039189, "name": "Louis Vuitton
+        X Exhibition", "tickets_url": "", "time_end": "2019-07-28T19:00:00-07:00",
+        "time_start": "2019-06-28T10:00:00-07:00", "location": {"address1": "468 N
+        Rodeo Dr", "address2": "", "address3": null, "city": "Beverly Hills", "zip_code":
+        "90210", "country": "US", "state": "CA", "display_address": ["468 N Rodeo
+        Dr", "Beverly Hills, CA 90210"], "cross_streets": ""}, "business_id": "brooks-brothers-beverly-hills-2"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "@YelpLA is giving away five pairs of tickets to Ros\u00e9
+        & Bubbles Festival on Saturday, August 24th! Ticket winners will have their
+        choice between the 2-4 pm...", "event_site_url": "https://www.yelp.com/events/west-hollywood-tix-giveaway-ros%C3%A9-and-bubbles-festival?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "west-hollywood-tix-giveaway-ros\u00e9-and-bubbles-festival", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/Um8fW3hZZoDeMel5prVcUw/o.jpg", "interested_count":
+        297, "is_canceled": false, "is_free": false, "is_official": true, "latitude":
+        34.0773657, "longitude": -118.3833566, "name": "TIX GIVEAWAY: Ros\u00e9 &
+        Bubbles Festival", "tickets_url": "", "time_end": "2019-08-24T21:00:00-07:00",
+        "time_start": "2019-08-24T14:00:00-07:00", "location": {"address1": "8783
+        Beverly Blvd", "address2": "", "address3": "", "city": "West Hollywood", "zip_code":
+        "90048", "country": "US", "state": "CA", "display_address": ["8783 Beverly
+        Blvd", "West Hollywood, CA 90048"], "cross_streets": ""}, "business_id": "leica-store-west-hollywood-2"},
+        {"attending_count": 1, "category": "other", "cost": null, "cost_max": null,
+        "description": "They say outer order leads to inner calm, and with the way
+        2020''s going, we think just about everyone could use a little extra calm
+        in their lives. Join...", "event_site_url": "https://www.yelp.com/events/beverly-hills-virtual-yelp-event-konmari-method-101-with-minimize-with-purpose?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "beverly-hills-virtual-yelp-event-konmari-method-101-with-minimize-with-purpose",
+        "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/7W3N3nMidCI92peQxOYghg/o.jpg",
+        "interested_count": 208, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 34.0661071, "longitude": -118.3841777, "name": "Virtual
+        Yelp Event: KonMari Method\u2122 101 with Minimize with Purpose", "tickets_url":
+        null, "time_end": "2020-08-05T18:30:00-07:00", "time_start": "2020-08-05T17:30:00-07:00",
+        "location": {"address1": null, "address2": null, "address3": null, "city":
+        "Beverly Hills", "zip_code": "90211", "country": "US", "state": "CA", "display_address":
+        ["Beverly Hills, CA 90211"], "cross_streets": ""}, "business_id": "minimize-with-purpose-beverly-hills"},
+        {"attending_count": 1, "category": "other", "cost": null, "cost_max": null,
+        "description": "Join Yelp LA and ASL with Andrew (https://www.yelp.com/biz/asl-with-andrew-los-angeles-5)
+        for a beginner level lesson in American Sign Language! Deaf since...", "event_site_url":
+        "https://www.yelp.com/events/los-angeles-virtual-yelp-event-asl-with-andrew?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-virtual-yelp-event-asl-with-andrew", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/fDyT9emsUN15Oc_Thdl_UQ/o.jpg",
+        "interested_count": 222, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 34.07299412949021, "longitude": -118.37264439194718, "name":
+        "Virtual Yelp Event: ASL with Andrew", "tickets_url": "", "time_end": "2020-08-12T19:00:00-07:00",
+        "time_start": "2020-08-12T18:00:00-07:00", "location": {"address1": null,
+        "address2": null, "address3": "", "city": "Los Angeles", "zip_code": "90048",
+        "country": "US", "state": "CA", "display_address": ["Los Angeles, CA 90048"],
+        "cross_streets": ""}, "business_id": "asl-with-andrew-los-angeles-5"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "Latinx and woman-owned business Beignet Box was featured on Yelp''s Latinx
+        \"Ones-to-Watch\" list in honor of Hispanic Heritage Month! Owner Christina
+        Milian...", "event_site_url": "https://www.yelp.com/events/los-angeles-community-experience-celebrate-latinx-heritage-month-with-beignet-box?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-community-experience-celebrate-latinx-heritage-month-with-beignet-box",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/pvPkk_ceCajGfQ7nnddrEg/o.jpg",
+        "interested_count": 193, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 34.143319054912865, "longitude": -118.40041691393071, "name":
+        "Community Experience: Celebrate Latinx Heritage Month with Beignet Box",
+        "tickets_url": null, "time_end": "2022-09-30T23:00:00-07:00", "time_start":
+        "2022-09-28T11:00:00-07:00", "location": {"address1": "12265 Ventura Blvd",
+        "address2": "", "address3": null, "city": "Los Angeles", "zip_code": "91604",
+        "country": "US", "state": "CA", "display_address": ["12265 Ventura Blvd",
+        "Los Angeles, CA 91604"], "cross_streets": ""}, "business_id": "beignet-box-los-angeles-2"}],
+        "total": 25}'
+  recorded_at: Tue, 27 Feb 2024 01:50:22 GMT
 - request:
     method: get
-    uri: https://api.yelp.com/v3/events?limit=4&location=80212&price=1
+    uri: https://api.yelp.com/v3/events?limit=25&location=80212&price=1
     body:
       encoding: US-ASCII
       string: ''
@@ -186,36 +411,36 @@ http_interactions:
       - keep-alive
       Content-Type:
       - application/json
+      X-Routing-Service:
+      - routing-main--useast1-7d94c5566-mtw9w; site=public_api_v3
       Ratelimit-Dailylimit:
       - '500.0'
-      Ratelimit-Resettime:
-      - '2024-02-27T00:00:00+00:00'
+      X-Zipkin-Id:
+      - 9ad33cb4a6f1cfc0
+      Server:
+      - envoy
       X-B3-Sampled:
       - '0'
       Ratelimit-Remaining:
-      - '369.0'
-      Server:
-      - envoy
-      X-Routing-Service:
-      - routing-main--useast1-7d94c5566-xrwkh; site=public_api_v3
-      X-Zipkin-Id:
-      - 49827e87d4300da6
+      - '499.0'
+      Ratelimit-Resettime:
+      - '2024-02-28T00:00:00+00:00'
       X-Mode:
       - ro
       X-Proxied:
-      - 10-65-82-75-useast1aprod
+      - 10-65-180-149-useast1bprod
       X-Extlb:
-      - 10-65-82-75-useast1aprod
+      - 10-65-180-149-useast1bprod
       Cache-Control:
       - max-age=0, no-store, private, no-transform
       Accept-Ranges:
       - bytes
       Date:
-      - Mon, 26 Feb 2024 19:54:48 GMT
+      - Tue, 27 Feb 2024 01:50:23 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-den8271-DEN
+      - cache-pdk-katl1840070-PDK
       X-Cache:
       - MISS
       X-Cache-Hits:
@@ -228,10 +453,22 @@ http_interactions:
       - chunked
     body:
       encoding: ASCII-8BIT
-      string: '{"events": [{"attending_count": 1, "category": "nightlife", "cost":
-        null, "cost_max": null, "description": "**The guest list is now closed**\n\nAre
-        you ready to paaaaaaaaarty? You and a guest are invited to Yelpapalooza 2.0,
-        our second annual Denver Yelp open party...", "event_site_url": "https://www.yelp.com/events/denver-yelpapalooza-2-0?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+      string: '{"events": [{"attending_count": 19, "category": "food-and-drink", "cost":
+        null, "cost_max": null, "description": "Do you smell that ??? It smells like
+        BBQ, one of the best most fun BBQs EVER!!!!  Doug Y and I are hosting so get
+        your oven mitts, your BBQ tools, a side...", "event_site_url": "https://www.yelp.com/events/denver-yelp-bbq-extravaganza?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "denver-yelp-bbq-extravaganza", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/KVCmmdeWsFJ__2oQIsDyDQ/o.jpg",
+        "interested_count": 30, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 39.7802155, "longitude": -105.0533012, "name": "Yelp BBQ
+        Extravaganza", "tickets_url": "", "time_end": null, "time_start": "2009-08-23T11:00:00-06:00",
+        "location": {"address1": "46TH Ave And Sheridan Blvd", "address2": "", "address3":
+        "", "city": "Denver", "zip_code": "80212", "country": "US", "state": "CO",
+        "display_address": ["46TH Ave And Sheridan Blvd", "Denver, CO 80212"], "cross_streets":
+        ""}, "business_id": "berkeley-park-denver"}, {"attending_count": 1, "category":
+        "nightlife", "cost": null, "cost_max": null, "description": "**The guest list
+        is now closed**\n\nAre you ready to paaaaaaaaarty? You and a guest are invited
+        to Yelpapalooza 2.0, our second annual Denver Yelp open party...", "event_site_url":
+        "https://www.yelp.com/events/denver-yelpapalooza-2-0?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
         "id": "denver-yelpapalooza-2-0", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/yJTk08Jl1CyTv-LbP4d8ng/o.jpg",
         "interested_count": 484, "is_canceled": false, "is_free": true, "is_official":
         false, "latitude": 39.7401642172446, "longitude": -105.016385999975, "name":
@@ -240,6 +477,91 @@ http_interactions:
         W Colfax Ave", "address2": "", "address3": null, "city": "Denver", "zip_code":
         "80204", "country": "US", "state": "CO", "display_address": ["2027 W Colfax
         Ave", "Denver, CO 80204"], "cross_streets": ""}, "business_id": "mile-high-station-denver"},
+        {"attending_count": 23, "category": "nightlife", "cost": 10.0, "cost_max":
+        40.0, "description": "Cool down with tasty brews at the Summer Brew Fest at
+        Mile High Station. This annual fest will celebrate craft beverages and feature
+        live local music, food,...", "event_site_url": "https://www.yelp.com/events/denver-summer-brew-fest-2?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "denver-summer-brew-fest-2", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/McX65_juQdw5qy_aJi4bXQ/o.jpg",
+        "interested_count": 18, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 39.7401642172446, "longitude": -105.016385999975, "name":
+        "Summer Brew Fest", "tickets_url": "", "time_end": "2010-07-23T22:00:00-06:00",
+        "time_start": "2010-07-23T19:00:00-06:00", "location": {"address1": "2027
+        W Colfax Ave", "address2": "", "address3": null, "city": "Denver", "zip_code":
+        "80204", "country": "US", "state": "CO", "display_address": ["2027 W Colfax
+        Ave", "Denver, CO 80204"], "cross_streets": ""}, "business_id": "mile-high-station-denver"},
+        {"attending_count": 21, "category": "nightlife", "cost": null, "cost_max":
+        null, "description": "Hola, yelpers! You know what time it is? Mmmhhmmm, that''s
+        right - it''s Office Hours. \n\nAre you a Yelp newbie and wondering what office
+        hours is all about?...", "event_site_url": "https://www.yelp.com/events/denver-june-office-hours-root-down?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "denver-june-office-hours-root-down", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/4Pr6vVcHquAPt-hWlxn-Ew/o.jpg",
+        "interested_count": 23, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 39.7630546, "longitude": -105.0056336, "name": "June Office
+        Hours @ Root Down!", "tickets_url": "", "time_end": "2010-06-16T18:30:00-06:00",
+        "time_start": "2010-06-16T16:30:00-06:00", "location": {"address1": "1600
+        W 33rd Ave", "address2": "", "address3": "", "city": "Denver", "zip_code":
+        "80211", "country": "US", "state": "CO", "display_address": ["1600 W 33rd
+        Ave", "Denver, CO 80211"], "cross_streets": ""}, "business_id": "root-down-denver"},
+        {"attending_count": 24, "category": "festivals-fairs", "cost": null, "cost_max":
+        null, "description": "Celebrating it''s 10th Anniversary, The Colorado Dragon
+        Boat Festival is a free family-friendly festival highlighting Colorado''s
+        rich Asian Pacific American...", "event_site_url": "https://www.yelp.com/events/denver-colorado-dragon-boat-festival-3?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "denver-colorado-dragon-boat-festival-3", "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/yNycjxZ7xYlLHNCAf94npw/o.jpg",
+        "interested_count": 14, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 39.743979, "longitude": -105.0532371, "name": "Colorado
+        Dragon Boat Festival", "tickets_url": "", "time_end": "2010-07-24T18:00:00-06:00",
+        "time_start": "2010-07-24T10:00:00-06:00", "location": {"address1": "Sheridan
+        Blvd & W 17th Ave", "address2": "", "address3": "", "city": "Denver", "zip_code":
+        "80219", "country": "US", "state": "CO", "display_address": ["Sheridan Blvd
+        & W 17th Ave", "Denver, CO 80219"], "cross_streets": ""}, "business_id": "sloans-lake-park-denver"},
+        {"attending_count": 16, "category": "nightlife", "cost": null, "cost_max":
+        null, "description": "Hey you guys! It''s time for Office Hours.\n\nThis month
+        let''s check out Stingray Lounge, the newest bar from the creators of Bar
+        Car, Jonesy''s and Horseshoe...", "event_site_url": "https://www.yelp.com/events/denver-march-office-hours-at-stingray-lounge?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "denver-march-office-hours-at-stingray-lounge", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/uJQxr2HlDoLq0cItRHeNIg/o.jpg",
+        "interested_count": 25, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 39.7693592, "longitude": -105.0232995, "name": "March Office
+        Hours at Stingray Lounge", "tickets_url": "", "time_end": null, "time_start":
+        "2011-03-23T18:00:00-06:00", "location": {"address1": "2911 W 38th Ave", "address2":
+        "", "address3": "", "city": "Denver", "zip_code": "80211", "country": "US",
+        "state": "CO", "display_address": ["2911 W 38th Ave", "Denver, CO 80211"],
+        "cross_streets": ""}, "business_id": "stingray-lounge-denver"}, {"attending_count":
+        18, "category": "nightlife", "cost": 10.0, "cost_max": 40.0, "description":
+        "100+ Beers from 39+ Breweries\n\nThe Summer Brew Fest at Mile High Station
+        celebrates craft beverages from around Colorado and other U.S. microbrews
+        and...", "event_site_url": "https://www.yelp.com/events/denver-summer-brewfest?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "denver-summer-brewfest", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/xOh7W2e5f5PfVhyytvb0kw/o.jpg",
+        "interested_count": 19, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 39.7401642172446, "longitude": -105.016385999975, "name":
+        "Summer Brewfest", "tickets_url": "http://www.etix.com/ticket/online/venueSearch.jsp?venue_id=6220&cobrand=denverbrewfest",
+        "time_end": "2011-07-22T22:00:00-06:00", "time_start": "2011-07-22T18:00:00-06:00",
+        "location": {"address1": "2027 W Colfax Ave", "address2": "", "address3":
+        null, "city": "Denver", "zip_code": "80204", "country": "US", "state": "CO",
+        "display_address": ["2027 W Colfax Ave", "Denver, CO 80204"], "cross_streets":
+        ""}, "business_id": "mile-high-station-denver"}, {"attending_count": 32, "category":
+        "festivals-fairs", "cost": null, "cost_max": null, "description": "It''s back
+        and better than ever for 2011! \n\nSpend the weekend watching traditional
+        dragon boats races on Sloan''s Lake, enjoying delicious traditional Asian...",
+        "event_site_url": "https://www.yelp.com/events/denver-colorado-dragon-boat-festival-5?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "denver-colorado-dragon-boat-festival-5", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/noTMmPvptF6ivqy0JoEIKg/o.jpg",
+        "interested_count": 19, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 39.743979, "longitude": -105.0532371, "name": "Colorado
+        Dragon Boat Festival", "tickets_url": "", "time_end": "2011-07-31T17:00:00-06:00",
+        "time_start": "2011-07-31T10:00:00-06:00", "location": {"address1": "Sheridan
+        Blvd & W 17th Ave", "address2": "", "address3": "", "city": "Denver", "zip_code":
+        "80219", "country": "US", "state": "CO", "display_address": ["Sheridan Blvd
+        & W 17th Ave", "Denver, CO 80219"], "cross_streets": ""}, "business_id": "sloans-lake-park-denver"},
+        {"attending_count": 16, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "I was thinking something along the lines of:\n\n1pm
+        Tacos Tijuana for 99-cent tacos (44th & Sheridan) http://www.yelp.com/biz/tacos-tijuana-denver\n1:45pm
+        Los...", "event_site_url": "https://www.yelp.com/events/denver-nw-side-taco-tour-uye?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "denver-nw-side-taco-tour-uye", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/ZyAeOzlCLbkmd54zBo2pdQ/o.jpg",
+        "interested_count": 24, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 39.7757569360581, "longitude": -105.053003299742, "name":
+        "NW Side Taco Tour UYE", "tickets_url": "", "time_end": "2011-07-10T15:00:00-06:00",
+        "time_start": "2011-07-10T13:00:00-06:00", "location": {"address1": "4348
+        Sheridan Blvd", "address2": "", "address3": "", "city": "Denver", "zip_code":
+        "80212", "country": "US", "state": "CO", "display_address": ["4348 Sheridan
+        Blvd", "Denver, CO 80212"], "cross_streets": ""}, "business_id": "tacos-tijuana-denver"},
         {"attending_count": 27, "category": "food-and-drink", "cost": 25.0, "cost_max":
         null, "description": "**PLEASE NOTE: This dinner has currently SOLD OUT! \n\nOur
         next Secret Supper will be happening on 2/21 and you can find the details
@@ -253,6 +575,119 @@ http_interactions:
         "3609 W 32nd Ave", "address2": "", "address3": "", "city": "Denver", "zip_code":
         "80211", "country": "US", "state": "CO", "display_address": ["3609 W 32nd
         Ave", "Denver, CO 80211"], "cross_streets": ""}, "business_id": "venue-denver"},
+        {"attending_count": 17, "category": "festivals-fairs", "cost": null, "cost_max":
+        null, "description": "Join the Italian tradition at Festival Italiano at Belmar!  The
+        two-day celebration of Italian culture, food, wine and artisans attracted
+        100,000 guests...", "event_site_url": "https://www.yelp.com/events/lakewood-festival-italiano?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "lakewood-festival-italiano", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/Ifp6G0vdHT-THUjoVuoQdQ/o.jpg",
+        "interested_count": 17, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 39.7093508, "longitude": -105.0787921, "name": "festival
+        italiano", "tickets_url": "", "time_end": "2012-09-09T19:00:00-06:00", "time_start":
+        "2012-09-08T10:00:00-06:00", "location": {"address1": "7337 W Alaska Dr",
+        "address2": "", "address3": "", "city": "Lakewood", "zip_code": "80226", "country":
+        "US", "state": "CO", "display_address": ["7337 W Alaska Dr", "Lakewood, CO
+        80226"], "cross_streets": ""}, "business_id": "belmar-lakewood-2"}, {"attending_count":
+        24, "category": "nightlife", "cost": null, "cost_max": null, "description":
+        "***I changed the event date from 8/9 to 8/23 so that I (and hopefully you!)
+        can attend Carly B''s awesome UYE (Unofficial Yelp Event) for Lawn Games.
+        Details...", "event_site_url": "https://www.yelp.com/events/denver-yelps-august-meet-and-greet-strange-brewing-company?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "denver-yelps-august-meet-and-greet-strange-brewing-company", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/-W9tM9tASi0mlx75p6Hf2w/o.jpg", "interested_count":
+        34, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        39.7372425522548, "longitude": -105.014891153933, "name": "Yelp''s August
+        Meet-And-Greet @ Strange Brewing Company", "tickets_url": null, "time_end":
+        "2012-08-23T20:00:00-06:00", "time_start": "2012-08-23T17:00:00-06:00", "location":
+        {"address1": "1330 Zuni St", "address2": "Unit M", "address3": "", "city":
+        "Denver", "zip_code": "80204", "country": "US", "state": "CO", "display_address":
+        ["1330 Zuni St", "Unit M", "Denver, CO 80204"], "cross_streets": ""}, "business_id":
+        "strange-craft-beer-company-denver"}, {"attending_count": 11, "category":
+        "food-and-drink", "cost": 7.0, "cost_max": 13.0, "description": "For this
+        month the adventure will be held on a Saturday.  \n\nThey have sat aside an
+        area for us with larger separate tables.  Each table will have their own...",
+        "event_site_url": "https://www.yelp.com/events/denver-january-brunch-adventure?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "denver-january-brunch-adventure", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/0dCYC3uL_F37VMQElJrGgg/o.jpg",
+        "interested_count": 26, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 39.7623585, "longitude": -105.0388221, "name": "January
+        Brunch Adventure", "tickets_url": "", "time_end": "2013-01-12T12:30:00-07:00",
+        "time_start": "2013-01-12T10:30:00-07:00", "location": {"address1": "3927
+        W 32nd Ave", "address2": null, "address3": "", "city": "Denver", "zip_code":
+        "80212", "country": "US", "state": "CO", "display_address": ["3927 W 32nd
+        Ave", "Denver, CO 80212"], "cross_streets": ""}, "business_id": "sassafras-american-eatery-highlands-denver"},
+        {"attending_count": 20, "category": "food-and-drink", "cost": 25.0, "cost_max":
+        null, "description": "**PLEASE NOTE: This brunch has currently SOLD OUT!  Our
+        next Secret Supper will be happening on April 23rd. Please visit here to learn
+        more and purchase a...", "event_site_url": "https://www.yelp.com/events/denver-yelps-secret-supper-march-2013-edition-sold-out?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "denver-yelps-secret-supper-march-2013-edition-sold-out", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/o8BzP4_qwFHTMPJ-_5T-kQ/o.jpg", "interested_count":
+        22, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        39.7477325, "longitude": -105.0000188, "name": "Yelp''s Secret Supper - March
+        2013 Edition (SOLD OUT)", "tickets_url": null, "time_end": null, "time_start":
+        "2013-03-24T11:00:00-06:00", "location": {"address1": "1317 14th St", "address2":
+        "", "address3": "", "city": "Denver", "zip_code": "80202", "country": "US",
+        "state": "CO", "display_address": ["1317 14th St", "Denver, CO 80202"], "cross_streets":
+        ""}, "business_id": "euclid-hall-bar-and-kitchen-denver"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": 25.0, "cost_max": null, "description":
+        "So, consider this the August Secret Supper. It''s early enough in September,
+        right? :) The actual September Secret Supper will be on September 17th, which...",
+        "event_site_url": "https://www.yelp.com/events/denver-yelps-secret-supper-august-well-kind-of-2013-edition?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "denver-yelps-secret-supper-august-well-kind-of-2013-edition", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/xwe0tnjCnRv9iwoLGPp4OA/o.jpg", "interested_count":
+        38, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        39.762136, "longitude": -105.011061, "name": "Yelp''s Secret Supper - August
+        (Well, kind of) 2013 Edition", "tickets_url": null, "time_end": null, "time_start":
+        "2013-09-03T18:30:00-06:00", "location": {"address1": "3200 Tejon St", "address2":
+        "", "address3": "", "city": "Denver", "zip_code": "80211", "country": "US",
+        "state": "CO", "display_address": ["3200 Tejon St", "Denver, CO 80211"], "cross_streets":
+        ""}, "business_id": "lohi-steakbar-denver-3"}, {"attending_count": 1, "category":
+        "food-and-drink", "cost": 25.0, "cost_max": null, "description": "**RSVPs
+        will open on Monday, September 16th at 12:00pm**\n\nInstead of paying the
+        $25 upfront to reserve your seats, you will RSVP on this event listing and...",
+        "event_site_url": "https://www.yelp.com/events/denver-yelps-secret-supper-october-2013-edition?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "denver-yelps-secret-supper-october-2013-edition", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/lDpLo7lCHL8MBdW3Rx-Ilg/o.jpg",
+        "interested_count": 53, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 39.751248413952, "longitude": -105.000414848328, "name":
+        "Yelp''s Secret Supper - October 2013 Edition", "tickets_url": null, "time_end":
+        null, "time_start": "2013-10-15T18:30:00-06:00", "location": {"address1":
+        "1616 16th St", "address2": "", "address3": "", "city": "Denver", "zip_code":
+        "80202", "country": "US", "state": "CO", "display_address": ["1616 16th St",
+        "Denver, CO 80202"], "cross_streets": ""}, "business_id": "blue-sushi-sake-grill-denver"},
+        {"attending_count": 7, "category": "music", "cost": 179.0, "cost_max": 279.0,
+        "description": "+++The Yelp Elite ticket winners have already been selected+++\n\nIn
+        2005, Riot Fest booked a multi-venue weekend of punk and rock in Chicago with
+        bands such...", "event_site_url": "https://www.yelp.com/events/denver-riot-fest?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "denver-riot-fest", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/m8EKpHaE7n32_pTCfEk8QA/o.jpg",
+        "interested_count": 40, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 39.7440009594414, "longitude": -105.020117158794, "name":
+        "Riot Fest", "tickets_url": "http://www.ticketfly.com/purchase/event/577753?utm_source=Riotfest.org&utm_medium=Main%20Page_ticketbutton",
+        "time_end": "2014-09-21T23:00:00-06:00", "time_start": "2014-09-19T16:30:00-06:00",
+        "location": {"address1": "1701 Bryant St", "address2": "Ste 700", "address3":
+        "", "city": "Denver", "zip_code": "80204", "country": "US", "state": "CO",
+        "display_address": ["1701 Bryant St", "Ste 700", "Denver, CO 80204"], "cross_streets":
+        ""}, "business_id": "empower-field-at-mile-high-denver"}, {"attending_count":
+        1, "category": "other", "cost": null, "cost_max": null, "description": "Yelpers,
+        it''s time. I wanna meet y''all in real life!! I''ve gotta pop-up CMYE for
+        you...\n\nJoin me at Zengo Thursday night for 2 complimentary drinks and...",
+        "event_site_url": "https://www.yelp.com/events/denver-meet-your-cm-cmye-zengo?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "denver-meet-your-cm-cmye-zengo", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/E8W_ns0h30PTe8-fxI9NAw/o.jpg",
+        "interested_count": 50, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 39.7550557410351, "longitude": -105.004502209103, "name":
+        "Meet Your CM! CMYE @ Zengo", "tickets_url": null, "time_end": "2016-02-18T21:00:00-07:00",
+        "time_start": "2016-02-18T19:00:00-07:00", "location": {"address1": "1610
+        Little Raven St", "address2": null, "address3": "", "city": "Denver", "zip_code":
+        "80202", "country": "US", "state": "CO", "display_address": ["1610 Little
+        Raven St", "Denver, CO 80202"], "cross_streets": ""}, "business_id": "zengo-denver"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": 10.0, "cost_max":
+        null, "description": "Join us for Yelp''s Yappy Hour benefiting MaxFund! Hosted
+        by Hotel Indigo''s Ambassador and Greetings Guru, Sir Charles Barkly III (aka
+        Barkly), this is a...", "event_site_url": "https://www.yelp.com/events/denver-yelps-yappy-hour-at-hotel-indigo?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "denver-yelps-yappy-hour-at-hotel-indigo", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/hKwbSZgT-3b_mlvP4YieYg/o.jpg",
+        "interested_count": 41, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 39.7555852, "longitude": -105.0000759, "name": "Yelp''s
+        Yappy Hour at Hotel Indigo", "tickets_url": null, "time_end": "2017-09-24T18:00:00-06:00",
+        "time_start": "2017-09-24T16:00:00-06:00", "location": {"address1": "1801
+        Wewatta St", "address2": null, "address3": null, "city": "Denver", "zip_code":
+        "80202", "country": "US", "state": "CO", "display_address": ["1801 Wewatta
+        St", "Denver, CO 80202"], "cross_streets": ""}, "business_id": "hotel-indigo-denver-downtown-union-station-denver-2"},
         {"attending_count": 35, "category": "sports-active-life", "cost": 23.0, "cost_max":
         50.0, "description": "Yeah sports! Cheer on the Denver Nuggets against the
         New York Knicks and enjoy a special VIP experience with your fellow local
@@ -262,6 +697,32 @@ http_interactions:
         true, "latitude": 39.7485498, "longitude": -105.0077106, "name": "Yelp Denver
         Nuggets x Knicks Game", "tickets_url": "https://ticketing.axs.com/PickASection.aspx?t=6A4164F08D52BA648CF94F7&og=-1",
         "time_end": null, "time_start": "2018-01-25T19:00:00-07:00", "location": {"address1":
+        "1000 Chopper Cir", "address2": "", "address3": "", "city": "Denver", "zip_code":
+        "80204", "country": "US", "state": "CO", "display_address": ["1000 Chopper
+        Cir", "Denver, CO 80204"], "cross_streets": ""}, "business_id": "ball-arena-denver"},
+        {"attending_count": 42, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "You''re invited to celebrate CREAM Belmar Grand Opening
+        Celebration! \n\nEveryone gets free ice cream sandwiches from 12 pm - 7 pm.\n\nHave
+        some fun with us and...", "event_site_url": "https://www.yelp.com/events/lakewood-free-ice-cream-sandwiches-at-cream-belmar-grand-opening?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "lakewood-free-ice-cream-sandwiches-at-cream-belmar-grand-opening",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/1rpJ8rN_VVjzMCHBxxXLAA/o.jpg",
+        "interested_count": 26, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 39.7093374, "longitude": -105.0790482, "name": "Free Ice
+        Cream Sandwiches at CREAM Belmar Grand Opening", "tickets_url": null, "time_end":
+        "2018-02-17T19:00:00-07:00", "time_start": "2018-02-17T12:00:00-07:00", "location":
+        {"address1": "7357 W Alaska Dr", "address2": "", "address3": "", "city": "Lakewood",
+        "zip_code": "80226", "country": "US", "state": "CO", "display_address": ["7357
+        W Alaska Dr, Lakewood, CO 80226"], "cross_streets": ""}, "business_id": null},
+        {"attending_count": 26, "category": "sports-active-life", "cost": 31.0, "cost_max":
+        75.0, "description": "Yeah sports! Cheer on the Denver Nuggets against the
+        Philadelphia 76ers and enjoy a special VIP experience with your fellow local
+        Yelpers. Tickets must be...", "event_site_url": "https://www.yelp.com/events/denver-yelp-denver-nuggets-x-philadelphia-76ers-game?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "denver-yelp-denver-nuggets-x-philadelphia-76ers-game", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/ephoto/HDLaD5ZuQTPLF9yQmf7swg/o.jpg", "interested_count":
+        32, "is_canceled": false, "is_free": false, "is_official": true, "latitude":
+        39.7485498, "longitude": -105.0077106, "name": "Yelp Denver Nuggets x Philadelphia
+        76ers Game", "tickets_url": "https://nuggets.ksetickets.com/yelp", "time_end":
+        null, "time_start": "2019-01-26T19:00:00-07:00", "location": {"address1":
         "1000 Chopper Cir", "address2": "", "address3": "", "city": "Denver", "zip_code":
         "80204", "country": "US", "state": "CO", "display_address": ["1000 Chopper
         Cir", "Denver, CO 80204"], "cross_streets": ""}, "business_id": "ball-arena-denver"},
@@ -277,6 +738,32 @@ http_interactions:
         West 52nd Ave", "address2": "Ste 200", "address3": null, "city": "Arvada",
         "zip_code": "80002", "country": "US", "state": "CO", "display_address": ["7450B
         West 52nd Ave", "Ste 200", "Arvada, CO 80002"], "cross_streets": ""}, "business_id":
-        "first-watch-arvada-8"}], "total": 4}'
-  recorded_at: Mon, 26 Feb 2024 19:54:48 GMT
+        "first-watch-arvada-8"}, {"attending_count": 1, "category": "food-and-drink",
+        "cost": null, "cost_max": null, "description": "*You must receive confirmation
+        via email to attend this event.*\n\nIn respect of Latinx Heritage Month, Yelp
+        has partnered with Denver''s leading empanada...", "event_site_url": "https://www.yelp.com/events/denver-yelps-empanada-making-class-at-maria-empanada?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "denver-yelps-empanada-making-class-at-maria-empanada", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/eQ7WJm4iNvLaRrYecTFMYg/o.jpg", "interested_count":
+        63, "is_canceled": false, "is_free": true, "is_official": true, "latitude":
+        39.758424, "longitude": -105.006381, "name": "Yelp''s Empanada Making Class
+        at Maria Empanada", "tickets_url": "", "time_end": "2019-09-18T20:00:00-06:00",
+        "time_start": "2019-09-18T18:00:00-06:00", "location": {"address1": "1700
+        Platte St", "address2": "", "address3": null, "city": "Denver", "zip_code":
+        "80202", "country": "US", "state": "CO", "display_address": ["1700 Platte
+        St", "Denver, CO 80202"], "cross_streets": ""}, "business_id": "maria-empanada-denver-5"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "***RSVP on this page to stay up to date on promotional
+        details***\n\nYelp Denver invites you to support local businesses at the Edgewater
+        Public Market this...", "event_site_url": "https://www.yelp.com/events/edgewater-yelps-virtual-passport-to-edgewater-public-market?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "edgewater-yelps-virtual-passport-to-edgewater-public-market", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/ephoto/yDu_SMjusc_bQNOIh-lFwA/o.jpg", "interested_count":
+        55, "is_canceled": false, "is_free": false, "is_official": true, "latitude":
+        39.74914922443379, "longitude": -105.05718245890881, "name": "Yelp''s Virtual
+        Passport to Edgewater Public Market", "tickets_url": null, "time_end": "2021-06-30T19:00:00-06:00",
+        "time_start": "2021-06-08T18:00:00-06:00", "location": {"address1": "5505
+        West 20th Ave", "address2": null, "address3": "", "city": "Edgewater", "zip_code":
+        "80214", "country": "US", "state": "CO", "display_address": ["5505 West 20th
+        Ave", "Edgewater, CO 80214"], "cross_streets": ""}, "business_id": "edgewater-public-market-edgewater"}],
+        "total": 25}'
+  recorded_at: Tue, 27 Feb 2024 01:50:23 GMT
 recorded_with: VCR 6.2.0
