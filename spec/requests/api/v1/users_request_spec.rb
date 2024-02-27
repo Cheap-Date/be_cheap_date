@@ -104,7 +104,6 @@ RSpec.describe 'Api::V1::Users', type: :request do
 
       id = User.last.id
       previous_name = User.last.name
-      # require 'pry'; binding.pry
       expect(previous_name).to eq("Bob Dylan")
       
       user_params = { name: "Paul McCartney" }

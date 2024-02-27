@@ -1,7 +1,8 @@
 class Event
-  attr_reader :name, :location, :categories, :cost, :url
+  attr_reader :id, :name, :location, :description, :category, :cost, :cost_max, :is_free, :url
   
   def initialize(attributes)
+    @id = attributes[:id]
     @name = attributes[:name]
     @location = attributes[:location][:display_address]
     @description = attributes[:description]
@@ -9,6 +10,6 @@ class Event
     @cost = attributes[:cost]
     @cost_max = attributes[:cost_max]
     @is_free = attributes[:is_free]
-    @url = attributes[:events_site_url]
+    @url = attributes[:event_site_url]
   end
 end
