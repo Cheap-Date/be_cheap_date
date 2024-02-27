@@ -24,20 +24,20 @@ http_interactions:
       - keep-alive
       Content-Type:
       - application/json
-      Ratelimit-Resettime:
-      - '2024-02-28T00:00:00+00:00'
-      X-Zipkin-Id:
-      - 0bdbd0f621d3b1c9
       X-Routing-Service:
-      - routing-main--useast1-7d94c5566-j5qwp; site=public_api_v3
+      - routing-main--useast1-7d94c5566-ghnv2; site=public_api_v3
+      Ratelimit-Resettime:
+      - '2024-02-27T00:00:00+00:00'
+      X-Zipkin-Id:
+      - 5b51d2c841ad83cd
       Server:
       - envoy
-      X-B3-Sampled:
-      - '0'
       Ratelimit-Dailylimit:
       - '500.0'
+      X-B3-Sampled:
+      - '0'
       Ratelimit-Remaining:
-      - '482.0'
+      - '370.0'
       X-Mode:
       - ro
       X-Proxied:
@@ -49,11 +49,11 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Tue, 27 Feb 2024 12:58:32 GMT
+      - Mon, 26 Feb 2024 19:54:48 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-pdk-katl1840060-PDK
+      - cache-den8249-DEN
       X-Cache:
       - MISS
       X-Cache-Hits:
@@ -307,86 +307,9 @@ http_interactions:
         "location": {"address1": "5905 Wilshire Blvd", "address2": "", "address3":
         "", "city": "Los Angeles", "zip_code": "90036", "country": "US", "state":
         "CA", "display_address": ["5905 Wilshire Blvd", "Los Angeles, CA 90036"],
-        "cross_streets": ""}, "business_id": "los-angeles-county-museum-of-art-los-angeles-11"},
-        {"attending_count": 277, "category": "fashion", "cost": null, "cost_max":
-        null, "description": "Louis Vuitton presents Time Capsule, a journey through
-        the history of the House that revisits its landmark innovations in technology
-        and design in Los...", "event_site_url": "https://www.yelp.com/events/los-angeles-louis-vuittons-time-capsule-exhibition?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "los-angeles-louis-vuittons-time-capsule-exhibition", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/cfekqMiIWo43o384WDFEOQ/o.jpg",
-        "interested_count": 222, "is_canceled": false, "is_free": true, "is_official":
-        false, "latitude": 34.0590031, "longitude": -118.418866, "name": "Louis Vuitton''s
-        Time Capsule Exhibition", "tickets_url": "", "time_end": "2018-06-10T21:00:00-07:00",
-        "time_start": "2018-05-18T10:00:00-07:00", "location": {"address1": "10250
-        Santa Monica Blvd", "address2": "", "address3": "", "city": "Los Angeles",
-        "zip_code": "90067", "country": "US", "state": "CA", "display_address": ["10250
-        Santa Monica Blvd", "Los Angeles, CA 90067"], "cross_streets": ""}, "business_id":
-        "westfield-century-city-los-angeles-2"}, {"attending_count": 189, "category":
-        "visual-arts", "cost": null, "cost_max": null, "description": "Louis Vuitton
-        will soon stage an exhibit exploring the house''s 160-year history of collaborations.
-        Titled Louis Vuitton X, the show will feature over 180...", "event_site_url":
-        "https://www.yelp.com/events/beverly-hills-louis-vuitton-x-exhibition?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "beverly-hills-louis-vuitton-x-exhibition", "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/YG17A9a7eG4JU2EoHfzRFQ/o.jpg",
-        "interested_count": 122, "is_canceled": false, "is_free": true, "is_official":
-        false, "latitude": 34.0706111, "longitude": -118.4039189, "name": "Louis Vuitton
-        X Exhibition", "tickets_url": "", "time_end": "2019-07-28T19:00:00-07:00",
-        "time_start": "2019-06-28T10:00:00-07:00", "location": {"address1": "468 N
-        Rodeo Dr", "address2": "", "address3": null, "city": "Beverly Hills", "zip_code":
-        "90210", "country": "US", "state": "CA", "display_address": ["468 N Rodeo
-        Dr", "Beverly Hills, CA 90210"], "cross_streets": ""}, "business_id": "brooks-brothers-beverly-hills-2"},
-        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
-        null, "description": "@YelpLA is giving away five pairs of tickets to Ros\u00e9
-        & Bubbles Festival on Saturday, August 24th! Ticket winners will have their
-        choice between the 2-4 pm...", "event_site_url": "https://www.yelp.com/events/west-hollywood-tix-giveaway-ros%C3%A9-and-bubbles-festival?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "west-hollywood-tix-giveaway-ros\u00e9-and-bubbles-festival", "image_url":
-        "https://s3-media2.fl.yelpcdn.com/ephoto/Um8fW3hZZoDeMel5prVcUw/o.jpg", "interested_count":
-        297, "is_canceled": false, "is_free": false, "is_official": true, "latitude":
-        34.0773657, "longitude": -118.3833566, "name": "TIX GIVEAWAY: Ros\u00e9 &
-        Bubbles Festival", "tickets_url": "", "time_end": "2019-08-24T21:00:00-07:00",
-        "time_start": "2019-08-24T14:00:00-07:00", "location": {"address1": "8783
-        Beverly Blvd", "address2": "", "address3": "", "city": "West Hollywood", "zip_code":
-        "90048", "country": "US", "state": "CA", "display_address": ["8783 Beverly
-        Blvd", "West Hollywood, CA 90048"], "cross_streets": ""}, "business_id": "leica-store-west-hollywood-2"},
-        {"attending_count": 1, "category": "other", "cost": null, "cost_max": null,
-        "description": "They say outer order leads to inner calm, and with the way
-        2020''s going, we think just about everyone could use a little extra calm
-        in their lives. Join...", "event_site_url": "https://www.yelp.com/events/beverly-hills-virtual-yelp-event-konmari-method-101-with-minimize-with-purpose?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "beverly-hills-virtual-yelp-event-konmari-method-101-with-minimize-with-purpose",
-        "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/7W3N3nMidCI92peQxOYghg/o.jpg",
-        "interested_count": 208, "is_canceled": false, "is_free": true, "is_official":
-        true, "latitude": 34.0661071, "longitude": -118.3841777, "name": "Virtual
-        Yelp Event: KonMari Method\u2122 101 with Minimize with Purpose", "tickets_url":
-        null, "time_end": "2020-08-05T18:30:00-07:00", "time_start": "2020-08-05T17:30:00-07:00",
-        "location": {"address1": null, "address2": null, "address3": null, "city":
-        "Beverly Hills", "zip_code": "90211", "country": "US", "state": "CA", "display_address":
-        ["Beverly Hills, CA 90211"], "cross_streets": ""}, "business_id": "minimize-with-purpose-beverly-hills"},
-        {"attending_count": 1, "category": "other", "cost": null, "cost_max": null,
-        "description": "Join Yelp LA and ASL with Andrew (https://www.yelp.com/biz/asl-with-andrew-los-angeles-5)
-        for a beginner level lesson in American Sign Language! Deaf since...", "event_site_url":
-        "https://www.yelp.com/events/los-angeles-virtual-yelp-event-asl-with-andrew?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "los-angeles-virtual-yelp-event-asl-with-andrew", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/fDyT9emsUN15Oc_Thdl_UQ/o.jpg",
-        "interested_count": 222, "is_canceled": false, "is_free": true, "is_official":
-        true, "latitude": 34.07299412949021, "longitude": -118.37264439194718, "name":
-        "Virtual Yelp Event: ASL with Andrew", "tickets_url": "", "time_end": "2020-08-12T19:00:00-07:00",
-        "time_start": "2020-08-12T18:00:00-07:00", "location": {"address1": null,
-        "address2": null, "address3": "", "city": "Los Angeles", "zip_code": "90048",
-        "country": "US", "state": "CA", "display_address": ["Los Angeles, CA 90048"],
-        "cross_streets": ""}, "business_id": "asl-with-andrew-los-angeles-5"}, {"attending_count":
-        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
-        "Latinx and woman-owned business Beignet Box was featured on Yelp''s Latinx
-        \"Ones-to-Watch\" list in honor of Hispanic Heritage Month! Owner Christina
-        Milian...", "event_site_url": "https://www.yelp.com/events/los-angeles-community-experience-celebrate-latinx-heritage-month-with-beignet-box?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "los-angeles-community-experience-celebrate-latinx-heritage-month-with-beignet-box",
-        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/pvPkk_ceCajGfQ7nnddrEg/o.jpg",
-        "interested_count": 193, "is_canceled": false, "is_free": true, "is_official":
-        true, "latitude": 34.143319054912865, "longitude": -118.40041691393071, "name":
-        "Community Experience: Celebrate Latinx Heritage Month with Beignet Box",
-        "tickets_url": null, "time_end": "2022-09-30T23:00:00-07:00", "time_start":
-        "2022-09-28T11:00:00-07:00", "location": {"address1": "12265 Ventura Blvd",
-        "address2": "", "address3": null, "city": "Los Angeles", "zip_code": "91604",
-        "country": "US", "state": "CA", "display_address": ["12265 Ventura Blvd",
-        "Los Angeles, CA 91604"], "cross_streets": ""}, "business_id": "beignet-box-los-angeles-2"}],
-        "total": 25}'
-  recorded_at: Tue, 27 Feb 2024 12:58:32 GMT
+        "cross_streets": ""}, "business_id": "los-angeles-county-museum-of-art-los-angeles-11"}],
+        "total": 7}'
+  recorded_at: Mon, 26 Feb 2024 19:54:48 GMT
 - request:
     method: get
     uri: https://api.yelp.com/v3/events?limit=25&location=80212&price=1
@@ -411,36 +334,36 @@ http_interactions:
       - keep-alive
       Content-Type:
       - application/json
+      Ratelimit-Dailylimit:
+      - '500.0'
+      Ratelimit-Resettime:
+      - '2024-02-27T00:00:00+00:00'
       X-B3-Sampled:
       - '0'
       Ratelimit-Remaining:
-      - '481.0'
-      Ratelimit-Resettime:
-      - '2024-02-28T00:00:00+00:00'
+      - '369.0'
       Server:
       - envoy
-      X-Zipkin-Id:
-      - d62065edcfcd39fe
-      Ratelimit-Dailylimit:
-      - '500.0'
       X-Routing-Service:
-      - routing-main--useast1-7d94c5566-798t2; site=public_api_v3
+      - routing-main--useast1-7d94c5566-xrwkh; site=public_api_v3
+      X-Zipkin-Id:
+      - 49827e87d4300da6
       X-Mode:
       - ro
       X-Proxied:
-      - 10-65-122-196-useast1aprod
+      - 10-65-82-75-useast1aprod
       X-Extlb:
-      - 10-65-122-196-useast1aprod
+      - 10-65-82-75-useast1aprod
       Cache-Control:
       - max-age=0, no-store, private, no-transform
       Accept-Ranges:
       - bytes
       Date:
-      - Tue, 27 Feb 2024 12:58:33 GMT
+      - Mon, 26 Feb 2024 19:54:48 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-pdk-katl1840029-PDK
+      - cache-den8271-DEN
       X-Cache:
       - MISS
       X-Cache-Hits:
@@ -738,32 +661,6 @@ http_interactions:
         West 52nd Ave", "address2": "Ste 200", "address3": null, "city": "Arvada",
         "zip_code": "80002", "country": "US", "state": "CO", "display_address": ["7450B
         West 52nd Ave", "Ste 200", "Arvada, CO 80002"], "cross_streets": ""}, "business_id":
-        "first-watch-arvada-8"}, {"attending_count": 1, "category": "food-and-drink",
-        "cost": null, "cost_max": null, "description": "*You must receive confirmation
-        via email to attend this event.*\n\nIn respect of Latinx Heritage Month, Yelp
-        has partnered with Denver''s leading empanada...", "event_site_url": "https://www.yelp.com/events/denver-yelps-empanada-making-class-at-maria-empanada?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "denver-yelps-empanada-making-class-at-maria-empanada", "image_url":
-        "https://s3-media2.fl.yelpcdn.com/ephoto/eQ7WJm4iNvLaRrYecTFMYg/o.jpg", "interested_count":
-        63, "is_canceled": false, "is_free": true, "is_official": true, "latitude":
-        39.758424, "longitude": -105.006381, "name": "Yelp''s Empanada Making Class
-        at Maria Empanada", "tickets_url": "", "time_end": "2019-09-18T20:00:00-06:00",
-        "time_start": "2019-09-18T18:00:00-06:00", "location": {"address1": "1700
-        Platte St", "address2": "", "address3": null, "city": "Denver", "zip_code":
-        "80202", "country": "US", "state": "CO", "display_address": ["1700 Platte
-        St", "Denver, CO 80202"], "cross_streets": ""}, "business_id": "maria-empanada-denver-5"},
-        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
-        null, "description": "***RSVP on this page to stay up to date on promotional
-        details***\n\nYelp Denver invites you to support local businesses at the Edgewater
-        Public Market this...", "event_site_url": "https://www.yelp.com/events/edgewater-yelps-virtual-passport-to-edgewater-public-market?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "edgewater-yelps-virtual-passport-to-edgewater-public-market", "image_url":
-        "https://s3-media3.fl.yelpcdn.com/ephoto/yDu_SMjusc_bQNOIh-lFwA/o.jpg", "interested_count":
-        55, "is_canceled": false, "is_free": false, "is_official": true, "latitude":
-        39.74914922443379, "longitude": -105.05718245890881, "name": "Yelp''s Virtual
-        Passport to Edgewater Public Market", "tickets_url": null, "time_end": "2021-06-30T19:00:00-06:00",
-        "time_start": "2021-06-08T18:00:00-06:00", "location": {"address1": "5505
-        West 20th Ave", "address2": null, "address3": "", "city": "Edgewater", "zip_code":
-        "80214", "country": "US", "state": "CO", "display_address": ["5505 West 20th
-        Ave", "Edgewater, CO 80214"], "cross_streets": ""}, "business_id": "edgewater-public-market-edgewater"}],
-        "total": 25}'
-  recorded_at: Tue, 27 Feb 2024 12:58:33 GMT
+        "first-watch-arvada-8"}], "total": 4}'
+  recorded_at: Mon, 26 Feb 2024 19:54:48 GMT
 recorded_with: VCR 6.2.0
