@@ -6,9 +6,11 @@ RSpec.describe "Api::V1::Events", type: :request do
     @zip = "90210"
   end
   describe "GET /api/v1/events" do
-    it "returns cheap YELP events given a `zipcode` and response `limit`" do
+
+    it "returns cheap YELP events given a `zipcode` and response `limit`", vcr: true do
       # /api/v1/events
       get "#{api_v1_events_path}?location=#{@zip}&price=1"
+
       json_response = JSON.parse(response.body, symbolize_names: true)
 
       expect(response).to have_http_status(:success)
