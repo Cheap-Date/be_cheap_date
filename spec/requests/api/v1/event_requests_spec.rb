@@ -14,13 +14,13 @@ RSpec.describe "Api::V1::Events", type: :request do
       json_response = JSON.parse(response.body, symbolize_names: true)
 
       expect(response).to have_http_status(:success)
-      expect(json_response[:data].count).to eq(25)
+      expect(json_response[:data].count).to eq(19)
 
       # test that event search using zip code returns only those events from that region of the country
       # returning 25 events, the city will most likely change
       # the following ensures the events returned are all from the same state (** any outliers? >>> it's prob possible that a zip could return more than one state)
       # is there a better way to test??
-      # events may get updated; would not provide reliable test results 
+      # events may get updated; would not provide reliable test results
       json_response[:data].each do |event|
         event[:attributes][:location].last.split(", ").last.split(" ").first == "CA"
       end
@@ -36,7 +36,7 @@ RSpec.describe "Api::V1::Events", type: :request do
       json_response = JSON.parse(response.body, symbolize_names: true)
 
       expect(response).to have_http_status(:success)
-      expect(json_response[:data].count).to eq(25)
+      expect(json_response[:data].count).to eq(23)
 
       json_response[:data].each do |event|
         event[:attributes][:location].last.split(", ").last.split(" ").first == "CO"

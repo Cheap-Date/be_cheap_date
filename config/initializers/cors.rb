@@ -14,3 +14,10 @@
 #       methods: [:get, :post, :put, :patch, :delete, :options, :head]
 #   end
 # end
+# config/initializers/cors.rb
+Rails.application.config.middleware.insert_before 0, Rack::Cors do
+  allow do
+    origins 'localhost:5000', '127.0.0.1:5000' # Adjust the port as per your frontend server
+    resource '*', headers: :any, methods: [:get, :post, :patch, :delete, :options]
+  end
+end
