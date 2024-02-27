@@ -11,7 +11,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       get '/find_by_email', to: 'users#user_by_email'
       resources :users do
-        resources :meetups, only: [:index, :create, :update, :destroy]
+        resources :meetups
       end
       resources :events, only: [:index]
     end

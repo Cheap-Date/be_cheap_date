@@ -154,7 +154,7 @@ describe "User Meetups API", type: :request do
         expect(meetup_request[:data][:attributes][:location]).to be_a(String)
   
         expect(meetup_request[:data][:attributes]).to have_key(:start_time)
-        expect(meetup_request[:data][:attributes][:start_time]).to be_a(Integer)
+        expect(meetup_request[:data][:attributes][:start_time]).to be_a(String)
   
         expect(meetup_request[:data][:attributes]).to have_key(:end_time)
         expect(meetup_request[:data][:attributes][:end_time]).to be_a(String)
