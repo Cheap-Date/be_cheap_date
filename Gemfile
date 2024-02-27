@@ -48,8 +48,8 @@ group :test do
   gem 'capybara'
   gem 'launchy'
   gem 'orderly'
-  # gem "webmock"
-  # gem "vcr"
+  gem "webmock"
+  gem "vcr"
 end
 
 group :development, :test do
