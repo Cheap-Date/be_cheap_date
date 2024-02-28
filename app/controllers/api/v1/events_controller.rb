@@ -1,8 +1,11 @@
 class Api::V1::EventsController < ApplicationController
   def index
     # /api/v1/events
-    # results returned hard-coded to 25
-    results = YelpSearchFacade.new(params[:location], limit=25).event_search
+    if params[:latitude] && params[:longitude]
+      results = YelpSearchFacade.new(nil, params[:limit], params[:latitude], params[:longitude]).event_objects
+    elsif params[:location]
+      results = YelpSearchFacade.new(params[:location],params[:limit], nil, nil).event_objects
+    end
     render json: EventSerializer.new(results)
   end
 end
