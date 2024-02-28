@@ -13,7 +13,7 @@ RSpec.describe EventFacade, vcr: true do
     expect(facade).to be_an(Event)
   end
 
-  describe "#find_current_events", vcr: false do
+  describe "#current_events", vcr: false do
     before do
       VCR.turn_off!(ignore_cassettes: true)
       WebMock.allow_net_connect!
