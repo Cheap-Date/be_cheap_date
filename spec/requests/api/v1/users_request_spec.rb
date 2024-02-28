@@ -1,4 +1,4 @@
-require 'rails_helper' 
+require 'rails_helper'
 
 RSpec.describe 'Api::V1::Users', type: :request do
   describe "Users Index" do
@@ -42,10 +42,10 @@ RSpec.describe 'Api::V1::Users', type: :request do
       user_data = user[:data]
       user_object = user[:data][:attributes]
       expect(user).to be_a(Hash)
-      
+
       expect(user_data).to have_key(:id)
       expect(user_data[:id]).to be_an(String)
-    
+
       expect(user_object).to have_key(:name)
       expect(user_object[:name]).to be_an(String)
 
@@ -74,19 +74,19 @@ RSpec.describe 'Api::V1::Users', type: :request do
       expect(new_user.password).to eq(user_params[:password_digest])
     end
 
-    it "sad path; will send an error if user is not created" do 
+    it "sad path; will send an error if user is not created" do
       user_params = ({
         name: '',
         email: 'bob123@gmail.com',
         role: 1,
         password: "likearollingstone123"
       })
-      
+
       headers = {"CONTENT_TYPE" => "application/json"}
 
       post api_v1_users_path, headers: headers, params: JSON.generate(user: user_params)
 
-      expect(response).to_not be_successful 
+      expect(response).to_not be_successful
       expect(response).to have_http_status(401)
     end
   end
@@ -105,7 +105,7 @@ RSpec.describe 'Api::V1::Users', type: :request do
       id = User.last.id
       previous_name = User.last.name
       expect(previous_name).to eq("Bob Dylan")
-      
+
       user_params = { name: "Paul McCartney" }
       headers = {"CONTENT_TYPE" => "application/json"}
 
@@ -117,6 +117,17 @@ RSpec.describe 'Api::V1::Users', type: :request do
       expect(user.name).to_not eq(previous_name)
       expect(user.name).to eq("Paul McCartney")
     end
+
+    context 'when request is invalid' do
+      it 'returns unprocessable entity' do
+        user = User.create!(name: 'Initial Name', email: 'initial@example.com', password: 'password123')
+
+        patch "/api/v1/users/#{user.id}", params: { user: { name: '' } }
+
+        expect(response).to have_http_status(:unprocessable_entity)
+        expect(JSON.parse(response.body)).to have_key('name')
+      end
+    end
   end
 
   describe 'Find user by email' do
@@ -125,11 +136,11 @@ RSpec.describe 'Api::V1::Users', type: :request do
 
       get api_v1_find_by_email_path, params: { email: user.email, password: user.password }
       json = JSON.parse(response.body, symbolize_names: true)
-      
+
       expect(response).to be_successful
       expect(response.status).to eq(200)
       expect(json[:data][:attributes][:name]).to eq('Bob Dylan')
-    
+
     end
 
     it 'sad path for user login, wrong password' do
