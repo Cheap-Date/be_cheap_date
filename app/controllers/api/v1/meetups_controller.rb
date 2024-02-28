@@ -5,6 +5,11 @@ class Api::V1::MeetupsController < ApplicationController
     render json: MeetupSerializer.new(meetups)
   end
 
+  def show
+    @meetup = Meetup.find(params[:id])
+    render json: MeetupSerializer.new(@meetup)
+  end
+
   def create
     @user = User.find(params[:user_id])
     @meetup = @user.meetups.new(meetup_params)
