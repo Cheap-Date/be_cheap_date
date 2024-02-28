@@ -14,7 +14,7 @@ RSpec.describe "Api::V1::Events", type: :request do
       json_response = JSON.parse(response.body, symbolize_names: true)
 
       expect(response).to have_http_status(:success)
-      expect(json_response[:data].count).to eq(19)
+      expect(json_response[:data].count).to eq(25)
 
       # test that event search using zip code returns only those events from that region of the country
       # returning 25 events, the city will most likely change
@@ -36,7 +36,7 @@ RSpec.describe "Api::V1::Events", type: :request do
       json_response = JSON.parse(response.body, symbolize_names: true)
 
       expect(response).to have_http_status(:success)
-      expect(json_response[:data].count).to eq(23)
+      expect(json_response[:data].count).to eq(25)
 
       json_response[:data].each do |event|
         event[:attributes][:location].last.split(", ").last.split(" ").first == "CO"
