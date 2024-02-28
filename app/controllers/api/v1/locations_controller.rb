@@ -4,7 +4,6 @@ class Api::V1::LocationsController < ApplicationController
     @loc = Location.new(location_params)
     @latitude = params[:location][:latitude]
     @longitude = params[:location][:longitude]
-    
   end
 
   private
