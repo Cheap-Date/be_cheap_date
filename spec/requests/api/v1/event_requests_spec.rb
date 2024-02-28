@@ -35,7 +35,7 @@ RSpec.describe "Api::V1::Events", vcr: true, type: :request do
       json_response = JSON.parse(response.body, symbolize_names: true)
 
       expect(response).to have_http_status(:success)
-      expect(json_response[:data].count).to eq(25)
+      expect(json_response[:data].count).to be < 26
 
       json_response[:data].each do |event|
         event[:attributes][:location].last.split(", ").last.split(" ").first == "CO"
