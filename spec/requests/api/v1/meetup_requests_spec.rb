@@ -131,5 +131,37 @@ describe "User Meetups API", type: :request do
         expect{Meetup.find(meetup.id)}.to raise_error(ActiveRecord::RecordNotFound)
       end
     end
+
+    describe "Meetup Show" do
+      it "can get one Meetup by its id" do
+        user = create(:user)
+        meetup = create(:meetup, user: user)
+        
+        get api_v1_user_meetup_path(user.id, meetup.id)
+  
+        meetup_request = JSON.parse(response.body, symbolize_names: true) 
+  
+        expect(response).to be_successful
+        expect(meetup_request).to be_a(Hash)
+        
+        expect(meetup_request[:data]).to have_key(:id)
+        expect(meetup_request[:data][:id]).to be_an(String)
+    
+        expect(meetup_request[:data][:attributes]).to have_key(:title)
+        expect(meetup_request[:data][:attributes][:title]).to be_a(String)
+    
+        expect(meetup_request[:data][:attributes]).to have_key(:location)
+        expect(meetup_request[:data][:attributes][:location]).to be_a(String)
+  
+        expect(meetup_request[:data][:attributes]).to have_key(:start_time)
+        expect(meetup_request[:data][:attributes][:start_time]).to be_a(String)
+  
+        expect(meetup_request[:data][:attributes]).to have_key(:end_time)
+        expect(meetup_request[:data][:attributes][:end_time]).to be_a(String)
+  
+        expect(meetup_request[:data][:attributes]).to have_key(:first_date)
+        expect(meetup_request[:data][:attributes][:first_date]).to be_a(TrueClass).or be_a(FalseClass)
+      end
+    end
   end
 end

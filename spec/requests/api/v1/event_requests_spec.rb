@@ -20,7 +20,7 @@ RSpec.describe "Api::V1::Events", type: :request do
       # returning 25 events, the city will most likely change
       # the following ensures the events returned are all from the same state (** any outliers? >>> it's prob possible that a zip could return more than one state)
       # is there a better way to test??
-      # events may get updated; would not provide reliable test results 
+      # events may get updated; would not provide reliable test results
       json_response[:data].each do |event|
         event[:attributes][:location].last.split(", ").last.split(" ").first == "CA"
       end
