@@ -1,0 +1,247 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=13&location=70117&start_date=1709154341
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Ratelimit-Resettime:
+      - '2024-02-29T00:00:00+00:00'
+      X-Zipkin-Id:
+      - 58293bf98af21bf9
+      Server:
+      - envoy
+      X-B3-Sampled:
+      - '0'
+      X-Routing-Service:
+      - routing-main--useast1-7d94c5566-5nm2d; site=public_api_v3
+      Ratelimit-Dailylimit:
+      - '500.0'
+      Ratelimit-Remaining:
+      - '418.0'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-80-125-useast1aprod
+      X-Extlb:
+      - 10-65-80-125-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Wed, 28 Feb 2024 21:05:42 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-pdk-katl1840076-PDK
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 1, "category": "performing-arts", "cost":
+        20.0, "cost_max": null, "description": "New Orleans top entertainers are putting
+        on our Sunday best for this over-the-top burlesque and variety show that promises
+        looks to kill and acts to die...", "event_site_url": "https://www.yelp.com/events/new-orleans-the-opulence-hour-burlesque-and-variety-show-7?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "new-orleans-the-opulence-hour-burlesque-and-variety-show-7", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/ephoto/9N1PwVUDPVJwGHfwgjittA/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        29.9627937, "longitude": -90.0580004, "name": "The Opulence Hour Burlesque
+        & Variety Show", "tickets_url": "", "time_end": "2024-06-02T20:00:00-05:00",
+        "time_start": "2024-05-05T20:00:00-05:00", "location": {"address1": "508 Frenchmen
+        St", "address2": "", "address3": "", "city": "New Orleans", "zip_code": "70116",
+        "country": "US", "state": "LA", "display_address": ["508 Frenchmen St", "New
+        Orleans, LA 70116"], "cross_streets": ""}, "business_id": "the-maison-new-orleans"},
+        {"attending_count": 1, "category": "performing-arts", "cost": 20.0, "cost_max":
+        null, "description": "New Orleans top entertainers are putting on our Sunday
+        best for this over-the-top burlesque and variety show that promises looks
+        to kill and acts to die...", "event_site_url": "https://www.yelp.com/events/new-orleans-the-opulence-hour-burlesque-and-variety-show-8?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "new-orleans-the-opulence-hour-burlesque-and-variety-show-8", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/ephoto/N-vQ99LeQUvtr11bsGsAyg/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        29.9627937, "longitude": -90.0580004, "name": "The Opulence Hour Burlesque
+        & Variety Show", "tickets_url": "", "time_end": "2024-09-01T22:00:00-05:00",
+        "time_start": "2024-08-04T20:00:00-05:00", "location": {"address1": "508 Frenchmen
+        St", "address2": "", "address3": "", "city": "New Orleans", "zip_code": "70116",
+        "country": "US", "state": "LA", "display_address": ["508 Frenchmen St", "New
+        Orleans, LA 70116"], "cross_streets": ""}, "business_id": "the-maison-new-orleans"},
+        {"attending_count": 1, "category": "performing-arts", "cost": 20.0, "cost_max":
+        null, "description": "New Orleans top entertainers are putting on our Sunday
+        best for this over-the-top burlesque and variety show that promises looks
+        to kill and acts to die...", "event_site_url": "https://www.yelp.com/events/new-orleans-the-opulence-hour-burlesque-and-variety-show-9?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "new-orleans-the-opulence-hour-burlesque-and-variety-show-9", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/HUBw59FKDi7JZ3k__yWAzA/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        29.9627937, "longitude": -90.0580004, "name": "The Opulence Hour Burlesque
+        & Variety Show", "tickets_url": "", "time_end": "2024-11-03T22:00:00-06:00",
+        "time_start": "2024-10-06T20:00:00-05:00", "location": {"address1": "508 Frenchmen
+        St", "address2": "", "address3": "", "city": "New Orleans", "zip_code": "70116",
+        "country": "US", "state": "LA", "display_address": ["508 Frenchmen St", "New
+        Orleans, LA 70116"], "cross_streets": ""}, "business_id": "the-maison-new-orleans"},
+        {"attending_count": 1, "category": "nightlife", "cost": 49.99, "cost_max":
+        69.99, "description": "***PLEASE READ EVENT DETAILS CAREFULLY***\n\n \n\nTHIS
+        IS A TICKET ONLY EVENT!\n\n& TICKETS FOR THIS EVENT SELL OUT EVERY YEAR. SO
+        GET YOURS TODAY!!\n\nPlease...", "event_site_url": "https://www.yelp.com/events/new-orleans-rock-the-boat-annual-all-white-boat-ride-party-new-orleans-big-festival-weekend-2024?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "new-orleans-rock-the-boat-annual-all-white-boat-ride-party-new-orleans-big-festival-weekend-2024",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/mtXkbpwaQemvGVckdJbBkA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 29.9486272435915, "longitude": -90.062141418457, "name":
+        "rock the boat annual all white boat ride party | new orleans big festival
+        weekend 2024", "tickets_url": "https://RockTheBoatParty.com", "time_end":
+        "2024-07-05T22:00:00-05:00", "time_start": "2024-07-05T19:00:00-05:00", "location":
+        {"address1": "1 Poydras St", "address2": "", "address3": "", "city": "New
+        Orleans", "zip_code": "70130", "country": "US", "state": "LA", "display_address":
+        ["1 Poydras St", "New Orleans, LA 70130"], "cross_streets": ""}, "business_id":
+        "paddlewheeler-creole-queen-new-orleans"}, {"attending_count": 1, "category":
+        "nightlife", "cost": 49.99, "cost_max": 69.99, "description": "***please read
+        event details carefully***\n\nthis is a ticket only event!\n\n& tickets for
+        this event sell out every year. so get yours today!!\n\nplease remember...",
+        "event_site_url": "https://www.yelp.com/events/new-orleans-rock-the-boat-new-orleans-all-white-boat-ride-memorial-day-weekend-2024?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "new-orleans-rock-the-boat-new-orleans-all-white-boat-ride-memorial-day-weekend-2024",
+        "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/EA4FUBw00XMDWJOzjZnJFQ/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 29.9486272435915, "longitude": -90.062141418457, "name":
+        "rock the boat new orleans all white boat ride memorial day weekend 2024",
+        "tickets_url": "https://rocktheboatnola.com", "time_end": "2024-05-25T22:00:00-05:00",
+        "time_start": "2024-05-25T19:00:00-05:00", "location": {"address1": "1 Poydras
+        St", "address2": "", "address3": "", "city": "New Orleans", "zip_code": "70130",
+        "country": "US", "state": "LA", "display_address": ["1 Poydras St", "New Orleans,
+        LA 70130"], "cross_streets": ""}, "business_id": "paddlewheeler-creole-queen-new-orleans"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": 250.0, "cost_max":
+        325.0, "description": "Mardi Gras Balcony Party Tickets with 6 hours Open
+        Premium Bar, Creole cuisine and guaranteed Bourbon Street Balcony Access for
+        some bead tossing balcony...", "event_site_url": "https://www.yelp.com/events/new-orleans-mardi-gras-balcony-ticket-endymion-saturday?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "new-orleans-mardi-gras-balcony-ticket-endymion-saturday", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/ephoto/jlyNDBJq30J_34RsV05J1g/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        29.9586062680693, "longitude": -90.0657682265698, "name": "Mardi Gras Balcony
+        Ticket - Endymion Saturday", "tickets_url": "https://www.eventbrite.com/e/600986826777?aff=oddtdtcreator",
+        "time_end": null, "time_start": "2025-02-10T18:00:00-06:00", "location": {"address1":
+        "700 Bourbon St", "address2": "", "address3": "", "city": "New Orleans", "zip_code":
+        "70116", "country": "US", "state": "LA", "display_address": ["700 Bourbon
+        St", "New Orleans, LA 70116"], "cross_streets": ""}, "business_id": "cornet-new-orleans"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": 160.0, "cost_max":
+        null, "description": "The Bower will bring February to a close with  Lobster
+        and Bubbles - a decadent five-course dinner menu curated by Executive Chef
+        Marcus Woodham. Priced at...", "event_site_url": "https://www.yelp.com/events/new-orleans-lobster-and-bubbles-dinner-at-the-bower?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "new-orleans-lobster-and-bubbles-dinner-at-the-bower", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/ephoto/MXfvCI6Qs28-M9dUXLLODg/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        29.937844, "longitude": -90.0712358, "name": "Lobster and Bubbles Dinner at
+        The Bower", "tickets_url": "https://www.opentable.com/r/the-bower-new-orleans?corrid=5b0b778a-d710-4dc6-9ace-d95e97d86bb9&avt=eyJ2IjoyLCJtIjowLCJwIjowLCJzIjowLCJuIjowfQ&p=2&sd=2024-02-02T19%3A00%3A00",
+        "time_end": null, "time_start": "2024-02-29T18:30:00-06:00", "location": {"address1":
+        "1320 Magazine St", "address2": null, "address3": null, "city": "New Orleans",
+        "zip_code": "70130", "country": "US", "state": "LA", "display_address": ["1320
+        Magazine St", "New Orleans, LA 70130"], "cross_streets": ""}, "business_id":
+        "the-bower-new-orleans"}, {"attending_count": 1, "category": "food-and-drink",
+        "cost": 39.0, "cost_max": 99.0, "description": "Join us for an unforgettable
+        Easter Brunch complete with bottomless mimosas.  Reserve your spot today and
+        secure the joy of endless sips and delicious...", "event_site_url": "https://www.yelp.com/events/new-orleans-easter-brunch-2?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "new-orleans-easter-brunch-2", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/zjjXV3CuRC60Narcc2D4cA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 29.954343, "longitude": -90.0722983, "name": "Easter Brunch",
+        "tickets_url": "https://www.sevenrooms.com/experiences/msyrhtherooseveltneworleansexperiences/easter-brunch-8706096779",
+        "time_end": "2024-03-31T14:00:00-05:00", "time_start": "2024-03-31T10:30:00-05:00",
+        "location": {"address1": "130 Roosevelt Way", "address2": "", "address3":
+        "", "city": "New Orleans", "zip_code": "70112", "country": "US", "state":
+        "LA", "display_address": ["130 Roosevelt Way", "New Orleans, LA 70112"], "cross_streets":
+        ""}, "business_id": "the-roosevelt-new-orleans-a-waldorf-astoria-hotel-new-orleans-2"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": 39.0, "cost_max":
+        99.0, "description": "The Roosevelt, New Orleans invites you and your family
+        to take part in our Mother''s\n\nDay brunch! Celebrate the mothers, and mother
+        figures, in your life...", "event_site_url": "https://www.yelp.com/events/new-orleans-easter-brunch-3?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "new-orleans-easter-brunch-3", "image_url": "", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        29.954343, "longitude": -90.0722983, "name": "Easter Brunch", "tickets_url":
+        "https://www.sevenrooms.com/experiences/msyrhtherooseveltneworleansexperiences/easter-brunch-8706096779",
+        "time_end": null, "time_start": "2024-05-12T00:00:00-05:00", "location": {"address1":
+        "130 Roosevelt Way", "address2": "", "address3": "", "city": "New Orleans",
+        "zip_code": "70112", "country": "US", "state": "LA", "display_address": ["130
+        Roosevelt Way", "New Orleans, LA 70112"], "cross_streets": ""}, "business_id":
+        "the-roosevelt-new-orleans-a-waldorf-astoria-hotel-new-orleans-2"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "As Women''s History Month kicks off in March, Virgin Hotels New Orleans proudly
+        announces special programming to celebrate the global commemoration. From...",
+        "event_site_url": "https://www.yelp.com/events/new-orleans-virgin-hotels-new-orleans-celebrates-womens-history-month-with-festive-programming-march-2024?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "new-orleans-virgin-hotels-new-orleans-celebrates-womens-history-month-with-festive-programming-march-2024",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/WqRuD82ZyejnYZkwaQcc_A/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 29.9489973, "longitude": -90.0731619, "name": "Virgin Hotels
+        New Orleans Celebrates Women''s History Month With Festive Programming - March
+        2024", "tickets_url": "", "time_end": "2024-03-07T21:00:00-06:00", "time_start":
+        "2024-03-07T18:00:00-06:00", "location": {"address1": "550 Baronne St", "address2":
+        "", "address3": null, "city": "New Orleans", "zip_code": "70113", "country":
+        "US", "state": "LA", "display_address": ["550 Baronne St", "New Orleans, LA
+        70113"], "cross_streets": ""}, "business_id": "virgin-hotels-new-orleans-new-orleans"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "As Women''s History Month kicks off in March, Virgin
+        Hotels New Orleans proudly announces special programming to celebrate the
+        global commemoration. From...", "event_site_url": "https://www.yelp.com/events/new-orleans-virgin-hotels-new-orleans-celebrates-womens-history-month-with-festive-programming-march-2024-2?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "new-orleans-virgin-hotels-new-orleans-celebrates-womens-history-month-with-festive-programming-march-2024-2",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/_uFfVRdPl-eLl1SeFJjnMg/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 29.9489973, "longitude": -90.0731619, "name": "Virgin Hotels
+        New Orleans Celebrates Women''s History Month With Festive Programming - March
+        2024", "tickets_url": "", "time_end": null, "time_start": "2024-03-09T10:00:00-06:00",
+        "location": {"address1": "550 Baronne St", "address2": "", "address3": null,
+        "city": "New Orleans", "zip_code": "70113", "country": "US", "state": "LA",
+        "display_address": ["550 Baronne St", "New Orleans, LA 70113"], "cross_streets":
+        ""}, "business_id": "virgin-hotels-new-orleans-new-orleans"}, {"attending_count":
+        1, "category": "other", "cost": null, "cost_max": null, "description": "As
+        Women''s History Month kicks off in March, Virgin Hotels New Orleans proudly
+        announces special programming to celebrate the global commemoration. From...",
+        "event_site_url": "https://www.yelp.com/events/new-orleans-virgin-hotels-new-orleans-celebrates-womens-history-month-with-festive-programming-march-2024-3?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "new-orleans-virgin-hotels-new-orleans-celebrates-womens-history-month-with-festive-programming-march-2024-3",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/zvuO7zuUiMRtRTOr-PGp9w/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 29.9489973, "longitude": -90.0731619, "name": "Virgin Hotels
+        New Orleans Celebrates Women''s History Month With Festive Programming - March
+        2024", "tickets_url": "", "time_end": null, "time_start": "2024-03-10T11:00:00-05:00",
+        "location": {"address1": "550 Baronne St", "address2": "", "address3": null,
+        "city": "New Orleans", "zip_code": "70113", "country": "US", "state": "LA",
+        "display_address": ["550 Baronne St", "New Orleans, LA 70113"], "cross_streets":
+        ""}, "business_id": "virgin-hotels-new-orleans-new-orleans"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "As Women''s History Month kicks off in March, Virgin Hotels New Orleans proudly
+        announces special programming to celebrate the global commemoration. From...",
+        "event_site_url": "https://www.yelp.com/events/new-orleans-virgin-hotels-new-orleans-celebrates-womens-history-month-with-festive-programming-march-2024-4?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "new-orleans-virgin-hotels-new-orleans-celebrates-womens-history-month-with-festive-programming-march-2024-4",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/9vS9837r1c50h47S0E77EA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 29.9489973, "longitude": -90.0731619, "name": "Virgin Hotels
+        New Orleans Celebrates Women''s History Month With Festive Programming - March
+        2024", "tickets_url": "", "time_end": "2024-03-22T19:00:00-05:00", "time_start":
+        "2024-03-22T15:00:00-05:00", "location": {"address1": "550 Baronne St", "address2":
+        "", "address3": null, "city": "New Orleans", "zip_code": "70113", "country":
+        "US", "state": "LA", "display_address": ["550 Baronne St", "New Orleans, LA
+        70113"], "cross_streets": ""}, "business_id": "virgin-hotels-new-orleans-new-orleans"}],
+        "total": 13}'
+  recorded_at: Wed, 28 Feb 2024 21:05:42 GMT
+recorded_with: VCR 6.2.0
