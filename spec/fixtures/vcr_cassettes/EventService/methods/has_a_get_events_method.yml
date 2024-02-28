@@ -1,0 +1,137 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=5&location=70117&price=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Routing-Service:
+      - routing-main--useast1-7d94c5566-6nvmg; site=public_api_v3
+      Server:
+      - envoy
+      Ratelimit-Dailylimit:
+      - '500.0'
+      Ratelimit-Remaining:
+      - '460.0'
+      X-B3-Sampled:
+      - '0'
+      X-Zipkin-Id:
+      - d4295172ffdb9901
+      Ratelimit-Resettime:
+      - '2024-02-29T00:00:00+00:00'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-172-4-useast1bprod
+      X-Extlb:
+      - 10-65-172-4-useast1bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Wed, 28 Feb 2024 16:34:16 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-pdk-katl1840070-PDK
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 144, "category": "festivals-fairs",
+        "cost": null, "cost_max": null, "description": "The Yelp Elite from all over
+        the US are invited to converge upon New Orleans for a long weekend to remember...
+        (heheh, maybe). Get those livers ready:...", "event_site_url": "https://www.yelp.com/events/new-orleans-yelp-spring-break-new-orleans?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "new-orleans-yelp-spring-break-new-orleans", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/YWjVtjtmYa8rAT5upTJHHw/o.jpg",
+        "interested_count": 149, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 29.9521082, "longitude": -90.07704199999999, "name": "Yelp
+        Spring Break New Orleans", "tickets_url": null, "time_end": "2013-05-12T17:00:00-05:00",
+        "time_start": "2013-05-04T00:00:00-05:00", "location": {"address1": "1300
+        Perdido St", "address2": "", "address3": "", "city": "New Orleans", "zip_code":
+        "70112", "country": "US", "state": "LA", "display_address": ["1300 Perdido
+        St", "New Orleans, LA 70112"], "cross_streets": ""}, "business_id": "city-of-new-orleans-new-orleans-2"},
+        {"attending_count": 1, "category": "nightlife", "cost": null, "cost_max":
+        null, "description": "You''re invited to \"Come Fly Away With Yelp\" at the
+        famed National WWII Museum''s US Freedom Pavilion: The Boeing Center for a
+        night where partygoers pay...", "event_site_url": "https://www.yelp.com/events/new-orleans-come-fly-away-with-yelp-at-the-national-wwii-museums-us-freedom-pavilion-the-boeing-center?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "new-orleans-come-fly-away-with-yelp-at-the-national-wwii-museums-us-freedom-pavilion-the-boeing-center",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/c7ygLUNVux46-lNlP2jygQ/o.jpg",
+        "interested_count": 530, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 29.9430044, "longitude": -90.07008599999999, "name": "\"Come
+        Fly Away With Yelp\" at The National WWII Museum''s US Freedom Pavilion: The
+        Boeing Center", "tickets_url": null, "time_end": "2014-09-05T23:00:00-05:00",
+        "time_start": "2014-09-05T20:00:00-05:00", "location": {"address1": "945 Magazine
+        St", "address2": "", "address3": "", "city": "New Orleans", "zip_code": "70130",
+        "country": "US", "state": "LA", "display_address": ["945 Magazine St", "New
+        Orleans, LA 70130"], "cross_streets": ""}, "business_id": "the-national-wwii-museum-new-orleans"},
+        {"attending_count": 1, "category": "festivals-fairs", "cost": null, "cost_max":
+        null, "description": "The tailgate is adjacent to SukhoThai on the neutral
+        grounds of Elysian Fields & Royal Street :) You''ll see the Port Orleans Brewery
+        Tent!\n----\nDon''t forget...", "event_site_url": "https://www.yelp.com/events/new-orleans-yelps-krewe-du-vieux-tailgate-party?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "new-orleans-yelps-krewe-du-vieux-tailgate-party", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/tOBw-RNP4k3CPZjygPbYyQ/o.jpg",
+        "interested_count": 412, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 29.9649187269993, "longitude": -90.0564458227539, "name":
+        "Yelp''s Krewe Du Vieux Tailgate Party", "tickets_url": null, "time_end":
+        "2020-02-08T18:00:00-06:00", "time_start": "2020-02-08T14:30:00-06:00", "location":
+        {"address1": "2200 Royal St", "address2": "", "address3": null, "city": "New
+        Orleans", "zip_code": "70117", "country": "US", "state": "LA", "display_address":
+        ["2200 Royal St", "New Orleans, LA 70117"], "cross_streets": ""}, "business_id":
+        "yelp-kdv-tailgate-krewe-du-vieux-new-orleans"}, {"attending_count": 1, "category":
+        "food-and-drink", "cost": null, "cost_max": null, "description": "It''s Yelp''s
+        16th Birthday this month! In honor of Yelp''s Sweet 16, we''re hosting 16
+        sweet events at 16 incredible local businesses, all across North...", "event_site_url":
+        "https://www.yelp.com/events/new-orleans-yelp-sweet-16-presents-virtual-fancy-grilled-cheese-making-class-with-sofab-museum-cst?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "new-orleans-yelp-sweet-16-presents-virtual-fancy-grilled-cheese-making-class-with-sofab-museum-cst",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/qb_FlyTjAjTeK9sf0aS_zw/o.jpg",
+        "interested_count": 282, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 29.940368, "longitude": -90.080207, "name": "Yelp Sweet
+        16 Presents: Virtual Fancy Grilled Cheese Making Class with SoFAB Museum!
+        (CST)", "tickets_url": null, "time_end": null, "time_start": "2020-07-30T18:00:00-05:00",
+        "location": {"address1": "1504 Oretha C Haley Blvd", "address2": "", "address3":
+        "", "city": "New Orleans", "zip_code": "70113", "country": "US", "state":
+        "LA", "display_address": ["1504 Oretha C Haley Blvd", "New Orleans, LA 70113"],
+        "cross_streets": ""}, "business_id": "southern-food-and-beverage-museum-new-orleans-3"},
+        {"attending_count": 1, "category": "music", "cost": null, "cost_max": null,
+        "description": "We''ve had such an overwhelming response and personal life
+        inquiries we''ve teamed up with Daniel Beck to provide this exclusive offer
+        for in-person or...", "event_site_url": "https://www.yelp.com/events/new-orleans-new-year-fresh-start-inside-look-into-2021-with-astrologist-daniel-beck-of-inner-makeup-building-structure-and-hope?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "new-orleans-new-year-fresh-start-inside-look-into-2021-with-astrologist-daniel-beck-of-inner-makeup-building-structure-and-hope",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/yxZe0hTqJ3rgXDHUa9yhpg/o.jpg",
+        "interested_count": 165, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 29.951745489705985, "longitude": -90.07047636259767, "name":
+        "New Year, Fresh Start: Inside Look Into 2021 With Astrologist, Daniel Beck
+        of Inner Makeup (Building Structure & Hope)", "tickets_url": null, "time_end":
+        "2021-02-10T19:30:00-06:00", "time_start": "2021-02-10T18:30:00-06:00", "location":
+        {"address1": "", "address2": "", "address3": "", "city": "New Orleans", "zip_code":
+        "", "country": "US", "state": "LA", "display_address": ["New Orleans, LA"],
+        "cross_streets": ""}, "business_id": null}], "total": 5}'
+  recorded_at: Wed, 28 Feb 2024 16:34:16 GMT
+recorded_with: VCR 6.2.0
