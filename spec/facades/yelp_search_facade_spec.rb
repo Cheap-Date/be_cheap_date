@@ -9,5 +9,13 @@ RSpec.describe YelpSearchFacade, vcr: true do
         expect(facade.event_search).to be_a(Array)
       end
     end
+
+    context 'when the location parameter is provided' do
+      it "uses the location parameter's value" do
+        facade = YelpSearchFacade.new('San Francisco', 10)
+
+        expect(facade.event_search).to be_a(Array)
+      end
+    end
   end
 end
