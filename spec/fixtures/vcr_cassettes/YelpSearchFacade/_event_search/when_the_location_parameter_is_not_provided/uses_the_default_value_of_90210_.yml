@@ -1,0 +1,202 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=10&location=90210&price=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Routing-Service:
+      - routing-main--useast1-7d94c5566-k6wtg; site=public_api_v3
+      Server:
+      - envoy
+      Ratelimit-Dailylimit:
+      - '500.0'
+      X-Zipkin-Id:
+      - d4894e1c124b5f5f
+      Ratelimit-Remaining:
+      - '464.0'
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Resettime:
+      - '2024-02-29T00:00:00+00:00'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-187-35-useast1bprod
+      X-Extlb:
+      - 10-65-187-35-useast1bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Wed, 28 Feb 2024 14:50:06 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-pdk-katl1840069-PDK
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 772, "category": "visual-arts", "cost":
+        12.0, "cost_max": 20.0, "description": "From Beetlejuice to Batman, from Ed
+        Wood to Willy Wonka, the characters that Tim Burton has brought to movie screens
+        are notable for their dark...", "event_site_url": "https://www.yelp.com/events/los-angeles-tim-burton-exhibit-at-lacma-may-29-oct-31-2011?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-tim-burton-exhibit-at-lacma-may-29-oct-31-2011", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/kLVznA_spGTYTfU5PU_5Dw/o.jpg", "interested_count":
+        216, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        34.063931, "longitude": -118.35923, "name": "Tim Burton Exhibit at LACMA May
+        29- Oct 31, 2011", "tickets_url": "", "time_end": null, "time_start": "2011-05-29T10:00:00-07:00",
+        "location": {"address1": "5905 Wilshire Blvd", "address2": "", "address3":
+        "", "city": "Los Angeles", "zip_code": "90036", "country": "US", "state":
+        "CA", "display_address": ["5905 Wilshire Blvd", "Los Angeles, CA 90036"],
+        "cross_streets": ""}, "business_id": "los-angeles-county-museum-of-art-los-angeles-11"},
+        {"attending_count": 138, "category": "film", "cost": null, "cost_max": null,
+        "description": "\"Alice in Wonderland\" final Friday\n\nTim Burton films under
+        the stars at the Tar Pits.\nFilms start at sundown (between 8 and 8:30 pm).\n\n4
+        Friday Outdoor Film...", "event_site_url": "https://www.yelp.com/events/los-angeles-tim-burton-free-film-screenings-outdooors-at-lacma-fridays-free-jazz-if-you-arrive-early-see-full-schedule-below?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-tim-burton-free-film-screenings-outdooors-at-lacma-fridays-free-jazz-if-you-arrive-early-see-full-schedule-below",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/GIY7Gy9vuIlGgiKNpYoHOg/o.jpg",
+        "interested_count": 174, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 34.063931, "longitude": -118.35923, "name": "Tim Burton
+        Free Film Screenings - Outdooors at LACMA - Fridays + Free Jazz if You Arrive
+        Early.  See Full Schedule Below.", "tickets_url": null, "time_end": "2011-08-26T22:00:00-07:00",
+        "time_start": "2011-08-26T20:00:00-07:00", "location": {"address1": "5905
+        Wilshire Blvd", "address2": "", "address3": "", "city": "Los Angeles", "zip_code":
+        "90036", "country": "US", "state": "CA", "display_address": ["5905 Wilshire
+        Blvd", "Los Angeles, CA 90036"], "cross_streets": ""}, "business_id": "los-angeles-county-museum-of-art-los-angeles-11"},
+        {"attending_count": 1, "category": "festivals-fairs", "cost": null, "cost_max":
+        null, "description": "---RSVPs are now closed.---\nConfirmation emails will
+        go out on Wednesday, May 16.\nYou should receive a confirmation or waitlist
+        email. If you are unsure of...", "event_site_url": "https://www.yelp.com/events/los-angeles-yelps-100-days-of-summer-kickoff-party-3?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-yelps-100-days-of-summer-kickoff-party-3", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/Rc5DsjQ6twtEY7GfWgGs4A/o.jpg", "interested_count":
+        467, "is_canceled": false, "is_free": true, "is_official": false, "latitude":
+        34.0977214, "longitude": -118.3688055, "name": "Yelp''s 100 Days of Summer
+        - Kickoff Party 3", "tickets_url": null, "time_end": "2012-05-28T14:00:00-07:00",
+        "time_start": "2012-05-28T11:00:00-07:00", "location": {"address1": "8225
+        Sunset Blvd", "address2": "", "address3": "", "city": "Los Angeles", "zip_code":
+        "90046", "country": "US", "state": "CA", "display_address": ["8225 Sunset
+        Blvd, Los Angeles, CA 90046"], "cross_streets": ""}, "business_id": null},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "In conjunction with Yelp''s Passport to Beverly Hills
+        http://www.yelp.com/events/beverly-hills-passport-to-beverly-hills, join us
+        for some gourmet appetizers...", "event_site_url": "https://www.yelp.com/events/beverly-hills-happy-hour-at-flemings-beverly-hills?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "beverly-hills-happy-hour-at-flemings-beverly-hills", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/Zj4ht8CohilCE9qaSsCqYQ/o.jpg",
+        "interested_count": 305, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 34.0682675, "longitude": -118.3998491, "name": "Happy Hour
+        at Fleming''s Beverly Hills!", "tickets_url": null, "time_end": "2013-05-20T20:30:00-07:00",
+        "time_start": "2013-05-20T18:30:00-07:00", "location": {"address1": "252 N
+        Beverly Dr", "address2": "", "address3": "", "city": "Beverly Hills", "zip_code":
+        "90210", "country": "US", "state": "CA", "display_address": ["252 N Beverly
+        Dr", "Beverly Hills, CA 90210"], "cross_streets": ""}, "business_id": "flemings-prime-steakhouse-and-wine-bar-beverly-hills"},
+        {"attending_count": 943, "category": "visual-arts", "cost": 10.0, "cost_max":
+        40.0, "description": "The Rain Room allows you to experience the seemingly
+        impossible with Random International''s Rain Room (2012). This immersive environment
+        features...", "event_site_url": "https://www.yelp.com/events/los-angeles-rain-room?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-rain-room", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/W5OvUIsVIPuhnLpsNjKoTg/o.jpg",
+        "interested_count": 776, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 34.063931, "longitude": -118.35923, "name": "Rain Room",
+        "tickets_url": "http://tx1.lacma.org/default.asp", "time_end": "2015-11-30T17:00:00-08:00",
+        "time_start": "2015-11-01T11:00:00-08:00", "location": {"address1": "5905
+        Wilshire Blvd", "address2": "", "address3": "", "city": "Los Angeles", "zip_code":
+        "90036", "country": "US", "state": "CA", "display_address": ["5905 Wilshire
+        Blvd", "Los Angeles, CA 90036"], "cross_streets": ""}, "business_id": "los-angeles-county-museum-of-art-los-angeles-11"},
+        {"attending_count": 492, "category": "festivals-fairs", "cost": 87.0, "cost_max":
+        95.0, "description": "The Wizarding World of Harry Potter, based on J.K. Rowling''s
+        magical creations, will open at Universal Studios Hollywood on April 7, 2016.\n\nIf
+        you''ve been...", "event_site_url": "https://www.yelp.com/events/universal-city-the-wizarding-world-of-harry-potter-grand-opening-on-april-7-2016?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "universal-city-the-wizarding-world-of-harry-potter-grand-opening-on-april-7-2016",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/7XloL5tPCmSEZC3ig-_d2A/o.jpg",
+        "interested_count": 442, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 34.13621020562252, "longitude": -118.35522638220861, "name":
+        "The Wizarding World of Harry Potter Grand Opening on April 7, 2016", "tickets_url":
+        "http://www.universalstudioshollywood.com/tickets/", "time_end": "2016-05-07T00:00:00-07:00",
+        "time_start": "2016-04-07T08:00:00-07:00", "location": {"address1": "100 Universal
+        City Plz", "address2": "", "address3": "", "city": "Universal City", "zip_code":
+        "91608", "country": "US", "state": "CA", "display_address": ["100 Universal
+        City Plz", "Universal City, CA 91608"], "cross_streets": ""}, "business_id":
+        "universal-studios-hollywood-universal-city"}, {"attending_count": 1353, "category":
+        "visual-arts", "cost": 10.0, "cost_max": 40.0, "description": "*UPDATE* The
+        Rain Room will reopen on Thursday, May 19, for a limited engagement. \n\nThe
+        first block of tickets for this date is SOLD OUT, but the museum...", "event_site_url":
+        "https://www.yelp.com/events/los-angeles-lacma-rain-room-tickets-on-sale-now?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-lacma-rain-room-tickets-on-sale-now", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/P13fMJJMKKZ-4OpMrzPBAA/o.jpg",
+        "interested_count": 576, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 34.063931, "longitude": -118.35923, "name": "LACMA Rain
+        Room Tickets On Sale Now!", "tickets_url": "http://www.lacma.org/public-ticketing-information-rain-room",
+        "time_end": "2016-05-19T00:00:00-07:00", "time_start": "2016-04-25T00:00:00-07:00",
+        "location": {"address1": "5905 Wilshire Blvd", "address2": "", "address3":
+        "", "city": "Los Angeles", "zip_code": "90036", "country": "US", "state":
+        "CA", "display_address": ["5905 Wilshire Blvd", "Los Angeles, CA 90036"],
+        "cross_streets": ""}, "business_id": "los-angeles-county-museum-of-art-los-angeles-11"},
+        {"attending_count": 339, "category": "visual-arts", "cost": null, "cost_max":
+        null, "description": "Over thirty museums--presenting art, cultural heritage,
+        natural history, and science--will open their doors and invite visitors to
+        attend their museums free...", "event_site_url": "https://www.yelp.com/events/los-angeles-museums-free-for-all-6?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-museums-free-for-all-6", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/hUUnbeLBwji8mbynMQ8WtA/o.jpg",
+        "interested_count": 166, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 34.0581092683145, "longitude": -118.414823674345, "name":
+        "Museums Free-For-All", "tickets_url": null, "time_end": null, "time_start":
+        "2017-01-29T00:00:00-08:00", "location": {"address1": "2000 Ave Of The Stars",
+        "address2": "", "address3": "", "city": "Los Angeles", "zip_code": "90067",
+        "country": "US", "state": "CA", "display_address": ["2000 Ave Of The Stars",
+        "Los Angeles, CA 90067"], "cross_streets": ""}, "business_id": "annenberg-space-for-photography-los-angeles"},
+        {"attending_count": 1272, "category": "visual-arts", "cost": null, "cost_max":
+        null, "description": "This is an ongoing monthly event for 2018 but Yelp limits
+        event postings for 30 days. It''s also nationwide. Here''s your chance to
+        get your culture on for...", "event_site_url": "https://www.yelp.com/events/los-angeles-free-museum-entrance-every-first-weekend-of-the-month-for-boa-cardholders?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-free-museum-entrance-every-first-weekend-of-the-month-for-boa-cardholders",
+        "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/oa1j1P5mljr8gfrPXkQrBg/o.jpg",
+        "interested_count": 438, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 34.063931, "longitude": -118.35923, "name": "Free museum
+        entrance every first weekend of the month for BOA cardholders", "tickets_url":
+        null, "time_end": "2018-03-04T00:00:00-08:00", "time_start": "2018-02-03T00:00:00-08:00",
+        "location": {"address1": "5905 Wilshire Blvd", "address2": "", "address3":
+        "", "city": "Los Angeles", "zip_code": "90036", "country": "US", "state":
+        "CA", "display_address": ["5905 Wilshire Blvd", "Los Angeles, CA 90036"],
+        "cross_streets": ""}, "business_id": "los-angeles-county-museum-of-art-los-angeles-11"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "@YelpLA is giving away five pairs of tickets to Ros\u00e9
+        & Bubbles Festival on Saturday, August 24th! Ticket winners will have their
+        choice between the 2-4 pm...", "event_site_url": "https://www.yelp.com/events/west-hollywood-tix-giveaway-ros%C3%A9-and-bubbles-festival?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "west-hollywood-tix-giveaway-ros\u00e9-and-bubbles-festival", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/Um8fW3hZZoDeMel5prVcUw/o.jpg", "interested_count":
+        297, "is_canceled": false, "is_free": false, "is_official": true, "latitude":
+        34.0773657, "longitude": -118.3833566, "name": "TIX GIVEAWAY: Ros\u00e9 &
+        Bubbles Festival", "tickets_url": "", "time_end": "2019-08-24T21:00:00-07:00",
+        "time_start": "2019-08-24T14:00:00-07:00", "location": {"address1": "8783
+        Beverly Blvd", "address2": "", "address3": "", "city": "West Hollywood", "zip_code":
+        "90048", "country": "US", "state": "CA", "display_address": ["8783 Beverly
+        Blvd", "West Hollywood, CA 90048"], "cross_streets": ""}, "business_id": "leica-store-west-hollywood-2"}],
+        "total": 10}'
+  recorded_at: Wed, 28 Feb 2024 14:50:06 GMT
+recorded_with: VCR 6.2.0
