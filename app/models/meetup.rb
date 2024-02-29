@@ -7,4 +7,6 @@ class Meetup < ApplicationRecord
   validates :first_date, presence: true
 
   belongs_to :user
+
+  has_many :events
 end
