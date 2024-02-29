@@ -14,7 +14,7 @@ class YelpSearchFacade
     service = EventService.new
     json = service.get_events(location, @limit)
     events = json[:events].map do |event_data|
-      Event.new(event_data)
+      EventPoro.new(event_data)
     end
   end
 end

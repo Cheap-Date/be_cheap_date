@@ -10,7 +10,7 @@ RSpec.describe EventFacade, vcr: true do
   it "has an #event_by_id method" do
     facade = EventFacade.new.event_by_id("san-francisco-peace-love-and-yelp-our-3rd-annual-holiday-party")
 
-    expect(facade).to be_an(Event)
+    expect(facade).to be_an(EventPoro)
   end
 
   describe "#current_events", vcr: false do
@@ -28,7 +28,7 @@ RSpec.describe EventFacade, vcr: true do
       facade = EventFacade.new.current_events(70117)
 
       expect(facade).to be_an(Array)
-      expect(facade.first).to be_an(Event)
+      expect(facade.first).to be_an(EventPoro)
     end
   end
 end
