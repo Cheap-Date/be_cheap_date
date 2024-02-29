@@ -12,7 +12,7 @@ class Api::V1::UsersController < ApplicationController
     user = User.find_by(email: user_email)
     if user == nil
       render json: { error: 'This email is not associated with an account', status: 404 }, status: :not_found
-    elsif user.authenticate(params[:password])
+    elsif user.valid_password?(params[:password])
       render json: UserSerializer.new(user)
     else
       render json: { error: 'Sorry, your credentials are bad', status: 401 }, status: :unauthorized
