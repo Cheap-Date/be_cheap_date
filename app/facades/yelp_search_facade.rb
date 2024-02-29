@@ -1,19 +1,25 @@
 class YelpSearchFacade
-  def initialize(location, limit)
+  # :bad_argument_error
+  def initialize(location=nil, limit=25, latitude=nil, longitude=nil)
     @location = location
+    @latitude = latitude
+    @longitude = longitude
     @limit = limit
   end
 
   def event_search
     if @location
-      location = @location
+      json = EventService.new.get_events_by_zip(@location, @limit)
+    elsif @latitude && @longitude
+      json = EventService.new.get_geo_events(@latitude, @longitude, @limit)
     else
-      location = "90210" # default value unless provided by user
+      # raise bad argument error
+      json = "Didn't find any events"
     end
-
-    service = EventService.new
-    json = service.get_events(location, @limit)
-    events = json[:events].map do |event_data|
+  end
+  
+  def event_objects
+    event_search[:events].map do |event_data|
       Event.new(event_data)
     end
   end
