@@ -10,8 +10,8 @@ class EventService
     JSON.parse(res.body, symbolize_names: true)
   end
 
-  def find_by_lat_and_long(lat, long)
-    res = conn.get("events?start_date=#{Time.now.to_i}&limit=25&latitude=#{lat}&longitude=#{long}&price=1&radius=40000") 
+  def find_by_lat_and_long(latitude, longitude)
+    res = conn.get("events?start_date=#{Time.now.to_i}&limit=25&latitude=#{latitude}&longitude=#{longitude}&price=1&radius=40000") 
     JSON.parse(res.body, symbolize_names: true)
   end
 

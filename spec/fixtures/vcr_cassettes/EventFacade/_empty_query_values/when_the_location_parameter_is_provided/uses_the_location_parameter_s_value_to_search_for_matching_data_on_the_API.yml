@@ -12420,4 +12420,832 @@ http_interactions:
         St"}, "business_id": "smaart-gallery-and-studio-san-francisco-2"}], "total":
         25}'
   recorded_at: Fri, 01 Mar 2024 12:04:22 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=25&location=San%20Francisco&start_date=1709304041
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Ratelimit-Dailylimit:
+      - '500.0'
+      Ratelimit-Remaining:
+      - '162.0'
+      X-Zipkin-Id:
+      - 378eb2f2bb2df922
+      Ratelimit-Resettime:
+      - '2024-03-02T00:00:00+00:00'
+      Server:
+      - envoy
+      X-B3-Sampled:
+      - '0'
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-z9xb8; site=public_api_v3
+      X-Tracing-Auth:
+      - ouD2bjrmkjwnMVgwNkPFMwpVuHLorSKcEu7blxT_I_A
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-180-149-useast1bprod
+      X-Extlb:
+      - 10-65-180-149-useast1bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 01 Mar 2024 14:40:42 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8267-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 1, "category": "music", "cost": null,
+        "cost_max": null, "description": "Experience the Trash of Dore Alley and Filth
+        of Folsom Street Fair in an electrifying celebration of Pride in San Francisco!
+        Step into a world where the...", "event_site_url": "https://www.yelp.com/events/san-francisco-br%C3%BCt-party-sf-pride-2024?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-br\u00fct-party-sf-pride-2024", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/YykqbGhSFQxAgbrOGG1aaQ/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.767642, "longitude": -122.406565, "name": "BR\u00dcT
+        Party  - SF Pride 2024", "tickets_url": "https://www.eventbrite.com/e/brut-sf-pride-2024-tickets-753970705677",
+        "time_end": "2024-06-29T04:00:00-07:00", "time_start": "2024-06-28T22:00:00-07:00",
+        "location": {"address1": "119 Utah St", "address2": "", "address3": null,
+        "city": "San Francisco", "zip_code": "94103", "country": "US", "state": "CA",
+        "display_address": ["119 Utah St", "San Francisco, CA 94103"], "cross_streets":
+        "Alameda St & 15th St"}, "business_id": "the-great-northern-san-francisco-2"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": 12.0, "cost_max":
+        25.0, "description": "Chocolate lovers, get ready for a world of premium chocolate!
+        The most delicious of California artisan chocolate events, and now in its
+        16TH Year!\n\nThe...", "event_site_url": "https://www.yelp.com/events/san-francisco-san-francisco-chocolate-salon-and-festival-2024?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-san-francisco-chocolate-salon-and-festival-2024", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/ephoto/fq6WtmnSNs3ToFN_W0vZPg/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        37.76585, "longitude": -122.466345, "name": "San Francisco Chocolate Salon
+        and Festival 2024", "tickets_url": "http://gotoevent.co/e/6jp/7ncol/tix",
+        "time_end": "2024-04-07T17:00:00-07:00", "time_start": "2024-04-07T11:00:00-07:00",
+        "location": {"address1": "9TH Ave And Lincoln Way", "address2": "", "address3":
+        "", "city": "San Francisco", "zip_code": "94122", "country": "US", "state":
+        "CA", "display_address": ["9TH Ave And Lincoln Way", "San Francisco, CA 94122"],
+        "cross_streets": ""}, "business_id": "san-francisco-county-fair-building-san-francisco"},
+        {"attending_count": 1, "category": "other", "cost": null, "cost_max": null,
+        "description": "NEON invites SF Yelpers to receive a complimentary day pass
+        to redeem at NEON to utilize workspace and all amenities, as well as participation
+        in any...", "event_site_url": "https://www.yelp.com/events/san-francisco-yelp-community-experience-neon?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-yelp-community-experience-neon", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/MZjsyJSzpHctAWiCeYYTAw/o.jpg",
+        "interested_count": 109, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.79776469999999, "longitude": -122.4317585, "name": "Yelp
+        Community Experience: NEON", "tickets_url": null, "time_end": "2024-03-01T18:00:00-08:00",
+        "time_start": "2024-02-26T08:00:00-08:00", "location": {"address1": "1974
+        Union St", "address2": null, "address3": "", "city": "San Francisco", "zip_code":
+        "94123", "country": "US", "state": "CA", "display_address": ["1974 Union St",
+        "San Francisco, CA 94123"], "cross_streets": "Charlton Ct & Buchanan St"},
+        "business_id": "neon-san-francisco-2"}, {"attending_count": 192, "category":
+        "other", "cost": null, "cost_max": null, "description": "Are you ready to
+        celebrate Women''s History Month with #WomenRunSF in March? \nIn fact, we''re
+        so excited that we''re going to be keping the celebration going...", "event_site_url":
+        "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 30, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nWomen
+        owned and operated since 2017, Avotoasty was founded by Sofia Pinzon, a native...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-avotoasty?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-avotoasty", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/ZPucO5muvXMuLFnxE9p-Ig/o.jpg", "interested_count":
+        143, "is_canceled": false, "is_free": true, "is_official": true, "latitude":
+        37.7981839, "longitude": -122.428801, "name": "Women Run SF! Yelp Community
+        Event: Avotoasty", "tickets_url": null, "time_end": "2024-03-07T20:00:00-08:00",
+        "time_start": "2024-03-07T17:00:00-08:00", "location": {"address1": "1796
+        Union St", "address2": "", "address3": null, "city": "San Francisco", "zip_code":
+        "94123", "country": "US", "state": "CA", "display_address": ["1796 Union St",
+        "San Francisco, CA 94123"], "cross_streets": "Octavia St & Gough St"}, "business_id":
+        "yelp-community-event-avotoasty-san-francisco"}, {"attending_count": 1, "category":
+        "food-and-drink", "cost": null, "cost_max": null, "description": "#WomenRunSF
+        - https://www.yelp.com/events/san-francisco-women-run-sf\n\nSocial Cafe is
+        a local, woman owned and operated Cuban bakery introducing Cuban...", "event_site_url":
+        "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-social-cafe?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-social-cafe", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/FahHslLtX7ZDI0n2Effakw/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": true, "latitude":
+        37.7759975, "longitude": -122.4029949, "name": "Women Run SF! Yelp Community
+        Event: Social Cafe", "tickets_url": null, "time_end": "2024-03-24T15:00:00-07:00",
+        "time_start": "2024-03-24T12:00:00-07:00", "location": {"address1": "804 Bryant
+        St", "address2": "", "address3": null, "city": "San Francisco", "zip_code":
+        "94103", "country": "US", "state": "CA", "display_address": ["804 Bryant St",
+        "San Francisco, CA 94103"], "cross_streets": "Harriet St & 6th St"}, "business_id":
+        "yelp-community-event-social-cafe-san-francisco"}, {"attending_count": 1,
+        "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nCelebrate
+        #26 top 100 places to drink in the Bay Area!\nLost Cat Bar & Bites is a...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/eli_Ttx01rkP050WwQvvEQ/o.jpg",
+        "interested_count": 157, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7877655, "longitude": -122.4114052, "name": "Women Run
+        SF! Yelp Community Event: Lost Cat Bar & Bites x Cantoo Latin Asian Rotisserie
+        x Zaddy''s", "tickets_url": null, "time_end": "2024-03-09T16:00:00-08:00",
+        "time_start": "2024-03-09T14:00:00-08:00", "location": {"address1": "587 Post
+        St", "address2": "", "address3": null, "city": "San Francisco", "zip_code":
+        "94102", "country": "US", "state": "CA", "display_address": ["587 Post St",
+        "San Francisco, CA 94102"], "cross_streets": "Taylor St & Mason St"}, "business_id":
+        "yelp-community-event-lost-cat-x-cantoo-x-zaddys-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 269, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nRecently
+        under new, women-owned and largely women operated management, Skylark is...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-skylark-x-una-vodka-x-21-seeds?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-skylark-x-una-vodka-x-21-seeds",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/OLGXk2OiCpRHYe-Czz2wyQ/o.jpg",
+        "interested_count": 67, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7647142, "longitude": -122.4216181, "name": "Women Run
+        SF! Yelp Community Event: Skylark x UNA Vodka x 21 Seeds", "tickets_url":
+        null, "time_end": "2024-03-13T21:00:00-07:00", "time_start": "2024-03-13T17:00:00-07:00",
+        "location": {"address1": "3089 16th St", "address2": "", "address3": null,
+        "city": "San Francisco", "zip_code": "94103", "country": "US", "state": "CA",
+        "display_address": ["3089 16th St", "San Francisco, CA 94103"], "cross_streets":
+        "Valencia St & Caledonia St"}, "business_id": "yelp-community-event-skylark-x-una-vodka-x-21-seeds-san-francisco"},
+        {"attending_count": 1, "category": "music", "cost": 25.0, "cost_max": null,
+        "description": "https://www.oldfirstconcerts.org/performance/wooden-fish-ensemble-plays-women-composers-sunday-march-10-at-4-pm/\nWooden
+        Fish Ensemble plays Women...", "event_site_url": "https://www.yelp.com/events/san-francisco-in-person-and-online-wooden-fish-ensemble-plays-women-composers-sunday-march-10-at-4-pm?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-in-person-and-online-wooden-fish-ensemble-plays-women-composers-sunday-march-10-at-4-pm",
+        "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/SD0MhWbiLgXaeYA1_HNHbA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.7911946, "longitude": -122.422083, "name": "In-person
+        & Online - Wooden Fish Ensemble plays Women Composers! - Sunday, March 10
+        at 4 pm", "tickets_url": "https://www.oldfirstconcerts.org/performance/wooden-fish-ensemble-plays-women-composers-sunday-march-10-at-4-pm/",
+        "time_end": null, "time_start": "2024-03-10T16:00:00-07:00", "location": {"address1":
+        "1751 Sacramento Street", "address2": "", "address3": "", "city": "San Francisco",
+        "zip_code": "94109", "country": "US", "state": "CA", "display_address": ["1751
+        Sacramento St, San Francisco, CA 94109"], "cross_streets": ""}, "business_id":
+        null}, {"attending_count": 1, "category": "performing-arts", "cost": 25.0,
+        "cost_max": 100.0, "description": "The Marsh San Francisco marks the 20th
+        anniversary of \"Not A Genuine Black Man,\" with a special limited engagement
+        that will include the 1000th performance...", "event_site_url": "https://www.yelp.com/events/san-francisco-the-marsh-san-francisco-presents-not-a-genuine-black-man-2?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-the-marsh-san-francisco-presents-not-a-genuine-black-man-2",
+        "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/gSKYsWpqMiHMlCZ8PARwEA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.755733, "longitude": -122.4212321, "name": "The Marsh
+        San Francisco presents \"Not A Genuine Black Man\"", "tickets_url": "https://themarsh.org/performers/brian_copeland/genuine/",
+        "time_end": null, "time_start": "2024-04-27T17:00:00-07:00", "location": {"address1":
+        "1062 Valencia St", "address2": "", "address3": "", "city": "San Francisco",
+        "zip_code": "94110", "country": "US", "state": "CA", "display_address": ["1062
+        Valencia St", "San Francisco, CA 94110"], "cross_streets": "Hill St & 22nd
+        St"}, "business_id": "the-marsh-san-francisco"}, {"attending_count": 1, "category":
+        "food-and-drink", "cost": null, "cost_max": null, "description": "#WomenRunSF
+        - https://www.yelp.com/events/san-francisco-women-run-sf\n\nEl P\u00edpila
+        is led by a trio of women - mother Guadalupe Guerrero and her two daughters...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-el-pipila?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-el-pipila", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/ephoto/sjrSA2ZgwLv5XU_Jasiykg/o.jpg", "interested_count":
+        157, "is_canceled": false, "is_free": false, "is_official": true, "latitude":
+        37.7714957, "longitude": -122.4049441, "name": "Women Run SF! Yelp Community
+        Experience: El Pipila", "tickets_url": null, "time_end": "2024-03-23T15:00:00-07:00",
+        "time_start": "2024-03-18T10:00:00-07:00", "location": {"address1": "879 Brannan
+        St", "address2": "", "address3": "", "city": "San Francisco", "zip_code":
+        "94103", "country": "US", "state": "CA", "display_address": ["879 Brannan
+        St", "San Francisco, CA 94103"], "cross_streets": "8th St"}, "business_id":
+        "el-p\u00edpila-san-francisco-2"}, {"attending_count": 1, "category": "visual-arts",
+        "cost": 320.0, "cost_max": null, "description": "Unleash your Inner Potter:
+        Craft Stunning Ceramics in our 6-Week Wheel Throwing Course!\n\nEver dreamed
+        of spinning clay into beautiful mugs, bowls, and...", "event_site_url": "https://www.yelp.com/events/san-francisco-6wk-pottery-wheel-throwing-course-great-for-beginners-and-intermediate-13?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-6wk-pottery-wheel-throwing-course-great-for-beginners-and-intermediate-13",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/HRDNBz-wo3T2Z6KmpiB_pg/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.7522807, "longitude": -122.4147384, "name": "6wk Pottery
+        Wheel Throwing Course: Great for Beginners and Intermediate", "tickets_url":
+        "https://www.smaartstudio.com/booksmaart", "time_end": null, "time_start":
+        "2024-03-11T18:30:00-07:00", "location": {"address1": "3135 24th St", "address2":
+        null, "address3": "", "city": "San Francisco", "zip_code": "94110", "country":
+        "US", "state": "CA", "display_address": ["3135 24th St", "San Francisco, CA
+        94110"], "cross_streets": "Folsom St & Shotwell St"}, "business_id": "smaart-gallery-and-studio-san-francisco-2"},
+        {"attending_count": 1, "category": "other", "cost": null, "cost_max": null,
+        "description": "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nSenses
+        is not just a home goods shopping destination. It''s a space where Ariel,
+        the...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-senses?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-senses", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/ephoto/NP_1Zd-qUXFaKBriU2ZXeg/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": true, "is_official": true, "latitude":
+        37.805028, "longitude": -122.41213, "name": "Women Run SF! Yelp Community
+        Experience: Senses", "tickets_url": null, "time_end": "2024-04-21T18:00:00-07:00",
+        "time_start": "2024-04-07T11:00:00-07:00", "location": {"address1": "414 Francisco
+        St", "address2": null, "address3": "", "city": "San Francisco", "zip_code":
+        "94133", "country": "US", "state": "CA", "display_address": ["414 Francisco
+        St", "San Francisco, CA 94133"], "cross_streets": "Powell St & Mason St"},
+        "business_id": "senses-san-francisco-2"}, {"attending_count": 1, "category":
+        "nightlife", "cost": 12.0, "cost_max": 35.0, "description": "Get ready to
+        paint the town green this St. Patrick''s Day in San Francisco! On Saturday,
+        March 16th, from 2PM to 10PM, the city will come alive with the...", "event_site_url":
+        "https://www.yelp.com/events/san-francisco-san-francisco-st-patricks-day-bar-crawl-2?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-san-francisco-st-patricks-day-bar-crawl-2", "image_url":
+        "https://s3-media4.fl.yelpcdn.com/ephoto/XlojX8blUYHSQcREYOAm1g/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        37.7995959, "longitude": -122.4364723, "name": "San Francisco St. Patrick''s
+        Day Bar Crawl", "tickets_url": "https://lepraconsf.com", "time_end": "2024-03-16T22:00:00-07:00",
+        "time_start": "2024-03-16T14:00:00-07:00", "location": {"address1": "2125
+        Lombard St", "address2": null, "address3": "", "city": "San Francisco", "zip_code":
+        "94123", "country": "US", "state": "CA", "display_address": ["2125 Lombard
+        St", "San Francisco, CA 94123"], "cross_streets": "Steiner St & Fillmore St"},
+        "business_id": "del-mar-san-francisco-3"}, {"attending_count": 1, "category":
+        "food-and-drink", "cost": null, "cost_max": null, "description": "#WomenRunSF
+        - https://www.yelp.com/events/san-francisco-women-run-sf\n\nFounded by two
+        women from France, La Fromagerie on Chestnut is a cheese shop...", "event_site_url":
+        "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-la-fromagerie-chestnut?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-la-fromagerie-chestnut",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/VP05Cq_IL3qmqdEtNJ7rjQ/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.8004417, "longitude": -122.4406144, "name": "Women Run
+        SF! Yelp Community Experience: La Fromagerie Chestnut", "tickets_url": null,
+        "time_end": "2024-04-05T18:00:00-07:00", "time_start": "2024-04-01T10:00:00-07:00",
+        "location": {"address1": "2260 Chestnut St", "address2": null, "address3":
+        "", "city": "San Francisco", "zip_code": "94123", "country": "US", "state":
+        "CA", "display_address": ["2260 Chestnut St", "San Francisco, CA 94123"],
+        "cross_streets": "Scott St & Avila St"}, "business_id": "la-fromagerie-san-francisco-10"},
+        {"attending_count": 2, "category": "visual-arts", "cost": 20.0, "cost_max":
+        68.0, "description": "Superfine San Francisco: Celebrating Art and Creativity
+        at Fort Mason''s Gateway Pavilion 3/21-3/24\nImmerse yourself in the vibrant
+        world of contemporary art...", "event_site_url": "https://www.yelp.com/events/san-francisco-superfine-san-francisco-2024-4?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-superfine-san-francisco-2024-4", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/wKV0ZGxqfOubiLC-z5bliQ/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.806757941634245, "longitude": -122.43108565481538, "name":
+        "Superfine San Francisco 2024", "tickets_url": "http://superfinesf2024.eventbrite.com",
+        "time_end": "2024-03-21T22:00:00-07:00", "time_start": "2024-03-21T18:00:00-07:00",
+        "location": {"address1": "2 Marina Blvd", "address2": "Bldg C Ste 260", "address3":
+        "", "city": "San Francisco", "zip_code": "94123", "country": "US", "state":
+        "CA", "display_address": ["2 Marina Blvd", "Bldg C Ste 260", "San Francisco,
+        CA 94123"], "cross_streets": "Laguna St & Buchanan St"}, "business_id": "fort-mason-center-for-arts-and-culture-san-francisco"},
+        {"attending_count": 1, "category": "visual-arts", "cost": 320.0, "cost_max":
+        null, "description": "6wk Pottery Wheel Throwing Course: Great for Beginners
+        and Intermediate\n\nUnleash your Inner Potter: Craft Stunning Ceramics in
+        our 6-Week Wheel Throwing...", "event_site_url": "https://www.yelp.com/events/san-francisco-6wk-pottery-wheel-throwing-course-great-for-beginners-and-intermediate-14?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-6wk-pottery-wheel-throwing-course-great-for-beginners-and-intermediate-14",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/EO5pFCW1UyZvOXeIpKVLEg/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.7522807, "longitude": -122.4147384, "name": "6wk Pottery
+        Wheel Throwing Course: Great for Beginners and Intermediate", "tickets_url":
+        "https://www.smaartstudio.com/booksmaart", "time_end": null, "time_start":
+        "2024-03-03T18:00:00-08:00", "location": {"address1": "3135 24th St", "address2":
+        null, "address3": "", "city": "San Francisco", "zip_code": "94110", "country":
+        "US", "state": "CA", "display_address": ["3135 24th St", "San Francisco, CA
+        94110"], "cross_streets": "Folsom St & Shotwell St"}, "business_id": "smaart-gallery-and-studio-san-francisco-2"},
+        {"attending_count": 1, "category": "visual-arts", "cost": 320.0, "cost_max":
+        null, "description": "6wk Pottery Wheel Throwing Course: Great for Beginners
+        and Intermediate\n\nUnleash your Inner Potter: Craft Stunning Ceramics in
+        our 6-Week Wheel Throwing...", "event_site_url": "https://www.yelp.com/events/san-francisco-6wk-pottery-wheel-throwing-course-great-for-beginners-and-intermediate-15?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-6wk-pottery-wheel-throwing-course-great-for-beginners-and-intermediate-15",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/OODCKVkSUHDpx170fV-9Qw/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.7522807, "longitude": -122.4147384, "name": "6wk Pottery
+        Wheel Throwing Course: Great for Beginners and Intermediate", "tickets_url":
+        "https://www.smaartstudio.com/booksmaart", "time_end": null, "time_start":
+        "2024-03-16T10:00:00-07:00", "location": {"address1": "3135 24th St", "address2":
+        null, "address3": "", "city": "San Francisco", "zip_code": "94110", "country":
+        "US", "state": "CA", "display_address": ["3135 24th St", "San Francisco, CA
+        94110"], "cross_streets": "Folsom St & Shotwell St"}, "business_id": "smaart-gallery-and-studio-san-francisco-2"},
+        {"attending_count": 1, "category": "visual-arts", "cost": 320.0, "cost_max":
+        null, "description": "6wk Pottery Wheel Throwing Course: Great for Beginners
+        and Intermediate\n\nUnleash your Inner Potter: Craft Stunning Ceramics in
+        our 6-Week Wheel Throwing...", "event_site_url": "https://www.yelp.com/events/san-francisco-6wk-pottery-wheel-throwing-course-great-for-beginners-and-intermediate-16?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-6wk-pottery-wheel-throwing-course-great-for-beginners-and-intermediate-16",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/_5d03DGV_qkhAYQ68HNrxQ/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.7522807, "longitude": -122.4147384, "name": "6wk Pottery
+        Wheel Throwing Course: Great for Beginners and Intermediate", "tickets_url":
+        "https://www.smaartstudio.com/booksmaart", "time_end": null, "time_start":
+        "2024-03-08T18:00:00-08:00", "location": {"address1": "3135 24th St", "address2":
+        null, "address3": "", "city": "San Francisco", "zip_code": "94110", "country":
+        "US", "state": "CA", "display_address": ["3135 24th St", "San Francisco, CA
+        94110"], "cross_streets": "Folsom St & Shotwell St"}, "business_id": "smaart-gallery-and-studio-san-francisco-2"},
+        {"attending_count": 1, "category": "visual-arts", "cost": 320.0, "cost_max":
+        null, "description": "6wk Pottery Wheel Throwing Course: Great for Beginners
+        and Intermediate\n\nUnleash your Inner Potter: Craft Stunning Ceramics in
+        our 6-Week Wheel Throwing...", "event_site_url": "https://www.yelp.com/events/san-francisco-6wk-pottery-wheel-throwing-course-great-for-beginners-and-intermediate-17?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-6wk-pottery-wheel-throwing-course-great-for-beginners-and-intermediate-17",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/Uz2mXj0Wt6olWCWuMTgc4w/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.7522807, "longitude": -122.4147384, "name": "6wk Pottery
+        Wheel Throwing Course: Great for Beginners and Intermediate", "tickets_url":
+        "https://www.smaartstudio.com/booksmaart", "time_end": null, "time_start":
+        "2024-04-09T18:30:00-07:00", "location": {"address1": "3135 24th St", "address2":
+        null, "address3": "", "city": "San Francisco", "zip_code": "94110", "country":
+        "US", "state": "CA", "display_address": ["3135 24th St", "San Francisco, CA
+        94110"], "cross_streets": "Folsom St & Shotwell St"}, "business_id": "smaart-gallery-and-studio-san-francisco-2"},
+        {"attending_count": 1, "category": "visual-arts", "cost": 320.0, "cost_max":
+        null, "description": "6wk Pottery Wheel Throwing Course: Great for Beginners
+        and Intermediate\n\nUnleash your Inner Potter: Craft Stunning Ceramics in
+        our 6-Week Wheel Throwing...", "event_site_url": "https://www.yelp.com/events/san-francisco-6wk-pottery-wheel-throwing-course-great-for-beginners-and-intermediate-18?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-6wk-pottery-wheel-throwing-course-great-for-beginners-and-intermediate-18",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/lmY4Ve4btCbPnAGtgJkQpw/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.7522807, "longitude": -122.4147384, "name": "6wk Pottery
+        Wheel Throwing Course: Great for Beginners and Intermediate", "tickets_url":
+        "https://www.smaartstudio.com/booksmaart", "time_end": null, "time_start":
+        "2024-04-03T18:30:00-07:00", "location": {"address1": "3135 24th St", "address2":
+        null, "address3": "", "city": "San Francisco", "zip_code": "94110", "country":
+        "US", "state": "CA", "display_address": ["3135 24th St", "San Francisco, CA
+        94110"], "cross_streets": "Folsom St & Shotwell St"}, "business_id": "smaart-gallery-and-studio-san-francisco-2"},
+        {"attending_count": 1, "category": "visual-arts", "cost": 320.0, "cost_max":
+        null, "description": "6wk Pottery Wheel Throwing Course: Great for Beginners
+        and Intermediate\n\nUnleash your Inner Potter: Craft Stunning Ceramics in
+        our 6-Week Wheel Throwing...", "event_site_url": "https://www.yelp.com/events/san-francisco-6wk-pottery-wheel-throwing-course-great-for-beginners-and-intermediate-19?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-6wk-pottery-wheel-throwing-course-great-for-beginners-and-intermediate-19",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/GBmXw5hbMhMSLvrEYoOmfA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.787835, "longitude": -122.417558, "name": "6wk Pottery
+        Wheel Throwing Course: Great for Beginners and Intermediate", "tickets_url":
+        "https://www.smaartstudio.com/booksmaart", "time_end": null, "time_start":
+        "2024-04-03T18:30:00-07:00", "location": {"address1": "1045 Sutter St", "address2":
+        null, "address3": "", "city": "San Francisco", "zip_code": "94109", "country":
+        "US", "state": "CA", "display_address": ["1045 Sutter St", "San Francisco,
+        CA 94109"], "cross_streets": "Hyde St"}, "business_id": "smaart-gallery-and-studio-san-francisco"},
+        {"attending_count": 1, "category": "visual-arts", "cost": 320.0, "cost_max":
+        null, "description": "6wk Pottery Wheel Throwing Course: Great for Beginners
+        and Intermediate\n\nUnleash your Inner Potter: Craft Stunning Ceramics in
+        our 6-Week Wheel Throwing...", "event_site_url": "https://www.yelp.com/events/san-francisco-6wk-pottery-wheel-throwing-course-great-for-beginners-and-intermediate-20?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-6wk-pottery-wheel-throwing-course-great-for-beginners-and-intermediate-20",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/KoC9UhCs2plMCguJ3KtAXw/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.787835, "longitude": -122.417558, "name": "6wk Pottery
+        Wheel Throwing Course: Great for Beginners and Intermediate", "tickets_url":
+        "https://www.smaartstudio.com/booksmaart", "time_end": null, "time_start":
+        "2024-04-18T18:00:00-07:00", "location": {"address1": "1045 Sutter St", "address2":
+        null, "address3": "", "city": "San Francisco", "zip_code": "94109", "country":
+        "US", "state": "CA", "display_address": ["1045 Sutter St", "San Francisco,
+        CA 94109"], "cross_streets": "Hyde St"}, "business_id": "smaart-gallery-and-studio-san-francisco"},
+        {"attending_count": 1, "category": "visual-arts", "cost": 320.0, "cost_max":
+        null, "description": "Unleash Your Inner Sculptor: 6-Week Clay Adventure!\n\nEver
+        dreamed of bringing your imagination to life in 3D? This 6-week Clay Sculpture
+        Course is your...", "event_site_url": "https://www.yelp.com/events/san-francisco-6wk-clay-sculpture-course-great-for-beginners-and-intermediate-2?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-6wk-clay-sculpture-course-great-for-beginners-and-intermediate-2",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/ANWq3fRhV-8rQCBg0zKHww/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.7522807, "longitude": -122.4147384, "name": "6wk Clay
+        Sculpture Course: Great for Beginners and Intermediate", "tickets_url": "https://www.smaartstudio.com/booksmaart",
+        "time_end": null, "time_start": "2024-04-03T18:00:00-07:00", "location": {"address1":
+        "3135 24th St", "address2": null, "address3": "", "city": "San Francisco",
+        "zip_code": "94110", "country": "US", "state": "CA", "display_address": ["3135
+        24th St", "San Francisco, CA 94110"], "cross_streets": "Folsom St & Shotwell
+        St"}, "business_id": "smaart-gallery-and-studio-san-francisco-2"}], "total":
+        25}'
+  recorded_at: Fri, 01 Mar 2024 14:40:42 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=25&location=San%20Francisco&start_date=1709315148
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Tracing-Auth:
+      - 2RKFkNDQL4VucXTd3KOycAgU0cza1Y13c-OK4eJaUbs
+      Server:
+      - envoy
+      X-Zipkin-Id:
+      - 117cfdaba1eb5210
+      Ratelimit-Dailylimit:
+      - '500.0'
+      Ratelimit-Remaining:
+      - '72.0'
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Resettime:
+      - '2024-03-02T00:00:00+00:00'
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-z2dbf; site=public_api_v3
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-80-125-useast1aprod
+      X-Extlb:
+      - 10-65-80-125-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 01 Mar 2024 17:45:49 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8237-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 1, "category": "music", "cost": null,
+        "cost_max": null, "description": "Experience the Trash of Dore Alley and Filth
+        of Folsom Street Fair in an electrifying celebration of Pride in San Francisco!
+        Step into a world where the...", "event_site_url": "https://www.yelp.com/events/san-francisco-br%C3%BCt-party-sf-pride-2024?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-br\u00fct-party-sf-pride-2024", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/YykqbGhSFQxAgbrOGG1aaQ/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.767642, "longitude": -122.406565, "name": "BR\u00dcT
+        Party  - SF Pride 2024", "tickets_url": "https://www.eventbrite.com/e/brut-sf-pride-2024-tickets-753970705677",
+        "time_end": "2024-06-29T04:00:00-07:00", "time_start": "2024-06-28T22:00:00-07:00",
+        "location": {"address1": "119 Utah St", "address2": "", "address3": null,
+        "city": "San Francisco", "zip_code": "94103", "country": "US", "state": "CA",
+        "display_address": ["119 Utah St", "San Francisco, CA 94103"], "cross_streets":
+        "Alameda St & 15th St"}, "business_id": "the-great-northern-san-francisco-2"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": 12.0, "cost_max":
+        25.0, "description": "Chocolate lovers, get ready for a world of premium chocolate!
+        The most delicious of California artisan chocolate events, and now in its
+        16TH Year!\n\nThe...", "event_site_url": "https://www.yelp.com/events/san-francisco-san-francisco-chocolate-salon-and-festival-2024?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-san-francisco-chocolate-salon-and-festival-2024", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/ephoto/fq6WtmnSNs3ToFN_W0vZPg/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        37.76585, "longitude": -122.466345, "name": "San Francisco Chocolate Salon
+        and Festival 2024", "tickets_url": "http://gotoevent.co/e/6jp/7ncol/tix",
+        "time_end": "2024-04-07T17:00:00-07:00", "time_start": "2024-04-07T11:00:00-07:00",
+        "location": {"address1": "9TH Ave And Lincoln Way", "address2": "", "address3":
+        "", "city": "San Francisco", "zip_code": "94122", "country": "US", "state":
+        "CA", "display_address": ["9TH Ave And Lincoln Way", "San Francisco, CA 94122"],
+        "cross_streets": ""}, "business_id": "san-francisco-county-fair-building-san-francisco"},
+        {"attending_count": 1, "category": "other", "cost": null, "cost_max": null,
+        "description": "NEON invites SF Yelpers to receive a complimentary day pass
+        to redeem at NEON to utilize workspace and all amenities, as well as participation
+        in any...", "event_site_url": "https://www.yelp.com/events/san-francisco-yelp-community-experience-neon?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-yelp-community-experience-neon", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/MZjsyJSzpHctAWiCeYYTAw/o.jpg",
+        "interested_count": 109, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.79776469999999, "longitude": -122.4317585, "name": "Yelp
+        Community Experience: NEON", "tickets_url": null, "time_end": "2024-03-01T18:00:00-08:00",
+        "time_start": "2024-02-26T08:00:00-08:00", "location": {"address1": "1974
+        Union St", "address2": null, "address3": "", "city": "San Francisco", "zip_code":
+        "94123", "country": "US", "state": "CA", "display_address": ["1974 Union St",
+        "San Francisco, CA 94123"], "cross_streets": "Charlton Ct & Buchanan St"},
+        "business_id": "neon-san-francisco-2"}, {"attending_count": 193, "category":
+        "other", "cost": null, "cost_max": null, "description": "Are you ready to
+        celebrate Women''s History Month with #WomenRunSF in March? \nIn fact, we''re
+        so excited that we''re going to be keping the celebration going...", "event_site_url":
+        "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 30, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nWomen
+        owned and operated since 2017, Avotoasty was founded by Sofia Pinzon, a native...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-avotoasty?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-avotoasty", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/ZPucO5muvXMuLFnxE9p-Ig/o.jpg", "interested_count":
+        143, "is_canceled": false, "is_free": true, "is_official": true, "latitude":
+        37.7981839, "longitude": -122.428801, "name": "Women Run SF! Yelp Community
+        Event: Avotoasty", "tickets_url": null, "time_end": "2024-03-07T20:00:00-08:00",
+        "time_start": "2024-03-07T17:00:00-08:00", "location": {"address1": "1796
+        Union St", "address2": "", "address3": null, "city": "San Francisco", "zip_code":
+        "94123", "country": "US", "state": "CA", "display_address": ["1796 Union St",
+        "San Francisco, CA 94123"], "cross_streets": "Octavia St & Gough St"}, "business_id":
+        "yelp-community-event-avotoasty-san-francisco"}, {"attending_count": 1, "category":
+        "food-and-drink", "cost": null, "cost_max": null, "description": "#WomenRunSF
+        - https://www.yelp.com/events/san-francisco-women-run-sf\n\nSocial Cafe is
+        a local, woman owned and operated Cuban bakery introducing Cuban...", "event_site_url":
+        "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-social-cafe?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-social-cafe", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/FahHslLtX7ZDI0n2Effakw/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": true, "latitude":
+        37.7759975, "longitude": -122.4029949, "name": "Women Run SF! Yelp Community
+        Event: Social Cafe", "tickets_url": null, "time_end": "2024-03-24T15:00:00-07:00",
+        "time_start": "2024-03-24T12:00:00-07:00", "location": {"address1": "804 Bryant
+        St", "address2": "", "address3": null, "city": "San Francisco", "zip_code":
+        "94103", "country": "US", "state": "CA", "display_address": ["804 Bryant St",
+        "San Francisco, CA 94103"], "cross_streets": "Harriet St & 6th St"}, "business_id":
+        "yelp-community-event-social-cafe-san-francisco"}, {"attending_count": 1,
+        "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nCelebrate
+        #26 top 100 places to drink in the Bay Area!\nLost Cat Bar & Bites is a...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/eli_Ttx01rkP050WwQvvEQ/o.jpg",
+        "interested_count": 159, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7877655, "longitude": -122.4114052, "name": "Women Run
+        SF! Yelp Community Event: Lost Cat Bar & Bites x Cantoo Latin Asian Rotisserie
+        x Zaddy''s", "tickets_url": null, "time_end": "2024-03-09T16:00:00-08:00",
+        "time_start": "2024-03-09T14:00:00-08:00", "location": {"address1": "587 Post
+        St", "address2": "", "address3": null, "city": "San Francisco", "zip_code":
+        "94102", "country": "US", "state": "CA", "display_address": ["587 Post St",
+        "San Francisco, CA 94102"], "cross_streets": "Taylor St & Mason St"}, "business_id":
+        "yelp-community-event-lost-cat-x-cantoo-x-zaddys-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 271, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nRecently
+        under new, women-owned and largely women operated management, Skylark is...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-skylark-x-una-vodka-x-21-seeds?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-skylark-x-una-vodka-x-21-seeds",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/OLGXk2OiCpRHYe-Czz2wyQ/o.jpg",
+        "interested_count": 67, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7647142, "longitude": -122.4216181, "name": "Women Run
+        SF! Yelp Community Event: Skylark x UNA Vodka x 21 Seeds", "tickets_url":
+        null, "time_end": "2024-03-13T21:00:00-07:00", "time_start": "2024-03-13T17:00:00-07:00",
+        "location": {"address1": "3089 16th St", "address2": "", "address3": null,
+        "city": "San Francisco", "zip_code": "94103", "country": "US", "state": "CA",
+        "display_address": ["3089 16th St", "San Francisco, CA 94103"], "cross_streets":
+        "Valencia St & Caledonia St"}, "business_id": "yelp-community-event-skylark-x-una-vodka-x-21-seeds-san-francisco"},
+        {"attending_count": 1, "category": "music", "cost": 25.0, "cost_max": null,
+        "description": "https://www.oldfirstconcerts.org/performance/wooden-fish-ensemble-plays-women-composers-sunday-march-10-at-4-pm/\nWooden
+        Fish Ensemble plays Women...", "event_site_url": "https://www.yelp.com/events/san-francisco-in-person-and-online-wooden-fish-ensemble-plays-women-composers-sunday-march-10-at-4-pm?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-in-person-and-online-wooden-fish-ensemble-plays-women-composers-sunday-march-10-at-4-pm",
+        "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/SD0MhWbiLgXaeYA1_HNHbA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.7911946, "longitude": -122.422083, "name": "In-person
+        & Online - Wooden Fish Ensemble plays Women Composers! - Sunday, March 10
+        at 4 pm", "tickets_url": "https://www.oldfirstconcerts.org/performance/wooden-fish-ensemble-plays-women-composers-sunday-march-10-at-4-pm/",
+        "time_end": null, "time_start": "2024-03-10T16:00:00-07:00", "location": {"address1":
+        "1751 Sacramento Street", "address2": "", "address3": "", "city": "San Francisco",
+        "zip_code": "94109", "country": "US", "state": "CA", "display_address": ["1751
+        Sacramento St, San Francisco, CA 94109"], "cross_streets": ""}, "business_id":
+        null}, {"attending_count": 1, "category": "performing-arts", "cost": 25.0,
+        "cost_max": 100.0, "description": "The Marsh San Francisco marks the 20th
+        anniversary of \"Not A Genuine Black Man,\" with a special limited engagement
+        that will include the 1000th performance...", "event_site_url": "https://www.yelp.com/events/san-francisco-the-marsh-san-francisco-presents-not-a-genuine-black-man-2?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-the-marsh-san-francisco-presents-not-a-genuine-black-man-2",
+        "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/gSKYsWpqMiHMlCZ8PARwEA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.755733, "longitude": -122.4212321, "name": "The Marsh
+        San Francisco presents \"Not A Genuine Black Man\"", "tickets_url": "https://themarsh.org/performers/brian_copeland/genuine/",
+        "time_end": null, "time_start": "2024-04-27T17:00:00-07:00", "location": {"address1":
+        "1062 Valencia St", "address2": "", "address3": "", "city": "San Francisco",
+        "zip_code": "94110", "country": "US", "state": "CA", "display_address": ["1062
+        Valencia St", "San Francisco, CA 94110"], "cross_streets": "Hill St & 22nd
+        St"}, "business_id": "the-marsh-san-francisco"}, {"attending_count": 1, "category":
+        "food-and-drink", "cost": null, "cost_max": null, "description": "#WomenRunSF
+        - https://www.yelp.com/events/san-francisco-women-run-sf\n\nEl P\u00edpila
+        is led by a trio of women - mother Guadalupe Guerrero and her two daughters...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-el-pipila?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-el-pipila", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/ephoto/sjrSA2ZgwLv5XU_Jasiykg/o.jpg", "interested_count":
+        159, "is_canceled": false, "is_free": false, "is_official": true, "latitude":
+        37.7714957, "longitude": -122.4049441, "name": "Women Run SF! Yelp Community
+        Experience: El Pipila", "tickets_url": null, "time_end": "2024-03-23T15:00:00-07:00",
+        "time_start": "2024-03-18T10:00:00-07:00", "location": {"address1": "879 Brannan
+        St", "address2": "", "address3": "", "city": "San Francisco", "zip_code":
+        "94103", "country": "US", "state": "CA", "display_address": ["879 Brannan
+        St", "San Francisco, CA 94103"], "cross_streets": "8th St"}, "business_id":
+        "el-p\u00edpila-san-francisco-2"}, {"attending_count": 1, "category": "visual-arts",
+        "cost": 320.0, "cost_max": null, "description": "Unleash your Inner Potter:
+        Craft Stunning Ceramics in our 6-Week Wheel Throwing Course!\n\nEver dreamed
+        of spinning clay into beautiful mugs, bowls, and...", "event_site_url": "https://www.yelp.com/events/san-francisco-6wk-pottery-wheel-throwing-course-great-for-beginners-and-intermediate-13?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-6wk-pottery-wheel-throwing-course-great-for-beginners-and-intermediate-13",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/HRDNBz-wo3T2Z6KmpiB_pg/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.7522807, "longitude": -122.4147384, "name": "6wk Pottery
+        Wheel Throwing Course: Great for Beginners and Intermediate", "tickets_url":
+        "https://www.smaartstudio.com/booksmaart", "time_end": null, "time_start":
+        "2024-03-11T18:30:00-07:00", "location": {"address1": "3135 24th St", "address2":
+        null, "address3": "", "city": "San Francisco", "zip_code": "94110", "country":
+        "US", "state": "CA", "display_address": ["3135 24th St", "San Francisco, CA
+        94110"], "cross_streets": "Folsom St & Shotwell St"}, "business_id": "smaart-gallery-and-studio-san-francisco-2"},
+        {"attending_count": 1, "category": "other", "cost": null, "cost_max": null,
+        "description": "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nSenses
+        is not just a home goods shopping destination. It''s a space where Ariel,
+        the...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-senses?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-senses", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/ephoto/NP_1Zd-qUXFaKBriU2ZXeg/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": true, "is_official": true, "latitude":
+        37.805028, "longitude": -122.41213, "name": "Women Run SF! Yelp Community
+        Experience: Senses", "tickets_url": null, "time_end": "2024-04-21T18:00:00-07:00",
+        "time_start": "2024-04-07T11:00:00-07:00", "location": {"address1": "414 Francisco
+        St", "address2": null, "address3": "", "city": "San Francisco", "zip_code":
+        "94133", "country": "US", "state": "CA", "display_address": ["414 Francisco
+        St", "San Francisco, CA 94133"], "cross_streets": "Powell St & Mason St"},
+        "business_id": "senses-san-francisco-2"}, {"attending_count": 1, "category":
+        "nightlife", "cost": 12.0, "cost_max": 35.0, "description": "Get ready to
+        paint the town green this St. Patrick''s Day in San Francisco! On Saturday,
+        March 16th, from 2PM to 10PM, the city will come alive with the...", "event_site_url":
+        "https://www.yelp.com/events/san-francisco-san-francisco-st-patricks-day-bar-crawl-2?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-san-francisco-st-patricks-day-bar-crawl-2", "image_url":
+        "https://s3-media4.fl.yelpcdn.com/ephoto/XlojX8blUYHSQcREYOAm1g/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        37.7995959, "longitude": -122.4364723, "name": "San Francisco St. Patrick''s
+        Day Bar Crawl", "tickets_url": "https://lepraconsf.com", "time_end": "2024-03-16T22:00:00-07:00",
+        "time_start": "2024-03-16T14:00:00-07:00", "location": {"address1": "2125
+        Lombard St", "address2": null, "address3": "", "city": "San Francisco", "zip_code":
+        "94123", "country": "US", "state": "CA", "display_address": ["2125 Lombard
+        St", "San Francisco, CA 94123"], "cross_streets": "Steiner St & Fillmore St"},
+        "business_id": "del-mar-san-francisco-3"}, {"attending_count": 1, "category":
+        "food-and-drink", "cost": null, "cost_max": null, "description": "#WomenRunSF
+        - https://www.yelp.com/events/san-francisco-women-run-sf\n\nFounded by two
+        women from France, La Fromagerie on Chestnut is a cheese shop...", "event_site_url":
+        "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-la-fromagerie-chestnut?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-la-fromagerie-chestnut",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/VP05Cq_IL3qmqdEtNJ7rjQ/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.8004417, "longitude": -122.4406144, "name": "Women Run
+        SF! Yelp Community Experience: La Fromagerie Chestnut", "tickets_url": null,
+        "time_end": "2024-04-05T18:00:00-07:00", "time_start": "2024-04-01T10:00:00-07:00",
+        "location": {"address1": "2260 Chestnut St", "address2": null, "address3":
+        "", "city": "San Francisco", "zip_code": "94123", "country": "US", "state":
+        "CA", "display_address": ["2260 Chestnut St", "San Francisco, CA 94123"],
+        "cross_streets": "Scott St & Avila St"}, "business_id": "la-fromagerie-san-francisco-10"},
+        {"attending_count": 2, "category": "visual-arts", "cost": 20.0, "cost_max":
+        68.0, "description": "Superfine San Francisco: Celebrating Art and Creativity
+        at Fort Mason''s Gateway Pavilion 3/21-3/24\nImmerse yourself in the vibrant
+        world of contemporary art...", "event_site_url": "https://www.yelp.com/events/san-francisco-superfine-san-francisco-2024-4?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-superfine-san-francisco-2024-4", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/wKV0ZGxqfOubiLC-z5bliQ/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.806757941634245, "longitude": -122.43108565481538, "name":
+        "Superfine San Francisco 2024", "tickets_url": "http://superfinesf2024.eventbrite.com",
+        "time_end": "2024-03-21T22:00:00-07:00", "time_start": "2024-03-21T18:00:00-07:00",
+        "location": {"address1": "2 Marina Blvd", "address2": "Bldg C Ste 260", "address3":
+        "", "city": "San Francisco", "zip_code": "94123", "country": "US", "state":
+        "CA", "display_address": ["2 Marina Blvd", "Bldg C Ste 260", "San Francisco,
+        CA 94123"], "cross_streets": "Laguna St & Buchanan St"}, "business_id": "fort-mason-center-for-arts-and-culture-san-francisco"},
+        {"attending_count": 1, "category": "visual-arts", "cost": 320.0, "cost_max":
+        null, "description": "6wk Pottery Wheel Throwing Course: Great for Beginners
+        and Intermediate\n\nUnleash your Inner Potter: Craft Stunning Ceramics in
+        our 6-Week Wheel Throwing...", "event_site_url": "https://www.yelp.com/events/san-francisco-6wk-pottery-wheel-throwing-course-great-for-beginners-and-intermediate-14?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-6wk-pottery-wheel-throwing-course-great-for-beginners-and-intermediate-14",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/EO5pFCW1UyZvOXeIpKVLEg/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.7522807, "longitude": -122.4147384, "name": "6wk Pottery
+        Wheel Throwing Course: Great for Beginners and Intermediate", "tickets_url":
+        "https://www.smaartstudio.com/booksmaart", "time_end": null, "time_start":
+        "2024-03-03T18:00:00-08:00", "location": {"address1": "3135 24th St", "address2":
+        null, "address3": "", "city": "San Francisco", "zip_code": "94110", "country":
+        "US", "state": "CA", "display_address": ["3135 24th St", "San Francisco, CA
+        94110"], "cross_streets": "Folsom St & Shotwell St"}, "business_id": "smaart-gallery-and-studio-san-francisco-2"},
+        {"attending_count": 1, "category": "visual-arts", "cost": 320.0, "cost_max":
+        null, "description": "6wk Pottery Wheel Throwing Course: Great for Beginners
+        and Intermediate\n\nUnleash your Inner Potter: Craft Stunning Ceramics in
+        our 6-Week Wheel Throwing...", "event_site_url": "https://www.yelp.com/events/san-francisco-6wk-pottery-wheel-throwing-course-great-for-beginners-and-intermediate-15?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-6wk-pottery-wheel-throwing-course-great-for-beginners-and-intermediate-15",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/OODCKVkSUHDpx170fV-9Qw/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.7522807, "longitude": -122.4147384, "name": "6wk Pottery
+        Wheel Throwing Course: Great for Beginners and Intermediate", "tickets_url":
+        "https://www.smaartstudio.com/booksmaart", "time_end": null, "time_start":
+        "2024-03-16T10:00:00-07:00", "location": {"address1": "3135 24th St", "address2":
+        null, "address3": "", "city": "San Francisco", "zip_code": "94110", "country":
+        "US", "state": "CA", "display_address": ["3135 24th St", "San Francisco, CA
+        94110"], "cross_streets": "Folsom St & Shotwell St"}, "business_id": "smaart-gallery-and-studio-san-francisco-2"},
+        {"attending_count": 1, "category": "visual-arts", "cost": 320.0, "cost_max":
+        null, "description": "6wk Pottery Wheel Throwing Course: Great for Beginners
+        and Intermediate\n\nUnleash your Inner Potter: Craft Stunning Ceramics in
+        our 6-Week Wheel Throwing...", "event_site_url": "https://www.yelp.com/events/san-francisco-6wk-pottery-wheel-throwing-course-great-for-beginners-and-intermediate-16?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-6wk-pottery-wheel-throwing-course-great-for-beginners-and-intermediate-16",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/_5d03DGV_qkhAYQ68HNrxQ/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.7522807, "longitude": -122.4147384, "name": "6wk Pottery
+        Wheel Throwing Course: Great for Beginners and Intermediate", "tickets_url":
+        "https://www.smaartstudio.com/booksmaart", "time_end": null, "time_start":
+        "2024-03-08T18:00:00-08:00", "location": {"address1": "3135 24th St", "address2":
+        null, "address3": "", "city": "San Francisco", "zip_code": "94110", "country":
+        "US", "state": "CA", "display_address": ["3135 24th St", "San Francisco, CA
+        94110"], "cross_streets": "Folsom St & Shotwell St"}, "business_id": "smaart-gallery-and-studio-san-francisco-2"},
+        {"attending_count": 1, "category": "visual-arts", "cost": 320.0, "cost_max":
+        null, "description": "6wk Pottery Wheel Throwing Course: Great for Beginners
+        and Intermediate\n\nUnleash your Inner Potter: Craft Stunning Ceramics in
+        our 6-Week Wheel Throwing...", "event_site_url": "https://www.yelp.com/events/san-francisco-6wk-pottery-wheel-throwing-course-great-for-beginners-and-intermediate-17?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-6wk-pottery-wheel-throwing-course-great-for-beginners-and-intermediate-17",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/Uz2mXj0Wt6olWCWuMTgc4w/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.7522807, "longitude": -122.4147384, "name": "6wk Pottery
+        Wheel Throwing Course: Great for Beginners and Intermediate", "tickets_url":
+        "https://www.smaartstudio.com/booksmaart", "time_end": null, "time_start":
+        "2024-04-09T18:30:00-07:00", "location": {"address1": "3135 24th St", "address2":
+        null, "address3": "", "city": "San Francisco", "zip_code": "94110", "country":
+        "US", "state": "CA", "display_address": ["3135 24th St", "San Francisco, CA
+        94110"], "cross_streets": "Folsom St & Shotwell St"}, "business_id": "smaart-gallery-and-studio-san-francisco-2"},
+        {"attending_count": 1, "category": "visual-arts", "cost": 320.0, "cost_max":
+        null, "description": "6wk Pottery Wheel Throwing Course: Great for Beginners
+        and Intermediate\n\nUnleash your Inner Potter: Craft Stunning Ceramics in
+        our 6-Week Wheel Throwing...", "event_site_url": "https://www.yelp.com/events/san-francisco-6wk-pottery-wheel-throwing-course-great-for-beginners-and-intermediate-18?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-6wk-pottery-wheel-throwing-course-great-for-beginners-and-intermediate-18",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/lmY4Ve4btCbPnAGtgJkQpw/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.7522807, "longitude": -122.4147384, "name": "6wk Pottery
+        Wheel Throwing Course: Great for Beginners and Intermediate", "tickets_url":
+        "https://www.smaartstudio.com/booksmaart", "time_end": null, "time_start":
+        "2024-04-03T18:30:00-07:00", "location": {"address1": "3135 24th St", "address2":
+        null, "address3": "", "city": "San Francisco", "zip_code": "94110", "country":
+        "US", "state": "CA", "display_address": ["3135 24th St", "San Francisco, CA
+        94110"], "cross_streets": "Folsom St & Shotwell St"}, "business_id": "smaart-gallery-and-studio-san-francisco-2"},
+        {"attending_count": 1, "category": "visual-arts", "cost": 320.0, "cost_max":
+        null, "description": "6wk Pottery Wheel Throwing Course: Great for Beginners
+        and Intermediate\n\nUnleash your Inner Potter: Craft Stunning Ceramics in
+        our 6-Week Wheel Throwing...", "event_site_url": "https://www.yelp.com/events/san-francisco-6wk-pottery-wheel-throwing-course-great-for-beginners-and-intermediate-19?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-6wk-pottery-wheel-throwing-course-great-for-beginners-and-intermediate-19",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/GBmXw5hbMhMSLvrEYoOmfA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.787835, "longitude": -122.417558, "name": "6wk Pottery
+        Wheel Throwing Course: Great for Beginners and Intermediate", "tickets_url":
+        "https://www.smaartstudio.com/booksmaart", "time_end": null, "time_start":
+        "2024-04-03T18:30:00-07:00", "location": {"address1": "1045 Sutter St", "address2":
+        null, "address3": "", "city": "San Francisco", "zip_code": "94109", "country":
+        "US", "state": "CA", "display_address": ["1045 Sutter St", "San Francisco,
+        CA 94109"], "cross_streets": "Hyde St"}, "business_id": "smaart-gallery-and-studio-san-francisco"},
+        {"attending_count": 1, "category": "visual-arts", "cost": 320.0, "cost_max":
+        null, "description": "6wk Pottery Wheel Throwing Course: Great for Beginners
+        and Intermediate\n\nUnleash your Inner Potter: Craft Stunning Ceramics in
+        our 6-Week Wheel Throwing...", "event_site_url": "https://www.yelp.com/events/san-francisco-6wk-pottery-wheel-throwing-course-great-for-beginners-and-intermediate-20?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-6wk-pottery-wheel-throwing-course-great-for-beginners-and-intermediate-20",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/KoC9UhCs2plMCguJ3KtAXw/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.787835, "longitude": -122.417558, "name": "6wk Pottery
+        Wheel Throwing Course: Great for Beginners and Intermediate", "tickets_url":
+        "https://www.smaartstudio.com/booksmaart", "time_end": null, "time_start":
+        "2024-04-18T18:00:00-07:00", "location": {"address1": "1045 Sutter St", "address2":
+        null, "address3": "", "city": "San Francisco", "zip_code": "94109", "country":
+        "US", "state": "CA", "display_address": ["1045 Sutter St", "San Francisco,
+        CA 94109"], "cross_streets": "Hyde St"}, "business_id": "smaart-gallery-and-studio-san-francisco"},
+        {"attending_count": 1, "category": "visual-arts", "cost": 320.0, "cost_max":
+        null, "description": "Unleash Your Inner Sculptor: 6-Week Clay Adventure!\n\nEver
+        dreamed of bringing your imagination to life in 3D? This 6-week Clay Sculpture
+        Course is your...", "event_site_url": "https://www.yelp.com/events/san-francisco-6wk-clay-sculpture-course-great-for-beginners-and-intermediate-2?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-6wk-clay-sculpture-course-great-for-beginners-and-intermediate-2",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/ANWq3fRhV-8rQCBg0zKHww/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.7522807, "longitude": -122.4147384, "name": "6wk Clay
+        Sculpture Course: Great for Beginners and Intermediate", "tickets_url": "https://www.smaartstudio.com/booksmaart",
+        "time_end": null, "time_start": "2024-04-03T18:00:00-07:00", "location": {"address1":
+        "3135 24th St", "address2": null, "address3": "", "city": "San Francisco",
+        "zip_code": "94110", "country": "US", "state": "CA", "display_address": ["3135
+        24th St", "San Francisco, CA 94110"], "cross_streets": "Folsom St & Shotwell
+        St"}, "business_id": "smaart-gallery-and-studio-san-francisco-2"}], "total":
+        25}'
+  recorded_at: Fri, 01 Mar 2024 17:45:49 GMT
 recorded_with: VCR 6.2.0

@@ -26,36 +26,36 @@ http_interactions:
       - application/json
       Ratelimit-Dailylimit:
       - '500.0'
-      X-Tracing-Auth:
-      - rE_8qdHx8NCZ9x9NcQmLxEsHeanvcOvOa9g5YKa0csk
       X-Routing-Service:
-      - routing-canary--useast1-74574f5c5b-2nphv; site=public_api_v3
+      - routing-main--useast1-b98889cf5-nv5zm; site=public_api_v3
+      Ratelimit-Remaining:
+      - '66.0'
+      X-Tracing-Auth:
+      - JMflfTjN4PuZPCU9S_wRqvanu3N2jDlQCRu7qfyzNqY
       Ratelimit-Resettime:
       - '2024-03-02T00:00:00+00:00'
-      X-B3-Sampled:
-      - '0'
+      X-Zipkin-Id:
+      - 7af1677e90160084
       Server:
       - envoy
-      Ratelimit-Remaining:
-      - '166.0'
-      X-Zipkin-Id:
-      - 31156a5d319474b0
+      X-B3-Sampled:
+      - '0'
       X-Mode:
       - ro
       X-Proxied:
-      - 10-65-172-4-useast1bprod
+      - 10-65-180-149-useast1bprod
       X-Extlb:
-      - 10-65-172-4-useast1bprod
+      - 10-65-180-149-useast1bprod
       Cache-Control:
       - max-age=0, no-store, private, no-transform
       Accept-Ranges:
       - bytes
       Date:
-      - Fri, 01 Mar 2024 12:04:25 GMT
+      - Fri, 01 Mar 2024 17:45:52 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-den8228-DEN
+      - cache-den8232-DEN
       X-Cache:
       - MISS
       X-Cache-Hits:
@@ -82,5 +82,5 @@ http_interactions:
         "94103", "country": "US", "state": "CA", "display_address": ["701 Mission
         St", "San Francisco, CA 94103"], "cross_streets": "Opera Aly & 3rd St"}, "business_id":
         "yerba-buena-center-for-the-arts-san-francisco"}'
-  recorded_at: Fri, 01 Mar 2024 12:04:25 GMT
+  recorded_at: Fri, 01 Mar 2024 17:45:52 GMT
 recorded_with: VCR 6.2.0

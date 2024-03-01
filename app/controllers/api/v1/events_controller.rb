@@ -9,16 +9,16 @@ class Api::V1::EventsController < ApplicationController
 
     # mostly only seen five-digit zips; start in USA where no alpha zip
 
-    if location.to_s.match(/[0-9]+/).class && (location.to_s.length > 4 && location.to_s.length < 6)
+    if location && location.to_s.match(/[0-9]+/).class && (location.to_s.length > 4 && location.to_s.length < 6)
       zip = location
       events = EventFacade.new.events_by_zip(zip)
       render json: EventSerializer.new(events)
 
-    elsif location.match(/[a-zA-Z]+/)
+    elsif location && location.match(/[a-zA-Z]+/)
       events = EventFacade.new.events_by_city_state(city_state)
       render json: EventSerializer.new(events)
 
-    elsif EventFacade.new.valid_latitude_and_longitude?(lat, long) && (lat.to_f.class && long.to_f.class) == Float
+    elsif location && EventFacade.new.valid_latitude_and_longitude?(lat, long) && (lat.to_f.class && long.to_f.class) == Float
       events = EventFacade.new.events_by_lat_and_long(lat, long)
       render json: EventSerializer.new(events)
       
