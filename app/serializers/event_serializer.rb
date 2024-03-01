@@ -5,13 +5,13 @@ class EventSerializer
 
   include JSONAPI::Serializer
 
-  attributes :name,
+  attributes :id,
+             :name,
              :location,
              :description,
              :category,
              :cost,
              :cost_max,
              :is_free,
-             :url,
-             :id
+             :url
 end

@@ -195,4 +195,2464 @@ http_interactions:
         "country": "US", "state": "CA", "display_address": ["San Francisco, CA"],
         "cross_streets": ""}, "business_id": null}], "total": 10}'
   recorded_at: Wed, 28 Feb 2024 21:35:33 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=10&location=San%20Francisco&price=1&radius=40000&start_date=1709231013
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Ratelimit-Dailylimit:
+      - '500.0'
+      X-Tracing-Auth:
+      - NzIYtvSkmzChOxuFX2nof2P8eo_ZAY-QjtJNPYd71Yw
+      Ratelimit-Remaining:
+      - '186.0'
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-j6f2w; site=public_api_v3
+      Ratelimit-Resettime:
+      - '2024-03-01T00:00:00+00:00'
+      Server:
+      - envoy
+      X-Zipkin-Id:
+      - 981aedcb1525a125
+      X-B3-Sampled:
+      - '0'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-82-75-useast1aprod
+      X-Extlb:
+      - 10-65-82-75-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Thu, 29 Feb 2024 18:23:34 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8237-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 1, "category": "other", "cost": null,
+        "cost_max": null, "description": "NEON invites SF Yelpers to receive a complimentary
+        day pass to redeem at NEON to utilize workspace and all amenities, as well
+        as participation in any...", "event_site_url": "https://www.yelp.com/events/san-francisco-yelp-community-experience-neon?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-yelp-community-experience-neon", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/MZjsyJSzpHctAWiCeYYTAw/o.jpg",
+        "interested_count": 109, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.79776469999999, "longitude": -122.4317585, "name": "Yelp
+        Community Experience: NEON", "tickets_url": null, "time_end": "2024-03-01T18:00:00-08:00",
+        "time_start": "2024-02-26T08:00:00-08:00", "location": {"address1": "1974
+        Union St", "address2": null, "address3": "", "city": "San Francisco", "zip_code":
+        "94123", "country": "US", "state": "CA", "display_address": ["1974 Union St",
+        "San Francisco, CA 94123"], "cross_streets": "Charlton Ct & Buchanan St"},
+        "business_id": "neon-san-francisco-2"}, {"attending_count": 188, "category":
+        "other", "cost": null, "cost_max": null, "description": "Are you ready to
+        celebrate Women''s History Month with #WomenRunSF in March? \nIn fact, we''re
+        so excited that we''re going to be keping the celebration going...", "event_site_url":
+        "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 29, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nWomen
+        owned and operated since 2017, Avotoasty was founded by Sofia Pinzon, a native...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-avotoasty?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-avotoasty", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/ZPucO5muvXMuLFnxE9p-Ig/o.jpg", "interested_count":
+        144, "is_canceled": false, "is_free": true, "is_official": true, "latitude":
+        37.7981839, "longitude": -122.428801, "name": "Women Run SF! Yelp Community
+        Event: Avotoasty", "tickets_url": null, "time_end": "2024-03-07T20:00:00-08:00",
+        "time_start": "2024-03-07T17:00:00-08:00", "location": {"address1": "1796
+        Union St", "address2": "", "address3": null, "city": "San Francisco", "zip_code":
+        "94123", "country": "US", "state": "CA", "display_address": ["1796 Union St",
+        "San Francisco, CA 94123"], "cross_streets": "Octavia St & Gough St"}, "business_id":
+        "yelp-community-event-avotoasty-san-francisco"}, {"attending_count": 1, "category":
+        "food-and-drink", "cost": null, "cost_max": null, "description": "#WomenRunSF
+        - https://www.yelp.com/events/san-francisco-women-run-sf\n\nCelebrate #26
+        top 100 places to drink in the Bay Area!\nLost Cat Bar & Bites is a...", "event_site_url":
+        "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/eli_Ttx01rkP050WwQvvEQ/o.jpg",
+        "interested_count": 156, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7877655, "longitude": -122.4114052, "name": "Women Run
+        SF! Yelp Community Event: Lost Cat Bar & Bites x Cantoo Latin Asian Rotisserie
+        x Zaddy''s", "tickets_url": null, "time_end": "2024-03-09T16:00:00-08:00",
+        "time_start": "2024-03-09T14:00:00-08:00", "location": {"address1": "587 Post
+        St", "address2": "", "address3": null, "city": "San Francisco", "zip_code":
+        "94102", "country": "US", "state": "CA", "display_address": ["587 Post St",
+        "San Francisco, CA 94102"], "cross_streets": "Taylor St & Mason St"}, "business_id":
+        "yelp-community-event-lost-cat-x-cantoo-x-zaddys-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 261, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nRecently
+        under new, women-owned and largely women operated management, Skylark is...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-skylark-x-una-vodka-x-21-seeds?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-skylark-x-una-vodka-x-21-seeds",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/OLGXk2OiCpRHYe-Czz2wyQ/o.jpg",
+        "interested_count": 66, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7647142, "longitude": -122.4216181, "name": "Women Run
+        SF! Yelp Community Event: Skylark x UNA Vodka x 21 Seeds", "tickets_url":
+        null, "time_end": "2024-03-13T21:00:00-07:00", "time_start": "2024-03-13T17:00:00-07:00",
+        "location": {"address1": "3089 16th St", "address2": "", "address3": null,
+        "city": "San Francisco", "zip_code": "94103", "country": "US", "state": "CA",
+        "display_address": ["3089 16th St", "San Francisco, CA 94103"], "cross_streets":
+        "Valencia St & Caledonia St"}, "business_id": "yelp-community-event-skylark-x-una-vodka-x-21-seeds-san-francisco"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nEl
+        P\u00edpila is led by a trio of women - mother Guadalupe Guerrero and her
+        two daughters...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-el-pipila?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-el-pipila", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/ephoto/sjrSA2ZgwLv5XU_Jasiykg/o.jpg", "interested_count":
+        147, "is_canceled": false, "is_free": false, "is_official": true, "latitude":
+        37.7714957, "longitude": -122.4049441, "name": "Women Run SF! Yelp Community
+        Experience: El Pipila", "tickets_url": null, "time_end": "2024-03-23T15:00:00-07:00",
+        "time_start": "2024-03-18T10:00:00-07:00", "location": {"address1": "879 Brannan
+        St", "address2": "", "address3": "", "city": "San Francisco", "zip_code":
+        "94103", "country": "US", "state": "CA", "display_address": ["879 Brannan
+        St", "San Francisco, CA 94103"], "cross_streets": "8th St"}, "business_id":
+        "el-p\u00edpila-san-francisco-2"}, {"attending_count": 3, "category": "charities",
+        "cost": null, "cost_max": null, "description": "You''re Invited to Our HUGE
+        Spring Rummage Sale!\n\nSaturday, March 2 (10am* - 3pm)   &\nSunday, March
+        3 (11am* - 3pm)  \n*No early birds please!\n\nAll are...", "event_site_url":
+        "https://www.yelp.com/events/union-city-huge-spring-rummage-sale-2024?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "union-city-huge-spring-rummage-sale-2024", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/5Uo2JD-mbhd1NLF49YxnJQ/o.jpg",
+        "interested_count": 2, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 37.59331931272346, "longitude": -122.0452259500602, "name":
+        "HUGE Spring Rummage Sale, 2024!", "tickets_url": "http://sacbc.org", "time_end":
+        "2024-03-02T15:00:00-08:00", "time_start": "2024-03-02T10:00:00-08:00", "location":
+        {"address1": "32975 Alvarado Niles Rd", "address2": "", "address3": "", "city":
+        "Union City", "zip_code": "94587", "country": "US", "state": "CA", "display_address":
+        ["32975 Alvarado Niles Rd", "Union City, CA 94587"], "cross_streets": "Dowe
+        Ave"}, "business_id": "southern-alameda-county-buddhist-church-union-city"},
+        {"attending_count": 1, "category": "performing-arts", "cost": 15.0, "cost_max":
+        20.0, "description": "Join us for \"Goosebumps The Musical!\" Brooke and Zeke
+        are thrilled to be starring in a mysterious show called The Phantom, and not
+        the least bit frightened...", "event_site_url": "https://www.yelp.com/events/san-mateo-goosebumps-the-musical?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-mateo-goosebumps-the-musical", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/rwpA9Y2Pl1O5IlXASDA-TQ/o.jpg",
+        "interested_count": 2, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.5776072, "longitude": -122.3306804, "name": "Goosebumps
+        The Musical", "tickets_url": "http://gotoevent.co/e/6qe/7siow/tix", "time_end":
+        "2024-03-03T14:00:00-08:00", "time_start": "2024-03-01T19:00:00-08:00", "location":
+        {"address1": "600 N Delaware St", "address2": "", "address3": "", "city":
+        "San Mateo", "zip_code": "94401", "country": "US", "state": "CA", "display_address":
+        ["600 N Delaware St", "San Mateo, CA 94401"], "cross_streets": ""}, "business_id":
+        "san-mateo-performing-arts-center-san-mateo"}, {"attending_count": 3, "category":
+        "fashion", "cost": null, "cost_max": null, "description": "Hello, Pinole!  Join
+        us for a pre-opening shopping experience at your all-new Nordstrom Rack store.\nTuesday,
+        March 5 (RSVP Required)\u200b\n4-8 PM\n\nJoin us for...", "event_site_url":
+        "https://www.yelp.com/events/pinole-nordstrom-rack-vip-shopping-party-at-pinole-vista-crossing?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "pinole-nordstrom-rack-vip-shopping-party-at-pinole-vista-crossing",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/PiOkAdSLgLHpRKNsoClDPA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 37.984771386783144, "longitude": -122.311726, "name": "Nordstrom
+        Rack VIP Shopping Party at Pinole Vista Crossing", "tickets_url": "https://nordstromrsvp.com/Pinole",
+        "time_end": "2024-03-05T20:00:00-08:00", "time_start": "2024-03-05T16:00:00-08:00",
+        "location": {"address1": "1330 Fitzgerald Dr", "address2": "Ste B", "address3":
+        null, "city": "Pinole", "zip_code": "94564", "country": "US", "state": "CA",
+        "display_address": ["1330 Fitzgerald Dr", "Ste B", "Pinole, CA 94564"], "cross_streets":
+        ""}, "business_id": "nordstrom-rack-opening-soon-pinole-2"}], "total": 10}'
+  recorded_at: Thu, 29 Feb 2024 18:23:34 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=10&location=San%20Francisco&price=1&radius=40000&start_date=1709231088
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Zipkin-Id:
+      - 8c36e45252a8394a
+      X-B3-Sampled:
+      - '0'
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-4r8xg; site=public_api_v3
+      X-Tracing-Auth:
+      - grWy3UNW-ip_-izEWWruCvdyDlEg-vW-ME-2sH_BEAI
+      Ratelimit-Dailylimit:
+      - '500.0'
+      Server:
+      - envoy
+      Ratelimit-Remaining:
+      - '179.0'
+      Ratelimit-Resettime:
+      - '2024-03-01T00:00:00+00:00'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-187-35-useast1bprod
+      X-Extlb:
+      - 10-65-187-35-useast1bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Thu, 29 Feb 2024 18:24:48 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8240-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 1, "category": "other", "cost": null,
+        "cost_max": null, "description": "NEON invites SF Yelpers to receive a complimentary
+        day pass to redeem at NEON to utilize workspace and all amenities, as well
+        as participation in any...", "event_site_url": "https://www.yelp.com/events/san-francisco-yelp-community-experience-neon?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-yelp-community-experience-neon", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/MZjsyJSzpHctAWiCeYYTAw/o.jpg",
+        "interested_count": 109, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.79776469999999, "longitude": -122.4317585, "name": "Yelp
+        Community Experience: NEON", "tickets_url": null, "time_end": "2024-03-01T18:00:00-08:00",
+        "time_start": "2024-02-26T08:00:00-08:00", "location": {"address1": "1974
+        Union St", "address2": null, "address3": "", "city": "San Francisco", "zip_code":
+        "94123", "country": "US", "state": "CA", "display_address": ["1974 Union St",
+        "San Francisco, CA 94123"], "cross_streets": "Charlton Ct & Buchanan St"},
+        "business_id": "neon-san-francisco-2"}, {"attending_count": 188, "category":
+        "other", "cost": null, "cost_max": null, "description": "Are you ready to
+        celebrate Women''s History Month with #WomenRunSF in March? \nIn fact, we''re
+        so excited that we''re going to be keping the celebration going...", "event_site_url":
+        "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 29, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nWomen
+        owned and operated since 2017, Avotoasty was founded by Sofia Pinzon, a native...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-avotoasty?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-avotoasty", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/ZPucO5muvXMuLFnxE9p-Ig/o.jpg", "interested_count":
+        144, "is_canceled": false, "is_free": true, "is_official": true, "latitude":
+        37.7981839, "longitude": -122.428801, "name": "Women Run SF! Yelp Community
+        Event: Avotoasty", "tickets_url": null, "time_end": "2024-03-07T20:00:00-08:00",
+        "time_start": "2024-03-07T17:00:00-08:00", "location": {"address1": "1796
+        Union St", "address2": "", "address3": null, "city": "San Francisco", "zip_code":
+        "94123", "country": "US", "state": "CA", "display_address": ["1796 Union St",
+        "San Francisco, CA 94123"], "cross_streets": "Octavia St & Gough St"}, "business_id":
+        "yelp-community-event-avotoasty-san-francisco"}, {"attending_count": 1, "category":
+        "food-and-drink", "cost": null, "cost_max": null, "description": "#WomenRunSF
+        - https://www.yelp.com/events/san-francisco-women-run-sf\n\nCelebrate #26
+        top 100 places to drink in the Bay Area!\nLost Cat Bar & Bites is a...", "event_site_url":
+        "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/eli_Ttx01rkP050WwQvvEQ/o.jpg",
+        "interested_count": 156, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7877655, "longitude": -122.4114052, "name": "Women Run
+        SF! Yelp Community Event: Lost Cat Bar & Bites x Cantoo Latin Asian Rotisserie
+        x Zaddy''s", "tickets_url": null, "time_end": "2024-03-09T16:00:00-08:00",
+        "time_start": "2024-03-09T14:00:00-08:00", "location": {"address1": "587 Post
+        St", "address2": "", "address3": null, "city": "San Francisco", "zip_code":
+        "94102", "country": "US", "state": "CA", "display_address": ["587 Post St",
+        "San Francisco, CA 94102"], "cross_streets": "Taylor St & Mason St"}, "business_id":
+        "yelp-community-event-lost-cat-x-cantoo-x-zaddys-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 261, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nRecently
+        under new, women-owned and largely women operated management, Skylark is...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-skylark-x-una-vodka-x-21-seeds?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-skylark-x-una-vodka-x-21-seeds",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/OLGXk2OiCpRHYe-Czz2wyQ/o.jpg",
+        "interested_count": 66, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7647142, "longitude": -122.4216181, "name": "Women Run
+        SF! Yelp Community Event: Skylark x UNA Vodka x 21 Seeds", "tickets_url":
+        null, "time_end": "2024-03-13T21:00:00-07:00", "time_start": "2024-03-13T17:00:00-07:00",
+        "location": {"address1": "3089 16th St", "address2": "", "address3": null,
+        "city": "San Francisco", "zip_code": "94103", "country": "US", "state": "CA",
+        "display_address": ["3089 16th St", "San Francisco, CA 94103"], "cross_streets":
+        "Valencia St & Caledonia St"}, "business_id": "yelp-community-event-skylark-x-una-vodka-x-21-seeds-san-francisco"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nEl
+        P\u00edpila is led by a trio of women - mother Guadalupe Guerrero and her
+        two daughters...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-el-pipila?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-el-pipila", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/ephoto/sjrSA2ZgwLv5XU_Jasiykg/o.jpg", "interested_count":
+        147, "is_canceled": false, "is_free": false, "is_official": true, "latitude":
+        37.7714957, "longitude": -122.4049441, "name": "Women Run SF! Yelp Community
+        Experience: El Pipila", "tickets_url": null, "time_end": "2024-03-23T15:00:00-07:00",
+        "time_start": "2024-03-18T10:00:00-07:00", "location": {"address1": "879 Brannan
+        St", "address2": "", "address3": "", "city": "San Francisco", "zip_code":
+        "94103", "country": "US", "state": "CA", "display_address": ["879 Brannan
+        St", "San Francisco, CA 94103"], "cross_streets": "8th St"}, "business_id":
+        "el-p\u00edpila-san-francisco-2"}, {"attending_count": 3, "category": "charities",
+        "cost": null, "cost_max": null, "description": "You''re Invited to Our HUGE
+        Spring Rummage Sale!\n\nSaturday, March 2 (10am* - 3pm)   &\nSunday, March
+        3 (11am* - 3pm)  \n*No early birds please!\n\nAll are...", "event_site_url":
+        "https://www.yelp.com/events/union-city-huge-spring-rummage-sale-2024?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "union-city-huge-spring-rummage-sale-2024", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/5Uo2JD-mbhd1NLF49YxnJQ/o.jpg",
+        "interested_count": 2, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 37.59331931272346, "longitude": -122.0452259500602, "name":
+        "HUGE Spring Rummage Sale, 2024!", "tickets_url": "http://sacbc.org", "time_end":
+        "2024-03-02T15:00:00-08:00", "time_start": "2024-03-02T10:00:00-08:00", "location":
+        {"address1": "32975 Alvarado Niles Rd", "address2": "", "address3": "", "city":
+        "Union City", "zip_code": "94587", "country": "US", "state": "CA", "display_address":
+        ["32975 Alvarado Niles Rd", "Union City, CA 94587"], "cross_streets": "Dowe
+        Ave"}, "business_id": "southern-alameda-county-buddhist-church-union-city"},
+        {"attending_count": 1, "category": "performing-arts", "cost": 15.0, "cost_max":
+        20.0, "description": "Join us for \"Goosebumps The Musical!\" Brooke and Zeke
+        are thrilled to be starring in a mysterious show called The Phantom, and not
+        the least bit frightened...", "event_site_url": "https://www.yelp.com/events/san-mateo-goosebumps-the-musical?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-mateo-goosebumps-the-musical", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/rwpA9Y2Pl1O5IlXASDA-TQ/o.jpg",
+        "interested_count": 2, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.5776072, "longitude": -122.3306804, "name": "Goosebumps
+        The Musical", "tickets_url": "http://gotoevent.co/e/6qe/7siow/tix", "time_end":
+        "2024-03-03T14:00:00-08:00", "time_start": "2024-03-01T19:00:00-08:00", "location":
+        {"address1": "600 N Delaware St", "address2": "", "address3": "", "city":
+        "San Mateo", "zip_code": "94401", "country": "US", "state": "CA", "display_address":
+        ["600 N Delaware St", "San Mateo, CA 94401"], "cross_streets": ""}, "business_id":
+        "san-mateo-performing-arts-center-san-mateo"}, {"attending_count": 3, "category":
+        "fashion", "cost": null, "cost_max": null, "description": "Hello, Pinole!  Join
+        us for a pre-opening shopping experience at your all-new Nordstrom Rack store.\nTuesday,
+        March 5 (RSVP Required)\u200b\n4-8 PM\n\nJoin us for...", "event_site_url":
+        "https://www.yelp.com/events/pinole-nordstrom-rack-vip-shopping-party-at-pinole-vista-crossing?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "pinole-nordstrom-rack-vip-shopping-party-at-pinole-vista-crossing",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/PiOkAdSLgLHpRKNsoClDPA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 37.984771386783144, "longitude": -122.311726, "name": "Nordstrom
+        Rack VIP Shopping Party at Pinole Vista Crossing", "tickets_url": "https://nordstromrsvp.com/Pinole",
+        "time_end": "2024-03-05T20:00:00-08:00", "time_start": "2024-03-05T16:00:00-08:00",
+        "location": {"address1": "1330 Fitzgerald Dr", "address2": "Ste B", "address3":
+        null, "city": "Pinole", "zip_code": "94564", "country": "US", "state": "CA",
+        "display_address": ["1330 Fitzgerald Dr", "Ste B", "Pinole, CA 94564"], "cross_streets":
+        ""}, "business_id": "nordstrom-rack-opening-soon-pinole-2"}], "total": 10}'
+  recorded_at: Thu, 29 Feb 2024 18:24:48 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=10&location=San%20Francisco&price=1&radius=40000&start_date=1709231138
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Ratelimit-Remaining:
+      - '172.0'
+      X-Tracing-Auth:
+      - Pu-chunXAlnnp2KBx8wiib1cQmGUGNazyorU_7zHvbM
+      Ratelimit-Resettime:
+      - '2024-03-01T00:00:00+00:00'
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-l62f7; site=public_api_v3
+      Server:
+      - envoy
+      X-Zipkin-Id:
+      - b65be619cf759c6d
+      Ratelimit-Dailylimit:
+      - '500.0'
+      X-B3-Sampled:
+      - '0'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-80-125-useast1aprod
+      X-Extlb:
+      - 10-65-80-125-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Thu, 29 Feb 2024 18:25:38 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8264-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 1, "category": "other", "cost": null,
+        "cost_max": null, "description": "NEON invites SF Yelpers to receive a complimentary
+        day pass to redeem at NEON to utilize workspace and all amenities, as well
+        as participation in any...", "event_site_url": "https://www.yelp.com/events/san-francisco-yelp-community-experience-neon?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-yelp-community-experience-neon", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/MZjsyJSzpHctAWiCeYYTAw/o.jpg",
+        "interested_count": 109, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.79776469999999, "longitude": -122.4317585, "name": "Yelp
+        Community Experience: NEON", "tickets_url": null, "time_end": "2024-03-01T18:00:00-08:00",
+        "time_start": "2024-02-26T08:00:00-08:00", "location": {"address1": "1974
+        Union St", "address2": null, "address3": "", "city": "San Francisco", "zip_code":
+        "94123", "country": "US", "state": "CA", "display_address": ["1974 Union St",
+        "San Francisco, CA 94123"], "cross_streets": "Charlton Ct & Buchanan St"},
+        "business_id": "neon-san-francisco-2"}, {"attending_count": 188, "category":
+        "other", "cost": null, "cost_max": null, "description": "Are you ready to
+        celebrate Women''s History Month with #WomenRunSF in March? \nIn fact, we''re
+        so excited that we''re going to be keping the celebration going...", "event_site_url":
+        "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 29, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nWomen
+        owned and operated since 2017, Avotoasty was founded by Sofia Pinzon, a native...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-avotoasty?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-avotoasty", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/ZPucO5muvXMuLFnxE9p-Ig/o.jpg", "interested_count":
+        144, "is_canceled": false, "is_free": true, "is_official": true, "latitude":
+        37.7981839, "longitude": -122.428801, "name": "Women Run SF! Yelp Community
+        Event: Avotoasty", "tickets_url": null, "time_end": "2024-03-07T20:00:00-08:00",
+        "time_start": "2024-03-07T17:00:00-08:00", "location": {"address1": "1796
+        Union St", "address2": "", "address3": null, "city": "San Francisco", "zip_code":
+        "94123", "country": "US", "state": "CA", "display_address": ["1796 Union St",
+        "San Francisco, CA 94123"], "cross_streets": "Octavia St & Gough St"}, "business_id":
+        "yelp-community-event-avotoasty-san-francisco"}, {"attending_count": 1, "category":
+        "food-and-drink", "cost": null, "cost_max": null, "description": "#WomenRunSF
+        - https://www.yelp.com/events/san-francisco-women-run-sf\n\nCelebrate #26
+        top 100 places to drink in the Bay Area!\nLost Cat Bar & Bites is a...", "event_site_url":
+        "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/eli_Ttx01rkP050WwQvvEQ/o.jpg",
+        "interested_count": 156, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7877655, "longitude": -122.4114052, "name": "Women Run
+        SF! Yelp Community Event: Lost Cat Bar & Bites x Cantoo Latin Asian Rotisserie
+        x Zaddy''s", "tickets_url": null, "time_end": "2024-03-09T16:00:00-08:00",
+        "time_start": "2024-03-09T14:00:00-08:00", "location": {"address1": "587 Post
+        St", "address2": "", "address3": null, "city": "San Francisco", "zip_code":
+        "94102", "country": "US", "state": "CA", "display_address": ["587 Post St",
+        "San Francisco, CA 94102"], "cross_streets": "Taylor St & Mason St"}, "business_id":
+        "yelp-community-event-lost-cat-x-cantoo-x-zaddys-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 261, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nRecently
+        under new, women-owned and largely women operated management, Skylark is...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-skylark-x-una-vodka-x-21-seeds?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-skylark-x-una-vodka-x-21-seeds",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/OLGXk2OiCpRHYe-Czz2wyQ/o.jpg",
+        "interested_count": 66, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7647142, "longitude": -122.4216181, "name": "Women Run
+        SF! Yelp Community Event: Skylark x UNA Vodka x 21 Seeds", "tickets_url":
+        null, "time_end": "2024-03-13T21:00:00-07:00", "time_start": "2024-03-13T17:00:00-07:00",
+        "location": {"address1": "3089 16th St", "address2": "", "address3": null,
+        "city": "San Francisco", "zip_code": "94103", "country": "US", "state": "CA",
+        "display_address": ["3089 16th St", "San Francisco, CA 94103"], "cross_streets":
+        "Valencia St & Caledonia St"}, "business_id": "yelp-community-event-skylark-x-una-vodka-x-21-seeds-san-francisco"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nEl
+        P\u00edpila is led by a trio of women - mother Guadalupe Guerrero and her
+        two daughters...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-el-pipila?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-el-pipila", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/ephoto/sjrSA2ZgwLv5XU_Jasiykg/o.jpg", "interested_count":
+        147, "is_canceled": false, "is_free": false, "is_official": true, "latitude":
+        37.7714957, "longitude": -122.4049441, "name": "Women Run SF! Yelp Community
+        Experience: El Pipila", "tickets_url": null, "time_end": "2024-03-23T15:00:00-07:00",
+        "time_start": "2024-03-18T10:00:00-07:00", "location": {"address1": "879 Brannan
+        St", "address2": "", "address3": "", "city": "San Francisco", "zip_code":
+        "94103", "country": "US", "state": "CA", "display_address": ["879 Brannan
+        St", "San Francisco, CA 94103"], "cross_streets": "8th St"}, "business_id":
+        "el-p\u00edpila-san-francisco-2"}, {"attending_count": 3, "category": "charities",
+        "cost": null, "cost_max": null, "description": "You''re Invited to Our HUGE
+        Spring Rummage Sale!\n\nSaturday, March 2 (10am* - 3pm)   &\nSunday, March
+        3 (11am* - 3pm)  \n*No early birds please!\n\nAll are...", "event_site_url":
+        "https://www.yelp.com/events/union-city-huge-spring-rummage-sale-2024?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "union-city-huge-spring-rummage-sale-2024", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/5Uo2JD-mbhd1NLF49YxnJQ/o.jpg",
+        "interested_count": 2, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 37.59331931272346, "longitude": -122.0452259500602, "name":
+        "HUGE Spring Rummage Sale, 2024!", "tickets_url": "http://sacbc.org", "time_end":
+        "2024-03-02T15:00:00-08:00", "time_start": "2024-03-02T10:00:00-08:00", "location":
+        {"address1": "32975 Alvarado Niles Rd", "address2": "", "address3": "", "city":
+        "Union City", "zip_code": "94587", "country": "US", "state": "CA", "display_address":
+        ["32975 Alvarado Niles Rd", "Union City, CA 94587"], "cross_streets": "Dowe
+        Ave"}, "business_id": "southern-alameda-county-buddhist-church-union-city"},
+        {"attending_count": 1, "category": "performing-arts", "cost": 15.0, "cost_max":
+        20.0, "description": "Join us for \"Goosebumps The Musical!\" Brooke and Zeke
+        are thrilled to be starring in a mysterious show called The Phantom, and not
+        the least bit frightened...", "event_site_url": "https://www.yelp.com/events/san-mateo-goosebumps-the-musical?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-mateo-goosebumps-the-musical", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/rwpA9Y2Pl1O5IlXASDA-TQ/o.jpg",
+        "interested_count": 2, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.5776072, "longitude": -122.3306804, "name": "Goosebumps
+        The Musical", "tickets_url": "http://gotoevent.co/e/6qe/7siow/tix", "time_end":
+        "2024-03-03T14:00:00-08:00", "time_start": "2024-03-01T19:00:00-08:00", "location":
+        {"address1": "600 N Delaware St", "address2": "", "address3": "", "city":
+        "San Mateo", "zip_code": "94401", "country": "US", "state": "CA", "display_address":
+        ["600 N Delaware St", "San Mateo, CA 94401"], "cross_streets": ""}, "business_id":
+        "san-mateo-performing-arts-center-san-mateo"}, {"attending_count": 3, "category":
+        "fashion", "cost": null, "cost_max": null, "description": "Hello, Pinole!  Join
+        us for a pre-opening shopping experience at your all-new Nordstrom Rack store.\nTuesday,
+        March 5 (RSVP Required)\u200b\n4-8 PM\n\nJoin us for...", "event_site_url":
+        "https://www.yelp.com/events/pinole-nordstrom-rack-vip-shopping-party-at-pinole-vista-crossing?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "pinole-nordstrom-rack-vip-shopping-party-at-pinole-vista-crossing",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/PiOkAdSLgLHpRKNsoClDPA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 37.984771386783144, "longitude": -122.311726, "name": "Nordstrom
+        Rack VIP Shopping Party at Pinole Vista Crossing", "tickets_url": "https://nordstromrsvp.com/Pinole",
+        "time_end": "2024-03-05T20:00:00-08:00", "time_start": "2024-03-05T16:00:00-08:00",
+        "location": {"address1": "1330 Fitzgerald Dr", "address2": "Ste B", "address3":
+        null, "city": "Pinole", "zip_code": "94564", "country": "US", "state": "CA",
+        "display_address": ["1330 Fitzgerald Dr", "Ste B", "Pinole, CA 94564"], "cross_streets":
+        ""}, "business_id": "nordstrom-rack-opening-soon-pinole-2"}], "total": 10}'
+  recorded_at: Thu, 29 Feb 2024 18:25:38 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=10&location=San%20Francisco&price=1&radius=40000&start_date=1709231976
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Tracing-Auth:
+      - UA4mB686aBZizuiXVO2oYj4_iY1x99fQB_Ic9ctVLKE
+      Ratelimit-Dailylimit:
+      - '500.0'
+      X-B3-Sampled:
+      - '0'
+      X-Zipkin-Id:
+      - a113941e3159c2b9
+      Ratelimit-Remaining:
+      - '154.0'
+      Ratelimit-Resettime:
+      - '2024-03-01T00:00:00+00:00'
+      Server:
+      - envoy
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-bpp69; site=public_api_v3
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-82-75-useast1aprod
+      X-Extlb:
+      - 10-65-82-75-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Thu, 29 Feb 2024 18:39:36 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8263-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 1, "category": "other", "cost": null,
+        "cost_max": null, "description": "NEON invites SF Yelpers to receive a complimentary
+        day pass to redeem at NEON to utilize workspace and all amenities, as well
+        as participation in any...", "event_site_url": "https://www.yelp.com/events/san-francisco-yelp-community-experience-neon?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-yelp-community-experience-neon", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/MZjsyJSzpHctAWiCeYYTAw/o.jpg",
+        "interested_count": 109, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.79776469999999, "longitude": -122.4317585, "name": "Yelp
+        Community Experience: NEON", "tickets_url": null, "time_end": "2024-03-01T18:00:00-08:00",
+        "time_start": "2024-02-26T08:00:00-08:00", "location": {"address1": "1974
+        Union St", "address2": null, "address3": "", "city": "San Francisco", "zip_code":
+        "94123", "country": "US", "state": "CA", "display_address": ["1974 Union St",
+        "San Francisco, CA 94123"], "cross_streets": "Charlton Ct & Buchanan St"},
+        "business_id": "neon-san-francisco-2"}, {"attending_count": 188, "category":
+        "other", "cost": null, "cost_max": null, "description": "Are you ready to
+        celebrate Women''s History Month with #WomenRunSF in March? \nIn fact, we''re
+        so excited that we''re going to be keping the celebration going...", "event_site_url":
+        "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 29, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nWomen
+        owned and operated since 2017, Avotoasty was founded by Sofia Pinzon, a native...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-avotoasty?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-avotoasty", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/ZPucO5muvXMuLFnxE9p-Ig/o.jpg", "interested_count":
+        144, "is_canceled": false, "is_free": true, "is_official": true, "latitude":
+        37.7981839, "longitude": -122.428801, "name": "Women Run SF! Yelp Community
+        Event: Avotoasty", "tickets_url": null, "time_end": "2024-03-07T20:00:00-08:00",
+        "time_start": "2024-03-07T17:00:00-08:00", "location": {"address1": "1796
+        Union St", "address2": "", "address3": null, "city": "San Francisco", "zip_code":
+        "94123", "country": "US", "state": "CA", "display_address": ["1796 Union St",
+        "San Francisco, CA 94123"], "cross_streets": "Octavia St & Gough St"}, "business_id":
+        "yelp-community-event-avotoasty-san-francisco"}, {"attending_count": 1, "category":
+        "food-and-drink", "cost": null, "cost_max": null, "description": "#WomenRunSF
+        - https://www.yelp.com/events/san-francisco-women-run-sf\n\nCelebrate #26
+        top 100 places to drink in the Bay Area!\nLost Cat Bar & Bites is a...", "event_site_url":
+        "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/eli_Ttx01rkP050WwQvvEQ/o.jpg",
+        "interested_count": 156, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7877655, "longitude": -122.4114052, "name": "Women Run
+        SF! Yelp Community Event: Lost Cat Bar & Bites x Cantoo Latin Asian Rotisserie
+        x Zaddy''s", "tickets_url": null, "time_end": "2024-03-09T16:00:00-08:00",
+        "time_start": "2024-03-09T14:00:00-08:00", "location": {"address1": "587 Post
+        St", "address2": "", "address3": null, "city": "San Francisco", "zip_code":
+        "94102", "country": "US", "state": "CA", "display_address": ["587 Post St",
+        "San Francisco, CA 94102"], "cross_streets": "Taylor St & Mason St"}, "business_id":
+        "yelp-community-event-lost-cat-x-cantoo-x-zaddys-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 261, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nRecently
+        under new, women-owned and largely women operated management, Skylark is...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-skylark-x-una-vodka-x-21-seeds?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-skylark-x-una-vodka-x-21-seeds",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/OLGXk2OiCpRHYe-Czz2wyQ/o.jpg",
+        "interested_count": 66, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7647142, "longitude": -122.4216181, "name": "Women Run
+        SF! Yelp Community Event: Skylark x UNA Vodka x 21 Seeds", "tickets_url":
+        null, "time_end": "2024-03-13T21:00:00-07:00", "time_start": "2024-03-13T17:00:00-07:00",
+        "location": {"address1": "3089 16th St", "address2": "", "address3": null,
+        "city": "San Francisco", "zip_code": "94103", "country": "US", "state": "CA",
+        "display_address": ["3089 16th St", "San Francisco, CA 94103"], "cross_streets":
+        "Valencia St & Caledonia St"}, "business_id": "yelp-community-event-skylark-x-una-vodka-x-21-seeds-san-francisco"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nEl
+        P\u00edpila is led by a trio of women - mother Guadalupe Guerrero and her
+        two daughters...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-el-pipila?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-el-pipila", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/ephoto/sjrSA2ZgwLv5XU_Jasiykg/o.jpg", "interested_count":
+        147, "is_canceled": false, "is_free": false, "is_official": true, "latitude":
+        37.7714957, "longitude": -122.4049441, "name": "Women Run SF! Yelp Community
+        Experience: El Pipila", "tickets_url": null, "time_end": "2024-03-23T15:00:00-07:00",
+        "time_start": "2024-03-18T10:00:00-07:00", "location": {"address1": "879 Brannan
+        St", "address2": "", "address3": "", "city": "San Francisco", "zip_code":
+        "94103", "country": "US", "state": "CA", "display_address": ["879 Brannan
+        St", "San Francisco, CA 94103"], "cross_streets": "8th St"}, "business_id":
+        "el-p\u00edpila-san-francisco-2"}, {"attending_count": 4, "category": "charities",
+        "cost": null, "cost_max": null, "description": "You''re Invited to Our HUGE
+        Spring Rummage Sale!\n\nSaturday, March 2 (10am* - 3pm)   &\nSunday, March
+        3 (11am* - 3pm)  \n*No early birds please!\n\nAll are...", "event_site_url":
+        "https://www.yelp.com/events/union-city-huge-spring-rummage-sale-2024?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "union-city-huge-spring-rummage-sale-2024", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/5Uo2JD-mbhd1NLF49YxnJQ/o.jpg",
+        "interested_count": 2, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 37.59331931272346, "longitude": -122.0452259500602, "name":
+        "HUGE Spring Rummage Sale, 2024!", "tickets_url": "http://sacbc.org", "time_end":
+        "2024-03-02T15:00:00-08:00", "time_start": "2024-03-02T10:00:00-08:00", "location":
+        {"address1": "32975 Alvarado Niles Rd", "address2": "", "address3": "", "city":
+        "Union City", "zip_code": "94587", "country": "US", "state": "CA", "display_address":
+        ["32975 Alvarado Niles Rd", "Union City, CA 94587"], "cross_streets": "Dowe
+        Ave"}, "business_id": "southern-alameda-county-buddhist-church-union-city"},
+        {"attending_count": 1, "category": "performing-arts", "cost": 15.0, "cost_max":
+        20.0, "description": "Join us for \"Goosebumps The Musical!\" Brooke and Zeke
+        are thrilled to be starring in a mysterious show called The Phantom, and not
+        the least bit frightened...", "event_site_url": "https://www.yelp.com/events/san-mateo-goosebumps-the-musical?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-mateo-goosebumps-the-musical", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/rwpA9Y2Pl1O5IlXASDA-TQ/o.jpg",
+        "interested_count": 2, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.5776072, "longitude": -122.3306804, "name": "Goosebumps
+        The Musical", "tickets_url": "http://gotoevent.co/e/6qe/7siow/tix", "time_end":
+        "2024-03-03T14:00:00-08:00", "time_start": "2024-03-01T19:00:00-08:00", "location":
+        {"address1": "600 N Delaware St", "address2": "", "address3": "", "city":
+        "San Mateo", "zip_code": "94401", "country": "US", "state": "CA", "display_address":
+        ["600 N Delaware St", "San Mateo, CA 94401"], "cross_streets": ""}, "business_id":
+        "san-mateo-performing-arts-center-san-mateo"}, {"attending_count": 3, "category":
+        "fashion", "cost": null, "cost_max": null, "description": "Hello, Pinole!  Join
+        us for a pre-opening shopping experience at your all-new Nordstrom Rack store.\nTuesday,
+        March 5 (RSVP Required)\u200b\n4-8 PM\n\nJoin us for...", "event_site_url":
+        "https://www.yelp.com/events/pinole-nordstrom-rack-vip-shopping-party-at-pinole-vista-crossing?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "pinole-nordstrom-rack-vip-shopping-party-at-pinole-vista-crossing",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/PiOkAdSLgLHpRKNsoClDPA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 37.984771386783144, "longitude": -122.311726, "name": "Nordstrom
+        Rack VIP Shopping Party at Pinole Vista Crossing", "tickets_url": "https://nordstromrsvp.com/Pinole",
+        "time_end": "2024-03-05T20:00:00-08:00", "time_start": "2024-03-05T16:00:00-08:00",
+        "location": {"address1": "1330 Fitzgerald Dr", "address2": "Ste B", "address3":
+        null, "city": "Pinole", "zip_code": "94564", "country": "US", "state": "CA",
+        "display_address": ["1330 Fitzgerald Dr", "Ste B", "Pinole, CA 94564"], "cross_streets":
+        ""}, "business_id": "nordstrom-rack-opening-soon-pinole-2"}], "total": 10}'
+  recorded_at: Thu, 29 Feb 2024 18:39:36 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=10&location=San%20Francisco&price=1&radius=40000&start_date=1709232531
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Ratelimit-Remaining:
+      - '145.0'
+      X-Zipkin-Id:
+      - 16efee5dc1228c55
+      X-B3-Sampled:
+      - '0'
+      X-Tracing-Auth:
+      - eb5o9T7GliQ4nSz71u99JPmxNllIJkRTx8CPH5J4_Cg
+      Server:
+      - envoy
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-nt7rt; site=public_api_v3
+      Ratelimit-Resettime:
+      - '2024-03-01T00:00:00+00:00'
+      Ratelimit-Dailylimit:
+      - '500.0'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-180-149-useast1bprod
+      X-Extlb:
+      - 10-65-180-149-useast1bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Thu, 29 Feb 2024 18:48:51 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8269-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 1, "category": "other", "cost": null,
+        "cost_max": null, "description": "NEON invites SF Yelpers to receive a complimentary
+        day pass to redeem at NEON to utilize workspace and all amenities, as well
+        as participation in any...", "event_site_url": "https://www.yelp.com/events/san-francisco-yelp-community-experience-neon?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-yelp-community-experience-neon", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/MZjsyJSzpHctAWiCeYYTAw/o.jpg",
+        "interested_count": 109, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.79776469999999, "longitude": -122.4317585, "name": "Yelp
+        Community Experience: NEON", "tickets_url": null, "time_end": "2024-03-01T18:00:00-08:00",
+        "time_start": "2024-02-26T08:00:00-08:00", "location": {"address1": "1974
+        Union St", "address2": null, "address3": "", "city": "San Francisco", "zip_code":
+        "94123", "country": "US", "state": "CA", "display_address": ["1974 Union St",
+        "San Francisco, CA 94123"], "cross_streets": "Charlton Ct & Buchanan St"},
+        "business_id": "neon-san-francisco-2"}, {"attending_count": 188, "category":
+        "other", "cost": null, "cost_max": null, "description": "Are you ready to
+        celebrate Women''s History Month with #WomenRunSF in March? \nIn fact, we''re
+        so excited that we''re going to be keping the celebration going...", "event_site_url":
+        "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 29, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nWomen
+        owned and operated since 2017, Avotoasty was founded by Sofia Pinzon, a native...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-avotoasty?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-avotoasty", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/ZPucO5muvXMuLFnxE9p-Ig/o.jpg", "interested_count":
+        144, "is_canceled": false, "is_free": true, "is_official": true, "latitude":
+        37.7981839, "longitude": -122.428801, "name": "Women Run SF! Yelp Community
+        Event: Avotoasty", "tickets_url": null, "time_end": "2024-03-07T20:00:00-08:00",
+        "time_start": "2024-03-07T17:00:00-08:00", "location": {"address1": "1796
+        Union St", "address2": "", "address3": null, "city": "San Francisco", "zip_code":
+        "94123", "country": "US", "state": "CA", "display_address": ["1796 Union St",
+        "San Francisco, CA 94123"], "cross_streets": "Octavia St & Gough St"}, "business_id":
+        "yelp-community-event-avotoasty-san-francisco"}, {"attending_count": 1, "category":
+        "food-and-drink", "cost": null, "cost_max": null, "description": "#WomenRunSF
+        - https://www.yelp.com/events/san-francisco-women-run-sf\n\nCelebrate #26
+        top 100 places to drink in the Bay Area!\nLost Cat Bar & Bites is a...", "event_site_url":
+        "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/eli_Ttx01rkP050WwQvvEQ/o.jpg",
+        "interested_count": 156, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7877655, "longitude": -122.4114052, "name": "Women Run
+        SF! Yelp Community Event: Lost Cat Bar & Bites x Cantoo Latin Asian Rotisserie
+        x Zaddy''s", "tickets_url": null, "time_end": "2024-03-09T16:00:00-08:00",
+        "time_start": "2024-03-09T14:00:00-08:00", "location": {"address1": "587 Post
+        St", "address2": "", "address3": null, "city": "San Francisco", "zip_code":
+        "94102", "country": "US", "state": "CA", "display_address": ["587 Post St",
+        "San Francisco, CA 94102"], "cross_streets": "Taylor St & Mason St"}, "business_id":
+        "yelp-community-event-lost-cat-x-cantoo-x-zaddys-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 261, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nRecently
+        under new, women-owned and largely women operated management, Skylark is...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-skylark-x-una-vodka-x-21-seeds?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-skylark-x-una-vodka-x-21-seeds",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/OLGXk2OiCpRHYe-Czz2wyQ/o.jpg",
+        "interested_count": 66, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7647142, "longitude": -122.4216181, "name": "Women Run
+        SF! Yelp Community Event: Skylark x UNA Vodka x 21 Seeds", "tickets_url":
+        null, "time_end": "2024-03-13T21:00:00-07:00", "time_start": "2024-03-13T17:00:00-07:00",
+        "location": {"address1": "3089 16th St", "address2": "", "address3": null,
+        "city": "San Francisco", "zip_code": "94103", "country": "US", "state": "CA",
+        "display_address": ["3089 16th St", "San Francisco, CA 94103"], "cross_streets":
+        "Valencia St & Caledonia St"}, "business_id": "yelp-community-event-skylark-x-una-vodka-x-21-seeds-san-francisco"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nEl
+        P\u00edpila is led by a trio of women - mother Guadalupe Guerrero and her
+        two daughters...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-el-pipila?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-el-pipila", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/ephoto/sjrSA2ZgwLv5XU_Jasiykg/o.jpg", "interested_count":
+        147, "is_canceled": false, "is_free": false, "is_official": true, "latitude":
+        37.7714957, "longitude": -122.4049441, "name": "Women Run SF! Yelp Community
+        Experience: El Pipila", "tickets_url": null, "time_end": "2024-03-23T15:00:00-07:00",
+        "time_start": "2024-03-18T10:00:00-07:00", "location": {"address1": "879 Brannan
+        St", "address2": "", "address3": "", "city": "San Francisco", "zip_code":
+        "94103", "country": "US", "state": "CA", "display_address": ["879 Brannan
+        St", "San Francisco, CA 94103"], "cross_streets": "8th St"}, "business_id":
+        "el-p\u00edpila-san-francisco-2"}, {"attending_count": 4, "category": "charities",
+        "cost": null, "cost_max": null, "description": "You''re Invited to Our HUGE
+        Spring Rummage Sale!\n\nSaturday, March 2 (10am* - 3pm)   &\nSunday, March
+        3 (11am* - 3pm)  \n*No early birds please!\n\nAll are...", "event_site_url":
+        "https://www.yelp.com/events/union-city-huge-spring-rummage-sale-2024?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "union-city-huge-spring-rummage-sale-2024", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/5Uo2JD-mbhd1NLF49YxnJQ/o.jpg",
+        "interested_count": 2, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 37.59331931272346, "longitude": -122.0452259500602, "name":
+        "HUGE Spring Rummage Sale, 2024!", "tickets_url": "http://sacbc.org", "time_end":
+        "2024-03-02T15:00:00-08:00", "time_start": "2024-03-02T10:00:00-08:00", "location":
+        {"address1": "32975 Alvarado Niles Rd", "address2": "", "address3": "", "city":
+        "Union City", "zip_code": "94587", "country": "US", "state": "CA", "display_address":
+        ["32975 Alvarado Niles Rd", "Union City, CA 94587"], "cross_streets": "Dowe
+        Ave"}, "business_id": "southern-alameda-county-buddhist-church-union-city"},
+        {"attending_count": 1, "category": "performing-arts", "cost": 15.0, "cost_max":
+        20.0, "description": "Join us for \"Goosebumps The Musical!\" Brooke and Zeke
+        are thrilled to be starring in a mysterious show called The Phantom, and not
+        the least bit frightened...", "event_site_url": "https://www.yelp.com/events/san-mateo-goosebumps-the-musical?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-mateo-goosebumps-the-musical", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/rwpA9Y2Pl1O5IlXASDA-TQ/o.jpg",
+        "interested_count": 2, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.5776072, "longitude": -122.3306804, "name": "Goosebumps
+        The Musical", "tickets_url": "http://gotoevent.co/e/6qe/7siow/tix", "time_end":
+        "2024-03-03T14:00:00-08:00", "time_start": "2024-03-01T19:00:00-08:00", "location":
+        {"address1": "600 N Delaware St", "address2": "", "address3": "", "city":
+        "San Mateo", "zip_code": "94401", "country": "US", "state": "CA", "display_address":
+        ["600 N Delaware St", "San Mateo, CA 94401"], "cross_streets": ""}, "business_id":
+        "san-mateo-performing-arts-center-san-mateo"}, {"attending_count": 3, "category":
+        "fashion", "cost": null, "cost_max": null, "description": "Hello, Pinole!  Join
+        us for a pre-opening shopping experience at your all-new Nordstrom Rack store.\nTuesday,
+        March 5 (RSVP Required)\u200b\n4-8 PM\n\nJoin us for...", "event_site_url":
+        "https://www.yelp.com/events/pinole-nordstrom-rack-vip-shopping-party-at-pinole-vista-crossing?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "pinole-nordstrom-rack-vip-shopping-party-at-pinole-vista-crossing",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/PiOkAdSLgLHpRKNsoClDPA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 37.984771386783144, "longitude": -122.311726, "name": "Nordstrom
+        Rack VIP Shopping Party at Pinole Vista Crossing", "tickets_url": "https://nordstromrsvp.com/Pinole",
+        "time_end": "2024-03-05T20:00:00-08:00", "time_start": "2024-03-05T16:00:00-08:00",
+        "location": {"address1": "1330 Fitzgerald Dr", "address2": "Ste B", "address3":
+        null, "city": "Pinole", "zip_code": "94564", "country": "US", "state": "CA",
+        "display_address": ["1330 Fitzgerald Dr", "Ste B", "Pinole, CA 94564"], "cross_streets":
+        ""}, "business_id": "nordstrom-rack-opening-soon-pinole-2"}], "total": 10}'
+  recorded_at: Thu, 29 Feb 2024 18:48:51 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=10&location=San%20Francisco&price=1&radius=40000&start_date=1709232886
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Server:
+      - envoy
+      Ratelimit-Resettime:
+      - '2024-03-01T00:00:00+00:00'
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-j6f2w; site=public_api_v3
+      X-Tracing-Auth:
+      - 8GXh8jQmb9tvLH-rTbcDm2rNc4L_7ONWLe9rDmgC1cw
+      X-B3-Sampled:
+      - '0'
+      X-Zipkin-Id:
+      - a7eff3ff2012fa9c
+      Ratelimit-Dailylimit:
+      - '500.0'
+      Ratelimit-Remaining:
+      - '131.0'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-92-107-useast1aprod
+      X-Extlb:
+      - 10-65-92-107-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Thu, 29 Feb 2024 18:54:46 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8227-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 1, "category": "other", "cost": null,
+        "cost_max": null, "description": "NEON invites SF Yelpers to receive a complimentary
+        day pass to redeem at NEON to utilize workspace and all amenities, as well
+        as participation in any...", "event_site_url": "https://www.yelp.com/events/san-francisco-yelp-community-experience-neon?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-yelp-community-experience-neon", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/MZjsyJSzpHctAWiCeYYTAw/o.jpg",
+        "interested_count": 109, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.79776469999999, "longitude": -122.4317585, "name": "Yelp
+        Community Experience: NEON", "tickets_url": null, "time_end": "2024-03-01T18:00:00-08:00",
+        "time_start": "2024-02-26T08:00:00-08:00", "location": {"address1": "1974
+        Union St", "address2": null, "address3": "", "city": "San Francisco", "zip_code":
+        "94123", "country": "US", "state": "CA", "display_address": ["1974 Union St",
+        "San Francisco, CA 94123"], "cross_streets": "Charlton Ct & Buchanan St"},
+        "business_id": "neon-san-francisco-2"}, {"attending_count": 188, "category":
+        "other", "cost": null, "cost_max": null, "description": "Are you ready to
+        celebrate Women''s History Month with #WomenRunSF in March? \nIn fact, we''re
+        so excited that we''re going to be keping the celebration going...", "event_site_url":
+        "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 29, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nWomen
+        owned and operated since 2017, Avotoasty was founded by Sofia Pinzon, a native...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-avotoasty?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-avotoasty", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/ZPucO5muvXMuLFnxE9p-Ig/o.jpg", "interested_count":
+        144, "is_canceled": false, "is_free": true, "is_official": true, "latitude":
+        37.7981839, "longitude": -122.428801, "name": "Women Run SF! Yelp Community
+        Event: Avotoasty", "tickets_url": null, "time_end": "2024-03-07T20:00:00-08:00",
+        "time_start": "2024-03-07T17:00:00-08:00", "location": {"address1": "1796
+        Union St", "address2": "", "address3": null, "city": "San Francisco", "zip_code":
+        "94123", "country": "US", "state": "CA", "display_address": ["1796 Union St",
+        "San Francisco, CA 94123"], "cross_streets": "Octavia St & Gough St"}, "business_id":
+        "yelp-community-event-avotoasty-san-francisco"}, {"attending_count": 1, "category":
+        "food-and-drink", "cost": null, "cost_max": null, "description": "#WomenRunSF
+        - https://www.yelp.com/events/san-francisco-women-run-sf\n\nCelebrate #26
+        top 100 places to drink in the Bay Area!\nLost Cat Bar & Bites is a...", "event_site_url":
+        "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/eli_Ttx01rkP050WwQvvEQ/o.jpg",
+        "interested_count": 156, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7877655, "longitude": -122.4114052, "name": "Women Run
+        SF! Yelp Community Event: Lost Cat Bar & Bites x Cantoo Latin Asian Rotisserie
+        x Zaddy''s", "tickets_url": null, "time_end": "2024-03-09T16:00:00-08:00",
+        "time_start": "2024-03-09T14:00:00-08:00", "location": {"address1": "587 Post
+        St", "address2": "", "address3": null, "city": "San Francisco", "zip_code":
+        "94102", "country": "US", "state": "CA", "display_address": ["587 Post St",
+        "San Francisco, CA 94102"], "cross_streets": "Taylor St & Mason St"}, "business_id":
+        "yelp-community-event-lost-cat-x-cantoo-x-zaddys-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 261, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nRecently
+        under new, women-owned and largely women operated management, Skylark is...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-skylark-x-una-vodka-x-21-seeds?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-skylark-x-una-vodka-x-21-seeds",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/OLGXk2OiCpRHYe-Czz2wyQ/o.jpg",
+        "interested_count": 66, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7647142, "longitude": -122.4216181, "name": "Women Run
+        SF! Yelp Community Event: Skylark x UNA Vodka x 21 Seeds", "tickets_url":
+        null, "time_end": "2024-03-13T21:00:00-07:00", "time_start": "2024-03-13T17:00:00-07:00",
+        "location": {"address1": "3089 16th St", "address2": "", "address3": null,
+        "city": "San Francisco", "zip_code": "94103", "country": "US", "state": "CA",
+        "display_address": ["3089 16th St", "San Francisco, CA 94103"], "cross_streets":
+        "Valencia St & Caledonia St"}, "business_id": "yelp-community-event-skylark-x-una-vodka-x-21-seeds-san-francisco"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nEl
+        P\u00edpila is led by a trio of women - mother Guadalupe Guerrero and her
+        two daughters...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-el-pipila?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-el-pipila", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/ephoto/sjrSA2ZgwLv5XU_Jasiykg/o.jpg", "interested_count":
+        147, "is_canceled": false, "is_free": false, "is_official": true, "latitude":
+        37.7714957, "longitude": -122.4049441, "name": "Women Run SF! Yelp Community
+        Experience: El Pipila", "tickets_url": null, "time_end": "2024-03-23T15:00:00-07:00",
+        "time_start": "2024-03-18T10:00:00-07:00", "location": {"address1": "879 Brannan
+        St", "address2": "", "address3": "", "city": "San Francisco", "zip_code":
+        "94103", "country": "US", "state": "CA", "display_address": ["879 Brannan
+        St", "San Francisco, CA 94103"], "cross_streets": "8th St"}, "business_id":
+        "el-p\u00edpila-san-francisco-2"}, {"attending_count": 4, "category": "charities",
+        "cost": null, "cost_max": null, "description": "You''re Invited to Our HUGE
+        Spring Rummage Sale!\n\nSaturday, March 2 (10am* - 3pm)   &\nSunday, March
+        3 (11am* - 3pm)  \n*No early birds please!\n\nAll are...", "event_site_url":
+        "https://www.yelp.com/events/union-city-huge-spring-rummage-sale-2024?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "union-city-huge-spring-rummage-sale-2024", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/5Uo2JD-mbhd1NLF49YxnJQ/o.jpg",
+        "interested_count": 2, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 37.59331931272346, "longitude": -122.0452259500602, "name":
+        "HUGE Spring Rummage Sale, 2024!", "tickets_url": "http://sacbc.org", "time_end":
+        "2024-03-02T15:00:00-08:00", "time_start": "2024-03-02T10:00:00-08:00", "location":
+        {"address1": "32975 Alvarado Niles Rd", "address2": "", "address3": "", "city":
+        "Union City", "zip_code": "94587", "country": "US", "state": "CA", "display_address":
+        ["32975 Alvarado Niles Rd", "Union City, CA 94587"], "cross_streets": "Dowe
+        Ave"}, "business_id": "southern-alameda-county-buddhist-church-union-city"},
+        {"attending_count": 1, "category": "performing-arts", "cost": 15.0, "cost_max":
+        20.0, "description": "Join us for \"Goosebumps The Musical!\" Brooke and Zeke
+        are thrilled to be starring in a mysterious show called The Phantom, and not
+        the least bit frightened...", "event_site_url": "https://www.yelp.com/events/san-mateo-goosebumps-the-musical?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-mateo-goosebumps-the-musical", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/rwpA9Y2Pl1O5IlXASDA-TQ/o.jpg",
+        "interested_count": 2, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.5776072, "longitude": -122.3306804, "name": "Goosebumps
+        The Musical", "tickets_url": "http://gotoevent.co/e/6qe/7siow/tix", "time_end":
+        "2024-03-03T14:00:00-08:00", "time_start": "2024-03-01T19:00:00-08:00", "location":
+        {"address1": "600 N Delaware St", "address2": "", "address3": "", "city":
+        "San Mateo", "zip_code": "94401", "country": "US", "state": "CA", "display_address":
+        ["600 N Delaware St", "San Mateo, CA 94401"], "cross_streets": ""}, "business_id":
+        "san-mateo-performing-arts-center-san-mateo"}, {"attending_count": 3, "category":
+        "fashion", "cost": null, "cost_max": null, "description": "Hello, Pinole!  Join
+        us for a pre-opening shopping experience at your all-new Nordstrom Rack store.\nTuesday,
+        March 5 (RSVP Required)\u200b\n4-8 PM\n\nJoin us for...", "event_site_url":
+        "https://www.yelp.com/events/pinole-nordstrom-rack-vip-shopping-party-at-pinole-vista-crossing?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "pinole-nordstrom-rack-vip-shopping-party-at-pinole-vista-crossing",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/PiOkAdSLgLHpRKNsoClDPA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 37.984771386783144, "longitude": -122.311726, "name": "Nordstrom
+        Rack VIP Shopping Party at Pinole Vista Crossing", "tickets_url": "https://nordstromrsvp.com/Pinole",
+        "time_end": "2024-03-05T20:00:00-08:00", "time_start": "2024-03-05T16:00:00-08:00",
+        "location": {"address1": "1330 Fitzgerald Dr", "address2": "Ste B", "address3":
+        null, "city": "Pinole", "zip_code": "94564", "country": "US", "state": "CA",
+        "display_address": ["1330 Fitzgerald Dr", "Ste B", "Pinole, CA 94564"], "cross_streets":
+        ""}, "business_id": "nordstrom-rack-opening-soon-pinole-2"}], "total": 10}'
+  recorded_at: Thu, 29 Feb 2024 18:54:46 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=10&location=San%20Francisco&price=1&radius=40000&start_date=1709232893
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Ratelimit-Resettime:
+      - '2024-03-01T00:00:00+00:00'
+      X-Tracing-Auth:
+      - jMw6-2SVcQx_QvkQ7_GDOUQPtNse_DKSDEHe6CX9lBc
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-4zzfd; site=public_api_v3
+      Server:
+      - envoy
+      X-Zipkin-Id:
+      - fc0ba8ed92c462ea
+      Ratelimit-Dailylimit:
+      - '500.0'
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Remaining:
+      - '125.0'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-122-196-useast1aprod
+      X-Extlb:
+      - 10-65-122-196-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Thu, 29 Feb 2024 18:54:54 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8277-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 1, "category": "other", "cost": null,
+        "cost_max": null, "description": "NEON invites SF Yelpers to receive a complimentary
+        day pass to redeem at NEON to utilize workspace and all amenities, as well
+        as participation in any...", "event_site_url": "https://www.yelp.com/events/san-francisco-yelp-community-experience-neon?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-yelp-community-experience-neon", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/MZjsyJSzpHctAWiCeYYTAw/o.jpg",
+        "interested_count": 109, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.79776469999999, "longitude": -122.4317585, "name": "Yelp
+        Community Experience: NEON", "tickets_url": null, "time_end": "2024-03-01T18:00:00-08:00",
+        "time_start": "2024-02-26T08:00:00-08:00", "location": {"address1": "1974
+        Union St", "address2": null, "address3": "", "city": "San Francisco", "zip_code":
+        "94123", "country": "US", "state": "CA", "display_address": ["1974 Union St",
+        "San Francisco, CA 94123"], "cross_streets": "Charlton Ct & Buchanan St"},
+        "business_id": "neon-san-francisco-2"}, {"attending_count": 188, "category":
+        "other", "cost": null, "cost_max": null, "description": "Are you ready to
+        celebrate Women''s History Month with #WomenRunSF in March? \nIn fact, we''re
+        so excited that we''re going to be keping the celebration going...", "event_site_url":
+        "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 29, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nWomen
+        owned and operated since 2017, Avotoasty was founded by Sofia Pinzon, a native...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-avotoasty?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-avotoasty", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/ZPucO5muvXMuLFnxE9p-Ig/o.jpg", "interested_count":
+        144, "is_canceled": false, "is_free": true, "is_official": true, "latitude":
+        37.7981839, "longitude": -122.428801, "name": "Women Run SF! Yelp Community
+        Event: Avotoasty", "tickets_url": null, "time_end": "2024-03-07T20:00:00-08:00",
+        "time_start": "2024-03-07T17:00:00-08:00", "location": {"address1": "1796
+        Union St", "address2": "", "address3": null, "city": "San Francisco", "zip_code":
+        "94123", "country": "US", "state": "CA", "display_address": ["1796 Union St",
+        "San Francisco, CA 94123"], "cross_streets": "Octavia St & Gough St"}, "business_id":
+        "yelp-community-event-avotoasty-san-francisco"}, {"attending_count": 1, "category":
+        "food-and-drink", "cost": null, "cost_max": null, "description": "#WomenRunSF
+        - https://www.yelp.com/events/san-francisco-women-run-sf\n\nCelebrate #26
+        top 100 places to drink in the Bay Area!\nLost Cat Bar & Bites is a...", "event_site_url":
+        "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/eli_Ttx01rkP050WwQvvEQ/o.jpg",
+        "interested_count": 156, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7877655, "longitude": -122.4114052, "name": "Women Run
+        SF! Yelp Community Event: Lost Cat Bar & Bites x Cantoo Latin Asian Rotisserie
+        x Zaddy''s", "tickets_url": null, "time_end": "2024-03-09T16:00:00-08:00",
+        "time_start": "2024-03-09T14:00:00-08:00", "location": {"address1": "587 Post
+        St", "address2": "", "address3": null, "city": "San Francisco", "zip_code":
+        "94102", "country": "US", "state": "CA", "display_address": ["587 Post St",
+        "San Francisco, CA 94102"], "cross_streets": "Taylor St & Mason St"}, "business_id":
+        "yelp-community-event-lost-cat-x-cantoo-x-zaddys-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 261, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nRecently
+        under new, women-owned and largely women operated management, Skylark is...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-skylark-x-una-vodka-x-21-seeds?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-skylark-x-una-vodka-x-21-seeds",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/OLGXk2OiCpRHYe-Czz2wyQ/o.jpg",
+        "interested_count": 66, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7647142, "longitude": -122.4216181, "name": "Women Run
+        SF! Yelp Community Event: Skylark x UNA Vodka x 21 Seeds", "tickets_url":
+        null, "time_end": "2024-03-13T21:00:00-07:00", "time_start": "2024-03-13T17:00:00-07:00",
+        "location": {"address1": "3089 16th St", "address2": "", "address3": null,
+        "city": "San Francisco", "zip_code": "94103", "country": "US", "state": "CA",
+        "display_address": ["3089 16th St", "San Francisco, CA 94103"], "cross_streets":
+        "Valencia St & Caledonia St"}, "business_id": "yelp-community-event-skylark-x-una-vodka-x-21-seeds-san-francisco"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nEl
+        P\u00edpila is led by a trio of women - mother Guadalupe Guerrero and her
+        two daughters...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-el-pipila?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-el-pipila", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/ephoto/sjrSA2ZgwLv5XU_Jasiykg/o.jpg", "interested_count":
+        147, "is_canceled": false, "is_free": false, "is_official": true, "latitude":
+        37.7714957, "longitude": -122.4049441, "name": "Women Run SF! Yelp Community
+        Experience: El Pipila", "tickets_url": null, "time_end": "2024-03-23T15:00:00-07:00",
+        "time_start": "2024-03-18T10:00:00-07:00", "location": {"address1": "879 Brannan
+        St", "address2": "", "address3": "", "city": "San Francisco", "zip_code":
+        "94103", "country": "US", "state": "CA", "display_address": ["879 Brannan
+        St", "San Francisco, CA 94103"], "cross_streets": "8th St"}, "business_id":
+        "el-p\u00edpila-san-francisco-2"}, {"attending_count": 4, "category": "charities",
+        "cost": null, "cost_max": null, "description": "You''re Invited to Our HUGE
+        Spring Rummage Sale!\n\nSaturday, March 2 (10am* - 3pm)   &\nSunday, March
+        3 (11am* - 3pm)  \n*No early birds please!\n\nAll are...", "event_site_url":
+        "https://www.yelp.com/events/union-city-huge-spring-rummage-sale-2024?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "union-city-huge-spring-rummage-sale-2024", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/5Uo2JD-mbhd1NLF49YxnJQ/o.jpg",
+        "interested_count": 2, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 37.59331931272346, "longitude": -122.0452259500602, "name":
+        "HUGE Spring Rummage Sale, 2024!", "tickets_url": "http://sacbc.org", "time_end":
+        "2024-03-02T15:00:00-08:00", "time_start": "2024-03-02T10:00:00-08:00", "location":
+        {"address1": "32975 Alvarado Niles Rd", "address2": "", "address3": "", "city":
+        "Union City", "zip_code": "94587", "country": "US", "state": "CA", "display_address":
+        ["32975 Alvarado Niles Rd", "Union City, CA 94587"], "cross_streets": "Dowe
+        Ave"}, "business_id": "southern-alameda-county-buddhist-church-union-city"},
+        {"attending_count": 1, "category": "performing-arts", "cost": 15.0, "cost_max":
+        20.0, "description": "Join us for \"Goosebumps The Musical!\" Brooke and Zeke
+        are thrilled to be starring in a mysterious show called The Phantom, and not
+        the least bit frightened...", "event_site_url": "https://www.yelp.com/events/san-mateo-goosebumps-the-musical?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-mateo-goosebumps-the-musical", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/rwpA9Y2Pl1O5IlXASDA-TQ/o.jpg",
+        "interested_count": 2, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.5776072, "longitude": -122.3306804, "name": "Goosebumps
+        The Musical", "tickets_url": "http://gotoevent.co/e/6qe/7siow/tix", "time_end":
+        "2024-03-03T14:00:00-08:00", "time_start": "2024-03-01T19:00:00-08:00", "location":
+        {"address1": "600 N Delaware St", "address2": "", "address3": "", "city":
+        "San Mateo", "zip_code": "94401", "country": "US", "state": "CA", "display_address":
+        ["600 N Delaware St", "San Mateo, CA 94401"], "cross_streets": ""}, "business_id":
+        "san-mateo-performing-arts-center-san-mateo"}, {"attending_count": 3, "category":
+        "fashion", "cost": null, "cost_max": null, "description": "Hello, Pinole!  Join
+        us for a pre-opening shopping experience at your all-new Nordstrom Rack store.\nTuesday,
+        March 5 (RSVP Required)\u200b\n4-8 PM\n\nJoin us for...", "event_site_url":
+        "https://www.yelp.com/events/pinole-nordstrom-rack-vip-shopping-party-at-pinole-vista-crossing?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "pinole-nordstrom-rack-vip-shopping-party-at-pinole-vista-crossing",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/PiOkAdSLgLHpRKNsoClDPA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 37.984771386783144, "longitude": -122.311726, "name": "Nordstrom
+        Rack VIP Shopping Party at Pinole Vista Crossing", "tickets_url": "https://nordstromrsvp.com/Pinole",
+        "time_end": "2024-03-05T20:00:00-08:00", "time_start": "2024-03-05T16:00:00-08:00",
+        "location": {"address1": "1330 Fitzgerald Dr", "address2": "Ste B", "address3":
+        null, "city": "Pinole", "zip_code": "94564", "country": "US", "state": "CA",
+        "display_address": ["1330 Fitzgerald Dr", "Ste B", "Pinole, CA 94564"], "cross_streets":
+        ""}, "business_id": "nordstrom-rack-opening-soon-pinole-2"}], "total": 10}'
+  recorded_at: Thu, 29 Feb 2024 18:54:54 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=10&location=San%20Francisco&price=1&radius=40000&start_date=1709232918
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Tracing-Auth:
+      - qPBL_2q_RU1XCRrnzEb2aCbp4FZloIHxSVlAoaLDCDU
+      Ratelimit-Remaining:
+      - '118.0'
+      Ratelimit-Resettime:
+      - '2024-03-01T00:00:00+00:00'
+      X-B3-Sampled:
+      - '0'
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-526c8; site=public_api_v3
+      Ratelimit-Dailylimit:
+      - '500.0'
+      Server:
+      - envoy
+      X-Zipkin-Id:
+      - 5eae8996fea82a82
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-80-125-useast1aprod
+      X-Extlb:
+      - 10-65-80-125-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Thu, 29 Feb 2024 18:55:18 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8236-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 1, "category": "other", "cost": null,
+        "cost_max": null, "description": "NEON invites SF Yelpers to receive a complimentary
+        day pass to redeem at NEON to utilize workspace and all amenities, as well
+        as participation in any...", "event_site_url": "https://www.yelp.com/events/san-francisco-yelp-community-experience-neon?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-yelp-community-experience-neon", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/MZjsyJSzpHctAWiCeYYTAw/o.jpg",
+        "interested_count": 109, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.79776469999999, "longitude": -122.4317585, "name": "Yelp
+        Community Experience: NEON", "tickets_url": null, "time_end": "2024-03-01T18:00:00-08:00",
+        "time_start": "2024-02-26T08:00:00-08:00", "location": {"address1": "1974
+        Union St", "address2": null, "address3": "", "city": "San Francisco", "zip_code":
+        "94123", "country": "US", "state": "CA", "display_address": ["1974 Union St",
+        "San Francisco, CA 94123"], "cross_streets": "Charlton Ct & Buchanan St"},
+        "business_id": "neon-san-francisco-2"}, {"attending_count": 188, "category":
+        "other", "cost": null, "cost_max": null, "description": "Are you ready to
+        celebrate Women''s History Month with #WomenRunSF in March? \nIn fact, we''re
+        so excited that we''re going to be keping the celebration going...", "event_site_url":
+        "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 29, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nWomen
+        owned and operated since 2017, Avotoasty was founded by Sofia Pinzon, a native...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-avotoasty?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-avotoasty", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/ZPucO5muvXMuLFnxE9p-Ig/o.jpg", "interested_count":
+        144, "is_canceled": false, "is_free": true, "is_official": true, "latitude":
+        37.7981839, "longitude": -122.428801, "name": "Women Run SF! Yelp Community
+        Event: Avotoasty", "tickets_url": null, "time_end": "2024-03-07T20:00:00-08:00",
+        "time_start": "2024-03-07T17:00:00-08:00", "location": {"address1": "1796
+        Union St", "address2": "", "address3": null, "city": "San Francisco", "zip_code":
+        "94123", "country": "US", "state": "CA", "display_address": ["1796 Union St",
+        "San Francisco, CA 94123"], "cross_streets": "Octavia St & Gough St"}, "business_id":
+        "yelp-community-event-avotoasty-san-francisco"}, {"attending_count": 1, "category":
+        "food-and-drink", "cost": null, "cost_max": null, "description": "#WomenRunSF
+        - https://www.yelp.com/events/san-francisco-women-run-sf\n\nCelebrate #26
+        top 100 places to drink in the Bay Area!\nLost Cat Bar & Bites is a...", "event_site_url":
+        "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/eli_Ttx01rkP050WwQvvEQ/o.jpg",
+        "interested_count": 156, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7877655, "longitude": -122.4114052, "name": "Women Run
+        SF! Yelp Community Event: Lost Cat Bar & Bites x Cantoo Latin Asian Rotisserie
+        x Zaddy''s", "tickets_url": null, "time_end": "2024-03-09T16:00:00-08:00",
+        "time_start": "2024-03-09T14:00:00-08:00", "location": {"address1": "587 Post
+        St", "address2": "", "address3": null, "city": "San Francisco", "zip_code":
+        "94102", "country": "US", "state": "CA", "display_address": ["587 Post St",
+        "San Francisco, CA 94102"], "cross_streets": "Taylor St & Mason St"}, "business_id":
+        "yelp-community-event-lost-cat-x-cantoo-x-zaddys-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 261, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nRecently
+        under new, women-owned and largely women operated management, Skylark is...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-skylark-x-una-vodka-x-21-seeds?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-skylark-x-una-vodka-x-21-seeds",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/OLGXk2OiCpRHYe-Czz2wyQ/o.jpg",
+        "interested_count": 66, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7647142, "longitude": -122.4216181, "name": "Women Run
+        SF! Yelp Community Event: Skylark x UNA Vodka x 21 Seeds", "tickets_url":
+        null, "time_end": "2024-03-13T21:00:00-07:00", "time_start": "2024-03-13T17:00:00-07:00",
+        "location": {"address1": "3089 16th St", "address2": "", "address3": null,
+        "city": "San Francisco", "zip_code": "94103", "country": "US", "state": "CA",
+        "display_address": ["3089 16th St", "San Francisco, CA 94103"], "cross_streets":
+        "Valencia St & Caledonia St"}, "business_id": "yelp-community-event-skylark-x-una-vodka-x-21-seeds-san-francisco"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nEl
+        P\u00edpila is led by a trio of women - mother Guadalupe Guerrero and her
+        two daughters...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-el-pipila?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-el-pipila", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/ephoto/sjrSA2ZgwLv5XU_Jasiykg/o.jpg", "interested_count":
+        147, "is_canceled": false, "is_free": false, "is_official": true, "latitude":
+        37.7714957, "longitude": -122.4049441, "name": "Women Run SF! Yelp Community
+        Experience: El Pipila", "tickets_url": null, "time_end": "2024-03-23T15:00:00-07:00",
+        "time_start": "2024-03-18T10:00:00-07:00", "location": {"address1": "879 Brannan
+        St", "address2": "", "address3": "", "city": "San Francisco", "zip_code":
+        "94103", "country": "US", "state": "CA", "display_address": ["879 Brannan
+        St", "San Francisco, CA 94103"], "cross_streets": "8th St"}, "business_id":
+        "el-p\u00edpila-san-francisco-2"}, {"attending_count": 4, "category": "charities",
+        "cost": null, "cost_max": null, "description": "You''re Invited to Our HUGE
+        Spring Rummage Sale!\n\nSaturday, March 2 (10am* - 3pm)   &\nSunday, March
+        3 (11am* - 3pm)  \n*No early birds please!\n\nAll are...", "event_site_url":
+        "https://www.yelp.com/events/union-city-huge-spring-rummage-sale-2024?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "union-city-huge-spring-rummage-sale-2024", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/5Uo2JD-mbhd1NLF49YxnJQ/o.jpg",
+        "interested_count": 2, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 37.59331931272346, "longitude": -122.0452259500602, "name":
+        "HUGE Spring Rummage Sale, 2024!", "tickets_url": "http://sacbc.org", "time_end":
+        "2024-03-02T15:00:00-08:00", "time_start": "2024-03-02T10:00:00-08:00", "location":
+        {"address1": "32975 Alvarado Niles Rd", "address2": "", "address3": "", "city":
+        "Union City", "zip_code": "94587", "country": "US", "state": "CA", "display_address":
+        ["32975 Alvarado Niles Rd", "Union City, CA 94587"], "cross_streets": "Dowe
+        Ave"}, "business_id": "southern-alameda-county-buddhist-church-union-city"},
+        {"attending_count": 1, "category": "performing-arts", "cost": 15.0, "cost_max":
+        20.0, "description": "Join us for \"Goosebumps The Musical!\" Brooke and Zeke
+        are thrilled to be starring in a mysterious show called The Phantom, and not
+        the least bit frightened...", "event_site_url": "https://www.yelp.com/events/san-mateo-goosebumps-the-musical?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-mateo-goosebumps-the-musical", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/rwpA9Y2Pl1O5IlXASDA-TQ/o.jpg",
+        "interested_count": 2, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.5776072, "longitude": -122.3306804, "name": "Goosebumps
+        The Musical", "tickets_url": "http://gotoevent.co/e/6qe/7siow/tix", "time_end":
+        "2024-03-03T14:00:00-08:00", "time_start": "2024-03-01T19:00:00-08:00", "location":
+        {"address1": "600 N Delaware St", "address2": "", "address3": "", "city":
+        "San Mateo", "zip_code": "94401", "country": "US", "state": "CA", "display_address":
+        ["600 N Delaware St", "San Mateo, CA 94401"], "cross_streets": ""}, "business_id":
+        "san-mateo-performing-arts-center-san-mateo"}, {"attending_count": 3, "category":
+        "fashion", "cost": null, "cost_max": null, "description": "Hello, Pinole!  Join
+        us for a pre-opening shopping experience at your all-new Nordstrom Rack store.\nTuesday,
+        March 5 (RSVP Required)\u200b\n4-8 PM\n\nJoin us for...", "event_site_url":
+        "https://www.yelp.com/events/pinole-nordstrom-rack-vip-shopping-party-at-pinole-vista-crossing?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "pinole-nordstrom-rack-vip-shopping-party-at-pinole-vista-crossing",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/PiOkAdSLgLHpRKNsoClDPA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 37.984771386783144, "longitude": -122.311726, "name": "Nordstrom
+        Rack VIP Shopping Party at Pinole Vista Crossing", "tickets_url": "https://nordstromrsvp.com/Pinole",
+        "time_end": "2024-03-05T20:00:00-08:00", "time_start": "2024-03-05T16:00:00-08:00",
+        "location": {"address1": "1330 Fitzgerald Dr", "address2": "Ste B", "address3":
+        null, "city": "Pinole", "zip_code": "94564", "country": "US", "state": "CA",
+        "display_address": ["1330 Fitzgerald Dr", "Ste B", "Pinole, CA 94564"], "cross_streets":
+        ""}, "business_id": "nordstrom-rack-opening-soon-pinole-2"}], "total": 10}'
+  recorded_at: Thu, 29 Feb 2024 18:55:18 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=10&location=San%20Francisco&price=1&radius=40000&start_date=1709232975
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Tracing-Auth:
+      - 2WxsZ9oqhkj-YTUiorSTvNY9G2rdr0wosH_-fMegzvk
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-q59pv; site=public_api_v3
+      X-Zipkin-Id:
+      - 849354d2d722e11c
+      Ratelimit-Dailylimit:
+      - '500.0'
+      Ratelimit-Remaining:
+      - '111.0'
+      Server:
+      - envoy
+      Ratelimit-Resettime:
+      - '2024-03-01T00:00:00+00:00'
+      X-B3-Sampled:
+      - '0'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-180-149-useast1bprod
+      X-Extlb:
+      - 10-65-180-149-useast1bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Thu, 29 Feb 2024 18:56:16 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8246-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 1, "category": "other", "cost": null,
+        "cost_max": null, "description": "NEON invites SF Yelpers to receive a complimentary
+        day pass to redeem at NEON to utilize workspace and all amenities, as well
+        as participation in any...", "event_site_url": "https://www.yelp.com/events/san-francisco-yelp-community-experience-neon?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-yelp-community-experience-neon", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/MZjsyJSzpHctAWiCeYYTAw/o.jpg",
+        "interested_count": 109, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.79776469999999, "longitude": -122.4317585, "name": "Yelp
+        Community Experience: NEON", "tickets_url": null, "time_end": "2024-03-01T18:00:00-08:00",
+        "time_start": "2024-02-26T08:00:00-08:00", "location": {"address1": "1974
+        Union St", "address2": null, "address3": "", "city": "San Francisco", "zip_code":
+        "94123", "country": "US", "state": "CA", "display_address": ["1974 Union St",
+        "San Francisco, CA 94123"], "cross_streets": "Charlton Ct & Buchanan St"},
+        "business_id": "neon-san-francisco-2"}, {"attending_count": 188, "category":
+        "other", "cost": null, "cost_max": null, "description": "Are you ready to
+        celebrate Women''s History Month with #WomenRunSF in March? \nIn fact, we''re
+        so excited that we''re going to be keping the celebration going...", "event_site_url":
+        "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 29, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nWomen
+        owned and operated since 2017, Avotoasty was founded by Sofia Pinzon, a native...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-avotoasty?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-avotoasty", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/ZPucO5muvXMuLFnxE9p-Ig/o.jpg", "interested_count":
+        144, "is_canceled": false, "is_free": true, "is_official": true, "latitude":
+        37.7981839, "longitude": -122.428801, "name": "Women Run SF! Yelp Community
+        Event: Avotoasty", "tickets_url": null, "time_end": "2024-03-07T20:00:00-08:00",
+        "time_start": "2024-03-07T17:00:00-08:00", "location": {"address1": "1796
+        Union St", "address2": "", "address3": null, "city": "San Francisco", "zip_code":
+        "94123", "country": "US", "state": "CA", "display_address": ["1796 Union St",
+        "San Francisco, CA 94123"], "cross_streets": "Octavia St & Gough St"}, "business_id":
+        "yelp-community-event-avotoasty-san-francisco"}, {"attending_count": 1, "category":
+        "food-and-drink", "cost": null, "cost_max": null, "description": "#WomenRunSF
+        - https://www.yelp.com/events/san-francisco-women-run-sf\n\nCelebrate #26
+        top 100 places to drink in the Bay Area!\nLost Cat Bar & Bites is a...", "event_site_url":
+        "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/eli_Ttx01rkP050WwQvvEQ/o.jpg",
+        "interested_count": 156, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7877655, "longitude": -122.4114052, "name": "Women Run
+        SF! Yelp Community Event: Lost Cat Bar & Bites x Cantoo Latin Asian Rotisserie
+        x Zaddy''s", "tickets_url": null, "time_end": "2024-03-09T16:00:00-08:00",
+        "time_start": "2024-03-09T14:00:00-08:00", "location": {"address1": "587 Post
+        St", "address2": "", "address3": null, "city": "San Francisco", "zip_code":
+        "94102", "country": "US", "state": "CA", "display_address": ["587 Post St",
+        "San Francisco, CA 94102"], "cross_streets": "Taylor St & Mason St"}, "business_id":
+        "yelp-community-event-lost-cat-x-cantoo-x-zaddys-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 261, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nRecently
+        under new, women-owned and largely women operated management, Skylark is...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-skylark-x-una-vodka-x-21-seeds?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-skylark-x-una-vodka-x-21-seeds",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/OLGXk2OiCpRHYe-Czz2wyQ/o.jpg",
+        "interested_count": 66, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7647142, "longitude": -122.4216181, "name": "Women Run
+        SF! Yelp Community Event: Skylark x UNA Vodka x 21 Seeds", "tickets_url":
+        null, "time_end": "2024-03-13T21:00:00-07:00", "time_start": "2024-03-13T17:00:00-07:00",
+        "location": {"address1": "3089 16th St", "address2": "", "address3": null,
+        "city": "San Francisco", "zip_code": "94103", "country": "US", "state": "CA",
+        "display_address": ["3089 16th St", "San Francisco, CA 94103"], "cross_streets":
+        "Valencia St & Caledonia St"}, "business_id": "yelp-community-event-skylark-x-una-vodka-x-21-seeds-san-francisco"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nEl
+        P\u00edpila is led by a trio of women - mother Guadalupe Guerrero and her
+        two daughters...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-el-pipila?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-el-pipila", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/ephoto/sjrSA2ZgwLv5XU_Jasiykg/o.jpg", "interested_count":
+        147, "is_canceled": false, "is_free": false, "is_official": true, "latitude":
+        37.7714957, "longitude": -122.4049441, "name": "Women Run SF! Yelp Community
+        Experience: El Pipila", "tickets_url": null, "time_end": "2024-03-23T15:00:00-07:00",
+        "time_start": "2024-03-18T10:00:00-07:00", "location": {"address1": "879 Brannan
+        St", "address2": "", "address3": "", "city": "San Francisco", "zip_code":
+        "94103", "country": "US", "state": "CA", "display_address": ["879 Brannan
+        St", "San Francisco, CA 94103"], "cross_streets": "8th St"}, "business_id":
+        "el-p\u00edpila-san-francisco-2"}, {"attending_count": 4, "category": "charities",
+        "cost": null, "cost_max": null, "description": "You''re Invited to Our HUGE
+        Spring Rummage Sale!\n\nSaturday, March 2 (10am* - 3pm)   &\nSunday, March
+        3 (11am* - 3pm)  \n*No early birds please!\n\nAll are...", "event_site_url":
+        "https://www.yelp.com/events/union-city-huge-spring-rummage-sale-2024?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "union-city-huge-spring-rummage-sale-2024", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/5Uo2JD-mbhd1NLF49YxnJQ/o.jpg",
+        "interested_count": 2, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 37.59331931272346, "longitude": -122.0452259500602, "name":
+        "HUGE Spring Rummage Sale, 2024!", "tickets_url": "http://sacbc.org", "time_end":
+        "2024-03-02T15:00:00-08:00", "time_start": "2024-03-02T10:00:00-08:00", "location":
+        {"address1": "32975 Alvarado Niles Rd", "address2": "", "address3": "", "city":
+        "Union City", "zip_code": "94587", "country": "US", "state": "CA", "display_address":
+        ["32975 Alvarado Niles Rd", "Union City, CA 94587"], "cross_streets": "Dowe
+        Ave"}, "business_id": "southern-alameda-county-buddhist-church-union-city"},
+        {"attending_count": 1, "category": "performing-arts", "cost": 15.0, "cost_max":
+        20.0, "description": "Join us for \"Goosebumps The Musical!\" Brooke and Zeke
+        are thrilled to be starring in a mysterious show called The Phantom, and not
+        the least bit frightened...", "event_site_url": "https://www.yelp.com/events/san-mateo-goosebumps-the-musical?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-mateo-goosebumps-the-musical", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/rwpA9Y2Pl1O5IlXASDA-TQ/o.jpg",
+        "interested_count": 2, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.5776072, "longitude": -122.3306804, "name": "Goosebumps
+        The Musical", "tickets_url": "http://gotoevent.co/e/6qe/7siow/tix", "time_end":
+        "2024-03-03T14:00:00-08:00", "time_start": "2024-03-01T19:00:00-08:00", "location":
+        {"address1": "600 N Delaware St", "address2": "", "address3": "", "city":
+        "San Mateo", "zip_code": "94401", "country": "US", "state": "CA", "display_address":
+        ["600 N Delaware St", "San Mateo, CA 94401"], "cross_streets": ""}, "business_id":
+        "san-mateo-performing-arts-center-san-mateo"}, {"attending_count": 3, "category":
+        "fashion", "cost": null, "cost_max": null, "description": "Hello, Pinole!  Join
+        us for a pre-opening shopping experience at your all-new Nordstrom Rack store.\nTuesday,
+        March 5 (RSVP Required)\u200b\n4-8 PM\n\nJoin us for...", "event_site_url":
+        "https://www.yelp.com/events/pinole-nordstrom-rack-vip-shopping-party-at-pinole-vista-crossing?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "pinole-nordstrom-rack-vip-shopping-party-at-pinole-vista-crossing",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/PiOkAdSLgLHpRKNsoClDPA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 37.984771386783144, "longitude": -122.311726, "name": "Nordstrom
+        Rack VIP Shopping Party at Pinole Vista Crossing", "tickets_url": "https://nordstromrsvp.com/Pinole",
+        "time_end": "2024-03-05T20:00:00-08:00", "time_start": "2024-03-05T16:00:00-08:00",
+        "location": {"address1": "1330 Fitzgerald Dr", "address2": "Ste B", "address3":
+        null, "city": "Pinole", "zip_code": "94564", "country": "US", "state": "CA",
+        "display_address": ["1330 Fitzgerald Dr", "Ste B", "Pinole, CA 94564"], "cross_streets":
+        ""}, "business_id": "nordstrom-rack-opening-soon-pinole-2"}], "total": 10}'
+  recorded_at: Thu, 29 Feb 2024 18:56:16 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=10&location=San%20Francisco&price=1&radius=40000&start_date=1709234007
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Ratelimit-Remaining:
+      - '91.0'
+      X-Zipkin-Id:
+      - ad3979604eaa666b
+      X-B3-Sampled:
+      - '0'
+      X-Tracing-Auth:
+      - z4A7RNMigDIrQNOS5tyA1cNAw-51_1-tIOy2OK7xa7k
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-nt7rt; site=public_api_v3
+      Server:
+      - envoy
+      Ratelimit-Resettime:
+      - '2024-03-01T00:00:00+00:00'
+      Ratelimit-Dailylimit:
+      - '500.0'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-82-75-useast1aprod
+      X-Extlb:
+      - 10-65-82-75-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Thu, 29 Feb 2024 19:13:28 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8275-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 1, "category": "other", "cost": null,
+        "cost_max": null, "description": "NEON invites SF Yelpers to receive a complimentary
+        day pass to redeem at NEON to utilize workspace and all amenities, as well
+        as participation in any...", "event_site_url": "https://www.yelp.com/events/san-francisco-yelp-community-experience-neon?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-yelp-community-experience-neon", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/MZjsyJSzpHctAWiCeYYTAw/o.jpg",
+        "interested_count": 109, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.79776469999999, "longitude": -122.4317585, "name": "Yelp
+        Community Experience: NEON", "tickets_url": null, "time_end": "2024-03-01T18:00:00-08:00",
+        "time_start": "2024-02-26T08:00:00-08:00", "location": {"address1": "1974
+        Union St", "address2": null, "address3": "", "city": "San Francisco", "zip_code":
+        "94123", "country": "US", "state": "CA", "display_address": ["1974 Union St",
+        "San Francisco, CA 94123"], "cross_streets": "Charlton Ct & Buchanan St"},
+        "business_id": "neon-san-francisco-2"}, {"attending_count": 188, "category":
+        "other", "cost": null, "cost_max": null, "description": "Are you ready to
+        celebrate Women''s History Month with #WomenRunSF in March? \nIn fact, we''re
+        so excited that we''re going to be keping the celebration going...", "event_site_url":
+        "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 29, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nWomen
+        owned and operated since 2017, Avotoasty was founded by Sofia Pinzon, a native...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-avotoasty?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-avotoasty", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/ZPucO5muvXMuLFnxE9p-Ig/o.jpg", "interested_count":
+        144, "is_canceled": false, "is_free": true, "is_official": true, "latitude":
+        37.7981839, "longitude": -122.428801, "name": "Women Run SF! Yelp Community
+        Event: Avotoasty", "tickets_url": null, "time_end": "2024-03-07T20:00:00-08:00",
+        "time_start": "2024-03-07T17:00:00-08:00", "location": {"address1": "1796
+        Union St", "address2": "", "address3": null, "city": "San Francisco", "zip_code":
+        "94123", "country": "US", "state": "CA", "display_address": ["1796 Union St",
+        "San Francisco, CA 94123"], "cross_streets": "Octavia St & Gough St"}, "business_id":
+        "yelp-community-event-avotoasty-san-francisco"}, {"attending_count": 1, "category":
+        "food-and-drink", "cost": null, "cost_max": null, "description": "#WomenRunSF
+        - https://www.yelp.com/events/san-francisco-women-run-sf\n\nCelebrate #26
+        top 100 places to drink in the Bay Area!\nLost Cat Bar & Bites is a...", "event_site_url":
+        "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/eli_Ttx01rkP050WwQvvEQ/o.jpg",
+        "interested_count": 156, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7877655, "longitude": -122.4114052, "name": "Women Run
+        SF! Yelp Community Event: Lost Cat Bar & Bites x Cantoo Latin Asian Rotisserie
+        x Zaddy''s", "tickets_url": null, "time_end": "2024-03-09T16:00:00-08:00",
+        "time_start": "2024-03-09T14:00:00-08:00", "location": {"address1": "587 Post
+        St", "address2": "", "address3": null, "city": "San Francisco", "zip_code":
+        "94102", "country": "US", "state": "CA", "display_address": ["587 Post St",
+        "San Francisco, CA 94102"], "cross_streets": "Taylor St & Mason St"}, "business_id":
+        "yelp-community-event-lost-cat-x-cantoo-x-zaddys-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 261, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nRecently
+        under new, women-owned and largely women operated management, Skylark is...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-skylark-x-una-vodka-x-21-seeds?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-skylark-x-una-vodka-x-21-seeds",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/OLGXk2OiCpRHYe-Czz2wyQ/o.jpg",
+        "interested_count": 66, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7647142, "longitude": -122.4216181, "name": "Women Run
+        SF! Yelp Community Event: Skylark x UNA Vodka x 21 Seeds", "tickets_url":
+        null, "time_end": "2024-03-13T21:00:00-07:00", "time_start": "2024-03-13T17:00:00-07:00",
+        "location": {"address1": "3089 16th St", "address2": "", "address3": null,
+        "city": "San Francisco", "zip_code": "94103", "country": "US", "state": "CA",
+        "display_address": ["3089 16th St", "San Francisco, CA 94103"], "cross_streets":
+        "Valencia St & Caledonia St"}, "business_id": "yelp-community-event-skylark-x-una-vodka-x-21-seeds-san-francisco"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nEl
+        P\u00edpila is led by a trio of women - mother Guadalupe Guerrero and her
+        two daughters...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-el-pipila?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-el-pipila", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/ephoto/sjrSA2ZgwLv5XU_Jasiykg/o.jpg", "interested_count":
+        147, "is_canceled": false, "is_free": false, "is_official": true, "latitude":
+        37.7714957, "longitude": -122.4049441, "name": "Women Run SF! Yelp Community
+        Experience: El Pipila", "tickets_url": null, "time_end": "2024-03-23T15:00:00-07:00",
+        "time_start": "2024-03-18T10:00:00-07:00", "location": {"address1": "879 Brannan
+        St", "address2": "", "address3": "", "city": "San Francisco", "zip_code":
+        "94103", "country": "US", "state": "CA", "display_address": ["879 Brannan
+        St", "San Francisco, CA 94103"], "cross_streets": "8th St"}, "business_id":
+        "el-p\u00edpila-san-francisco-2"}, {"attending_count": 4, "category": "charities",
+        "cost": null, "cost_max": null, "description": "You''re Invited to Our HUGE
+        Spring Rummage Sale!\n\nSaturday, March 2 (10am* - 3pm)   &\nSunday, March
+        3 (11am* - 3pm)  \n*No early birds please!\n\nAll are...", "event_site_url":
+        "https://www.yelp.com/events/union-city-huge-spring-rummage-sale-2024?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "union-city-huge-spring-rummage-sale-2024", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/5Uo2JD-mbhd1NLF49YxnJQ/o.jpg",
+        "interested_count": 2, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 37.59331931272346, "longitude": -122.0452259500602, "name":
+        "HUGE Spring Rummage Sale, 2024!", "tickets_url": "http://sacbc.org", "time_end":
+        "2024-03-02T15:00:00-08:00", "time_start": "2024-03-02T10:00:00-08:00", "location":
+        {"address1": "32975 Alvarado Niles Rd", "address2": "", "address3": "", "city":
+        "Union City", "zip_code": "94587", "country": "US", "state": "CA", "display_address":
+        ["32975 Alvarado Niles Rd", "Union City, CA 94587"], "cross_streets": "Dowe
+        Ave"}, "business_id": "southern-alameda-county-buddhist-church-union-city"},
+        {"attending_count": 1, "category": "performing-arts", "cost": 15.0, "cost_max":
+        20.0, "description": "Join us for \"Goosebumps The Musical!\" Brooke and Zeke
+        are thrilled to be starring in a mysterious show called The Phantom, and not
+        the least bit frightened...", "event_site_url": "https://www.yelp.com/events/san-mateo-goosebumps-the-musical?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-mateo-goosebumps-the-musical", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/rwpA9Y2Pl1O5IlXASDA-TQ/o.jpg",
+        "interested_count": 2, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.5776072, "longitude": -122.3306804, "name": "Goosebumps
+        The Musical", "tickets_url": "http://gotoevent.co/e/6qe/7siow/tix", "time_end":
+        "2024-03-03T14:00:00-08:00", "time_start": "2024-03-01T19:00:00-08:00", "location":
+        {"address1": "600 N Delaware St", "address2": "", "address3": "", "city":
+        "San Mateo", "zip_code": "94401", "country": "US", "state": "CA", "display_address":
+        ["600 N Delaware St", "San Mateo, CA 94401"], "cross_streets": ""}, "business_id":
+        "san-mateo-performing-arts-center-san-mateo"}, {"attending_count": 3, "category":
+        "fashion", "cost": null, "cost_max": null, "description": "Hello, Pinole!  Join
+        us for a pre-opening shopping experience at your all-new Nordstrom Rack store.\nTuesday,
+        March 5 (RSVP Required)\u200b\n4-8 PM\n\nJoin us for...", "event_site_url":
+        "https://www.yelp.com/events/pinole-nordstrom-rack-vip-shopping-party-at-pinole-vista-crossing?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "pinole-nordstrom-rack-vip-shopping-party-at-pinole-vista-crossing",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/PiOkAdSLgLHpRKNsoClDPA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 37.984771386783144, "longitude": -122.311726, "name": "Nordstrom
+        Rack VIP Shopping Party at Pinole Vista Crossing", "tickets_url": "https://nordstromrsvp.com/Pinole",
+        "time_end": "2024-03-05T20:00:00-08:00", "time_start": "2024-03-05T16:00:00-08:00",
+        "location": {"address1": "1330 Fitzgerald Dr", "address2": "Ste B", "address3":
+        null, "city": "Pinole", "zip_code": "94564", "country": "US", "state": "CA",
+        "display_address": ["1330 Fitzgerald Dr", "Ste B", "Pinole, CA 94564"], "cross_streets":
+        ""}, "business_id": "nordstrom-rack-opening-soon-pinole-2"}], "total": 10}'
+  recorded_at: Thu, 29 Feb 2024 19:13:28 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=10&location=San%20Francisco&price=1&radius=40000&start_date=1709235305
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-B3-Sampled:
+      - '0'
+      X-Tracing-Auth:
+      - X4zCdcQST8Bu5jsnQ-D8olDQxQTCkUNJ4D9cEdWYM7M
+      X-Zipkin-Id:
+      - 67acc1beae124f35
+      Ratelimit-Remaining:
+      - '67.0'
+      Server:
+      - envoy
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-q59pv; site=public_api_v3
+      Ratelimit-Resettime:
+      - '2024-03-01T00:00:00+00:00'
+      Ratelimit-Dailylimit:
+      - '500.0'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-82-75-useast1aprod
+      X-Extlb:
+      - 10-65-82-75-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Thu, 29 Feb 2024 19:35:06 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8248-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 1, "category": "other", "cost": null,
+        "cost_max": null, "description": "NEON invites SF Yelpers to receive a complimentary
+        day pass to redeem at NEON to utilize workspace and all amenities, as well
+        as participation in any...", "event_site_url": "https://www.yelp.com/events/san-francisco-yelp-community-experience-neon?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-yelp-community-experience-neon", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/MZjsyJSzpHctAWiCeYYTAw/o.jpg",
+        "interested_count": 109, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.79776469999999, "longitude": -122.4317585, "name": "Yelp
+        Community Experience: NEON", "tickets_url": null, "time_end": "2024-03-01T18:00:00-08:00",
+        "time_start": "2024-02-26T08:00:00-08:00", "location": {"address1": "1974
+        Union St", "address2": null, "address3": "", "city": "San Francisco", "zip_code":
+        "94123", "country": "US", "state": "CA", "display_address": ["1974 Union St",
+        "San Francisco, CA 94123"], "cross_streets": "Charlton Ct & Buchanan St"},
+        "business_id": "neon-san-francisco-2"}, {"attending_count": 189, "category":
+        "other", "cost": null, "cost_max": null, "description": "Are you ready to
+        celebrate Women''s History Month with #WomenRunSF in March? \nIn fact, we''re
+        so excited that we''re going to be keping the celebration going...", "event_site_url":
+        "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 29, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nWomen
+        owned and operated since 2017, Avotoasty was founded by Sofia Pinzon, a native...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-avotoasty?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-avotoasty", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/ZPucO5muvXMuLFnxE9p-Ig/o.jpg", "interested_count":
+        145, "is_canceled": false, "is_free": true, "is_official": true, "latitude":
+        37.7981839, "longitude": -122.428801, "name": "Women Run SF! Yelp Community
+        Event: Avotoasty", "tickets_url": null, "time_end": "2024-03-07T20:00:00-08:00",
+        "time_start": "2024-03-07T17:00:00-08:00", "location": {"address1": "1796
+        Union St", "address2": "", "address3": null, "city": "San Francisco", "zip_code":
+        "94123", "country": "US", "state": "CA", "display_address": ["1796 Union St",
+        "San Francisco, CA 94123"], "cross_streets": "Octavia St & Gough St"}, "business_id":
+        "yelp-community-event-avotoasty-san-francisco"}, {"attending_count": 1, "category":
+        "food-and-drink", "cost": null, "cost_max": null, "description": "#WomenRunSF
+        - https://www.yelp.com/events/san-francisco-women-run-sf\n\nCelebrate #26
+        top 100 places to drink in the Bay Area!\nLost Cat Bar & Bites is a...", "event_site_url":
+        "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/eli_Ttx01rkP050WwQvvEQ/o.jpg",
+        "interested_count": 156, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7877655, "longitude": -122.4114052, "name": "Women Run
+        SF! Yelp Community Event: Lost Cat Bar & Bites x Cantoo Latin Asian Rotisserie
+        x Zaddy''s", "tickets_url": null, "time_end": "2024-03-09T16:00:00-08:00",
+        "time_start": "2024-03-09T14:00:00-08:00", "location": {"address1": "587 Post
+        St", "address2": "", "address3": null, "city": "San Francisco", "zip_code":
+        "94102", "country": "US", "state": "CA", "display_address": ["587 Post St",
+        "San Francisco, CA 94102"], "cross_streets": "Taylor St & Mason St"}, "business_id":
+        "yelp-community-event-lost-cat-x-cantoo-x-zaddys-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 261, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nRecently
+        under new, women-owned and largely women operated management, Skylark is...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-skylark-x-una-vodka-x-21-seeds?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-skylark-x-una-vodka-x-21-seeds",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/OLGXk2OiCpRHYe-Czz2wyQ/o.jpg",
+        "interested_count": 66, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7647142, "longitude": -122.4216181, "name": "Women Run
+        SF! Yelp Community Event: Skylark x UNA Vodka x 21 Seeds", "tickets_url":
+        null, "time_end": "2024-03-13T21:00:00-07:00", "time_start": "2024-03-13T17:00:00-07:00",
+        "location": {"address1": "3089 16th St", "address2": "", "address3": null,
+        "city": "San Francisco", "zip_code": "94103", "country": "US", "state": "CA",
+        "display_address": ["3089 16th St", "San Francisco, CA 94103"], "cross_streets":
+        "Valencia St & Caledonia St"}, "business_id": "yelp-community-event-skylark-x-una-vodka-x-21-seeds-san-francisco"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nEl
+        P\u00edpila is led by a trio of women - mother Guadalupe Guerrero and her
+        two daughters...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-el-pipila?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-el-pipila", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/ephoto/sjrSA2ZgwLv5XU_Jasiykg/o.jpg", "interested_count":
+        147, "is_canceled": false, "is_free": false, "is_official": true, "latitude":
+        37.7714957, "longitude": -122.4049441, "name": "Women Run SF! Yelp Community
+        Experience: El Pipila", "tickets_url": null, "time_end": "2024-03-23T15:00:00-07:00",
+        "time_start": "2024-03-18T10:00:00-07:00", "location": {"address1": "879 Brannan
+        St", "address2": "", "address3": "", "city": "San Francisco", "zip_code":
+        "94103", "country": "US", "state": "CA", "display_address": ["879 Brannan
+        St", "San Francisco, CA 94103"], "cross_streets": "8th St"}, "business_id":
+        "el-p\u00edpila-san-francisco-2"}, {"attending_count": 4, "category": "charities",
+        "cost": null, "cost_max": null, "description": "You''re Invited to Our HUGE
+        Spring Rummage Sale!\n\nSaturday, March 2 (10am* - 3pm)   &\nSunday, March
+        3 (11am* - 3pm)  \n*No early birds please!\n\nAll are...", "event_site_url":
+        "https://www.yelp.com/events/union-city-huge-spring-rummage-sale-2024?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "union-city-huge-spring-rummage-sale-2024", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/5Uo2JD-mbhd1NLF49YxnJQ/o.jpg",
+        "interested_count": 2, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 37.59331931272346, "longitude": -122.0452259500602, "name":
+        "HUGE Spring Rummage Sale, 2024!", "tickets_url": "http://sacbc.org", "time_end":
+        "2024-03-02T15:00:00-08:00", "time_start": "2024-03-02T10:00:00-08:00", "location":
+        {"address1": "32975 Alvarado Niles Rd", "address2": "", "address3": "", "city":
+        "Union City", "zip_code": "94587", "country": "US", "state": "CA", "display_address":
+        ["32975 Alvarado Niles Rd", "Union City, CA 94587"], "cross_streets": "Dowe
+        Ave"}, "business_id": "southern-alameda-county-buddhist-church-union-city"},
+        {"attending_count": 1, "category": "performing-arts", "cost": 15.0, "cost_max":
+        20.0, "description": "Join us for \"Goosebumps The Musical!\" Brooke and Zeke
+        are thrilled to be starring in a mysterious show called The Phantom, and not
+        the least bit frightened...", "event_site_url": "https://www.yelp.com/events/san-mateo-goosebumps-the-musical?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-mateo-goosebumps-the-musical", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/rwpA9Y2Pl1O5IlXASDA-TQ/o.jpg",
+        "interested_count": 2, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.5776072, "longitude": -122.3306804, "name": "Goosebumps
+        The Musical", "tickets_url": "http://gotoevent.co/e/6qe/7siow/tix", "time_end":
+        "2024-03-03T14:00:00-08:00", "time_start": "2024-03-01T19:00:00-08:00", "location":
+        {"address1": "600 N Delaware St", "address2": "", "address3": "", "city":
+        "San Mateo", "zip_code": "94401", "country": "US", "state": "CA", "display_address":
+        ["600 N Delaware St", "San Mateo, CA 94401"], "cross_streets": ""}, "business_id":
+        "san-mateo-performing-arts-center-san-mateo"}, {"attending_count": 3, "category":
+        "fashion", "cost": null, "cost_max": null, "description": "Hello, Pinole!  Join
+        us for a pre-opening shopping experience at your all-new Nordstrom Rack store.\nTuesday,
+        March 5 (RSVP Required)\u200b\n4-8 PM\n\nJoin us for...", "event_site_url":
+        "https://www.yelp.com/events/pinole-nordstrom-rack-vip-shopping-party-at-pinole-vista-crossing?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "pinole-nordstrom-rack-vip-shopping-party-at-pinole-vista-crossing",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/PiOkAdSLgLHpRKNsoClDPA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 37.984771386783144, "longitude": -122.311726, "name": "Nordstrom
+        Rack VIP Shopping Party at Pinole Vista Crossing", "tickets_url": "https://nordstromrsvp.com/Pinole",
+        "time_end": "2024-03-05T20:00:00-08:00", "time_start": "2024-03-05T16:00:00-08:00",
+        "location": {"address1": "1330 Fitzgerald Dr", "address2": "Ste B", "address3":
+        null, "city": "Pinole", "zip_code": "94564", "country": "US", "state": "CA",
+        "display_address": ["1330 Fitzgerald Dr", "Ste B", "Pinole, CA 94564"], "cross_streets":
+        ""}, "business_id": "nordstrom-rack-opening-soon-pinole-2"}], "total": 10}'
+  recorded_at: Thu, 29 Feb 2024 19:35:06 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=10&location=San%20Francisco&price=1&radius=40000&start_date=1709235345
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Server:
+      - envoy
+      X-Tracing-Auth:
+      - BLNNiEDXJCzuWAOI1WfjxZl0jM32vi_Qb4e7YFIFPOE
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-pv52v; site=public_api_v3
+      X-Zipkin-Id:
+      - bfd8edd2fcad23f2
+      Ratelimit-Remaining:
+      - '58.0'
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Resettime:
+      - '2024-03-01T00:00:00+00:00'
+      Ratelimit-Dailylimit:
+      - '500.0'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-180-149-useast1bprod
+      X-Extlb:
+      - 10-65-180-149-useast1bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Thu, 29 Feb 2024 19:35:46 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8269-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 1, "category": "other", "cost": null,
+        "cost_max": null, "description": "NEON invites SF Yelpers to receive a complimentary
+        day pass to redeem at NEON to utilize workspace and all amenities, as well
+        as participation in any...", "event_site_url": "https://www.yelp.com/events/san-francisco-yelp-community-experience-neon?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-yelp-community-experience-neon", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/MZjsyJSzpHctAWiCeYYTAw/o.jpg",
+        "interested_count": 109, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.79776469999999, "longitude": -122.4317585, "name": "Yelp
+        Community Experience: NEON", "tickets_url": null, "time_end": "2024-03-01T18:00:00-08:00",
+        "time_start": "2024-02-26T08:00:00-08:00", "location": {"address1": "1974
+        Union St", "address2": null, "address3": "", "city": "San Francisco", "zip_code":
+        "94123", "country": "US", "state": "CA", "display_address": ["1974 Union St",
+        "San Francisco, CA 94123"], "cross_streets": "Charlton Ct & Buchanan St"},
+        "business_id": "neon-san-francisco-2"}, {"attending_count": 189, "category":
+        "other", "cost": null, "cost_max": null, "description": "Are you ready to
+        celebrate Women''s History Month with #WomenRunSF in March? \nIn fact, we''re
+        so excited that we''re going to be keping the celebration going...", "event_site_url":
+        "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 29, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nWomen
+        owned and operated since 2017, Avotoasty was founded by Sofia Pinzon, a native...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-avotoasty?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-avotoasty", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/ZPucO5muvXMuLFnxE9p-Ig/o.jpg", "interested_count":
+        145, "is_canceled": false, "is_free": true, "is_official": true, "latitude":
+        37.7981839, "longitude": -122.428801, "name": "Women Run SF! Yelp Community
+        Event: Avotoasty", "tickets_url": null, "time_end": "2024-03-07T20:00:00-08:00",
+        "time_start": "2024-03-07T17:00:00-08:00", "location": {"address1": "1796
+        Union St", "address2": "", "address3": null, "city": "San Francisco", "zip_code":
+        "94123", "country": "US", "state": "CA", "display_address": ["1796 Union St",
+        "San Francisco, CA 94123"], "cross_streets": "Octavia St & Gough St"}, "business_id":
+        "yelp-community-event-avotoasty-san-francisco"}, {"attending_count": 1, "category":
+        "food-and-drink", "cost": null, "cost_max": null, "description": "#WomenRunSF
+        - https://www.yelp.com/events/san-francisco-women-run-sf\n\nCelebrate #26
+        top 100 places to drink in the Bay Area!\nLost Cat Bar & Bites is a...", "event_site_url":
+        "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/eli_Ttx01rkP050WwQvvEQ/o.jpg",
+        "interested_count": 156, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7877655, "longitude": -122.4114052, "name": "Women Run
+        SF! Yelp Community Event: Lost Cat Bar & Bites x Cantoo Latin Asian Rotisserie
+        x Zaddy''s", "tickets_url": null, "time_end": "2024-03-09T16:00:00-08:00",
+        "time_start": "2024-03-09T14:00:00-08:00", "location": {"address1": "587 Post
+        St", "address2": "", "address3": null, "city": "San Francisco", "zip_code":
+        "94102", "country": "US", "state": "CA", "display_address": ["587 Post St",
+        "San Francisco, CA 94102"], "cross_streets": "Taylor St & Mason St"}, "business_id":
+        "yelp-community-event-lost-cat-x-cantoo-x-zaddys-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 261, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nRecently
+        under new, women-owned and largely women operated management, Skylark is...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-skylark-x-una-vodka-x-21-seeds?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-skylark-x-una-vodka-x-21-seeds",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/OLGXk2OiCpRHYe-Czz2wyQ/o.jpg",
+        "interested_count": 66, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7647142, "longitude": -122.4216181, "name": "Women Run
+        SF! Yelp Community Event: Skylark x UNA Vodka x 21 Seeds", "tickets_url":
+        null, "time_end": "2024-03-13T21:00:00-07:00", "time_start": "2024-03-13T17:00:00-07:00",
+        "location": {"address1": "3089 16th St", "address2": "", "address3": null,
+        "city": "San Francisco", "zip_code": "94103", "country": "US", "state": "CA",
+        "display_address": ["3089 16th St", "San Francisco, CA 94103"], "cross_streets":
+        "Valencia St & Caledonia St"}, "business_id": "yelp-community-event-skylark-x-una-vodka-x-21-seeds-san-francisco"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nEl
+        P\u00edpila is led by a trio of women - mother Guadalupe Guerrero and her
+        two daughters...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-el-pipila?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-el-pipila", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/ephoto/sjrSA2ZgwLv5XU_Jasiykg/o.jpg", "interested_count":
+        147, "is_canceled": false, "is_free": false, "is_official": true, "latitude":
+        37.7714957, "longitude": -122.4049441, "name": "Women Run SF! Yelp Community
+        Experience: El Pipila", "tickets_url": null, "time_end": "2024-03-23T15:00:00-07:00",
+        "time_start": "2024-03-18T10:00:00-07:00", "location": {"address1": "879 Brannan
+        St", "address2": "", "address3": "", "city": "San Francisco", "zip_code":
+        "94103", "country": "US", "state": "CA", "display_address": ["879 Brannan
+        St", "San Francisco, CA 94103"], "cross_streets": "8th St"}, "business_id":
+        "el-p\u00edpila-san-francisco-2"}, {"attending_count": 4, "category": "charities",
+        "cost": null, "cost_max": null, "description": "You''re Invited to Our HUGE
+        Spring Rummage Sale!\n\nSaturday, March 2 (10am* - 3pm)   &\nSunday, March
+        3 (11am* - 3pm)  \n*No early birds please!\n\nAll are...", "event_site_url":
+        "https://www.yelp.com/events/union-city-huge-spring-rummage-sale-2024?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "union-city-huge-spring-rummage-sale-2024", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/5Uo2JD-mbhd1NLF49YxnJQ/o.jpg",
+        "interested_count": 2, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 37.59331931272346, "longitude": -122.0452259500602, "name":
+        "HUGE Spring Rummage Sale, 2024!", "tickets_url": "http://sacbc.org", "time_end":
+        "2024-03-02T15:00:00-08:00", "time_start": "2024-03-02T10:00:00-08:00", "location":
+        {"address1": "32975 Alvarado Niles Rd", "address2": "", "address3": "", "city":
+        "Union City", "zip_code": "94587", "country": "US", "state": "CA", "display_address":
+        ["32975 Alvarado Niles Rd", "Union City, CA 94587"], "cross_streets": "Dowe
+        Ave"}, "business_id": "southern-alameda-county-buddhist-church-union-city"},
+        {"attending_count": 1, "category": "performing-arts", "cost": 15.0, "cost_max":
+        20.0, "description": "Join us for \"Goosebumps The Musical!\" Brooke and Zeke
+        are thrilled to be starring in a mysterious show called The Phantom, and not
+        the least bit frightened...", "event_site_url": "https://www.yelp.com/events/san-mateo-goosebumps-the-musical?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-mateo-goosebumps-the-musical", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/rwpA9Y2Pl1O5IlXASDA-TQ/o.jpg",
+        "interested_count": 2, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.5776072, "longitude": -122.3306804, "name": "Goosebumps
+        The Musical", "tickets_url": "http://gotoevent.co/e/6qe/7siow/tix", "time_end":
+        "2024-03-03T14:00:00-08:00", "time_start": "2024-03-01T19:00:00-08:00", "location":
+        {"address1": "600 N Delaware St", "address2": "", "address3": "", "city":
+        "San Mateo", "zip_code": "94401", "country": "US", "state": "CA", "display_address":
+        ["600 N Delaware St", "San Mateo, CA 94401"], "cross_streets": ""}, "business_id":
+        "san-mateo-performing-arts-center-san-mateo"}, {"attending_count": 3, "category":
+        "fashion", "cost": null, "cost_max": null, "description": "Hello, Pinole!  Join
+        us for a pre-opening shopping experience at your all-new Nordstrom Rack store.\nTuesday,
+        March 5 (RSVP Required)\u200b\n4-8 PM\n\nJoin us for...", "event_site_url":
+        "https://www.yelp.com/events/pinole-nordstrom-rack-vip-shopping-party-at-pinole-vista-crossing?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "pinole-nordstrom-rack-vip-shopping-party-at-pinole-vista-crossing",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/PiOkAdSLgLHpRKNsoClDPA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 37.984771386783144, "longitude": -122.311726, "name": "Nordstrom
+        Rack VIP Shopping Party at Pinole Vista Crossing", "tickets_url": "https://nordstromrsvp.com/Pinole",
+        "time_end": "2024-03-05T20:00:00-08:00", "time_start": "2024-03-05T16:00:00-08:00",
+        "location": {"address1": "1330 Fitzgerald Dr", "address2": "Ste B", "address3":
+        null, "city": "Pinole", "zip_code": "94564", "country": "US", "state": "CA",
+        "display_address": ["1330 Fitzgerald Dr", "Ste B", "Pinole, CA 94564"], "cross_streets":
+        ""}, "business_id": "nordstrom-rack-opening-soon-pinole-2"}], "total": 10}'
+  recorded_at: Thu, 29 Feb 2024 19:35:46 GMT
 recorded_with: VCR 6.2.0

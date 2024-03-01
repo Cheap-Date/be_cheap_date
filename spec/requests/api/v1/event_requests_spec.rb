@@ -23,6 +23,7 @@ RSpec.describe "Api::V1::Events", vcr: true, type: :request do
       json_response = JSON.parse(response.body, symbolize_names: true)
 
       expect(response).to have_http_status(:success)
+
       expect(json_response[:data].count).to eq(25)
 
       # test that event search using zip code returns only those events from that region of the country

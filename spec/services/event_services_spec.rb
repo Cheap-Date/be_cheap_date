@@ -9,7 +9,7 @@ RSpec.describe EventService, vcr: true do
 
   describe "methods" do
     it "has a #get_events method" do
-      service = EventService.new.get_events(70117, 5)
+      service = EventService.new.find_by_zip(70117, 5)
 
       expect(service).to be_a(Hash)
     end
@@ -33,7 +33,7 @@ RSpec.describe EventService, vcr: true do
     end
 
     it "returns a hash" do
-      service = EventService.new.find_current_events("70117")
+      service = EventService.new.find_by_zip("70117")
 
       expect(service).to be_a(Hash)
     end
