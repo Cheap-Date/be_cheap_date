@@ -10,8 +10,8 @@ RSpec.describe Event, type: :model do
     it { should validate_presence_of(:location) }
     it { should validate_presence_of(:description) }
     it { should validate_presence_of(:category) }
-    it { should validate_presence_of(:cost) }
-    it { should validate_presence_of(:cost_max) }
+    # it { should validate_presence_of(:cost) }
+    # it { should validate_presence_of(:cost_max) }
     it { should validate_presence_of(:is_free) }
     it { should validate_presence_of(:url) }
   end

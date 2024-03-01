@@ -1,0 +1,2671 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=3&location=San%20Francisco&price=1&radius=40000&start_date=1709235485
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Ratelimit-Dailylimit:
+      - '500.0'
+      X-Zipkin-Id:
+      - 5956b2eca7db85c4
+      Ratelimit-Remaining:
+      - '52.0'
+      X-B3-Sampled:
+      - '0'
+      Server:
+      - envoy
+      Ratelimit-Resettime:
+      - '2024-03-01T00:00:00+00:00'
+      X-Tracing-Auth:
+      - 1NPAY6bFa5gG-mYXu1DwOeM8Q3DgRDqSHdETVMgM-M0
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-b76h6; site=public_api_v3
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-187-35-useast1bprod
+      X-Extlb:
+      - 10-65-187-35-useast1bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Thu, 29 Feb 2024 19:38:05 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8235-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 189, "category": "other", "cost": null,
+        "cost_max": null, "description": "Are you ready to celebrate Women''s History
+        Month with #WomenRunSF in March? \nIn fact, we''re so excited that we''re
+        going to be keping the celebration going...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 29, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nCelebrate
+        #26 top 100 places to drink in the Bay Area!\nLost Cat Bar & Bites is a...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/eli_Ttx01rkP050WwQvvEQ/o.jpg",
+        "interested_count": 156, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7877655, "longitude": -122.4114052, "name": "Women Run
+        SF! Yelp Community Event: Lost Cat Bar & Bites x Cantoo Latin Asian Rotisserie
+        x Zaddy''s", "tickets_url": null, "time_end": "2024-03-09T16:00:00-08:00",
+        "time_start": "2024-03-09T14:00:00-08:00", "location": {"address1": "587 Post
+        St", "address2": "", "address3": null, "city": "San Francisco", "zip_code":
+        "94102", "country": "US", "state": "CA", "display_address": ["587 Post St",
+        "San Francisco, CA 94102"], "cross_streets": "Taylor St & Mason St"}, "business_id":
+        "yelp-community-event-lost-cat-x-cantoo-x-zaddys-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 261, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"}],
+        "total": 3}'
+  recorded_at: Thu, 29 Feb 2024 19:38:05 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=3&location=San%20Francisco&price=1&radius=40000&start_date=1709235787
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Zipkin-Id:
+      - 9580a0787e256ebf
+      Ratelimit-Resettime:
+      - '2024-03-01T00:00:00+00:00'
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-w4h9g; site=public_api_v3
+      X-Tracing-Auth:
+      - TMsh1ntwT5KnwWwj89dCAreBGX9IxRgL7BWvp0kZsHo
+      Ratelimit-Remaining:
+      - '51.0'
+      Server:
+      - envoy
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Dailylimit:
+      - '500.0'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-175-176-useast1bprod
+      X-Extlb:
+      - 10-65-175-176-useast1bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Thu, 29 Feb 2024 19:43:08 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8257-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 189, "category": "other", "cost": null,
+        "cost_max": null, "description": "Are you ready to celebrate Women''s History
+        Month with #WomenRunSF in March? \nIn fact, we''re so excited that we''re
+        going to be keping the celebration going...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 29, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nCelebrate
+        #26 top 100 places to drink in the Bay Area!\nLost Cat Bar & Bites is a...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/eli_Ttx01rkP050WwQvvEQ/o.jpg",
+        "interested_count": 156, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7877655, "longitude": -122.4114052, "name": "Women Run
+        SF! Yelp Community Event: Lost Cat Bar & Bites x Cantoo Latin Asian Rotisserie
+        x Zaddy''s", "tickets_url": null, "time_end": "2024-03-09T16:00:00-08:00",
+        "time_start": "2024-03-09T14:00:00-08:00", "location": {"address1": "587 Post
+        St", "address2": "", "address3": null, "city": "San Francisco", "zip_code":
+        "94102", "country": "US", "state": "CA", "display_address": ["587 Post St",
+        "San Francisco, CA 94102"], "cross_streets": "Taylor St & Mason St"}, "business_id":
+        "yelp-community-event-lost-cat-x-cantoo-x-zaddys-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 261, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"}],
+        "total": 3}'
+  recorded_at: Thu, 29 Feb 2024 19:43:08 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=3&location=San%20Francisco&price=1&radius=40000&start_date=1709235857
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Tracing-Auth:
+      - zhhtoXA_AcwG2jkYwh653uFAsgjcGzWCAHAyiUDcCsc
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-vk2jk; site=public_api_v3
+      Ratelimit-Dailylimit:
+      - '500.0'
+      Server:
+      - envoy
+      Ratelimit-Remaining:
+      - '50.0'
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Resettime:
+      - '2024-03-01T00:00:00+00:00'
+      X-Zipkin-Id:
+      - 6dc0aaefa604186b
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-92-107-useast1aprod
+      X-Extlb:
+      - 10-65-92-107-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Thu, 29 Feb 2024 19:44:17 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8248-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 189, "category": "other", "cost": null,
+        "cost_max": null, "description": "Are you ready to celebrate Women''s History
+        Month with #WomenRunSF in March? \nIn fact, we''re so excited that we''re
+        going to be keping the celebration going...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 29, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nCelebrate
+        #26 top 100 places to drink in the Bay Area!\nLost Cat Bar & Bites is a...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/eli_Ttx01rkP050WwQvvEQ/o.jpg",
+        "interested_count": 156, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7877655, "longitude": -122.4114052, "name": "Women Run
+        SF! Yelp Community Event: Lost Cat Bar & Bites x Cantoo Latin Asian Rotisserie
+        x Zaddy''s", "tickets_url": null, "time_end": "2024-03-09T16:00:00-08:00",
+        "time_start": "2024-03-09T14:00:00-08:00", "location": {"address1": "587 Post
+        St", "address2": "", "address3": null, "city": "San Francisco", "zip_code":
+        "94102", "country": "US", "state": "CA", "display_address": ["587 Post St",
+        "San Francisco, CA 94102"], "cross_streets": "Taylor St & Mason St"}, "business_id":
+        "yelp-community-event-lost-cat-x-cantoo-x-zaddys-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 261, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"}],
+        "total": 3}'
+  recorded_at: Thu, 29 Feb 2024 19:44:17 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=&location=San%20Francisco&price=1&radius=40000&start_date=1709236056
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Zipkin-Id:
+      - d42b3dbad75d8a38
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Resettime:
+      - '2024-03-01T00:00:00+00:00'
+      X-Tracing-Auth:
+      - A5KuG0-jwjilld1UnoJvI0sZ7Do-uPEdsAvgTmjqUBg
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-4r8xg; site=public_api_v3
+      Server:
+      - envoy
+      Ratelimit-Dailylimit:
+      - '500.0'
+      Ratelimit-Remaining:
+      - '47.0'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-92-107-useast1aprod
+      X-Extlb:
+      - 10-65-92-107-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Thu, 29 Feb 2024 19:47:37 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8220-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 189, "category": "other", "cost": null,
+        "cost_max": null, "description": "Are you ready to celebrate Women''s History
+        Month with #WomenRunSF in March? \nIn fact, we''re so excited that we''re
+        going to be keping the celebration going...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 29, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nCelebrate
+        #26 top 100 places to drink in the Bay Area!\nLost Cat Bar & Bites is a...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/eli_Ttx01rkP050WwQvvEQ/o.jpg",
+        "interested_count": 156, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7877655, "longitude": -122.4114052, "name": "Women Run
+        SF! Yelp Community Event: Lost Cat Bar & Bites x Cantoo Latin Asian Rotisserie
+        x Zaddy''s", "tickets_url": null, "time_end": "2024-03-09T16:00:00-08:00",
+        "time_start": "2024-03-09T14:00:00-08:00", "location": {"address1": "587 Post
+        St", "address2": "", "address3": null, "city": "San Francisco", "zip_code":
+        "94102", "country": "US", "state": "CA", "display_address": ["587 Post St",
+        "San Francisco, CA 94102"], "cross_streets": "Taylor St & Mason St"}, "business_id":
+        "yelp-community-event-lost-cat-x-cantoo-x-zaddys-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 261, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"}],
+        "total": 3}'
+  recorded_at: Thu, 29 Feb 2024 19:47:37 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=3&location=San%20Francisco&price=1&radius=40000&start_date=1709236340
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Tracing-Auth:
+      - Cq7Iv_ezu7m6as6340LNb7uB2jLPVYHeNBsdzjRnRbc
+      X-Zipkin-Id:
+      - 7920d1fec3d65b5a
+      Ratelimit-Dailylimit:
+      - '500.0'
+      Server:
+      - envoy
+      Ratelimit-Remaining:
+      - '42.0'
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-z9xb8; site=public_api_v3
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Resettime:
+      - '2024-03-01T00:00:00+00:00'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-82-75-useast1aprod
+      X-Extlb:
+      - 10-65-82-75-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Thu, 29 Feb 2024 19:52:21 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8266-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 189, "category": "other", "cost": null,
+        "cost_max": null, "description": "Are you ready to celebrate Women''s History
+        Month with #WomenRunSF in March? \nIn fact, we''re so excited that we''re
+        going to be keping the celebration going...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 29, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nCelebrate
+        #26 top 100 places to drink in the Bay Area!\nLost Cat Bar & Bites is a...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/eli_Ttx01rkP050WwQvvEQ/o.jpg",
+        "interested_count": 156, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7877655, "longitude": -122.4114052, "name": "Women Run
+        SF! Yelp Community Event: Lost Cat Bar & Bites x Cantoo Latin Asian Rotisserie
+        x Zaddy''s", "tickets_url": null, "time_end": "2024-03-09T16:00:00-08:00",
+        "time_start": "2024-03-09T14:00:00-08:00", "location": {"address1": "587 Post
+        St", "address2": "", "address3": null, "city": "San Francisco", "zip_code":
+        "94102", "country": "US", "state": "CA", "display_address": ["587 Post St",
+        "San Francisco, CA 94102"], "cross_streets": "Taylor St & Mason St"}, "business_id":
+        "yelp-community-event-lost-cat-x-cantoo-x-zaddys-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 261, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"}],
+        "total": 3}'
+  recorded_at: Thu, 29 Feb 2024 19:52:21 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=3&location=San%20Francisco&price=1&radius=40000&start_date=1709236433
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-B3-Sampled:
+      - '0'
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-vj5c8; site=public_api_v3
+      Ratelimit-Dailylimit:
+      - '500.0'
+      X-Zipkin-Id:
+      - 9b94ed3f0f476f9c
+      Ratelimit-Remaining:
+      - '39.0'
+      Ratelimit-Resettime:
+      - '2024-03-01T00:00:00+00:00'
+      Server:
+      - envoy
+      X-Tracing-Auth:
+      - Df3oQDsJynKy16QMB0-sPRM-I8g9JKZozInD75qjJqo
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-175-176-useast1bprod
+      X-Extlb:
+      - 10-65-175-176-useast1bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Thu, 29 Feb 2024 19:53:54 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8234-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 189, "category": "other", "cost": null,
+        "cost_max": null, "description": "Are you ready to celebrate Women''s History
+        Month with #WomenRunSF in March? \nIn fact, we''re so excited that we''re
+        going to be keping the celebration going...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 29, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nCelebrate
+        #26 top 100 places to drink in the Bay Area!\nLost Cat Bar & Bites is a...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/eli_Ttx01rkP050WwQvvEQ/o.jpg",
+        "interested_count": 156, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7877655, "longitude": -122.4114052, "name": "Women Run
+        SF! Yelp Community Event: Lost Cat Bar & Bites x Cantoo Latin Asian Rotisserie
+        x Zaddy''s", "tickets_url": null, "time_end": "2024-03-09T16:00:00-08:00",
+        "time_start": "2024-03-09T14:00:00-08:00", "location": {"address1": "587 Post
+        St", "address2": "", "address3": null, "city": "San Francisco", "zip_code":
+        "94102", "country": "US", "state": "CA", "display_address": ["587 Post St",
+        "San Francisco, CA 94102"], "cross_streets": "Taylor St & Mason St"}, "business_id":
+        "yelp-community-event-lost-cat-x-cantoo-x-zaddys-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 261, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"}],
+        "total": 3}'
+  recorded_at: Thu, 29 Feb 2024 19:53:54 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=3&location=San%20Francisco&price=1&radius=40000&start_date=1709236473
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Tracing-Auth:
+      - dcU1K8UHG-FC1qlsC98gzzF0f49URFEBTaRVgB8dYKo
+      Ratelimit-Dailylimit:
+      - '500.0'
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Resettime:
+      - '2024-03-01T00:00:00+00:00'
+      Ratelimit-Remaining:
+      - '38.0'
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-s4kxb; site=public_api_v3
+      Server:
+      - envoy
+      X-Zipkin-Id:
+      - 1ff3b83d9f3e2625
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-122-196-useast1aprod
+      X-Extlb:
+      - 10-65-122-196-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Thu, 29 Feb 2024 19:54:33 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8243-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 189, "category": "other", "cost": null,
+        "cost_max": null, "description": "Are you ready to celebrate Women''s History
+        Month with #WomenRunSF in March? \nIn fact, we''re so excited that we''re
+        going to be keping the celebration going...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 29, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nCelebrate
+        #26 top 100 places to drink in the Bay Area!\nLost Cat Bar & Bites is a...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/eli_Ttx01rkP050WwQvvEQ/o.jpg",
+        "interested_count": 156, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7877655, "longitude": -122.4114052, "name": "Women Run
+        SF! Yelp Community Event: Lost Cat Bar & Bites x Cantoo Latin Asian Rotisserie
+        x Zaddy''s", "tickets_url": null, "time_end": "2024-03-09T16:00:00-08:00",
+        "time_start": "2024-03-09T14:00:00-08:00", "location": {"address1": "587 Post
+        St", "address2": "", "address3": null, "city": "San Francisco", "zip_code":
+        "94102", "country": "US", "state": "CA", "display_address": ["587 Post St",
+        "San Francisco, CA 94102"], "cross_streets": "Taylor St & Mason St"}, "business_id":
+        "yelp-community-event-lost-cat-x-cantoo-x-zaddys-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 261, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"}],
+        "total": 3}'
+  recorded_at: Thu, 29 Feb 2024 19:54:33 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=3&location=San%20Francisco&price=1&radius=40000&start_date=1709236502
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Ratelimit-Remaining:
+      - '37.0'
+      Ratelimit-Resettime:
+      - '2024-03-01T00:00:00+00:00'
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-545q6; site=public_api_v3
+      X-B3-Sampled:
+      - '0'
+      X-Zipkin-Id:
+      - 5675ff870939bb41
+      Server:
+      - envoy
+      Ratelimit-Dailylimit:
+      - '500.0'
+      X-Tracing-Auth:
+      - _oNgVzkUoxwBP84GO6eBE6Gnox0ty6U59lEmZqfe-Bo
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-175-176-useast1bprod
+      X-Extlb:
+      - 10-65-175-176-useast1bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Thu, 29 Feb 2024 19:55:03 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8283-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 189, "category": "other", "cost": null,
+        "cost_max": null, "description": "Are you ready to celebrate Women''s History
+        Month with #WomenRunSF in March? \nIn fact, we''re so excited that we''re
+        going to be keping the celebration going...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 29, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nCelebrate
+        #26 top 100 places to drink in the Bay Area!\nLost Cat Bar & Bites is a...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-event-lost-cat-bar-and-bites-x-cantoo-latin-asian-rotisserie-x-zaddys",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/eli_Ttx01rkP050WwQvvEQ/o.jpg",
+        "interested_count": 156, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7877655, "longitude": -122.4114052, "name": "Women Run
+        SF! Yelp Community Event: Lost Cat Bar & Bites x Cantoo Latin Asian Rotisserie
+        x Zaddy''s", "tickets_url": null, "time_end": "2024-03-09T16:00:00-08:00",
+        "time_start": "2024-03-09T14:00:00-08:00", "location": {"address1": "587 Post
+        St", "address2": "", "address3": null, "city": "San Francisco", "zip_code":
+        "94102", "country": "US", "state": "CA", "display_address": ["587 Post St",
+        "San Francisco, CA 94102"], "cross_streets": "Taylor St & Mason St"}, "business_id":
+        "yelp-community-event-lost-cat-x-cantoo-x-zaddys-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 261, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"}],
+        "total": 3}'
+  recorded_at: Thu, 29 Feb 2024 19:55:03 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=3&location=San%20Francisco&price=1&radius=40000&start_date=1709256347
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Ratelimit-Resettime:
+      - '2024-03-02T00:00:00+00:00'
+      X-Tracing-Auth:
+      - zkrF1DXCzwCW4dU0PyD5fHg1rHucfOVrM8sbGwWXVjI
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-q59pv; site=public_api_v3
+      Server:
+      - envoy
+      X-Zipkin-Id:
+      - de39bdefa509f24c
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Remaining:
+      - '490.0'
+      Ratelimit-Dailylimit:
+      - '500.0'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-180-149-useast1bprod
+      X-Extlb:
+      - 10-65-180-149-useast1bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 01 Mar 2024 01:25:47 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8234-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 191, "category": "other", "cost": null,
+        "cost_max": null, "description": "Are you ready to celebrate Women''s History
+        Month with #WomenRunSF in March? \nIn fact, we''re so excited that we''re
+        going to be keping the celebration going...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 29, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 263, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nEl
+        P\u00edpila is led by a trio of women - mother Guadalupe Guerrero and her
+        two daughters...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-el-pipila?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-el-pipila", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/ephoto/sjrSA2ZgwLv5XU_Jasiykg/o.jpg", "interested_count":
+        152, "is_canceled": false, "is_free": false, "is_official": true, "latitude":
+        37.7714957, "longitude": -122.4049441, "name": "Women Run SF! Yelp Community
+        Experience: El Pipila", "tickets_url": null, "time_end": "2024-03-23T15:00:00-07:00",
+        "time_start": "2024-03-18T10:00:00-07:00", "location": {"address1": "879 Brannan
+        St", "address2": "", "address3": "", "city": "San Francisco", "zip_code":
+        "94103", "country": "US", "state": "CA", "display_address": ["879 Brannan
+        St", "San Francisco, CA 94103"], "cross_streets": "8th St"}, "business_id":
+        "el-p\u00edpila-san-francisco-2"}], "total": 3}'
+  recorded_at: Fri, 01 Mar 2024 01:25:47 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=3&location=San%20Francisco&price=1&radius=40000&start_date=1709256363
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Ratelimit-Dailylimit:
+      - '500.0'
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-5pgx6; site=public_api_v3
+      X-Tracing-Auth:
+      - LZiQOZDKDir1yFKWX5dUWEHkN2bHv6cF9wXEyZu0d4c
+      Server:
+      - envoy
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Resettime:
+      - '2024-03-02T00:00:00+00:00'
+      Ratelimit-Remaining:
+      - '489.0'
+      X-Zipkin-Id:
+      - 0b458650d8ef7a8c
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-82-75-useast1aprod
+      X-Extlb:
+      - 10-65-82-75-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 01 Mar 2024 01:26:04 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8222-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 191, "category": "other", "cost": null,
+        "cost_max": null, "description": "Are you ready to celebrate Women''s History
+        Month with #WomenRunSF in March? \nIn fact, we''re so excited that we''re
+        going to be keping the celebration going...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 29, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 263, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nEl
+        P\u00edpila is led by a trio of women - mother Guadalupe Guerrero and her
+        two daughters...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-el-pipila?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-el-pipila", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/ephoto/sjrSA2ZgwLv5XU_Jasiykg/o.jpg", "interested_count":
+        152, "is_canceled": false, "is_free": false, "is_official": true, "latitude":
+        37.7714957, "longitude": -122.4049441, "name": "Women Run SF! Yelp Community
+        Experience: El Pipila", "tickets_url": null, "time_end": "2024-03-23T15:00:00-07:00",
+        "time_start": "2024-03-18T10:00:00-07:00", "location": {"address1": "879 Brannan
+        St", "address2": "", "address3": "", "city": "San Francisco", "zip_code":
+        "94103", "country": "US", "state": "CA", "display_address": ["879 Brannan
+        St", "San Francisco, CA 94103"], "cross_streets": "8th St"}, "business_id":
+        "el-p\u00edpila-san-francisco-2"}], "total": 3}'
+  recorded_at: Fri, 01 Mar 2024 01:26:04 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=3&location=San%20Francisco&price=1&radius=40000&start_date=1709256389
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Ratelimit-Dailylimit:
+      - '500.0'
+      X-Tracing-Auth:
+      - 50LylYLAAwL0BhAvY4I3kyz0_HEZMx_q62HU53hxzJI
+      Ratelimit-Resettime:
+      - '2024-03-02T00:00:00+00:00'
+      Server:
+      - envoy
+      X-Zipkin-Id:
+      - '08bd3f6e95dfaa0b'
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-w8zlw; site=public_api_v3
+      Ratelimit-Remaining:
+      - '488.0'
+      X-B3-Sampled:
+      - '0'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-92-107-useast1aprod
+      X-Extlb:
+      - 10-65-92-107-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 01 Mar 2024 01:26:29 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8254-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 191, "category": "other", "cost": null,
+        "cost_max": null, "description": "Are you ready to celebrate Women''s History
+        Month with #WomenRunSF in March? \nIn fact, we''re so excited that we''re
+        going to be keping the celebration going...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 29, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 263, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nEl
+        P\u00edpila is led by a trio of women - mother Guadalupe Guerrero and her
+        two daughters...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-el-pipila?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-el-pipila", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/ephoto/sjrSA2ZgwLv5XU_Jasiykg/o.jpg", "interested_count":
+        152, "is_canceled": false, "is_free": false, "is_official": true, "latitude":
+        37.7714957, "longitude": -122.4049441, "name": "Women Run SF! Yelp Community
+        Experience: El Pipila", "tickets_url": null, "time_end": "2024-03-23T15:00:00-07:00",
+        "time_start": "2024-03-18T10:00:00-07:00", "location": {"address1": "879 Brannan
+        St", "address2": "", "address3": "", "city": "San Francisco", "zip_code":
+        "94103", "country": "US", "state": "CA", "display_address": ["879 Brannan
+        St", "San Francisco, CA 94103"], "cross_streets": "8th St"}, "business_id":
+        "el-p\u00edpila-san-francisco-2"}], "total": 3}'
+  recorded_at: Fri, 01 Mar 2024 01:26:29 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=3&location=San%20Francisco&price=1&radius=40000&start_date=1709256400
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Tracing-Auth:
+      - sjtBFtt9JBdAxE26PwKYBEzq4u673P-lfA7FQ8ow1h4
+      Ratelimit-Resettime:
+      - '2024-03-02T00:00:00+00:00'
+      Ratelimit-Dailylimit:
+      - '500.0'
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Remaining:
+      - '482.0'
+      Server:
+      - envoy
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-z9xb8; site=public_api_v3
+      X-Zipkin-Id:
+      - '09403933be181ad2'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-92-107-useast1aprod
+      X-Extlb:
+      - 10-65-92-107-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 01 Mar 2024 01:26:40 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8239-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 191, "category": "other", "cost": null,
+        "cost_max": null, "description": "Are you ready to celebrate Women''s History
+        Month with #WomenRunSF in March? \nIn fact, we''re so excited that we''re
+        going to be keping the celebration going...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 29, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 263, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nEl
+        P\u00edpila is led by a trio of women - mother Guadalupe Guerrero and her
+        two daughters...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-el-pipila?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-el-pipila", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/ephoto/sjrSA2ZgwLv5XU_Jasiykg/o.jpg", "interested_count":
+        152, "is_canceled": false, "is_free": false, "is_official": true, "latitude":
+        37.7714957, "longitude": -122.4049441, "name": "Women Run SF! Yelp Community
+        Experience: El Pipila", "tickets_url": null, "time_end": "2024-03-23T15:00:00-07:00",
+        "time_start": "2024-03-18T10:00:00-07:00", "location": {"address1": "879 Brannan
+        St", "address2": "", "address3": "", "city": "San Francisco", "zip_code":
+        "94103", "country": "US", "state": "CA", "display_address": ["879 Brannan
+        St", "San Francisco, CA 94103"], "cross_streets": "8th St"}, "business_id":
+        "el-p\u00edpila-san-francisco-2"}], "total": 3}'
+  recorded_at: Fri, 01 Mar 2024 01:26:40 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=2&location=San%20Francisco&price=1&radius=40000&start_date=1709256431
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Zipkin-Id:
+      - 222cc4124891684a
+      X-B3-Sampled:
+      - '0'
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-7hldv; site=public_api_v3
+      Ratelimit-Dailylimit:
+      - '500.0'
+      X-Tracing-Auth:
+      - lVqeOVvp6x5iIL4pKXJotZyTADWy-Tt0eweIGd-oVzw
+      Ratelimit-Remaining:
+      - '473.0'
+      Ratelimit-Resettime:
+      - '2024-03-02T00:00:00+00:00'
+      Server:
+      - envoy
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-187-35-useast1bprod
+      X-Extlb:
+      - 10-65-187-35-useast1bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 01 Mar 2024 01:27:11 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8222-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 191, "category": "other", "cost": null,
+        "cost_max": null, "description": "Are you ready to celebrate Women''s History
+        Month with #WomenRunSF in March? \nIn fact, we''re so excited that we''re
+        going to be keping the celebration going...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 29, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 263, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"}],
+        "total": 2}'
+  recorded_at: Fri, 01 Mar 2024 01:27:11 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=2&location=San%20Francisco&price=1&radius=40000&start_date=1709256431
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Ratelimit-Resettime:
+      - '2024-03-02T00:00:00+00:00'
+      X-Tracing-Auth:
+      - wpXRLeWNVdP1O4SXInnGoGrWC4xGlfj_pZBU-_jspzM
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-w8zlw; site=public_api_v3
+      Server:
+      - envoy
+      Ratelimit-Dailylimit:
+      - '500.0'
+      X-Zipkin-Id:
+      - 18bd3afaad3a2923
+      Ratelimit-Remaining:
+      - '472.0'
+      X-B3-Sampled:
+      - '0'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-80-125-useast1aprod
+      X-Extlb:
+      - 10-65-80-125-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 01 Mar 2024 01:27:11 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8240-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 191, "category": "other", "cost": null,
+        "cost_max": null, "description": "Are you ready to celebrate Women''s History
+        Month with #WomenRunSF in March? \nIn fact, we''re so excited that we''re
+        going to be keping the celebration going...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 29, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 263, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"}],
+        "total": 2}'
+  recorded_at: Fri, 01 Mar 2024 01:27:11 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=2&location=San%20Francisco&price=1&radius=40000&start_date=1709256456
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Zipkin-Id:
+      - 86d5f1127b5850da
+      Ratelimit-Dailylimit:
+      - '500.0'
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Resettime:
+      - '2024-03-02T00:00:00+00:00'
+      Server:
+      - envoy
+      Ratelimit-Remaining:
+      - '463.0'
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-b76h6; site=public_api_v3
+      X-Tracing-Auth:
+      - em15WtdzPtmZ9lGenr68XJ1mrXnpR7SVIEK5KcOgYDg
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-80-125-useast1aprod
+      X-Extlb:
+      - 10-65-80-125-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 01 Mar 2024 01:27:36 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8250-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 191, "category": "other", "cost": null,
+        "cost_max": null, "description": "Are you ready to celebrate Women''s History
+        Month with #WomenRunSF in March? \nIn fact, we''re so excited that we''re
+        going to be keping the celebration going...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 29, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 263, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"}],
+        "total": 2}'
+  recorded_at: Fri, 01 Mar 2024 01:27:36 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=2&location=San%20Francisco&price=1&radius=40000&start_date=1709256456
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Tracing-Auth:
+      - R5MDqq0E_LhUl52kAejnEu5J4HaX1q6d2cqbQtNydFc
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-9sc74; site=public_api_v3
+      Ratelimit-Resettime:
+      - '2024-03-02T00:00:00+00:00'
+      Server:
+      - envoy
+      Ratelimit-Dailylimit:
+      - '500.0'
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Remaining:
+      - '462.0'
+      X-Zipkin-Id:
+      - 0de14d893459c542
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-180-149-useast1bprod
+      X-Extlb:
+      - 10-65-180-149-useast1bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 01 Mar 2024 01:27:37 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8238-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 191, "category": "other", "cost": null,
+        "cost_max": null, "description": "Are you ready to celebrate Women''s History
+        Month with #WomenRunSF in March? \nIn fact, we''re so excited that we''re
+        going to be keping the celebration going...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 29, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 263, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"}],
+        "total": 2}'
+  recorded_at: Fri, 01 Mar 2024 01:27:37 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=2&location=San%20Francisco&price=1&radius=40000&start_date=1709256558
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-gkgrx; site=public_api_v3
+      Ratelimit-Remaining:
+      - '453.0'
+      X-Zipkin-Id:
+      - 3ed6e84fe288bc21
+      X-Tracing-Auth:
+      - kgEIcY1a0Ct9TTetbHqayEJBhcb07UdxzhDbd6qFXhE
+      X-B3-Sampled:
+      - '0'
+      Server:
+      - envoy
+      Ratelimit-Dailylimit:
+      - '500.0'
+      Ratelimit-Resettime:
+      - '2024-03-02T00:00:00+00:00'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-172-4-useast1bprod
+      X-Extlb:
+      - 10-65-172-4-useast1bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 01 Mar 2024 01:29:18 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8278-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 191, "category": "other", "cost": null,
+        "cost_max": null, "description": "Are you ready to celebrate Women''s History
+        Month with #WomenRunSF in March? \nIn fact, we''re so excited that we''re
+        going to be keping the celebration going...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 29, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 263, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"}],
+        "total": 2}'
+  recorded_at: Fri, 01 Mar 2024 01:29:18 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=2&location=San%20Francisco&price=1&radius=40000&start_date=1709256558
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Ratelimit-Dailylimit:
+      - '500.0'
+      Server:
+      - envoy
+      Ratelimit-Remaining:
+      - '452.0'
+      Ratelimit-Resettime:
+      - '2024-03-02T00:00:00+00:00'
+      X-Zipkin-Id:
+      - 8957c6a569596e7d
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-58wb8; site=public_api_v3
+      X-Tracing-Auth:
+      - Kf17lw97Ho2Sm1u6HKehnzvllqk3FwTiJKNcZmKE9jk
+      X-B3-Sampled:
+      - '0'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-175-176-useast1bprod
+      X-Extlb:
+      - 10-65-175-176-useast1bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 01 Mar 2024 01:29:18 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8235-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 191, "category": "other", "cost": null,
+        "cost_max": null, "description": "Are you ready to celebrate Women''s History
+        Month with #WomenRunSF in March? \nIn fact, we''re so excited that we''re
+        going to be keping the celebration going...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 29, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 263, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"}],
+        "total": 2}'
+  recorded_at: Fri, 01 Mar 2024 01:29:18 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=2&location=San%20Francisco&price=1&radius=40000&start_date=1709256578
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Tracing-Auth:
+      - Xrkk3028zH_AUku45kJ4tVy_MGGxzpux5tEkF1cA8cw
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-bm9vz; site=public_api_v3
+      Ratelimit-Dailylimit:
+      - '500.0'
+      X-Zipkin-Id:
+      - c4650bb03b039a75
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Resettime:
+      - '2024-03-02T00:00:00+00:00'
+      Server:
+      - envoy
+      Ratelimit-Remaining:
+      - '442.0'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-82-75-useast1aprod
+      X-Extlb:
+      - 10-65-82-75-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 01 Mar 2024 01:29:39 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8257-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 191, "category": "other", "cost": null,
+        "cost_max": null, "description": "Are you ready to celebrate Women''s History
+        Month with #WomenRunSF in March? \nIn fact, we''re so excited that we''re
+        going to be keping the celebration going...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 29, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 263, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"}],
+        "total": 2}'
+  recorded_at: Fri, 01 Mar 2024 01:29:38 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=2&location=San%20Francisco&price=1&radius=40000&start_date=1709256578
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Tracing-Auth:
+      - UOf4OT0Xx_Ec5sEgCIud7CA5UEGHpONF95yHBpbFBqc
+      X-Zipkin-Id:
+      - fecc95af27c4d463
+      Server:
+      - envoy
+      Ratelimit-Dailylimit:
+      - '500.0'
+      Ratelimit-Remaining:
+      - '441.0'
+      Ratelimit-Resettime:
+      - '2024-03-02T00:00:00+00:00'
+      X-B3-Sampled:
+      - '0'
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-pnwwq; site=public_api_v3
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-92-107-useast1aprod
+      X-Extlb:
+      - 10-65-92-107-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 01 Mar 2024 01:29:39 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8262-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 191, "category": "other", "cost": null,
+        "cost_max": null, "description": "Are you ready to celebrate Women''s History
+        Month with #WomenRunSF in March? \nIn fact, we''re so excited that we''re
+        going to be keping the celebration going...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 29, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 263, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"}],
+        "total": 2}'
+  recorded_at: Fri, 01 Mar 2024 01:29:39 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=2&location=San%20Francisco&price=1&radius=40000&start_date=1709256703
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Tracing-Auth:
+      - SaI3eL9zkecMRgn0nu9_IGE20nAb1KkutumgfqLWYKU
+      X-B3-Sampled:
+      - '0'
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-j6f2w; site=public_api_v3
+      Ratelimit-Dailylimit:
+      - '500.0'
+      Ratelimit-Remaining:
+      - '431.0'
+      X-Zipkin-Id:
+      - 6ad700ce1b5b8bf4
+      Ratelimit-Resettime:
+      - '2024-03-02T00:00:00+00:00'
+      Server:
+      - envoy
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-187-35-useast1bprod
+      X-Extlb:
+      - 10-65-187-35-useast1bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 01 Mar 2024 01:31:43 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8275-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 191, "category": "other", "cost": null,
+        "cost_max": null, "description": "Are you ready to celebrate Women''s History
+        Month with #WomenRunSF in March? \nIn fact, we''re so excited that we''re
+        going to be keping the celebration going...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 29, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 263, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"}],
+        "total": 2}'
+  recorded_at: Fri, 01 Mar 2024 01:31:43 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=2&location=San%20Francisco&price=1&radius=40000&start_date=1709256703
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Ratelimit-Resettime:
+      - '2024-03-02T00:00:00+00:00'
+      X-B3-Sampled:
+      - '0'
+      X-Tracing-Auth:
+      - SW9uNhKGL74Md0OYGK5PbAs48r85ISzh-TZkdKUJ674
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-xkwcw; site=public_api_v3
+      Ratelimit-Dailylimit:
+      - '500.0'
+      Server:
+      - envoy
+      Ratelimit-Remaining:
+      - '430.0'
+      X-Zipkin-Id:
+      - af049fe99a70795e
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-175-176-useast1bprod
+      X-Extlb:
+      - 10-65-175-176-useast1bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 01 Mar 2024 01:31:43 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8231-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 191, "category": "other", "cost": null,
+        "cost_max": null, "description": "Are you ready to celebrate Women''s History
+        Month with #WomenRunSF in March? \nIn fact, we''re so excited that we''re
+        going to be keping the celebration going...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 29, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 263, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"}],
+        "total": 2}'
+  recorded_at: Fri, 01 Mar 2024 01:31:43 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=2&location=San%20Francisco&price=1&radius=40000&start_date=1709256770
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Zipkin-Id:
+      - 80c0af86a17e275e
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Dailylimit:
+      - '500.0'
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-526c8; site=public_api_v3
+      Ratelimit-Remaining:
+      - '420.0'
+      Ratelimit-Resettime:
+      - '2024-03-02T00:00:00+00:00'
+      X-Tracing-Auth:
+      - enUIeG8MpEXRjBksLqLPGh0ojoWNxD4sj5DyDAtd5ZQ
+      Server:
+      - envoy
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-80-125-useast1aprod
+      X-Extlb:
+      - 10-65-80-125-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 01 Mar 2024 01:32:50 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8267-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 191, "category": "other", "cost": null,
+        "cost_max": null, "description": "Are you ready to celebrate Women''s History
+        Month with #WomenRunSF in March? \nIn fact, we''re so excited that we''re
+        going to be keping the celebration going...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 29, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 263, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"}],
+        "total": 2}'
+  recorded_at: Fri, 01 Mar 2024 01:32:50 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=2&location=San%20Francisco&price=1&radius=40000&start_date=1709256770
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-vfmsf; site=public_api_v3
+      Ratelimit-Resettime:
+      - '2024-03-02T00:00:00+00:00'
+      X-B3-Sampled:
+      - '0'
+      X-Tracing-Auth:
+      - 3TwrQuWt2n7etjaIjpylmIZhkqXjGncJcXhjsIAiC8o
+      Ratelimit-Dailylimit:
+      - '500.0'
+      Server:
+      - envoy
+      Ratelimit-Remaining:
+      - '419.0'
+      X-Zipkin-Id:
+      - 1dc4c500942540a8
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-172-4-useast1bprod
+      X-Extlb:
+      - 10-65-172-4-useast1bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 01 Mar 2024 01:32:51 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8252-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 191, "category": "other", "cost": null,
+        "cost_max": null, "description": "Are you ready to celebrate Women''s History
+        Month with #WomenRunSF in March? \nIn fact, we''re so excited that we''re
+        going to be keping the celebration going...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 29, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 263, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"}],
+        "total": 2}'
+  recorded_at: Fri, 01 Mar 2024 01:32:51 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=2&location=San%20Francisco&price=1&radius=40000&start_date=1709256798
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Ratelimit-Dailylimit:
+      - '500.0'
+      Ratelimit-Remaining:
+      - '409.0'
+      Ratelimit-Resettime:
+      - '2024-03-02T00:00:00+00:00'
+      X-Tracing-Auth:
+      - H3o3mT5DpLtjvPIgtQpbr341Cs-w1Ri3r0yA8AKun2s
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-5pgx6; site=public_api_v3
+      X-B3-Sampled:
+      - '0'
+      Server:
+      - envoy
+      X-Zipkin-Id:
+      - 830218e2cddbcf8c
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-92-107-useast1aprod
+      X-Extlb:
+      - 10-65-92-107-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 01 Mar 2024 01:33:18 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8271-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 191, "category": "other", "cost": null,
+        "cost_max": null, "description": "Are you ready to celebrate Women''s History
+        Month with #WomenRunSF in March? \nIn fact, we''re so excited that we''re
+        going to be keping the celebration going...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 29, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 263, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"}],
+        "total": 2}'
+  recorded_at: Fri, 01 Mar 2024 01:33:18 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=2&location=San%20Francisco&price=1&radius=40000&start_date=1709256798
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Ratelimit-Resettime:
+      - '2024-03-02T00:00:00+00:00'
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Remaining:
+      - '408.0'
+      X-Tracing-Auth:
+      - _1mrWICpdksD2QVddAMnzwCA5xuib_Iq94lIjc_Bv08
+      Ratelimit-Dailylimit:
+      - '500.0'
+      Server:
+      - envoy
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-xkwcw; site=public_api_v3
+      X-Zipkin-Id:
+      - 4f904bfa22407ab1
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-82-75-useast1aprod
+      X-Extlb:
+      - 10-65-82-75-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 01 Mar 2024 01:33:18 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8220-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 191, "category": "other", "cost": null,
+        "cost_max": null, "description": "Are you ready to celebrate Women''s History
+        Month with #WomenRunSF in March? \nIn fact, we''re so excited that we''re
+        going to be keping the celebration going...", "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/FnjiIpLcDBg8wnjtUHTQsA/o.jpg",
+        "interested_count": 29, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7726402, "longitude": -122.4099154, "name": "Women Run
+        SF", "tickets_url": null, "time_end": "2024-04-06T00:00:00-07:00", "time_start":
+        "2024-03-07T00:00:00-08:00", "location": {"address1": "", "address2": "",
+        "address3": "", "city": "San Francisco", "zip_code": "94103", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA 94103"], "cross_streets":
+        ""}, "business_id": "city-of-san-francisco-san-francisco"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": null, "cost_max": null, "description":
+        "#WomenRunSF - https://www.yelp.com/events/san-francisco-women-run-sf\n\nOn
+        a mission to reengineer ice cream, Smitten Founder, Robyn Sue Fisher, began...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-women-run-sf-yelp-community-experience-smitten-ice-cream",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/BesjQ_ZGU8f3VRJM9VUVeA/o.jpg",
+        "interested_count": 263, "is_canceled": false, "is_free": false, "is_official":
+        true, "latitude": 37.7584027, "longitude": -122.421653, "name": "Women Run
+        SF! Yelp Community Experience: Smitten Ice Cream", "tickets_url": null, "time_end":
+        "2024-03-18T21:00:00-07:00", "time_start": "2024-03-11T14:00:00-07:00", "location":
+        {"address1": "904 Valencia St", "address2": "", "address3": null, "city":
+        "San Francisco", "zip_code": "94110", "country": "US", "state": "CA", "display_address":
+        ["904 Valencia St", "San Francisco, CA 94110"], "cross_streets": "Liberty
+        St & 20th St"}, "business_id": "yelp-community-experience-smitten-ice-cream-san-francisco"}],
+        "total": 2}'
+  recorded_at: Fri, 01 Mar 2024 01:33:18 GMT
+recorded_with: VCR 6.2.0

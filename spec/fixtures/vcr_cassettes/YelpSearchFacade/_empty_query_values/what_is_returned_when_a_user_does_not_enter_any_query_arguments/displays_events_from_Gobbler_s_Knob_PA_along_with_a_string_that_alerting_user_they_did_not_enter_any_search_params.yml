@@ -1,0 +1,1893 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=10&location=gobbler%27s%20knob,%20pa&radius=40000&start_time=1709263620
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Zipkin-Id:
+      - f13eebb3ae3c67dc
+      Ratelimit-Dailylimit:
+      - '500.0'
+      Ratelimit-Resettime:
+      - '2024-03-02T00:00:00+00:00'
+      Ratelimit-Remaining:
+      - '349.0'
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-cnjsm; site=public_api_v3
+      X-B3-Sampled:
+      - '0'
+      Server:
+      - envoy
+      X-Tracing-Auth:
+      - AEJQNzz0Q1KkJa3i57ldspc4EsZgvj9nIzE3llRO6oY
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-175-176-useast1bprod
+      X-Extlb:
+      - 10-65-175-176-useast1bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 01 Mar 2024 03:27:00 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8223-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 1, "category": "charities", "cost":
+        null, "cost_max": null, "description": "May Mart 16th and 17th 2014\nFLOWERS
+        - CRAFTS - FOOD \nOVER 75 VENDORS & CRAFTERS FILLING \nTWO ARENAS and  SELLING
+        UNIQUE ITEMS \nFriday the 16th from 10 AM to...", "event_site_url": "https://www.yelp.com/events/indiana-may-mart?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-may-mart", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/o63oqJCoeYRU_jtQxrYGpA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 40.6201232, "longitude": -79.1287319, "name": "May Mart",
+        "tickets_url": "", "time_end": null, "time_start": "2014-05-16T10:00:00-04:00",
+        "location": {"address1": "475 East Pike", "address2": "", "address3": "",
+        "city": "Indiana", "zip_code": "15701", "country": "US", "state": "PA", "display_address":
+        ["475 East Pike Road, Indiana, PA 15701"], "cross_streets": ""}, "business_id":
+        null}, {"attending_count": 0, "category": "festivals-fairs", "cost": null,
+        "cost_max": null, "description": "Jimmy Stewart Airport Festival is a two
+        day event held every year in the spring.  This year, the Airport  Festival
+        will be held on Saturday and Sunday, June...", "event_site_url": "https://www.yelp.com/events/indiana-jimmy-stewart-airport-festival?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-jimmy-stewart-airport-festival", "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/kPbPcWpzIqpFnlTjQo7JOA/o.jpg",
+        "interested_count": 1, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 40.6358378, "longitude": -79.103384, "name": "Jimmy Stewart
+        Airport Festival", "tickets_url": null, "time_end": "2014-06-15T17:00:00-04:00",
+        "time_start": "2014-06-14T08:00:00-04:00", "location": {"address1": "398 Airport
+        Road", "address2": "", "address3": "", "city": "Indiana", "zip_code": "15701",
+        "country": "US", "state": "PA", "display_address": ["398 Airport Road, Indiana,
+        PA 15701"], "cross_streets": ""}, "business_id": null}, {"attending_count":
+        1, "category": "kids-family", "cost": null, "cost_max": null, "description":
+        "CAPY''s annual Back to School Pool Party is set for August 21 from 8:15-11:00
+        pm at the Chesterfield Family Aquatic Center.  CAPY is the Chesterfield...",
+        "event_site_url": "https://www.yelp.com/events/clearfield-county-capy-pool-party?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "clearfield-county-capy-pool-party", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/8DZWstPtO7452fSKcRFB7g/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 40.77903, "longitude": -78.6341996, "name": "CAPY Pool
+        Party", "tickets_url": "", "time_end": "2015-08-21T21:30:00-04:00", "time_start":
+        "2015-08-21T17:30:00-04:00", "location": {"address1": "16365 Lydia Hill Drive",
+        "address2": "", "address3": "", "city": "Clearfield County", "zip_code": "",
+        "country": "US", "state": "PA", "display_address": ["Clearfield County, PA"],
+        "cross_streets": ""}, "business_id": null}, {"attending_count": 1, "category":
+        "lectures-books", "cost": null, "cost_max": null, "description": "We tend
+        to think of money and possessions as being of this world.  Things that define
+        our status here on earth.  But God calls us to be good stewards of...", "event_site_url":
+        "https://www.yelp.com/events/du-bois-leaving-a-lasting-legacy-seminar?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "du-bois-leaving-a-lasting-legacy-seminar", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/HpHm4ywnvYck9eeBMbk3Nw/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 41.140507, "longitude": -78.69207829999999, "name": "Leaving
+        a Lasting Legacy Seminar", "tickets_url": "http://www.fln.org/events/event/859672-2016-09-22-leaving-a-legacy-seminar/",
+        "time_end": "2016-09-20T20:00:00-04:00", "time_start": "2016-09-20T18:30:00-04:00",
+        "location": {"address1": "1881 Old 255 Rd", "address2": null, "address3":
+        null, "city": "Du Bois", "zip_code": "15801", "country": "US", "state": "PA",
+        "display_address": ["1881 Old 255 Rd", "Du Bois, PA 15801"], "cross_streets":
+        ""}, "business_id": "tri-county-church-du-bois"}, {"attending_count": 1, "category":
+        "festivals-fairs", "cost": 0.0, "cost_max": 34.0, "description": "Garden Bros
+        Circus\nLocation: Brookville / Jefferson County Fairgrounds Show Arena\nDay/Date:
+        Tuesday, October 17, 2017 \nShowtimes: 4:30 & 7:30 PM \n\nGARDEN...", "event_site_url":
+        "https://www.yelp.com/events/brookville-garden-bros-circus?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "brookville-garden-bros-circus", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/UZuIntDroO-odVAX8lRjDw/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 41.172058, "longitude": -79.0426167, "name": "Garden Bros
+        Circus", "tickets_url": "", "time_end": null, "time_start": "2017-10-17T16:30:00-04:00",
+        "location": {"address1": "1514 PA-28", "address2": "", "address3": "", "city":
+        "Brookville", "zip_code": "15825", "country": "US", "state": "PA", "display_address":
+        ["1514 PA-28, Brookville, PA 15825"], "cross_streets": ""}, "business_id":
+        null}, {"attending_count": 1, "category": "kids-family", "cost": 0.0, "cost_max":
+        34.0, "description": "Garden Bros Circus\n\nLocation: Kovalchick Complex\n              711
+        Pratt Dr., Indiana, PA 15705\n              \nDay/Date: Sunday | October 15,
+        2017...", "event_site_url": "https://www.yelp.com/events/indiana-garden-bros-circus?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-garden-bros-circus", "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/f299rdpm5-vE-WZceVgcCA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 40.6115212, "longitude": -79.1601089, "name": "Garden Bros
+        Circus", "tickets_url": "", "time_end": "2017-10-15T18:00:00-04:00", "time_start":
+        "2017-10-15T13:00:00-04:00", "location": {"address1": "711 Pratt Drive", "address2":
+        "", "address3": "", "city": "Indiana", "zip_code": "15705", "country": "US",
+        "state": "PA", "display_address": ["711 Pratt Dr, Indiana, PA 15705"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 1, "category": "kids-family",
+        "cost": null, "cost_max": null, "description": "Paul''s Pumpkin Patch, located
+        in Frogtown, PA has been providing Fall Family Fun since its opening in 2008.\n\nPaul''s
+        Pumpkin Patch has all the colorful fall...", "event_site_url": "https://www.yelp.com/events/fairmount-city-pauls-pumpkin-patch-is-open-for-business?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "fairmount-city-pauls-pumpkin-patch-is-open-for-business", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/5HP3fYvQVgz5zhDhDJwNow/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        41.105798, "longitude": -79.3010222, "name": "Paul''s Pumpkin Patch is Open
+        for Business!", "tickets_url": null, "time_end": null, "time_start": "2017-09-27T13:00:00-04:00",
+        "location": {"address1": "395 Marks Ln", "address2": "", "address3": "", "city":
+        "Fairmount City", "zip_code": "16224", "country": "US", "state": "PA", "display_address":
+        ["395 Marks Ln, Fairmount City, PA 16224"], "cross_streets": ""}, "business_id":
+        null}, {"attending_count": 1, "category": "kids-family", "cost": null, "cost_max":
+        null, "description": "Paul''s Pumpkin Patch, located in Frogtown, PA has been
+        providing Fall Family Fun since its opening in 2008.\n\nPaul''s Pumpkin Patch
+        has all the colorful fall...", "event_site_url": "https://www.yelp.com/events/fairmount-city-pauls-pumpkin-patch-is-open-for-business-2?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "fairmount-city-pauls-pumpkin-patch-is-open-for-business-2", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/ephoto/q8J2HSktZ6evzjVCtF1jfA/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        41.1058586, "longitude": -79.3011819, "name": "Paul''s Pumpkin Patch is Open
+        for Business", "tickets_url": "", "time_end": null, "time_start": "2018-10-11T13:00:00-04:00",
+        "location": {"address1": "395 Marks Lane", "address2": "", "address3": "",
+        "city": "Fairmount City", "zip_code": "16224", "country": "US", "state": "PA",
+        "display_address": ["395 Marks Ln, Fairmount City, PA 16224"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 1, "category": "music", "cost":
+        null, "cost_max": null, "description": "Multi-platinum entertainer SARA EVANS
+        is at the top of her game. As the fifth most-played female artist at country
+        radio in nearly the last two decades--...", "event_site_url": "https://www.yelp.com/events/indiana-sara-evans-with-everette-live-at-kovalchick-convention-and-athletic-complex?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-sara-evans-with-everette-live-at-kovalchick-convention-and-athletic-complex",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/Ez8eB7NGy4NXZ-891fuYCg/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 40.6124386, "longitude": -79.16004869999999, "name": "Sara
+        Evans with Everette Live at Kovalchick Convention and Athletic Complex", "tickets_url":
+        "http://smarturl.it/SEIndianaPA", "time_end": null, "time_start": "2021-12-12T19:00:00-05:00",
+        "location": {"address1": "711 Pratt Dr", "address2": "", "address3": "", "city":
+        "Indiana", "zip_code": "15705", "country": "US", "state": "PA", "display_address":
+        ["711 Pratt Dr", "Indiana, PA 15705"], "cross_streets": ""}, "business_id":
+        "kovalchick-convention-and-athletic-complex-indiana"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": 10.0, "cost_max": null, "description":
+        "Pancake & Sausage Breakfast \nJanuary 20th\n6 AM - 11AM \nAdults 10.00  \nGrampian
+        Fire Hall, Main Street Grampian\nBenefits G.P.B. Fire Company", "event_site_url":
+        "https://www.yelp.com/events/grampian-pancake-and-sausage-breakfast?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "grampian-pancake-and-sausage-breakfast", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/qd_QfO8hI8uh29dNCoImWQ/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 40.9651536, "longitude": -78.61269709999999, "name": "Pancake
+        & Sausage Breakfast", "tickets_url": null, "time_end": null, "time_start":
+        "2024-01-20T06:00:00-05:00", "location": {"address1": "251 Main St", "address2":
+        "", "address3": "", "city": "Grampian", "zip_code": "16838", "country": "US",
+        "state": "PA", "display_address": ["251 Main St, Grampian, PA 16838"], "cross_streets":
+        ""}, "business_id": null}], "total": 10}'
+  recorded_at: Fri, 01 Mar 2024 03:27:00 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=10&location=gobbler%27s%20knob,%20pa&radius=40000&start_time=1709263728
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Ratelimit-Resettime:
+      - '2024-03-02T00:00:00+00:00'
+      X-B3-Sampled:
+      - '0'
+      X-Tracing-Auth:
+      - QlLCQY4XDOC2y55UVtzQHK8iJdUHpoVE0-WqtUF7Jm8
+      Server:
+      - envoy
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-9sc74; site=public_api_v3
+      Ratelimit-Dailylimit:
+      - '500.0'
+      Ratelimit-Remaining:
+      - '348.0'
+      X-Zipkin-Id:
+      - 258dbcb5b205efd7
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-80-125-useast1aprod
+      X-Extlb:
+      - 10-65-80-125-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 01 Mar 2024 03:28:49 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8270-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 1, "category": "charities", "cost":
+        null, "cost_max": null, "description": "May Mart 16th and 17th 2014\nFLOWERS
+        - CRAFTS - FOOD \nOVER 75 VENDORS & CRAFTERS FILLING \nTWO ARENAS and  SELLING
+        UNIQUE ITEMS \nFriday the 16th from 10 AM to...", "event_site_url": "https://www.yelp.com/events/indiana-may-mart?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-may-mart", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/o63oqJCoeYRU_jtQxrYGpA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 40.6201232, "longitude": -79.1287319, "name": "May Mart",
+        "tickets_url": "", "time_end": null, "time_start": "2014-05-16T10:00:00-04:00",
+        "location": {"address1": "475 East Pike", "address2": "", "address3": "",
+        "city": "Indiana", "zip_code": "15701", "country": "US", "state": "PA", "display_address":
+        ["475 East Pike Road, Indiana, PA 15701"], "cross_streets": ""}, "business_id":
+        null}, {"attending_count": 0, "category": "festivals-fairs", "cost": null,
+        "cost_max": null, "description": "Jimmy Stewart Airport Festival is a two
+        day event held every year in the spring.  This year, the Airport  Festival
+        will be held on Saturday and Sunday, June...", "event_site_url": "https://www.yelp.com/events/indiana-jimmy-stewart-airport-festival?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-jimmy-stewart-airport-festival", "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/kPbPcWpzIqpFnlTjQo7JOA/o.jpg",
+        "interested_count": 1, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 40.6358378, "longitude": -79.103384, "name": "Jimmy Stewart
+        Airport Festival", "tickets_url": null, "time_end": "2014-06-15T17:00:00-04:00",
+        "time_start": "2014-06-14T08:00:00-04:00", "location": {"address1": "398 Airport
+        Road", "address2": "", "address3": "", "city": "Indiana", "zip_code": "15701",
+        "country": "US", "state": "PA", "display_address": ["398 Airport Road, Indiana,
+        PA 15701"], "cross_streets": ""}, "business_id": null}, {"attending_count":
+        1, "category": "kids-family", "cost": null, "cost_max": null, "description":
+        "CAPY''s annual Back to School Pool Party is set for August 21 from 8:15-11:00
+        pm at the Chesterfield Family Aquatic Center.  CAPY is the Chesterfield...",
+        "event_site_url": "https://www.yelp.com/events/clearfield-county-capy-pool-party?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "clearfield-county-capy-pool-party", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/8DZWstPtO7452fSKcRFB7g/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 40.77903, "longitude": -78.6341996, "name": "CAPY Pool
+        Party", "tickets_url": "", "time_end": "2015-08-21T21:30:00-04:00", "time_start":
+        "2015-08-21T17:30:00-04:00", "location": {"address1": "16365 Lydia Hill Drive",
+        "address2": "", "address3": "", "city": "Clearfield County", "zip_code": "",
+        "country": "US", "state": "PA", "display_address": ["Clearfield County, PA"],
+        "cross_streets": ""}, "business_id": null}, {"attending_count": 1, "category":
+        "lectures-books", "cost": null, "cost_max": null, "description": "We tend
+        to think of money and possessions as being of this world.  Things that define
+        our status here on earth.  But God calls us to be good stewards of...", "event_site_url":
+        "https://www.yelp.com/events/du-bois-leaving-a-lasting-legacy-seminar?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "du-bois-leaving-a-lasting-legacy-seminar", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/HpHm4ywnvYck9eeBMbk3Nw/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 41.140507, "longitude": -78.69207829999999, "name": "Leaving
+        a Lasting Legacy Seminar", "tickets_url": "http://www.fln.org/events/event/859672-2016-09-22-leaving-a-legacy-seminar/",
+        "time_end": "2016-09-20T20:00:00-04:00", "time_start": "2016-09-20T18:30:00-04:00",
+        "location": {"address1": "1881 Old 255 Rd", "address2": null, "address3":
+        null, "city": "Du Bois", "zip_code": "15801", "country": "US", "state": "PA",
+        "display_address": ["1881 Old 255 Rd", "Du Bois, PA 15801"], "cross_streets":
+        ""}, "business_id": "tri-county-church-du-bois"}, {"attending_count": 1, "category":
+        "festivals-fairs", "cost": 0.0, "cost_max": 34.0, "description": "Garden Bros
+        Circus\nLocation: Brookville / Jefferson County Fairgrounds Show Arena\nDay/Date:
+        Tuesday, October 17, 2017 \nShowtimes: 4:30 & 7:30 PM \n\nGARDEN...", "event_site_url":
+        "https://www.yelp.com/events/brookville-garden-bros-circus?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "brookville-garden-bros-circus", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/UZuIntDroO-odVAX8lRjDw/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 41.172058, "longitude": -79.0426167, "name": "Garden Bros
+        Circus", "tickets_url": "", "time_end": null, "time_start": "2017-10-17T16:30:00-04:00",
+        "location": {"address1": "1514 PA-28", "address2": "", "address3": "", "city":
+        "Brookville", "zip_code": "15825", "country": "US", "state": "PA", "display_address":
+        ["1514 PA-28, Brookville, PA 15825"], "cross_streets": ""}, "business_id":
+        null}, {"attending_count": 1, "category": "kids-family", "cost": 0.0, "cost_max":
+        34.0, "description": "Garden Bros Circus\n\nLocation: Kovalchick Complex\n              711
+        Pratt Dr., Indiana, PA 15705\n              \nDay/Date: Sunday | October 15,
+        2017...", "event_site_url": "https://www.yelp.com/events/indiana-garden-bros-circus?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-garden-bros-circus", "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/f299rdpm5-vE-WZceVgcCA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 40.6115212, "longitude": -79.1601089, "name": "Garden Bros
+        Circus", "tickets_url": "", "time_end": "2017-10-15T18:00:00-04:00", "time_start":
+        "2017-10-15T13:00:00-04:00", "location": {"address1": "711 Pratt Drive", "address2":
+        "", "address3": "", "city": "Indiana", "zip_code": "15705", "country": "US",
+        "state": "PA", "display_address": ["711 Pratt Dr, Indiana, PA 15705"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 1, "category": "kids-family",
+        "cost": null, "cost_max": null, "description": "Paul''s Pumpkin Patch, located
+        in Frogtown, PA has been providing Fall Family Fun since its opening in 2008.\n\nPaul''s
+        Pumpkin Patch has all the colorful fall...", "event_site_url": "https://www.yelp.com/events/fairmount-city-pauls-pumpkin-patch-is-open-for-business?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "fairmount-city-pauls-pumpkin-patch-is-open-for-business", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/5HP3fYvQVgz5zhDhDJwNow/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        41.105798, "longitude": -79.3010222, "name": "Paul''s Pumpkin Patch is Open
+        for Business!", "tickets_url": null, "time_end": null, "time_start": "2017-09-27T13:00:00-04:00",
+        "location": {"address1": "395 Marks Ln", "address2": "", "address3": "", "city":
+        "Fairmount City", "zip_code": "16224", "country": "US", "state": "PA", "display_address":
+        ["395 Marks Ln, Fairmount City, PA 16224"], "cross_streets": ""}, "business_id":
+        null}, {"attending_count": 1, "category": "kids-family", "cost": null, "cost_max":
+        null, "description": "Paul''s Pumpkin Patch, located in Frogtown, PA has been
+        providing Fall Family Fun since its opening in 2008.\n\nPaul''s Pumpkin Patch
+        has all the colorful fall...", "event_site_url": "https://www.yelp.com/events/fairmount-city-pauls-pumpkin-patch-is-open-for-business-2?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "fairmount-city-pauls-pumpkin-patch-is-open-for-business-2", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/ephoto/q8J2HSktZ6evzjVCtF1jfA/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        41.1058586, "longitude": -79.3011819, "name": "Paul''s Pumpkin Patch is Open
+        for Business", "tickets_url": "", "time_end": null, "time_start": "2018-10-11T13:00:00-04:00",
+        "location": {"address1": "395 Marks Lane", "address2": "", "address3": "",
+        "city": "Fairmount City", "zip_code": "16224", "country": "US", "state": "PA",
+        "display_address": ["395 Marks Ln, Fairmount City, PA 16224"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 1, "category": "music", "cost":
+        null, "cost_max": null, "description": "Multi-platinum entertainer SARA EVANS
+        is at the top of her game. As the fifth most-played female artist at country
+        radio in nearly the last two decades--...", "event_site_url": "https://www.yelp.com/events/indiana-sara-evans-with-everette-live-at-kovalchick-convention-and-athletic-complex?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-sara-evans-with-everette-live-at-kovalchick-convention-and-athletic-complex",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/Ez8eB7NGy4NXZ-891fuYCg/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 40.6124386, "longitude": -79.16004869999999, "name": "Sara
+        Evans with Everette Live at Kovalchick Convention and Athletic Complex", "tickets_url":
+        "http://smarturl.it/SEIndianaPA", "time_end": null, "time_start": "2021-12-12T19:00:00-05:00",
+        "location": {"address1": "711 Pratt Dr", "address2": "", "address3": "", "city":
+        "Indiana", "zip_code": "15705", "country": "US", "state": "PA", "display_address":
+        ["711 Pratt Dr", "Indiana, PA 15705"], "cross_streets": ""}, "business_id":
+        "kovalchick-convention-and-athletic-complex-indiana"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": 10.0, "cost_max": null, "description":
+        "Pancake & Sausage Breakfast \nJanuary 20th\n6 AM - 11AM \nAdults 10.00  \nGrampian
+        Fire Hall, Main Street Grampian\nBenefits G.P.B. Fire Company", "event_site_url":
+        "https://www.yelp.com/events/grampian-pancake-and-sausage-breakfast?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "grampian-pancake-and-sausage-breakfast", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/qd_QfO8hI8uh29dNCoImWQ/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 40.9651536, "longitude": -78.61269709999999, "name": "Pancake
+        & Sausage Breakfast", "tickets_url": null, "time_end": null, "time_start":
+        "2024-01-20T06:00:00-05:00", "location": {"address1": "251 Main St", "address2":
+        "", "address3": "", "city": "Grampian", "zip_code": "16838", "country": "US",
+        "state": "PA", "display_address": ["251 Main St, Grampian, PA 16838"], "cross_streets":
+        ""}, "business_id": null}], "total": 10}'
+  recorded_at: Fri, 01 Mar 2024 03:28:49 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=10&location=gobbler%27s%20knob,%20pa&radius=40000&start_time=1709277961
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Zipkin-Id:
+      - bd1fc435ed11c32d
+      X-Tracing-Auth:
+      - fwmcYjFvHz1Sscb02gZc6xOfrj9yUW2GCGjb2cTFYbg
+      Ratelimit-Remaining:
+      - '347.0'
+      Server:
+      - envoy
+      X-Routing-Service:
+      - routing-canary--useast1-74574f5c5b-2nphv; site=public_api_v3
+      Ratelimit-Dailylimit:
+      - '500.0'
+      Ratelimit-Resettime:
+      - '2024-03-02T00:00:00+00:00'
+      X-B3-Sampled:
+      - '0'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-180-149-useast1bprod
+      X-Extlb:
+      - 10-65-180-149-useast1bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 01 Mar 2024 07:26:02 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8247-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 1, "category": "charities", "cost":
+        null, "cost_max": null, "description": "May Mart 16th and 17th 2014\nFLOWERS
+        - CRAFTS - FOOD \nOVER 75 VENDORS & CRAFTERS FILLING \nTWO ARENAS and  SELLING
+        UNIQUE ITEMS \nFriday the 16th from 10 AM to...", "event_site_url": "https://www.yelp.com/events/indiana-may-mart?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-may-mart", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/o63oqJCoeYRU_jtQxrYGpA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 40.6201232, "longitude": -79.1287319, "name": "May Mart",
+        "tickets_url": "", "time_end": null, "time_start": "2014-05-16T10:00:00-04:00",
+        "location": {"address1": "475 East Pike", "address2": "", "address3": "",
+        "city": "Indiana", "zip_code": "15701", "country": "US", "state": "PA", "display_address":
+        ["475 East Pike Road, Indiana, PA 15701"], "cross_streets": ""}, "business_id":
+        null}, {"attending_count": 0, "category": "festivals-fairs", "cost": null,
+        "cost_max": null, "description": "Jimmy Stewart Airport Festival is a two
+        day event held every year in the spring.  This year, the Airport  Festival
+        will be held on Saturday and Sunday, June...", "event_site_url": "https://www.yelp.com/events/indiana-jimmy-stewart-airport-festival?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-jimmy-stewart-airport-festival", "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/kPbPcWpzIqpFnlTjQo7JOA/o.jpg",
+        "interested_count": 1, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 40.6358378, "longitude": -79.103384, "name": "Jimmy Stewart
+        Airport Festival", "tickets_url": null, "time_end": "2014-06-15T17:00:00-04:00",
+        "time_start": "2014-06-14T08:00:00-04:00", "location": {"address1": "398 Airport
+        Road", "address2": "", "address3": "", "city": "Indiana", "zip_code": "15701",
+        "country": "US", "state": "PA", "display_address": ["398 Airport Road, Indiana,
+        PA 15701"], "cross_streets": ""}, "business_id": null}, {"attending_count":
+        1, "category": "kids-family", "cost": null, "cost_max": null, "description":
+        "CAPY''s annual Back to School Pool Party is set for August 21 from 8:15-11:00
+        pm at the Chesterfield Family Aquatic Center.  CAPY is the Chesterfield...",
+        "event_site_url": "https://www.yelp.com/events/clearfield-county-capy-pool-party?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "clearfield-county-capy-pool-party", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/8DZWstPtO7452fSKcRFB7g/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 40.77903, "longitude": -78.6341996, "name": "CAPY Pool
+        Party", "tickets_url": "", "time_end": "2015-08-21T21:30:00-04:00", "time_start":
+        "2015-08-21T17:30:00-04:00", "location": {"address1": "16365 Lydia Hill Drive",
+        "address2": "", "address3": "", "city": "Clearfield County", "zip_code": "",
+        "country": "US", "state": "PA", "display_address": ["Clearfield County, PA"],
+        "cross_streets": ""}, "business_id": null}, {"attending_count": 1, "category":
+        "lectures-books", "cost": null, "cost_max": null, "description": "We tend
+        to think of money and possessions as being of this world.  Things that define
+        our status here on earth.  But God calls us to be good stewards of...", "event_site_url":
+        "https://www.yelp.com/events/du-bois-leaving-a-lasting-legacy-seminar?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "du-bois-leaving-a-lasting-legacy-seminar", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/HpHm4ywnvYck9eeBMbk3Nw/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 41.140507, "longitude": -78.69207829999999, "name": "Leaving
+        a Lasting Legacy Seminar", "tickets_url": "http://www.fln.org/events/event/859672-2016-09-22-leaving-a-legacy-seminar/",
+        "time_end": "2016-09-20T20:00:00-04:00", "time_start": "2016-09-20T18:30:00-04:00",
+        "location": {"address1": "1881 Old 255 Rd", "address2": null, "address3":
+        null, "city": "Du Bois", "zip_code": "15801", "country": "US", "state": "PA",
+        "display_address": ["1881 Old 255 Rd", "Du Bois, PA 15801"], "cross_streets":
+        ""}, "business_id": "tri-county-church-du-bois"}, {"attending_count": 1, "category":
+        "festivals-fairs", "cost": 0.0, "cost_max": 34.0, "description": "Garden Bros
+        Circus\nLocation: Brookville / Jefferson County Fairgrounds Show Arena\nDay/Date:
+        Tuesday, October 17, 2017 \nShowtimes: 4:30 & 7:30 PM \n\nGARDEN...", "event_site_url":
+        "https://www.yelp.com/events/brookville-garden-bros-circus?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "brookville-garden-bros-circus", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/UZuIntDroO-odVAX8lRjDw/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 41.172058, "longitude": -79.0426167, "name": "Garden Bros
+        Circus", "tickets_url": "", "time_end": null, "time_start": "2017-10-17T16:30:00-04:00",
+        "location": {"address1": "1514 PA-28", "address2": "", "address3": "", "city":
+        "Brookville", "zip_code": "15825", "country": "US", "state": "PA", "display_address":
+        ["1514 PA-28, Brookville, PA 15825"], "cross_streets": ""}, "business_id":
+        null}, {"attending_count": 1, "category": "kids-family", "cost": 0.0, "cost_max":
+        34.0, "description": "Garden Bros Circus\n\nLocation: Kovalchick Complex\n              711
+        Pratt Dr., Indiana, PA 15705\n              \nDay/Date: Sunday | October 15,
+        2017...", "event_site_url": "https://www.yelp.com/events/indiana-garden-bros-circus?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-garden-bros-circus", "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/f299rdpm5-vE-WZceVgcCA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 40.6115212, "longitude": -79.1601089, "name": "Garden Bros
+        Circus", "tickets_url": "", "time_end": "2017-10-15T18:00:00-04:00", "time_start":
+        "2017-10-15T13:00:00-04:00", "location": {"address1": "711 Pratt Drive", "address2":
+        "", "address3": "", "city": "Indiana", "zip_code": "15705", "country": "US",
+        "state": "PA", "display_address": ["711 Pratt Dr, Indiana, PA 15705"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 1, "category": "kids-family",
+        "cost": null, "cost_max": null, "description": "Paul''s Pumpkin Patch, located
+        in Frogtown, PA has been providing Fall Family Fun since its opening in 2008.\n\nPaul''s
+        Pumpkin Patch has all the colorful fall...", "event_site_url": "https://www.yelp.com/events/fairmount-city-pauls-pumpkin-patch-is-open-for-business?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "fairmount-city-pauls-pumpkin-patch-is-open-for-business", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/5HP3fYvQVgz5zhDhDJwNow/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        41.105798, "longitude": -79.3010222, "name": "Paul''s Pumpkin Patch is Open
+        for Business!", "tickets_url": null, "time_end": null, "time_start": "2017-09-27T13:00:00-04:00",
+        "location": {"address1": "395 Marks Ln", "address2": "", "address3": "", "city":
+        "Fairmount City", "zip_code": "16224", "country": "US", "state": "PA", "display_address":
+        ["395 Marks Ln, Fairmount City, PA 16224"], "cross_streets": ""}, "business_id":
+        null}, {"attending_count": 1, "category": "kids-family", "cost": null, "cost_max":
+        null, "description": "Paul''s Pumpkin Patch, located in Frogtown, PA has been
+        providing Fall Family Fun since its opening in 2008.\n\nPaul''s Pumpkin Patch
+        has all the colorful fall...", "event_site_url": "https://www.yelp.com/events/fairmount-city-pauls-pumpkin-patch-is-open-for-business-2?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "fairmount-city-pauls-pumpkin-patch-is-open-for-business-2", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/ephoto/q8J2HSktZ6evzjVCtF1jfA/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        41.1058586, "longitude": -79.3011819, "name": "Paul''s Pumpkin Patch is Open
+        for Business", "tickets_url": "", "time_end": null, "time_start": "2018-10-11T13:00:00-04:00",
+        "location": {"address1": "395 Marks Lane", "address2": "", "address3": "",
+        "city": "Fairmount City", "zip_code": "16224", "country": "US", "state": "PA",
+        "display_address": ["395 Marks Ln, Fairmount City, PA 16224"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 1, "category": "music", "cost":
+        null, "cost_max": null, "description": "Multi-platinum entertainer SARA EVANS
+        is at the top of her game. As the fifth most-played female artist at country
+        radio in nearly the last two decades--...", "event_site_url": "https://www.yelp.com/events/indiana-sara-evans-with-everette-live-at-kovalchick-convention-and-athletic-complex?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-sara-evans-with-everette-live-at-kovalchick-convention-and-athletic-complex",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/Ez8eB7NGy4NXZ-891fuYCg/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 40.6124386, "longitude": -79.16004869999999, "name": "Sara
+        Evans with Everette Live at Kovalchick Convention and Athletic Complex", "tickets_url":
+        "http://smarturl.it/SEIndianaPA", "time_end": null, "time_start": "2021-12-12T19:00:00-05:00",
+        "location": {"address1": "711 Pratt Dr", "address2": "", "address3": "", "city":
+        "Indiana", "zip_code": "15705", "country": "US", "state": "PA", "display_address":
+        ["711 Pratt Dr", "Indiana, PA 15705"], "cross_streets": ""}, "business_id":
+        "kovalchick-convention-and-athletic-complex-indiana"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": 10.0, "cost_max": null, "description":
+        "Pancake & Sausage Breakfast \nJanuary 20th\n6 AM - 11AM \nAdults 10.00  \nGrampian
+        Fire Hall, Main Street Grampian\nBenefits G.P.B. Fire Company", "event_site_url":
+        "https://www.yelp.com/events/grampian-pancake-and-sausage-breakfast?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "grampian-pancake-and-sausage-breakfast", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/qd_QfO8hI8uh29dNCoImWQ/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 40.9651536, "longitude": -78.61269709999999, "name": "Pancake
+        & Sausage Breakfast", "tickets_url": null, "time_end": null, "time_start":
+        "2024-01-20T06:00:00-05:00", "location": {"address1": "251 Main St", "address2":
+        "", "address3": "", "city": "Grampian", "zip_code": "16838", "country": "US",
+        "state": "PA", "display_address": ["251 Main St, Grampian, PA 16838"], "cross_streets":
+        ""}, "business_id": null}], "total": 10}'
+  recorded_at: Fri, 01 Mar 2024 07:26:02 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=10&location=gobbler%27s%20knob,%20pa&radius=40000&start_time=1709278193
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Resettime:
+      - '2024-03-02T00:00:00+00:00'
+      X-Zipkin-Id:
+      - 06136537f90c0516
+      Ratelimit-Dailylimit:
+      - '500.0'
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-9sc74; site=public_api_v3
+      Ratelimit-Remaining:
+      - '346.0'
+      Server:
+      - envoy
+      X-Tracing-Auth:
+      - WEkbagDGRqE8QdJ-GbQWedXtLMz16_hGPD5ipsa3RHc
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-172-4-useast1bprod
+      X-Extlb:
+      - 10-65-172-4-useast1bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 01 Mar 2024 07:29:54 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8231-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 1, "category": "charities", "cost":
+        null, "cost_max": null, "description": "May Mart 16th and 17th 2014\nFLOWERS
+        - CRAFTS - FOOD \nOVER 75 VENDORS & CRAFTERS FILLING \nTWO ARENAS and  SELLING
+        UNIQUE ITEMS \nFriday the 16th from 10 AM to...", "event_site_url": "https://www.yelp.com/events/indiana-may-mart?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-may-mart", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/o63oqJCoeYRU_jtQxrYGpA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 40.6201232, "longitude": -79.1287319, "name": "May Mart",
+        "tickets_url": "", "time_end": null, "time_start": "2014-05-16T10:00:00-04:00",
+        "location": {"address1": "475 East Pike", "address2": "", "address3": "",
+        "city": "Indiana", "zip_code": "15701", "country": "US", "state": "PA", "display_address":
+        ["475 East Pike Road, Indiana, PA 15701"], "cross_streets": ""}, "business_id":
+        null}, {"attending_count": 0, "category": "festivals-fairs", "cost": null,
+        "cost_max": null, "description": "Jimmy Stewart Airport Festival is a two
+        day event held every year in the spring.  This year, the Airport  Festival
+        will be held on Saturday and Sunday, June...", "event_site_url": "https://www.yelp.com/events/indiana-jimmy-stewart-airport-festival?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-jimmy-stewart-airport-festival", "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/kPbPcWpzIqpFnlTjQo7JOA/o.jpg",
+        "interested_count": 1, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 40.6358378, "longitude": -79.103384, "name": "Jimmy Stewart
+        Airport Festival", "tickets_url": null, "time_end": "2014-06-15T17:00:00-04:00",
+        "time_start": "2014-06-14T08:00:00-04:00", "location": {"address1": "398 Airport
+        Road", "address2": "", "address3": "", "city": "Indiana", "zip_code": "15701",
+        "country": "US", "state": "PA", "display_address": ["398 Airport Road, Indiana,
+        PA 15701"], "cross_streets": ""}, "business_id": null}, {"attending_count":
+        1, "category": "kids-family", "cost": null, "cost_max": null, "description":
+        "CAPY''s annual Back to School Pool Party is set for August 21 from 8:15-11:00
+        pm at the Chesterfield Family Aquatic Center.  CAPY is the Chesterfield...",
+        "event_site_url": "https://www.yelp.com/events/clearfield-county-capy-pool-party?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "clearfield-county-capy-pool-party", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/8DZWstPtO7452fSKcRFB7g/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 40.77903, "longitude": -78.6341996, "name": "CAPY Pool
+        Party", "tickets_url": "", "time_end": "2015-08-21T21:30:00-04:00", "time_start":
+        "2015-08-21T17:30:00-04:00", "location": {"address1": "16365 Lydia Hill Drive",
+        "address2": "", "address3": "", "city": "Clearfield County", "zip_code": "",
+        "country": "US", "state": "PA", "display_address": ["Clearfield County, PA"],
+        "cross_streets": ""}, "business_id": null}, {"attending_count": 1, "category":
+        "lectures-books", "cost": null, "cost_max": null, "description": "We tend
+        to think of money and possessions as being of this world.  Things that define
+        our status here on earth.  But God calls us to be good stewards of...", "event_site_url":
+        "https://www.yelp.com/events/du-bois-leaving-a-lasting-legacy-seminar?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "du-bois-leaving-a-lasting-legacy-seminar", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/HpHm4ywnvYck9eeBMbk3Nw/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 41.140507, "longitude": -78.69207829999999, "name": "Leaving
+        a Lasting Legacy Seminar", "tickets_url": "http://www.fln.org/events/event/859672-2016-09-22-leaving-a-legacy-seminar/",
+        "time_end": "2016-09-20T20:00:00-04:00", "time_start": "2016-09-20T18:30:00-04:00",
+        "location": {"address1": "1881 Old 255 Rd", "address2": null, "address3":
+        null, "city": "Du Bois", "zip_code": "15801", "country": "US", "state": "PA",
+        "display_address": ["1881 Old 255 Rd", "Du Bois, PA 15801"], "cross_streets":
+        ""}, "business_id": "tri-county-church-du-bois"}, {"attending_count": 1, "category":
+        "festivals-fairs", "cost": 0.0, "cost_max": 34.0, "description": "Garden Bros
+        Circus\nLocation: Brookville / Jefferson County Fairgrounds Show Arena\nDay/Date:
+        Tuesday, October 17, 2017 \nShowtimes: 4:30 & 7:30 PM \n\nGARDEN...", "event_site_url":
+        "https://www.yelp.com/events/brookville-garden-bros-circus?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "brookville-garden-bros-circus", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/UZuIntDroO-odVAX8lRjDw/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 41.172058, "longitude": -79.0426167, "name": "Garden Bros
+        Circus", "tickets_url": "", "time_end": null, "time_start": "2017-10-17T16:30:00-04:00",
+        "location": {"address1": "1514 PA-28", "address2": "", "address3": "", "city":
+        "Brookville", "zip_code": "15825", "country": "US", "state": "PA", "display_address":
+        ["1514 PA-28, Brookville, PA 15825"], "cross_streets": ""}, "business_id":
+        null}, {"attending_count": 1, "category": "kids-family", "cost": 0.0, "cost_max":
+        34.0, "description": "Garden Bros Circus\n\nLocation: Kovalchick Complex\n              711
+        Pratt Dr., Indiana, PA 15705\n              \nDay/Date: Sunday | October 15,
+        2017...", "event_site_url": "https://www.yelp.com/events/indiana-garden-bros-circus?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-garden-bros-circus", "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/f299rdpm5-vE-WZceVgcCA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 40.6115212, "longitude": -79.1601089, "name": "Garden Bros
+        Circus", "tickets_url": "", "time_end": "2017-10-15T18:00:00-04:00", "time_start":
+        "2017-10-15T13:00:00-04:00", "location": {"address1": "711 Pratt Drive", "address2":
+        "", "address3": "", "city": "Indiana", "zip_code": "15705", "country": "US",
+        "state": "PA", "display_address": ["711 Pratt Dr, Indiana, PA 15705"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 1, "category": "kids-family",
+        "cost": null, "cost_max": null, "description": "Paul''s Pumpkin Patch, located
+        in Frogtown, PA has been providing Fall Family Fun since its opening in 2008.\n\nPaul''s
+        Pumpkin Patch has all the colorful fall...", "event_site_url": "https://www.yelp.com/events/fairmount-city-pauls-pumpkin-patch-is-open-for-business?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "fairmount-city-pauls-pumpkin-patch-is-open-for-business", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/5HP3fYvQVgz5zhDhDJwNow/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        41.105798, "longitude": -79.3010222, "name": "Paul''s Pumpkin Patch is Open
+        for Business!", "tickets_url": null, "time_end": null, "time_start": "2017-09-27T13:00:00-04:00",
+        "location": {"address1": "395 Marks Ln", "address2": "", "address3": "", "city":
+        "Fairmount City", "zip_code": "16224", "country": "US", "state": "PA", "display_address":
+        ["395 Marks Ln, Fairmount City, PA 16224"], "cross_streets": ""}, "business_id":
+        null}, {"attending_count": 1, "category": "kids-family", "cost": null, "cost_max":
+        null, "description": "Paul''s Pumpkin Patch, located in Frogtown, PA has been
+        providing Fall Family Fun since its opening in 2008.\n\nPaul''s Pumpkin Patch
+        has all the colorful fall...", "event_site_url": "https://www.yelp.com/events/fairmount-city-pauls-pumpkin-patch-is-open-for-business-2?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "fairmount-city-pauls-pumpkin-patch-is-open-for-business-2", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/ephoto/q8J2HSktZ6evzjVCtF1jfA/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        41.1058586, "longitude": -79.3011819, "name": "Paul''s Pumpkin Patch is Open
+        for Business", "tickets_url": "", "time_end": null, "time_start": "2018-10-11T13:00:00-04:00",
+        "location": {"address1": "395 Marks Lane", "address2": "", "address3": "",
+        "city": "Fairmount City", "zip_code": "16224", "country": "US", "state": "PA",
+        "display_address": ["395 Marks Ln, Fairmount City, PA 16224"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 1, "category": "music", "cost":
+        null, "cost_max": null, "description": "Multi-platinum entertainer SARA EVANS
+        is at the top of her game. As the fifth most-played female artist at country
+        radio in nearly the last two decades--...", "event_site_url": "https://www.yelp.com/events/indiana-sara-evans-with-everette-live-at-kovalchick-convention-and-athletic-complex?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-sara-evans-with-everette-live-at-kovalchick-convention-and-athletic-complex",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/Ez8eB7NGy4NXZ-891fuYCg/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 40.6124386, "longitude": -79.16004869999999, "name": "Sara
+        Evans with Everette Live at Kovalchick Convention and Athletic Complex", "tickets_url":
+        "http://smarturl.it/SEIndianaPA", "time_end": null, "time_start": "2021-12-12T19:00:00-05:00",
+        "location": {"address1": "711 Pratt Dr", "address2": "", "address3": "", "city":
+        "Indiana", "zip_code": "15705", "country": "US", "state": "PA", "display_address":
+        ["711 Pratt Dr", "Indiana, PA 15705"], "cross_streets": ""}, "business_id":
+        "kovalchick-convention-and-athletic-complex-indiana"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": 10.0, "cost_max": null, "description":
+        "Pancake & Sausage Breakfast \nJanuary 20th\n6 AM - 11AM \nAdults 10.00  \nGrampian
+        Fire Hall, Main Street Grampian\nBenefits G.P.B. Fire Company", "event_site_url":
+        "https://www.yelp.com/events/grampian-pancake-and-sausage-breakfast?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "grampian-pancake-and-sausage-breakfast", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/qd_QfO8hI8uh29dNCoImWQ/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 40.9651536, "longitude": -78.61269709999999, "name": "Pancake
+        & Sausage Breakfast", "tickets_url": null, "time_end": null, "time_start":
+        "2024-01-20T06:00:00-05:00", "location": {"address1": "251 Main St", "address2":
+        "", "address3": "", "city": "Grampian", "zip_code": "16838", "country": "US",
+        "state": "PA", "display_address": ["251 Main St, Grampian, PA 16838"], "cross_streets":
+        ""}, "business_id": null}], "total": 10}'
+  recorded_at: Fri, 01 Mar 2024 07:29:54 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=10&location=gobbler%27s%20knob,%20pa&radius=40000&start_time=1709279166
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Zipkin-Id:
+      - a6b9859ac86d955b
+      Ratelimit-Remaining:
+      - '345.0'
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Dailylimit:
+      - '500.0'
+      X-Tracing-Auth:
+      - D1-rIe6pxtcikhab4kSQ5j5dB2wIuZC-0v_qWvIsf6Y
+      Ratelimit-Resettime:
+      - '2024-03-02T00:00:00+00:00'
+      Server:
+      - envoy
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-mnz6p; site=public_api_v3
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-180-149-useast1bprod
+      X-Extlb:
+      - 10-65-180-149-useast1bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 01 Mar 2024 07:46:06 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8263-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 1, "category": "charities", "cost":
+        null, "cost_max": null, "description": "May Mart 16th and 17th 2014\nFLOWERS
+        - CRAFTS - FOOD \nOVER 75 VENDORS & CRAFTERS FILLING \nTWO ARENAS and  SELLING
+        UNIQUE ITEMS \nFriday the 16th from 10 AM to...", "event_site_url": "https://www.yelp.com/events/indiana-may-mart?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-may-mart", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/o63oqJCoeYRU_jtQxrYGpA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 40.6201232, "longitude": -79.1287319, "name": "May Mart",
+        "tickets_url": "", "time_end": null, "time_start": "2014-05-16T10:00:00-04:00",
+        "location": {"address1": "475 East Pike", "address2": "", "address3": "",
+        "city": "Indiana", "zip_code": "15701", "country": "US", "state": "PA", "display_address":
+        ["475 East Pike Road, Indiana, PA 15701"], "cross_streets": ""}, "business_id":
+        null}, {"attending_count": 0, "category": "festivals-fairs", "cost": null,
+        "cost_max": null, "description": "Jimmy Stewart Airport Festival is a two
+        day event held every year in the spring.  This year, the Airport  Festival
+        will be held on Saturday and Sunday, June...", "event_site_url": "https://www.yelp.com/events/indiana-jimmy-stewart-airport-festival?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-jimmy-stewart-airport-festival", "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/kPbPcWpzIqpFnlTjQo7JOA/o.jpg",
+        "interested_count": 1, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 40.6358378, "longitude": -79.103384, "name": "Jimmy Stewart
+        Airport Festival", "tickets_url": null, "time_end": "2014-06-15T17:00:00-04:00",
+        "time_start": "2014-06-14T08:00:00-04:00", "location": {"address1": "398 Airport
+        Road", "address2": "", "address3": "", "city": "Indiana", "zip_code": "15701",
+        "country": "US", "state": "PA", "display_address": ["398 Airport Road, Indiana,
+        PA 15701"], "cross_streets": ""}, "business_id": null}, {"attending_count":
+        1, "category": "kids-family", "cost": null, "cost_max": null, "description":
+        "CAPY''s annual Back to School Pool Party is set for August 21 from 8:15-11:00
+        pm at the Chesterfield Family Aquatic Center.  CAPY is the Chesterfield...",
+        "event_site_url": "https://www.yelp.com/events/clearfield-county-capy-pool-party?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "clearfield-county-capy-pool-party", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/8DZWstPtO7452fSKcRFB7g/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 40.77903, "longitude": -78.6341996, "name": "CAPY Pool
+        Party", "tickets_url": "", "time_end": "2015-08-21T21:30:00-04:00", "time_start":
+        "2015-08-21T17:30:00-04:00", "location": {"address1": "16365 Lydia Hill Drive",
+        "address2": "", "address3": "", "city": "Clearfield County", "zip_code": "",
+        "country": "US", "state": "PA", "display_address": ["Clearfield County, PA"],
+        "cross_streets": ""}, "business_id": null}, {"attending_count": 1, "category":
+        "lectures-books", "cost": null, "cost_max": null, "description": "We tend
+        to think of money and possessions as being of this world.  Things that define
+        our status here on earth.  But God calls us to be good stewards of...", "event_site_url":
+        "https://www.yelp.com/events/du-bois-leaving-a-lasting-legacy-seminar?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "du-bois-leaving-a-lasting-legacy-seminar", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/HpHm4ywnvYck9eeBMbk3Nw/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 41.140507, "longitude": -78.69207829999999, "name": "Leaving
+        a Lasting Legacy Seminar", "tickets_url": "http://www.fln.org/events/event/859672-2016-09-22-leaving-a-legacy-seminar/",
+        "time_end": "2016-09-20T20:00:00-04:00", "time_start": "2016-09-20T18:30:00-04:00",
+        "location": {"address1": "1881 Old 255 Rd", "address2": null, "address3":
+        null, "city": "Du Bois", "zip_code": "15801", "country": "US", "state": "PA",
+        "display_address": ["1881 Old 255 Rd", "Du Bois, PA 15801"], "cross_streets":
+        ""}, "business_id": "tri-county-church-du-bois"}, {"attending_count": 1, "category":
+        "festivals-fairs", "cost": 0.0, "cost_max": 34.0, "description": "Garden Bros
+        Circus\nLocation: Brookville / Jefferson County Fairgrounds Show Arena\nDay/Date:
+        Tuesday, October 17, 2017 \nShowtimes: 4:30 & 7:30 PM \n\nGARDEN...", "event_site_url":
+        "https://www.yelp.com/events/brookville-garden-bros-circus?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "brookville-garden-bros-circus", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/UZuIntDroO-odVAX8lRjDw/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 41.172058, "longitude": -79.0426167, "name": "Garden Bros
+        Circus", "tickets_url": "", "time_end": null, "time_start": "2017-10-17T16:30:00-04:00",
+        "location": {"address1": "1514 PA-28", "address2": "", "address3": "", "city":
+        "Brookville", "zip_code": "15825", "country": "US", "state": "PA", "display_address":
+        ["1514 PA-28, Brookville, PA 15825"], "cross_streets": ""}, "business_id":
+        null}, {"attending_count": 1, "category": "kids-family", "cost": 0.0, "cost_max":
+        34.0, "description": "Garden Bros Circus\n\nLocation: Kovalchick Complex\n              711
+        Pratt Dr., Indiana, PA 15705\n              \nDay/Date: Sunday | October 15,
+        2017...", "event_site_url": "https://www.yelp.com/events/indiana-garden-bros-circus?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-garden-bros-circus", "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/f299rdpm5-vE-WZceVgcCA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 40.6115212, "longitude": -79.1601089, "name": "Garden Bros
+        Circus", "tickets_url": "", "time_end": "2017-10-15T18:00:00-04:00", "time_start":
+        "2017-10-15T13:00:00-04:00", "location": {"address1": "711 Pratt Drive", "address2":
+        "", "address3": "", "city": "Indiana", "zip_code": "15705", "country": "US",
+        "state": "PA", "display_address": ["711 Pratt Dr, Indiana, PA 15705"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 1, "category": "kids-family",
+        "cost": null, "cost_max": null, "description": "Paul''s Pumpkin Patch, located
+        in Frogtown, PA has been providing Fall Family Fun since its opening in 2008.\n\nPaul''s
+        Pumpkin Patch has all the colorful fall...", "event_site_url": "https://www.yelp.com/events/fairmount-city-pauls-pumpkin-patch-is-open-for-business?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "fairmount-city-pauls-pumpkin-patch-is-open-for-business", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/5HP3fYvQVgz5zhDhDJwNow/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        41.105798, "longitude": -79.3010222, "name": "Paul''s Pumpkin Patch is Open
+        for Business!", "tickets_url": null, "time_end": null, "time_start": "2017-09-27T13:00:00-04:00",
+        "location": {"address1": "395 Marks Ln", "address2": "", "address3": "", "city":
+        "Fairmount City", "zip_code": "16224", "country": "US", "state": "PA", "display_address":
+        ["395 Marks Ln, Fairmount City, PA 16224"], "cross_streets": ""}, "business_id":
+        null}, {"attending_count": 1, "category": "kids-family", "cost": null, "cost_max":
+        null, "description": "Paul''s Pumpkin Patch, located in Frogtown, PA has been
+        providing Fall Family Fun since its opening in 2008.\n\nPaul''s Pumpkin Patch
+        has all the colorful fall...", "event_site_url": "https://www.yelp.com/events/fairmount-city-pauls-pumpkin-patch-is-open-for-business-2?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "fairmount-city-pauls-pumpkin-patch-is-open-for-business-2", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/ephoto/q8J2HSktZ6evzjVCtF1jfA/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        41.1058586, "longitude": -79.3011819, "name": "Paul''s Pumpkin Patch is Open
+        for Business", "tickets_url": "", "time_end": null, "time_start": "2018-10-11T13:00:00-04:00",
+        "location": {"address1": "395 Marks Lane", "address2": "", "address3": "",
+        "city": "Fairmount City", "zip_code": "16224", "country": "US", "state": "PA",
+        "display_address": ["395 Marks Ln, Fairmount City, PA 16224"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 1, "category": "music", "cost":
+        null, "cost_max": null, "description": "Multi-platinum entertainer SARA EVANS
+        is at the top of her game. As the fifth most-played female artist at country
+        radio in nearly the last two decades--...", "event_site_url": "https://www.yelp.com/events/indiana-sara-evans-with-everette-live-at-kovalchick-convention-and-athletic-complex?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-sara-evans-with-everette-live-at-kovalchick-convention-and-athletic-complex",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/Ez8eB7NGy4NXZ-891fuYCg/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 40.6124386, "longitude": -79.16004869999999, "name": "Sara
+        Evans with Everette Live at Kovalchick Convention and Athletic Complex", "tickets_url":
+        "http://smarturl.it/SEIndianaPA", "time_end": null, "time_start": "2021-12-12T19:00:00-05:00",
+        "location": {"address1": "711 Pratt Dr", "address2": "", "address3": "", "city":
+        "Indiana", "zip_code": "15705", "country": "US", "state": "PA", "display_address":
+        ["711 Pratt Dr", "Indiana, PA 15705"], "cross_streets": ""}, "business_id":
+        "kovalchick-convention-and-athletic-complex-indiana"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": 10.0, "cost_max": null, "description":
+        "Pancake & Sausage Breakfast \nJanuary 20th\n6 AM - 11AM \nAdults 10.00  \nGrampian
+        Fire Hall, Main Street Grampian\nBenefits G.P.B. Fire Company", "event_site_url":
+        "https://www.yelp.com/events/grampian-pancake-and-sausage-breakfast?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "grampian-pancake-and-sausage-breakfast", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/qd_QfO8hI8uh29dNCoImWQ/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 40.9651536, "longitude": -78.61269709999999, "name": "Pancake
+        & Sausage Breakfast", "tickets_url": null, "time_end": null, "time_start":
+        "2024-01-20T06:00:00-05:00", "location": {"address1": "251 Main St", "address2":
+        "", "address3": "", "city": "Grampian", "zip_code": "16838", "country": "US",
+        "state": "PA", "display_address": ["251 Main St, Grampian, PA 16838"], "cross_streets":
+        ""}, "business_id": null}], "total": 10}'
+  recorded_at: Fri, 01 Mar 2024 07:46:06 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=10&location=gobbler%27s%20knob,%20pa&radius=40000&start_time=1709279182
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Tracing-Auth:
+      - EMi186c4A04W_e4UG83VDe6WaNd9c3nvijTsobmYFys
+      X-Zipkin-Id:
+      - e25f162f2feef14e
+      Ratelimit-Remaining:
+      - '344.0'
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Resettime:
+      - '2024-03-02T00:00:00+00:00'
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-s4kxb; site=public_api_v3
+      Server:
+      - envoy
+      Ratelimit-Dailylimit:
+      - '500.0'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-187-35-useast1bprod
+      X-Extlb:
+      - 10-65-187-35-useast1bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 01 Mar 2024 07:46:22 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8232-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 1, "category": "charities", "cost":
+        null, "cost_max": null, "description": "May Mart 16th and 17th 2014\nFLOWERS
+        - CRAFTS - FOOD \nOVER 75 VENDORS & CRAFTERS FILLING \nTWO ARENAS and  SELLING
+        UNIQUE ITEMS \nFriday the 16th from 10 AM to...", "event_site_url": "https://www.yelp.com/events/indiana-may-mart?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-may-mart", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/o63oqJCoeYRU_jtQxrYGpA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 40.6201232, "longitude": -79.1287319, "name": "May Mart",
+        "tickets_url": "", "time_end": null, "time_start": "2014-05-16T10:00:00-04:00",
+        "location": {"address1": "475 East Pike", "address2": "", "address3": "",
+        "city": "Indiana", "zip_code": "15701", "country": "US", "state": "PA", "display_address":
+        ["475 East Pike Road, Indiana, PA 15701"], "cross_streets": ""}, "business_id":
+        null}, {"attending_count": 0, "category": "festivals-fairs", "cost": null,
+        "cost_max": null, "description": "Jimmy Stewart Airport Festival is a two
+        day event held every year in the spring.  This year, the Airport  Festival
+        will be held on Saturday and Sunday, June...", "event_site_url": "https://www.yelp.com/events/indiana-jimmy-stewart-airport-festival?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-jimmy-stewart-airport-festival", "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/kPbPcWpzIqpFnlTjQo7JOA/o.jpg",
+        "interested_count": 1, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 40.6358378, "longitude": -79.103384, "name": "Jimmy Stewart
+        Airport Festival", "tickets_url": null, "time_end": "2014-06-15T17:00:00-04:00",
+        "time_start": "2014-06-14T08:00:00-04:00", "location": {"address1": "398 Airport
+        Road", "address2": "", "address3": "", "city": "Indiana", "zip_code": "15701",
+        "country": "US", "state": "PA", "display_address": ["398 Airport Road, Indiana,
+        PA 15701"], "cross_streets": ""}, "business_id": null}, {"attending_count":
+        1, "category": "kids-family", "cost": null, "cost_max": null, "description":
+        "CAPY''s annual Back to School Pool Party is set for August 21 from 8:15-11:00
+        pm at the Chesterfield Family Aquatic Center.  CAPY is the Chesterfield...",
+        "event_site_url": "https://www.yelp.com/events/clearfield-county-capy-pool-party?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "clearfield-county-capy-pool-party", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/8DZWstPtO7452fSKcRFB7g/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 40.77903, "longitude": -78.6341996, "name": "CAPY Pool
+        Party", "tickets_url": "", "time_end": "2015-08-21T21:30:00-04:00", "time_start":
+        "2015-08-21T17:30:00-04:00", "location": {"address1": "16365 Lydia Hill Drive",
+        "address2": "", "address3": "", "city": "Clearfield County", "zip_code": "",
+        "country": "US", "state": "PA", "display_address": ["Clearfield County, PA"],
+        "cross_streets": ""}, "business_id": null}, {"attending_count": 1, "category":
+        "lectures-books", "cost": null, "cost_max": null, "description": "We tend
+        to think of money and possessions as being of this world.  Things that define
+        our status here on earth.  But God calls us to be good stewards of...", "event_site_url":
+        "https://www.yelp.com/events/du-bois-leaving-a-lasting-legacy-seminar?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "du-bois-leaving-a-lasting-legacy-seminar", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/HpHm4ywnvYck9eeBMbk3Nw/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 41.140507, "longitude": -78.69207829999999, "name": "Leaving
+        a Lasting Legacy Seminar", "tickets_url": "http://www.fln.org/events/event/859672-2016-09-22-leaving-a-legacy-seminar/",
+        "time_end": "2016-09-20T20:00:00-04:00", "time_start": "2016-09-20T18:30:00-04:00",
+        "location": {"address1": "1881 Old 255 Rd", "address2": null, "address3":
+        null, "city": "Du Bois", "zip_code": "15801", "country": "US", "state": "PA",
+        "display_address": ["1881 Old 255 Rd", "Du Bois, PA 15801"], "cross_streets":
+        ""}, "business_id": "tri-county-church-du-bois"}, {"attending_count": 1, "category":
+        "festivals-fairs", "cost": 0.0, "cost_max": 34.0, "description": "Garden Bros
+        Circus\nLocation: Brookville / Jefferson County Fairgrounds Show Arena\nDay/Date:
+        Tuesday, October 17, 2017 \nShowtimes: 4:30 & 7:30 PM \n\nGARDEN...", "event_site_url":
+        "https://www.yelp.com/events/brookville-garden-bros-circus?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "brookville-garden-bros-circus", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/UZuIntDroO-odVAX8lRjDw/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 41.172058, "longitude": -79.0426167, "name": "Garden Bros
+        Circus", "tickets_url": "", "time_end": null, "time_start": "2017-10-17T16:30:00-04:00",
+        "location": {"address1": "1514 PA-28", "address2": "", "address3": "", "city":
+        "Brookville", "zip_code": "15825", "country": "US", "state": "PA", "display_address":
+        ["1514 PA-28, Brookville, PA 15825"], "cross_streets": ""}, "business_id":
+        null}, {"attending_count": 1, "category": "kids-family", "cost": 0.0, "cost_max":
+        34.0, "description": "Garden Bros Circus\n\nLocation: Kovalchick Complex\n              711
+        Pratt Dr., Indiana, PA 15705\n              \nDay/Date: Sunday | October 15,
+        2017...", "event_site_url": "https://www.yelp.com/events/indiana-garden-bros-circus?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-garden-bros-circus", "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/f299rdpm5-vE-WZceVgcCA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 40.6115212, "longitude": -79.1601089, "name": "Garden Bros
+        Circus", "tickets_url": "", "time_end": "2017-10-15T18:00:00-04:00", "time_start":
+        "2017-10-15T13:00:00-04:00", "location": {"address1": "711 Pratt Drive", "address2":
+        "", "address3": "", "city": "Indiana", "zip_code": "15705", "country": "US",
+        "state": "PA", "display_address": ["711 Pratt Dr, Indiana, PA 15705"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 1, "category": "kids-family",
+        "cost": null, "cost_max": null, "description": "Paul''s Pumpkin Patch, located
+        in Frogtown, PA has been providing Fall Family Fun since its opening in 2008.\n\nPaul''s
+        Pumpkin Patch has all the colorful fall...", "event_site_url": "https://www.yelp.com/events/fairmount-city-pauls-pumpkin-patch-is-open-for-business?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "fairmount-city-pauls-pumpkin-patch-is-open-for-business", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/5HP3fYvQVgz5zhDhDJwNow/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        41.105798, "longitude": -79.3010222, "name": "Paul''s Pumpkin Patch is Open
+        for Business!", "tickets_url": null, "time_end": null, "time_start": "2017-09-27T13:00:00-04:00",
+        "location": {"address1": "395 Marks Ln", "address2": "", "address3": "", "city":
+        "Fairmount City", "zip_code": "16224", "country": "US", "state": "PA", "display_address":
+        ["395 Marks Ln, Fairmount City, PA 16224"], "cross_streets": ""}, "business_id":
+        null}, {"attending_count": 1, "category": "kids-family", "cost": null, "cost_max":
+        null, "description": "Paul''s Pumpkin Patch, located in Frogtown, PA has been
+        providing Fall Family Fun since its opening in 2008.\n\nPaul''s Pumpkin Patch
+        has all the colorful fall...", "event_site_url": "https://www.yelp.com/events/fairmount-city-pauls-pumpkin-patch-is-open-for-business-2?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "fairmount-city-pauls-pumpkin-patch-is-open-for-business-2", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/ephoto/q8J2HSktZ6evzjVCtF1jfA/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        41.1058586, "longitude": -79.3011819, "name": "Paul''s Pumpkin Patch is Open
+        for Business", "tickets_url": "", "time_end": null, "time_start": "2018-10-11T13:00:00-04:00",
+        "location": {"address1": "395 Marks Lane", "address2": "", "address3": "",
+        "city": "Fairmount City", "zip_code": "16224", "country": "US", "state": "PA",
+        "display_address": ["395 Marks Ln, Fairmount City, PA 16224"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 1, "category": "music", "cost":
+        null, "cost_max": null, "description": "Multi-platinum entertainer SARA EVANS
+        is at the top of her game. As the fifth most-played female artist at country
+        radio in nearly the last two decades--...", "event_site_url": "https://www.yelp.com/events/indiana-sara-evans-with-everette-live-at-kovalchick-convention-and-athletic-complex?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-sara-evans-with-everette-live-at-kovalchick-convention-and-athletic-complex",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/Ez8eB7NGy4NXZ-891fuYCg/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 40.6124386, "longitude": -79.16004869999999, "name": "Sara
+        Evans with Everette Live at Kovalchick Convention and Athletic Complex", "tickets_url":
+        "http://smarturl.it/SEIndianaPA", "time_end": null, "time_start": "2021-12-12T19:00:00-05:00",
+        "location": {"address1": "711 Pratt Dr", "address2": "", "address3": "", "city":
+        "Indiana", "zip_code": "15705", "country": "US", "state": "PA", "display_address":
+        ["711 Pratt Dr", "Indiana, PA 15705"], "cross_streets": ""}, "business_id":
+        "kovalchick-convention-and-athletic-complex-indiana"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": 10.0, "cost_max": null, "description":
+        "Pancake & Sausage Breakfast \nJanuary 20th\n6 AM - 11AM \nAdults 10.00  \nGrampian
+        Fire Hall, Main Street Grampian\nBenefits G.P.B. Fire Company", "event_site_url":
+        "https://www.yelp.com/events/grampian-pancake-and-sausage-breakfast?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "grampian-pancake-and-sausage-breakfast", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/qd_QfO8hI8uh29dNCoImWQ/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 40.9651536, "longitude": -78.61269709999999, "name": "Pancake
+        & Sausage Breakfast", "tickets_url": null, "time_end": null, "time_start":
+        "2024-01-20T06:00:00-05:00", "location": {"address1": "251 Main St", "address2":
+        "", "address3": "", "city": "Grampian", "zip_code": "16838", "country": "US",
+        "state": "PA", "display_address": ["251 Main St, Grampian, PA 16838"], "cross_streets":
+        ""}, "business_id": null}], "total": 10}'
+  recorded_at: Fri, 01 Mar 2024 07:46:22 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=10&location=gobbler%27s%20knob,%20pa&radius=40000&start_time=1709279464
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Tracing-Auth:
+      - 8qEjow9qNqz97AcH1pd6hgXdaXL-DhIaomk0ky8zgSU
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-bm9vz; site=public_api_v3
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Resettime:
+      - '2024-03-02T00:00:00+00:00'
+      X-Zipkin-Id:
+      - 3426ef7693068c9e
+      Server:
+      - envoy
+      Ratelimit-Remaining:
+      - '343.0'
+      Ratelimit-Dailylimit:
+      - '500.0'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-187-35-useast1bprod
+      X-Extlb:
+      - 10-65-187-35-useast1bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 01 Mar 2024 07:51:04 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8269-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 1, "category": "charities", "cost":
+        null, "cost_max": null, "description": "May Mart 16th and 17th 2014\nFLOWERS
+        - CRAFTS - FOOD \nOVER 75 VENDORS & CRAFTERS FILLING \nTWO ARENAS and  SELLING
+        UNIQUE ITEMS \nFriday the 16th from 10 AM to...", "event_site_url": "https://www.yelp.com/events/indiana-may-mart?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-may-mart", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/o63oqJCoeYRU_jtQxrYGpA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 40.6201232, "longitude": -79.1287319, "name": "May Mart",
+        "tickets_url": "", "time_end": null, "time_start": "2014-05-16T10:00:00-04:00",
+        "location": {"address1": "475 East Pike", "address2": "", "address3": "",
+        "city": "Indiana", "zip_code": "15701", "country": "US", "state": "PA", "display_address":
+        ["475 East Pike Road, Indiana, PA 15701"], "cross_streets": ""}, "business_id":
+        null}, {"attending_count": 0, "category": "festivals-fairs", "cost": null,
+        "cost_max": null, "description": "Jimmy Stewart Airport Festival is a two
+        day event held every year in the spring.  This year, the Airport  Festival
+        will be held on Saturday and Sunday, June...", "event_site_url": "https://www.yelp.com/events/indiana-jimmy-stewart-airport-festival?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-jimmy-stewart-airport-festival", "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/kPbPcWpzIqpFnlTjQo7JOA/o.jpg",
+        "interested_count": 1, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 40.6358378, "longitude": -79.103384, "name": "Jimmy Stewart
+        Airport Festival", "tickets_url": null, "time_end": "2014-06-15T17:00:00-04:00",
+        "time_start": "2014-06-14T08:00:00-04:00", "location": {"address1": "398 Airport
+        Road", "address2": "", "address3": "", "city": "Indiana", "zip_code": "15701",
+        "country": "US", "state": "PA", "display_address": ["398 Airport Road, Indiana,
+        PA 15701"], "cross_streets": ""}, "business_id": null}, {"attending_count":
+        1, "category": "kids-family", "cost": null, "cost_max": null, "description":
+        "CAPY''s annual Back to School Pool Party is set for August 21 from 8:15-11:00
+        pm at the Chesterfield Family Aquatic Center.  CAPY is the Chesterfield...",
+        "event_site_url": "https://www.yelp.com/events/clearfield-county-capy-pool-party?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "clearfield-county-capy-pool-party", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/8DZWstPtO7452fSKcRFB7g/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 40.77903, "longitude": -78.6341996, "name": "CAPY Pool
+        Party", "tickets_url": "", "time_end": "2015-08-21T21:30:00-04:00", "time_start":
+        "2015-08-21T17:30:00-04:00", "location": {"address1": "16365 Lydia Hill Drive",
+        "address2": "", "address3": "", "city": "Clearfield County", "zip_code": "",
+        "country": "US", "state": "PA", "display_address": ["Clearfield County, PA"],
+        "cross_streets": ""}, "business_id": null}, {"attending_count": 1, "category":
+        "lectures-books", "cost": null, "cost_max": null, "description": "We tend
+        to think of money and possessions as being of this world.  Things that define
+        our status here on earth.  But God calls us to be good stewards of...", "event_site_url":
+        "https://www.yelp.com/events/du-bois-leaving-a-lasting-legacy-seminar?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "du-bois-leaving-a-lasting-legacy-seminar", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/HpHm4ywnvYck9eeBMbk3Nw/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 41.140507, "longitude": -78.69207829999999, "name": "Leaving
+        a Lasting Legacy Seminar", "tickets_url": "http://www.fln.org/events/event/859672-2016-09-22-leaving-a-legacy-seminar/",
+        "time_end": "2016-09-20T20:00:00-04:00", "time_start": "2016-09-20T18:30:00-04:00",
+        "location": {"address1": "1881 Old 255 Rd", "address2": null, "address3":
+        null, "city": "Du Bois", "zip_code": "15801", "country": "US", "state": "PA",
+        "display_address": ["1881 Old 255 Rd", "Du Bois, PA 15801"], "cross_streets":
+        ""}, "business_id": "tri-county-church-du-bois"}, {"attending_count": 1, "category":
+        "festivals-fairs", "cost": 0.0, "cost_max": 34.0, "description": "Garden Bros
+        Circus\nLocation: Brookville / Jefferson County Fairgrounds Show Arena\nDay/Date:
+        Tuesday, October 17, 2017 \nShowtimes: 4:30 & 7:30 PM \n\nGARDEN...", "event_site_url":
+        "https://www.yelp.com/events/brookville-garden-bros-circus?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "brookville-garden-bros-circus", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/UZuIntDroO-odVAX8lRjDw/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 41.172058, "longitude": -79.0426167, "name": "Garden Bros
+        Circus", "tickets_url": "", "time_end": null, "time_start": "2017-10-17T16:30:00-04:00",
+        "location": {"address1": "1514 PA-28", "address2": "", "address3": "", "city":
+        "Brookville", "zip_code": "15825", "country": "US", "state": "PA", "display_address":
+        ["1514 PA-28, Brookville, PA 15825"], "cross_streets": ""}, "business_id":
+        null}, {"attending_count": 1, "category": "kids-family", "cost": 0.0, "cost_max":
+        34.0, "description": "Garden Bros Circus\n\nLocation: Kovalchick Complex\n              711
+        Pratt Dr., Indiana, PA 15705\n              \nDay/Date: Sunday | October 15,
+        2017...", "event_site_url": "https://www.yelp.com/events/indiana-garden-bros-circus?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-garden-bros-circus", "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/f299rdpm5-vE-WZceVgcCA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 40.6115212, "longitude": -79.1601089, "name": "Garden Bros
+        Circus", "tickets_url": "", "time_end": "2017-10-15T18:00:00-04:00", "time_start":
+        "2017-10-15T13:00:00-04:00", "location": {"address1": "711 Pratt Drive", "address2":
+        "", "address3": "", "city": "Indiana", "zip_code": "15705", "country": "US",
+        "state": "PA", "display_address": ["711 Pratt Dr, Indiana, PA 15705"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 1, "category": "kids-family",
+        "cost": null, "cost_max": null, "description": "Paul''s Pumpkin Patch, located
+        in Frogtown, PA has been providing Fall Family Fun since its opening in 2008.\n\nPaul''s
+        Pumpkin Patch has all the colorful fall...", "event_site_url": "https://www.yelp.com/events/fairmount-city-pauls-pumpkin-patch-is-open-for-business?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "fairmount-city-pauls-pumpkin-patch-is-open-for-business", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/5HP3fYvQVgz5zhDhDJwNow/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        41.105798, "longitude": -79.3010222, "name": "Paul''s Pumpkin Patch is Open
+        for Business!", "tickets_url": null, "time_end": null, "time_start": "2017-09-27T13:00:00-04:00",
+        "location": {"address1": "395 Marks Ln", "address2": "", "address3": "", "city":
+        "Fairmount City", "zip_code": "16224", "country": "US", "state": "PA", "display_address":
+        ["395 Marks Ln, Fairmount City, PA 16224"], "cross_streets": ""}, "business_id":
+        null}, {"attending_count": 1, "category": "kids-family", "cost": null, "cost_max":
+        null, "description": "Paul''s Pumpkin Patch, located in Frogtown, PA has been
+        providing Fall Family Fun since its opening in 2008.\n\nPaul''s Pumpkin Patch
+        has all the colorful fall...", "event_site_url": "https://www.yelp.com/events/fairmount-city-pauls-pumpkin-patch-is-open-for-business-2?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "fairmount-city-pauls-pumpkin-patch-is-open-for-business-2", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/ephoto/q8J2HSktZ6evzjVCtF1jfA/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        41.1058586, "longitude": -79.3011819, "name": "Paul''s Pumpkin Patch is Open
+        for Business", "tickets_url": "", "time_end": null, "time_start": "2018-10-11T13:00:00-04:00",
+        "location": {"address1": "395 Marks Lane", "address2": "", "address3": "",
+        "city": "Fairmount City", "zip_code": "16224", "country": "US", "state": "PA",
+        "display_address": ["395 Marks Ln, Fairmount City, PA 16224"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 1, "category": "music", "cost":
+        null, "cost_max": null, "description": "Multi-platinum entertainer SARA EVANS
+        is at the top of her game. As the fifth most-played female artist at country
+        radio in nearly the last two decades--...", "event_site_url": "https://www.yelp.com/events/indiana-sara-evans-with-everette-live-at-kovalchick-convention-and-athletic-complex?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-sara-evans-with-everette-live-at-kovalchick-convention-and-athletic-complex",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/Ez8eB7NGy4NXZ-891fuYCg/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 40.6124386, "longitude": -79.16004869999999, "name": "Sara
+        Evans with Everette Live at Kovalchick Convention and Athletic Complex", "tickets_url":
+        "http://smarturl.it/SEIndianaPA", "time_end": null, "time_start": "2021-12-12T19:00:00-05:00",
+        "location": {"address1": "711 Pratt Dr", "address2": "", "address3": "", "city":
+        "Indiana", "zip_code": "15705", "country": "US", "state": "PA", "display_address":
+        ["711 Pratt Dr", "Indiana, PA 15705"], "cross_streets": ""}, "business_id":
+        "kovalchick-convention-and-athletic-complex-indiana"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": 10.0, "cost_max": null, "description":
+        "Pancake & Sausage Breakfast \nJanuary 20th\n6 AM - 11AM \nAdults 10.00  \nGrampian
+        Fire Hall, Main Street Grampian\nBenefits G.P.B. Fire Company", "event_site_url":
+        "https://www.yelp.com/events/grampian-pancake-and-sausage-breakfast?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "grampian-pancake-and-sausage-breakfast", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/qd_QfO8hI8uh29dNCoImWQ/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 40.9651536, "longitude": -78.61269709999999, "name": "Pancake
+        & Sausage Breakfast", "tickets_url": null, "time_end": null, "time_start":
+        "2024-01-20T06:00:00-05:00", "location": {"address1": "251 Main St", "address2":
+        "", "address3": "", "city": "Grampian", "zip_code": "16838", "country": "US",
+        "state": "PA", "display_address": ["251 Main St, Grampian, PA 16838"], "cross_streets":
+        ""}, "business_id": null}], "total": 10}'
+  recorded_at: Fri, 01 Mar 2024 07:51:04 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=10&location=gobbler%27s%20knob,%20pa&radius=40000&start_time=1709279851
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Zipkin-Id:
+      - 9b5b0bf6e02d1223
+      X-B3-Sampled:
+      - '0'
+      X-Tracing-Auth:
+      - UXidv0OMoEGg2JxoXR33dLvrp1bcLJIuNWblHrvKPq8
+      Ratelimit-Dailylimit:
+      - '500.0'
+      Ratelimit-Remaining:
+      - '342.0'
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-526c8; site=public_api_v3
+      Ratelimit-Resettime:
+      - '2024-03-02T00:00:00+00:00'
+      Server:
+      - envoy
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-187-35-useast1bprod
+      X-Extlb:
+      - 10-65-187-35-useast1bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 01 Mar 2024 07:57:31 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8233-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 1, "category": "charities", "cost":
+        null, "cost_max": null, "description": "May Mart 16th and 17th 2014\nFLOWERS
+        - CRAFTS - FOOD \nOVER 75 VENDORS & CRAFTERS FILLING \nTWO ARENAS and  SELLING
+        UNIQUE ITEMS \nFriday the 16th from 10 AM to...", "event_site_url": "https://www.yelp.com/events/indiana-may-mart?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-may-mart", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/o63oqJCoeYRU_jtQxrYGpA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 40.6201232, "longitude": -79.1287319, "name": "May Mart",
+        "tickets_url": "", "time_end": null, "time_start": "2014-05-16T10:00:00-04:00",
+        "location": {"address1": "475 East Pike", "address2": "", "address3": "",
+        "city": "Indiana", "zip_code": "15701", "country": "US", "state": "PA", "display_address":
+        ["475 East Pike Road, Indiana, PA 15701"], "cross_streets": ""}, "business_id":
+        null}, {"attending_count": 0, "category": "festivals-fairs", "cost": null,
+        "cost_max": null, "description": "Jimmy Stewart Airport Festival is a two
+        day event held every year in the spring.  This year, the Airport  Festival
+        will be held on Saturday and Sunday, June...", "event_site_url": "https://www.yelp.com/events/indiana-jimmy-stewart-airport-festival?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-jimmy-stewart-airport-festival", "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/kPbPcWpzIqpFnlTjQo7JOA/o.jpg",
+        "interested_count": 1, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 40.6358378, "longitude": -79.103384, "name": "Jimmy Stewart
+        Airport Festival", "tickets_url": null, "time_end": "2014-06-15T17:00:00-04:00",
+        "time_start": "2014-06-14T08:00:00-04:00", "location": {"address1": "398 Airport
+        Road", "address2": "", "address3": "", "city": "Indiana", "zip_code": "15701",
+        "country": "US", "state": "PA", "display_address": ["398 Airport Road, Indiana,
+        PA 15701"], "cross_streets": ""}, "business_id": null}, {"attending_count":
+        1, "category": "kids-family", "cost": null, "cost_max": null, "description":
+        "CAPY''s annual Back to School Pool Party is set for August 21 from 8:15-11:00
+        pm at the Chesterfield Family Aquatic Center.  CAPY is the Chesterfield...",
+        "event_site_url": "https://www.yelp.com/events/clearfield-county-capy-pool-party?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "clearfield-county-capy-pool-party", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/8DZWstPtO7452fSKcRFB7g/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 40.77903, "longitude": -78.6341996, "name": "CAPY Pool
+        Party", "tickets_url": "", "time_end": "2015-08-21T21:30:00-04:00", "time_start":
+        "2015-08-21T17:30:00-04:00", "location": {"address1": "16365 Lydia Hill Drive",
+        "address2": "", "address3": "", "city": "Clearfield County", "zip_code": "",
+        "country": "US", "state": "PA", "display_address": ["Clearfield County, PA"],
+        "cross_streets": ""}, "business_id": null}, {"attending_count": 1, "category":
+        "lectures-books", "cost": null, "cost_max": null, "description": "We tend
+        to think of money and possessions as being of this world.  Things that define
+        our status here on earth.  But God calls us to be good stewards of...", "event_site_url":
+        "https://www.yelp.com/events/du-bois-leaving-a-lasting-legacy-seminar?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "du-bois-leaving-a-lasting-legacy-seminar", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/HpHm4ywnvYck9eeBMbk3Nw/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 41.140507, "longitude": -78.69207829999999, "name": "Leaving
+        a Lasting Legacy Seminar", "tickets_url": "http://www.fln.org/events/event/859672-2016-09-22-leaving-a-legacy-seminar/",
+        "time_end": "2016-09-20T20:00:00-04:00", "time_start": "2016-09-20T18:30:00-04:00",
+        "location": {"address1": "1881 Old 255 Rd", "address2": null, "address3":
+        null, "city": "Du Bois", "zip_code": "15801", "country": "US", "state": "PA",
+        "display_address": ["1881 Old 255 Rd", "Du Bois, PA 15801"], "cross_streets":
+        ""}, "business_id": "tri-county-church-du-bois"}, {"attending_count": 1, "category":
+        "festivals-fairs", "cost": 0.0, "cost_max": 34.0, "description": "Garden Bros
+        Circus\nLocation: Brookville / Jefferson County Fairgrounds Show Arena\nDay/Date:
+        Tuesday, October 17, 2017 \nShowtimes: 4:30 & 7:30 PM \n\nGARDEN...", "event_site_url":
+        "https://www.yelp.com/events/brookville-garden-bros-circus?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "brookville-garden-bros-circus", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/UZuIntDroO-odVAX8lRjDw/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 41.172058, "longitude": -79.0426167, "name": "Garden Bros
+        Circus", "tickets_url": "", "time_end": null, "time_start": "2017-10-17T16:30:00-04:00",
+        "location": {"address1": "1514 PA-28", "address2": "", "address3": "", "city":
+        "Brookville", "zip_code": "15825", "country": "US", "state": "PA", "display_address":
+        ["1514 PA-28, Brookville, PA 15825"], "cross_streets": ""}, "business_id":
+        null}, {"attending_count": 1, "category": "kids-family", "cost": 0.0, "cost_max":
+        34.0, "description": "Garden Bros Circus\n\nLocation: Kovalchick Complex\n              711
+        Pratt Dr., Indiana, PA 15705\n              \nDay/Date: Sunday | October 15,
+        2017...", "event_site_url": "https://www.yelp.com/events/indiana-garden-bros-circus?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-garden-bros-circus", "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/f299rdpm5-vE-WZceVgcCA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 40.6115212, "longitude": -79.1601089, "name": "Garden Bros
+        Circus", "tickets_url": "", "time_end": "2017-10-15T18:00:00-04:00", "time_start":
+        "2017-10-15T13:00:00-04:00", "location": {"address1": "711 Pratt Drive", "address2":
+        "", "address3": "", "city": "Indiana", "zip_code": "15705", "country": "US",
+        "state": "PA", "display_address": ["711 Pratt Dr, Indiana, PA 15705"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 1, "category": "kids-family",
+        "cost": null, "cost_max": null, "description": "Paul''s Pumpkin Patch, located
+        in Frogtown, PA has been providing Fall Family Fun since its opening in 2008.\n\nPaul''s
+        Pumpkin Patch has all the colorful fall...", "event_site_url": "https://www.yelp.com/events/fairmount-city-pauls-pumpkin-patch-is-open-for-business?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "fairmount-city-pauls-pumpkin-patch-is-open-for-business", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/5HP3fYvQVgz5zhDhDJwNow/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        41.105798, "longitude": -79.3010222, "name": "Paul''s Pumpkin Patch is Open
+        for Business!", "tickets_url": null, "time_end": null, "time_start": "2017-09-27T13:00:00-04:00",
+        "location": {"address1": "395 Marks Ln", "address2": "", "address3": "", "city":
+        "Fairmount City", "zip_code": "16224", "country": "US", "state": "PA", "display_address":
+        ["395 Marks Ln, Fairmount City, PA 16224"], "cross_streets": ""}, "business_id":
+        null}, {"attending_count": 1, "category": "kids-family", "cost": null, "cost_max":
+        null, "description": "Paul''s Pumpkin Patch, located in Frogtown, PA has been
+        providing Fall Family Fun since its opening in 2008.\n\nPaul''s Pumpkin Patch
+        has all the colorful fall...", "event_site_url": "https://www.yelp.com/events/fairmount-city-pauls-pumpkin-patch-is-open-for-business-2?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "fairmount-city-pauls-pumpkin-patch-is-open-for-business-2", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/ephoto/q8J2HSktZ6evzjVCtF1jfA/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        41.1058586, "longitude": -79.3011819, "name": "Paul''s Pumpkin Patch is Open
+        for Business", "tickets_url": "", "time_end": null, "time_start": "2018-10-11T13:00:00-04:00",
+        "location": {"address1": "395 Marks Lane", "address2": "", "address3": "",
+        "city": "Fairmount City", "zip_code": "16224", "country": "US", "state": "PA",
+        "display_address": ["395 Marks Ln, Fairmount City, PA 16224"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 1, "category": "music", "cost":
+        null, "cost_max": null, "description": "Multi-platinum entertainer SARA EVANS
+        is at the top of her game. As the fifth most-played female artist at country
+        radio in nearly the last two decades--...", "event_site_url": "https://www.yelp.com/events/indiana-sara-evans-with-everette-live-at-kovalchick-convention-and-athletic-complex?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-sara-evans-with-everette-live-at-kovalchick-convention-and-athletic-complex",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/Ez8eB7NGy4NXZ-891fuYCg/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 40.6124386, "longitude": -79.16004869999999, "name": "Sara
+        Evans with Everette Live at Kovalchick Convention and Athletic Complex", "tickets_url":
+        "http://smarturl.it/SEIndianaPA", "time_end": null, "time_start": "2021-12-12T19:00:00-05:00",
+        "location": {"address1": "711 Pratt Dr", "address2": "", "address3": "", "city":
+        "Indiana", "zip_code": "15705", "country": "US", "state": "PA", "display_address":
+        ["711 Pratt Dr", "Indiana, PA 15705"], "cross_streets": ""}, "business_id":
+        "kovalchick-convention-and-athletic-complex-indiana"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": 10.0, "cost_max": null, "description":
+        "Pancake & Sausage Breakfast \nJanuary 20th\n6 AM - 11AM \nAdults 10.00  \nGrampian
+        Fire Hall, Main Street Grampian\nBenefits G.P.B. Fire Company", "event_site_url":
+        "https://www.yelp.com/events/grampian-pancake-and-sausage-breakfast?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "grampian-pancake-and-sausage-breakfast", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/qd_QfO8hI8uh29dNCoImWQ/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 40.9651536, "longitude": -78.61269709999999, "name": "Pancake
+        & Sausage Breakfast", "tickets_url": null, "time_end": null, "time_start":
+        "2024-01-20T06:00:00-05:00", "location": {"address1": "251 Main St", "address2":
+        "", "address3": "", "city": "Grampian", "zip_code": "16838", "country": "US",
+        "state": "PA", "display_address": ["251 Main St, Grampian, PA 16838"], "cross_streets":
+        ""}, "business_id": null}], "total": 10}'
+  recorded_at: Fri, 01 Mar 2024 07:57:31 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=10&location=gobbler%27s%20knob,%20pa&radius=40000&start_time=1709280037
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Ratelimit-Resettime:
+      - '2024-03-02T00:00:00+00:00'
+      X-B3-Sampled:
+      - '0'
+      X-Routing-Service:
+      - routing-main--useast1-b98889cf5-4fmdg; site=public_api_v3
+      Server:
+      - envoy
+      X-Zipkin-Id:
+      - af33a247adca8adf
+      Ratelimit-Dailylimit:
+      - '500.0'
+      X-Tracing-Auth:
+      - oC0hLvW_9-rebAy2K2OecpneGQaEbSDka_bNyVX7fJc
+      Ratelimit-Remaining:
+      - '341.0'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-172-4-useast1bprod
+      X-Extlb:
+      - 10-65-172-4-useast1bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 01 Mar 2024 08:00:38 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8273-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 1, "category": "charities", "cost":
+        null, "cost_max": null, "description": "May Mart 16th and 17th 2014\nFLOWERS
+        - CRAFTS - FOOD \nOVER 75 VENDORS & CRAFTERS FILLING \nTWO ARENAS and  SELLING
+        UNIQUE ITEMS \nFriday the 16th from 10 AM to...", "event_site_url": "https://www.yelp.com/events/indiana-may-mart?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-may-mart", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/o63oqJCoeYRU_jtQxrYGpA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 40.6201232, "longitude": -79.1287319, "name": "May Mart",
+        "tickets_url": "", "time_end": null, "time_start": "2014-05-16T10:00:00-04:00",
+        "location": {"address1": "475 East Pike", "address2": "", "address3": "",
+        "city": "Indiana", "zip_code": "15701", "country": "US", "state": "PA", "display_address":
+        ["475 East Pike Road, Indiana, PA 15701"], "cross_streets": ""}, "business_id":
+        null}, {"attending_count": 0, "category": "festivals-fairs", "cost": null,
+        "cost_max": null, "description": "Jimmy Stewart Airport Festival is a two
+        day event held every year in the spring.  This year, the Airport  Festival
+        will be held on Saturday and Sunday, June...", "event_site_url": "https://www.yelp.com/events/indiana-jimmy-stewart-airport-festival?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-jimmy-stewart-airport-festival", "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/kPbPcWpzIqpFnlTjQo7JOA/o.jpg",
+        "interested_count": 1, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 40.6358378, "longitude": -79.103384, "name": "Jimmy Stewart
+        Airport Festival", "tickets_url": null, "time_end": "2014-06-15T17:00:00-04:00",
+        "time_start": "2014-06-14T08:00:00-04:00", "location": {"address1": "398 Airport
+        Road", "address2": "", "address3": "", "city": "Indiana", "zip_code": "15701",
+        "country": "US", "state": "PA", "display_address": ["398 Airport Road, Indiana,
+        PA 15701"], "cross_streets": ""}, "business_id": null}, {"attending_count":
+        1, "category": "kids-family", "cost": null, "cost_max": null, "description":
+        "CAPY''s annual Back to School Pool Party is set for August 21 from 8:15-11:00
+        pm at the Chesterfield Family Aquatic Center.  CAPY is the Chesterfield...",
+        "event_site_url": "https://www.yelp.com/events/clearfield-county-capy-pool-party?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "clearfield-county-capy-pool-party", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/8DZWstPtO7452fSKcRFB7g/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 40.77903, "longitude": -78.6341996, "name": "CAPY Pool
+        Party", "tickets_url": "", "time_end": "2015-08-21T21:30:00-04:00", "time_start":
+        "2015-08-21T17:30:00-04:00", "location": {"address1": "16365 Lydia Hill Drive",
+        "address2": "", "address3": "", "city": "Clearfield County", "zip_code": "",
+        "country": "US", "state": "PA", "display_address": ["Clearfield County, PA"],
+        "cross_streets": ""}, "business_id": null}, {"attending_count": 1, "category":
+        "lectures-books", "cost": null, "cost_max": null, "description": "We tend
+        to think of money and possessions as being of this world.  Things that define
+        our status here on earth.  But God calls us to be good stewards of...", "event_site_url":
+        "https://www.yelp.com/events/du-bois-leaving-a-lasting-legacy-seminar?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "du-bois-leaving-a-lasting-legacy-seminar", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/HpHm4ywnvYck9eeBMbk3Nw/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 41.140507, "longitude": -78.69207829999999, "name": "Leaving
+        a Lasting Legacy Seminar", "tickets_url": "http://www.fln.org/events/event/859672-2016-09-22-leaving-a-legacy-seminar/",
+        "time_end": "2016-09-20T20:00:00-04:00", "time_start": "2016-09-20T18:30:00-04:00",
+        "location": {"address1": "1881 Old 255 Rd", "address2": null, "address3":
+        null, "city": "Du Bois", "zip_code": "15801", "country": "US", "state": "PA",
+        "display_address": ["1881 Old 255 Rd", "Du Bois, PA 15801"], "cross_streets":
+        ""}, "business_id": "tri-county-church-du-bois"}, {"attending_count": 1, "category":
+        "festivals-fairs", "cost": 0.0, "cost_max": 34.0, "description": "Garden Bros
+        Circus\nLocation: Brookville / Jefferson County Fairgrounds Show Arena\nDay/Date:
+        Tuesday, October 17, 2017 \nShowtimes: 4:30 & 7:30 PM \n\nGARDEN...", "event_site_url":
+        "https://www.yelp.com/events/brookville-garden-bros-circus?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "brookville-garden-bros-circus", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/UZuIntDroO-odVAX8lRjDw/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 41.172058, "longitude": -79.0426167, "name": "Garden Bros
+        Circus", "tickets_url": "", "time_end": null, "time_start": "2017-10-17T16:30:00-04:00",
+        "location": {"address1": "1514 PA-28", "address2": "", "address3": "", "city":
+        "Brookville", "zip_code": "15825", "country": "US", "state": "PA", "display_address":
+        ["1514 PA-28, Brookville, PA 15825"], "cross_streets": ""}, "business_id":
+        null}, {"attending_count": 1, "category": "kids-family", "cost": 0.0, "cost_max":
+        34.0, "description": "Garden Bros Circus\n\nLocation: Kovalchick Complex\n              711
+        Pratt Dr., Indiana, PA 15705\n              \nDay/Date: Sunday | October 15,
+        2017...", "event_site_url": "https://www.yelp.com/events/indiana-garden-bros-circus?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-garden-bros-circus", "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/f299rdpm5-vE-WZceVgcCA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 40.6115212, "longitude": -79.1601089, "name": "Garden Bros
+        Circus", "tickets_url": "", "time_end": "2017-10-15T18:00:00-04:00", "time_start":
+        "2017-10-15T13:00:00-04:00", "location": {"address1": "711 Pratt Drive", "address2":
+        "", "address3": "", "city": "Indiana", "zip_code": "15705", "country": "US",
+        "state": "PA", "display_address": ["711 Pratt Dr, Indiana, PA 15705"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 1, "category": "kids-family",
+        "cost": null, "cost_max": null, "description": "Paul''s Pumpkin Patch, located
+        in Frogtown, PA has been providing Fall Family Fun since its opening in 2008.\n\nPaul''s
+        Pumpkin Patch has all the colorful fall...", "event_site_url": "https://www.yelp.com/events/fairmount-city-pauls-pumpkin-patch-is-open-for-business?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "fairmount-city-pauls-pumpkin-patch-is-open-for-business", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/5HP3fYvQVgz5zhDhDJwNow/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        41.105798, "longitude": -79.3010222, "name": "Paul''s Pumpkin Patch is Open
+        for Business!", "tickets_url": null, "time_end": null, "time_start": "2017-09-27T13:00:00-04:00",
+        "location": {"address1": "395 Marks Ln", "address2": "", "address3": "", "city":
+        "Fairmount City", "zip_code": "16224", "country": "US", "state": "PA", "display_address":
+        ["395 Marks Ln, Fairmount City, PA 16224"], "cross_streets": ""}, "business_id":
+        null}, {"attending_count": 1, "category": "kids-family", "cost": null, "cost_max":
+        null, "description": "Paul''s Pumpkin Patch, located in Frogtown, PA has been
+        providing Fall Family Fun since its opening in 2008.\n\nPaul''s Pumpkin Patch
+        has all the colorful fall...", "event_site_url": "https://www.yelp.com/events/fairmount-city-pauls-pumpkin-patch-is-open-for-business-2?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "fairmount-city-pauls-pumpkin-patch-is-open-for-business-2", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/ephoto/q8J2HSktZ6evzjVCtF1jfA/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        41.1058586, "longitude": -79.3011819, "name": "Paul''s Pumpkin Patch is Open
+        for Business", "tickets_url": "", "time_end": null, "time_start": "2018-10-11T13:00:00-04:00",
+        "location": {"address1": "395 Marks Lane", "address2": "", "address3": "",
+        "city": "Fairmount City", "zip_code": "16224", "country": "US", "state": "PA",
+        "display_address": ["395 Marks Ln, Fairmount City, PA 16224"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 1, "category": "music", "cost":
+        null, "cost_max": null, "description": "Multi-platinum entertainer SARA EVANS
+        is at the top of her game. As the fifth most-played female artist at country
+        radio in nearly the last two decades--...", "event_site_url": "https://www.yelp.com/events/indiana-sara-evans-with-everette-live-at-kovalchick-convention-and-athletic-complex?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-sara-evans-with-everette-live-at-kovalchick-convention-and-athletic-complex",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/Ez8eB7NGy4NXZ-891fuYCg/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 40.6124386, "longitude": -79.16004869999999, "name": "Sara
+        Evans with Everette Live at Kovalchick Convention and Athletic Complex", "tickets_url":
+        "http://smarturl.it/SEIndianaPA", "time_end": null, "time_start": "2021-12-12T19:00:00-05:00",
+        "location": {"address1": "711 Pratt Dr", "address2": "", "address3": "", "city":
+        "Indiana", "zip_code": "15705", "country": "US", "state": "PA", "display_address":
+        ["711 Pratt Dr", "Indiana, PA 15705"], "cross_streets": ""}, "business_id":
+        "kovalchick-convention-and-athletic-complex-indiana"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": 10.0, "cost_max": null, "description":
+        "Pancake & Sausage Breakfast \nJanuary 20th\n6 AM - 11AM \nAdults 10.00  \nGrampian
+        Fire Hall, Main Street Grampian\nBenefits G.P.B. Fire Company", "event_site_url":
+        "https://www.yelp.com/events/grampian-pancake-and-sausage-breakfast?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "grampian-pancake-and-sausage-breakfast", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/qd_QfO8hI8uh29dNCoImWQ/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 40.9651536, "longitude": -78.61269709999999, "name": "Pancake
+        & Sausage Breakfast", "tickets_url": null, "time_end": null, "time_start":
+        "2024-01-20T06:00:00-05:00", "location": {"address1": "251 Main St", "address2":
+        "", "address3": "", "city": "Grampian", "zip_code": "16838", "country": "US",
+        "state": "PA", "display_address": ["251 Main St, Grampian, PA 16838"], "cross_streets":
+        ""}, "business_id": null}], "total": 10}'
+  recorded_at: Fri, 01 Mar 2024 08:00:38 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=10&location=gobbler%27s%20knob,%20pa&radius=40000&start_time=1709280652
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Routing-Service:
+      - routing-canary--useast1-74574f5c5b-2nphv; site=public_api_v3
+      X-Tracing-Auth:
+      - _XmSb9E8E-_vhf2NuODAQRuDhAE1Bomg-v0t8mOGF7A
+      Ratelimit-Dailylimit:
+      - '500.0'
+      Server:
+      - envoy
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Remaining:
+      - '340.0'
+      Ratelimit-Resettime:
+      - '2024-03-02T00:00:00+00:00'
+      X-Zipkin-Id:
+      - fc98e74f06947ec1
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-80-125-useast1aprod
+      X-Extlb:
+      - 10-65-80-125-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 01 Mar 2024 08:10:52 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8238-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 1, "category": "charities", "cost":
+        null, "cost_max": null, "description": "May Mart 16th and 17th 2014\nFLOWERS
+        - CRAFTS - FOOD \nOVER 75 VENDORS & CRAFTERS FILLING \nTWO ARENAS and  SELLING
+        UNIQUE ITEMS \nFriday the 16th from 10 AM to...", "event_site_url": "https://www.yelp.com/events/indiana-may-mart?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-may-mart", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/o63oqJCoeYRU_jtQxrYGpA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 40.6201232, "longitude": -79.1287319, "name": "May Mart",
+        "tickets_url": "", "time_end": null, "time_start": "2014-05-16T10:00:00-04:00",
+        "location": {"address1": "475 East Pike", "address2": "", "address3": "",
+        "city": "Indiana", "zip_code": "15701", "country": "US", "state": "PA", "display_address":
+        ["475 East Pike Road, Indiana, PA 15701"], "cross_streets": ""}, "business_id":
+        null}, {"attending_count": 0, "category": "festivals-fairs", "cost": null,
+        "cost_max": null, "description": "Jimmy Stewart Airport Festival is a two
+        day event held every year in the spring.  This year, the Airport  Festival
+        will be held on Saturday and Sunday, June...", "event_site_url": "https://www.yelp.com/events/indiana-jimmy-stewart-airport-festival?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-jimmy-stewart-airport-festival", "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/kPbPcWpzIqpFnlTjQo7JOA/o.jpg",
+        "interested_count": 1, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 40.6358378, "longitude": -79.103384, "name": "Jimmy Stewart
+        Airport Festival", "tickets_url": null, "time_end": "2014-06-15T17:00:00-04:00",
+        "time_start": "2014-06-14T08:00:00-04:00", "location": {"address1": "398 Airport
+        Road", "address2": "", "address3": "", "city": "Indiana", "zip_code": "15701",
+        "country": "US", "state": "PA", "display_address": ["398 Airport Road, Indiana,
+        PA 15701"], "cross_streets": ""}, "business_id": null}, {"attending_count":
+        1, "category": "kids-family", "cost": null, "cost_max": null, "description":
+        "CAPY''s annual Back to School Pool Party is set for August 21 from 8:15-11:00
+        pm at the Chesterfield Family Aquatic Center.  CAPY is the Chesterfield...",
+        "event_site_url": "https://www.yelp.com/events/clearfield-county-capy-pool-party?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "clearfield-county-capy-pool-party", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/8DZWstPtO7452fSKcRFB7g/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 40.77903, "longitude": -78.6341996, "name": "CAPY Pool
+        Party", "tickets_url": "", "time_end": "2015-08-21T21:30:00-04:00", "time_start":
+        "2015-08-21T17:30:00-04:00", "location": {"address1": "16365 Lydia Hill Drive",
+        "address2": "", "address3": "", "city": "Clearfield County", "zip_code": "",
+        "country": "US", "state": "PA", "display_address": ["Clearfield County, PA"],
+        "cross_streets": ""}, "business_id": null}, {"attending_count": 1, "category":
+        "lectures-books", "cost": null, "cost_max": null, "description": "We tend
+        to think of money and possessions as being of this world.  Things that define
+        our status here on earth.  But God calls us to be good stewards of...", "event_site_url":
+        "https://www.yelp.com/events/du-bois-leaving-a-lasting-legacy-seminar?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "du-bois-leaving-a-lasting-legacy-seminar", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/HpHm4ywnvYck9eeBMbk3Nw/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 41.140507, "longitude": -78.69207829999999, "name": "Leaving
+        a Lasting Legacy Seminar", "tickets_url": "http://www.fln.org/events/event/859672-2016-09-22-leaving-a-legacy-seminar/",
+        "time_end": "2016-09-20T20:00:00-04:00", "time_start": "2016-09-20T18:30:00-04:00",
+        "location": {"address1": "1881 Old 255 Rd", "address2": null, "address3":
+        null, "city": "Du Bois", "zip_code": "15801", "country": "US", "state": "PA",
+        "display_address": ["1881 Old 255 Rd", "Du Bois, PA 15801"], "cross_streets":
+        ""}, "business_id": "tri-county-church-du-bois"}, {"attending_count": 1, "category":
+        "festivals-fairs", "cost": 0.0, "cost_max": 34.0, "description": "Garden Bros
+        Circus\nLocation: Brookville / Jefferson County Fairgrounds Show Arena\nDay/Date:
+        Tuesday, October 17, 2017 \nShowtimes: 4:30 & 7:30 PM \n\nGARDEN...", "event_site_url":
+        "https://www.yelp.com/events/brookville-garden-bros-circus?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "brookville-garden-bros-circus", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/UZuIntDroO-odVAX8lRjDw/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 41.172058, "longitude": -79.0426167, "name": "Garden Bros
+        Circus", "tickets_url": "", "time_end": null, "time_start": "2017-10-17T16:30:00-04:00",
+        "location": {"address1": "1514 PA-28", "address2": "", "address3": "", "city":
+        "Brookville", "zip_code": "15825", "country": "US", "state": "PA", "display_address":
+        ["1514 PA-28, Brookville, PA 15825"], "cross_streets": ""}, "business_id":
+        null}, {"attending_count": 1, "category": "kids-family", "cost": 0.0, "cost_max":
+        34.0, "description": "Garden Bros Circus\n\nLocation: Kovalchick Complex\n              711
+        Pratt Dr., Indiana, PA 15705\n              \nDay/Date: Sunday | October 15,
+        2017...", "event_site_url": "https://www.yelp.com/events/indiana-garden-bros-circus?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-garden-bros-circus", "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/f299rdpm5-vE-WZceVgcCA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 40.6115212, "longitude": -79.1601089, "name": "Garden Bros
+        Circus", "tickets_url": "", "time_end": "2017-10-15T18:00:00-04:00", "time_start":
+        "2017-10-15T13:00:00-04:00", "location": {"address1": "711 Pratt Drive", "address2":
+        "", "address3": "", "city": "Indiana", "zip_code": "15705", "country": "US",
+        "state": "PA", "display_address": ["711 Pratt Dr, Indiana, PA 15705"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 1, "category": "kids-family",
+        "cost": null, "cost_max": null, "description": "Paul''s Pumpkin Patch, located
+        in Frogtown, PA has been providing Fall Family Fun since its opening in 2008.\n\nPaul''s
+        Pumpkin Patch has all the colorful fall...", "event_site_url": "https://www.yelp.com/events/fairmount-city-pauls-pumpkin-patch-is-open-for-business?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "fairmount-city-pauls-pumpkin-patch-is-open-for-business", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/5HP3fYvQVgz5zhDhDJwNow/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        41.105798, "longitude": -79.3010222, "name": "Paul''s Pumpkin Patch is Open
+        for Business!", "tickets_url": null, "time_end": null, "time_start": "2017-09-27T13:00:00-04:00",
+        "location": {"address1": "395 Marks Ln", "address2": "", "address3": "", "city":
+        "Fairmount City", "zip_code": "16224", "country": "US", "state": "PA", "display_address":
+        ["395 Marks Ln, Fairmount City, PA 16224"], "cross_streets": ""}, "business_id":
+        null}, {"attending_count": 1, "category": "kids-family", "cost": null, "cost_max":
+        null, "description": "Paul''s Pumpkin Patch, located in Frogtown, PA has been
+        providing Fall Family Fun since its opening in 2008.\n\nPaul''s Pumpkin Patch
+        has all the colorful fall...", "event_site_url": "https://www.yelp.com/events/fairmount-city-pauls-pumpkin-patch-is-open-for-business-2?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "fairmount-city-pauls-pumpkin-patch-is-open-for-business-2", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/ephoto/q8J2HSktZ6evzjVCtF1jfA/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        41.1058586, "longitude": -79.3011819, "name": "Paul''s Pumpkin Patch is Open
+        for Business", "tickets_url": "", "time_end": null, "time_start": "2018-10-11T13:00:00-04:00",
+        "location": {"address1": "395 Marks Lane", "address2": "", "address3": "",
+        "city": "Fairmount City", "zip_code": "16224", "country": "US", "state": "PA",
+        "display_address": ["395 Marks Ln, Fairmount City, PA 16224"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 1, "category": "music", "cost":
+        null, "cost_max": null, "description": "Multi-platinum entertainer SARA EVANS
+        is at the top of her game. As the fifth most-played female artist at country
+        radio in nearly the last two decades--...", "event_site_url": "https://www.yelp.com/events/indiana-sara-evans-with-everette-live-at-kovalchick-convention-and-athletic-complex?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "indiana-sara-evans-with-everette-live-at-kovalchick-convention-and-athletic-complex",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/Ez8eB7NGy4NXZ-891fuYCg/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 40.6124386, "longitude": -79.16004869999999, "name": "Sara
+        Evans with Everette Live at Kovalchick Convention and Athletic Complex", "tickets_url":
+        "http://smarturl.it/SEIndianaPA", "time_end": null, "time_start": "2021-12-12T19:00:00-05:00",
+        "location": {"address1": "711 Pratt Dr", "address2": "", "address3": "", "city":
+        "Indiana", "zip_code": "15705", "country": "US", "state": "PA", "display_address":
+        ["711 Pratt Dr", "Indiana, PA 15705"], "cross_streets": ""}, "business_id":
+        "kovalchick-convention-and-athletic-complex-indiana"}, {"attending_count":
+        1, "category": "food-and-drink", "cost": 10.0, "cost_max": null, "description":
+        "Pancake & Sausage Breakfast \nJanuary 20th\n6 AM - 11AM \nAdults 10.00  \nGrampian
+        Fire Hall, Main Street Grampian\nBenefits G.P.B. Fire Company", "event_site_url":
+        "https://www.yelp.com/events/grampian-pancake-and-sausage-breakfast?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "grampian-pancake-and-sausage-breakfast", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/qd_QfO8hI8uh29dNCoImWQ/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 40.9651536, "longitude": -78.61269709999999, "name": "Pancake
+        & Sausage Breakfast", "tickets_url": null, "time_end": null, "time_start":
+        "2024-01-20T06:00:00-05:00", "location": {"address1": "251 Main St", "address2":
+        "", "address3": "", "city": "Grampian", "zip_code": "16838", "country": "US",
+        "state": "PA", "display_address": ["251 Main St, Grampian, PA 16838"], "cross_streets":
+        ""}, "business_id": null}], "total": 10}'
+  recorded_at: Fri, 01 Mar 2024 08:10:52 GMT
+recorded_with: VCR 6.2.0

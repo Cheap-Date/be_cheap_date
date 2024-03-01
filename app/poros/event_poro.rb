@@ -1,5 +1,5 @@
 class EventPoro
-  attr_reader :id, :name, :location, :description, :category, :cost, :cost_max, :is_free, :url
+  attr_reader :id, :name, :limit, :location, :description, :category, :cost, :cost_max, :is_free, :url
 
   def initialize(attributes)
     @id = attributes[:id]
@@ -11,5 +11,6 @@ class EventPoro
     @cost_max = attributes[:cost_max]
     @is_free = attributes[:is_free]
     @url = attributes[:event_site_url]
+    @limit = attributes[:limit]
   end
 end
