@@ -11,4 +11,6 @@ class User < ApplicationRecord
 
   has_many :meetups
   has_many :locations
+
+  has_many :events, through: :meetups
 end
