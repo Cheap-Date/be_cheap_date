@@ -1,0 +1,198 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events?limit=10&location=San%20Francisco&price=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Ratelimit-Resettime:
+      - '2024-02-29T00:00:00+00:00'
+      X-B3-Sampled:
+      - '0'
+      X-Routing-Service:
+      - routing-main--useast1-7d94c5566-k5hb8; site=public_api_v3
+      X-Zipkin-Id:
+      - 4702e416b7068d42
+      Ratelimit-Dailylimit:
+      - '500.0'
+      Ratelimit-Remaining:
+      - '356.0'
+      Server:
+      - envoy
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-175-176-useast1bprod
+      X-Extlb:
+      - 10-65-175-176-useast1bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Wed, 28 Feb 2024 21:35:33 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-pdk-katl1840060-PDK
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"events": [{"attending_count": 921, "category": "nightlife", "cost":
+        null, "cost_max": null, "description": "Come join the Yelp Team and all of
+        Yelpland in celebrating our 3rd Annual Yelp Holiday Party! Just some of the
+        \"funny, useful and cool\" thrills will include...", "event_site_url": "https://www.yelp.com/events/san-francisco-peace-love-and-yelp-our-3rd-annual-holiday-party?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-peace-love-and-yelp-our-3rd-annual-holiday-party", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/5Y1VFZBPHF9IIOO_IIpnhQ/o.jpg", "interested_count":
+        73, "is_canceled": false, "is_free": true, "is_official": false, "latitude":
+        37.78574, "longitude": -122.40255, "name": "Peace, Love & Yelp: Our 3rd Annual
+        Holiday Party!", "tickets_url": "", "time_end": "2007-12-05T23:00:00-08:00",
+        "time_start": "2007-12-05T20:30:00-08:00", "location": {"address1": "701 Mission
+        St", "address2": "", "address3": "", "city": "San Francisco", "zip_code":
+        "94103", "country": "US", "state": "CA", "display_address": ["701 Mission
+        St", "San Francisco, CA 94103"], "cross_streets": "Opera Aly & 3rd St"}, "business_id":
+        "yerba-buena-center-for-the-arts-san-francisco"}, {"attending_count": 1, "category":
+        "other", "cost": null, "cost_max": null, "description": "It''s big. It''s
+        sexy. It''s warm. It''s fuzzy. It''s the 5th annual Yelp holiday extravaganza,
+        Yelp Unwrapped!\n\nWhen: Monday, December 7th, 2009\nWhere: The...", "event_site_url":
+        "https://www.yelp.com/events/san-francisco-yelp-unwrapped-holiday-party?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-yelp-unwrapped-holiday-party", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/q1f2lQ-zEMr_HxRygEyUow/o.jpg",
+        "interested_count": 3114, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 37.7877520297158, "longitude": -122.40879430645991, "name":
+        "Yelp Unwrapped! Holiday Party", "tickets_url": "", "time_end": "2009-12-07T22:00:00-08:00",
+        "time_start": "2009-12-07T20:00:00-08:00", "location": {"address1": "335 Powell
+        St", "address2": "", "address3": "", "city": "San Francisco", "zip_code":
+        "94102", "country": "US", "state": "CA", "display_address": ["335 Powell St",
+        "San Francisco, CA 94102"], "cross_streets": "Post St & Geary St"}, "business_id":
+        "the-westin-st-francis-san-francisco-on-union-square-san-francisco"}, {"attending_count":
+        1, "category": "festivals-fairs", "cost": null, "cost_max": null, "description":
+        "In case you haven''t received your pass or can''t find it, or just to make
+        sure it''s easy to find come tonight, here it is. And if you''re receiving
+        in this...", "event_site_url": "https://www.yelp.com/events/san-francisco-yelper-party-the-yelp-literati?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-yelper-party-the-yelp-literati", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/qZc7BuW5C5c0qGTuYQ1pqg/o.jpg",
+        "interested_count": 1648, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 37.7689137, "longitude": -122.4192514, "name": "Yelper
+        Party: The Yelp Literati", "tickets_url": null, "time_end": "2014-02-24T22:00:00-08:00",
+        "time_start": "2014-02-24T19:00:00-08:00", "location": {"address1": "161 Erie
+        St", "address2": "", "address3": "", "city": "San Francisco", "zip_code":
+        "94103", "country": "US", "state": "CA", "display_address": ["161 Erie St",
+        "San Francisco, CA 94103"], "cross_streets": "Mission St"}, "business_id":
+        "public-works-san-francisco"}, {"attending_count": 2405, "category": "festivals-fairs",
+        "cost": null, "cost_max": null, "description": "With a decade of reviews under
+        our belt, it''s time to pull out all the stops as we celebrate the big 1-0.
+        San Francisco is where it all began, and from July...", "event_site_url":
+        "https://www.yelp.com/events/san-francisco-yelp-10-year-anniversary-celebration?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-yelp-10-year-anniversary-celebration", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/tLgoY8aIFgLcBPadkMhHtw/o.jpg",
+        "interested_count": 928, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.7749295, "longitude": -122.4194155, "name": "Yelp 10-Year
+        Anniversary Celebration", "tickets_url": null, "time_end": "2014-08-03T22:00:00-07:00",
+        "time_start": "2014-07-31T12:00:00-07:00", "location": {"address1": "", "address2":
+        "", "address3": "", "city": "San Francisco", "zip_code": "", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 1, "category": "charities",
+        "cost": null, "cost_max": null, "description": "+ RSVP''s are full! We will
+        not be accepting Yelpers on the boat without a party pass or confirmation
+        email.\n\n+ All attendees must be 21+ and show i.d. No...", "event_site_url":
+        "https://www.yelp.com/events/san-francisco-yelp-10-year-celebration-event-hornblower-sunset-cruise?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-yelp-10-year-celebration-event-hornblower-sunset-cruise",
+        "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/IfQDjUlV9NuLT6tMqqiEBg/o.jpg",
+        "interested_count": 1637, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.7959976648205, "longitude": -122.40000856452664, "name":
+        "Yelp 10-Year Celebration Event: Hornblower Sunset Cruise", "tickets_url":
+        null, "time_end": "2014-08-04T21:00:00-07:00", "time_start": "2014-08-02T18:00:00-07:00",
+        "location": {"address1": "Pier 3 Hornblower Lndg", "address2": "", "address3":
+        "", "city": "San Francisco", "zip_code": "94111", "country": "US", "state":
+        "CA", "display_address": ["Pier 3 Hornblower Lndg", "San Francisco, CA 94111"],
+        "cross_streets": ""}, "business_id": "city-cruises-san-francisco-san-francisco-2"},
+        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
+        null, "description": "RSVP''s are closed! Please await email confirmation
+        to see if you are a lucky recipient of two tickets to this event. You can
+        also purchase discounted...", "event_site_url": "https://www.yelp.com/events/san-francisco-yelp-10-year-celebration-event-tickets-to-eat-drink-sf-grand-tasting?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-yelp-10-year-celebration-event-tickets-to-eat-drink-sf-grand-tasting",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/50h4A_wu0FmLwT0JjzIlGA/o.jpg",
+        "interested_count": 1800, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.8062423441478, "longitude": -122.428887003113, "name":
+        "Yelp 10-Year Celebration Event: Tickets to Eat Drink SF Grand Tasting", "tickets_url":
+        null, "time_end": null, "time_start": "2014-08-03T13:00:00-07:00", "location":
+        {"address1": "1 Fort Mason", "address2": "", "address3": "", "city": "San
+        Francisco", "zip_code": "94123", "country": "US", "state": "CA", "display_address":
+        ["1 Fort Mason", "San Francisco, CA 94123"], "cross_streets": ""}, "business_id":
+        "fort-mason-san-francisco-3"}, {"attending_count": 1, "category": "festivals-fairs",
+        "cost": null, "cost_max": null, "description": "Yelp''s turning 16 this month,
+        and we''re celebrating what makes it so special--you! On Thursday, July 30,
+        join in one or more of 16 sweet virtual events,...", "event_site_url": "https://www.yelp.com/events/san-francisco-yelps-sweet-16?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-yelps-sweet-16", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/Az-UAbr1CE_4tKlnmp4a8g/o.jpg",
+        "interested_count": 1386, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7751232572094, "longitude": -122.419319943951, "name":
+        "Yelp''s Sweet 16", "tickets_url": null, "time_end": "2020-07-30T22:00:00-07:00",
+        "time_start": "2020-07-30T11:30:00-07:00", "location": {"address1": "", "address2":
+        "", "address3": "", "city": "San Francisco", "zip_code": "", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 1, "category": "other", "cost":
+        null, "cost_max": null, "description": "5pmPST/8pmEST\n\n**This event is only
+        for Elites who have a gold or black 2020 badge. If you''ve been Elite for
+        5+ years, this virtual party is for...", "event_site_url": "https://www.yelp.com/events/san-francisco-yelps-black-gold-event-series-product-aka-cool-features-you-use-love?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-yelps-black-gold-event-series-product-aka-cool-features-you-use-love",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/TwYjkQa3TDeEPbhsaBIxvg/o.jpg",
+        "interested_count": 1399, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 37.7909013, "longitude": -122.3967008, "name": "Yelp''s
+        Black + Gold Event Series: Product (AKA Cool Features You Use + Love)", "tickets_url":
+        null, "time_end": null, "time_start": "2020-08-06T17:00:00-07:00", "location":
+        {"address1": "350 Mission St", "address2": "", "address3": "", "city": "San
+        Francisco", "zip_code": "94105", "country": "US", "state": "CA", "display_address":
+        ["350 Mission St", "San Francisco, CA 94105"], "cross_streets": "Fremont St
+        & Beale St"}, "business_id": "yelp-san-francisco"}, {"attending_count": 859,
+        "category": "other", "cost": null, "cost_max": null, "description": "In a
+        year where everything was cancelled, join us throughout October for Yelp Haunts
+        at Home: a month of virtual tricks and treats, sugar and pumpkin spice,...",
+        "event_site_url": "https://www.yelp.com/events/san-francisco-yelp-haunts-at-home?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-yelp-haunts-at-home", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/s2XeimoINYhGVL_KqwboXQ/o.jpg",
+        "interested_count": 184, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.7751232572094, "longitude": -122.419319943951, "name":
+        "Yelp Haunts at Home", "tickets_url": null, "time_end": "2020-10-31T00:00:00-07:00",
+        "time_start": "2020-10-01T00:00:00-07:00", "location": {"address1": "", "address2":
+        "", "address3": "", "city": "San Francisco", "zip_code": "", "country": "US",
+        "state": "CA", "display_address": ["San Francisco, CA"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 1, "category": "other", "cost":
+        null, "cost_max": null, "description": "5pm PST / 7pm CST / 8pm EST\n\n**This
+        event is only for Elites who have a gold or black 2020 badge. If you''ve been
+        Elite for 5+ years, this virtual party is...", "event_site_url": "https://www.yelp.com/events/san-francisco-black-gold-series-finale-yelp-ceo-jeremy-stoppelman?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-black-gold-series-finale-yelp-ceo-jeremy-stoppelman",
+        "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/jOn-toqC5DHtm2KtU2iyFQ/o.jpg",
+        "interested_count": 1250, "is_canceled": false, "is_free": true, "is_official":
+        true, "latitude": 37.775123257209394, "longitude": -122.41931994395134, "name":
+        "Black + Gold Series Finale: Yelp CEO Jeremy Stoppelman", "tickets_url": null,
+        "time_end": null, "time_start": "2020-12-14T17:00:00-08:00", "location": {"address1":
+        "", "address2": "", "address3": "", "city": "San Francisco", "zip_code": "",
+        "country": "US", "state": "CA", "display_address": ["San Francisco, CA"],
+        "cross_streets": ""}, "business_id": null}], "total": 10}'
+  recorded_at: Wed, 28 Feb 2024 21:35:33 GMT
+recorded_with: VCR 6.2.0

@@ -1,6 +1,6 @@
-class Event
+class EventPoro
   attr_reader :id, :name, :location, :description, :category, :cost, :cost_max, :is_free, :url
-  
+
   def initialize(attributes)
     @id = attributes[:id]
     @name = attributes[:name]

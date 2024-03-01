@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.yelp.com/v3/events?limit=25&location=90210&price=1
+    uri: https://api.yelp.com/v3/events?limit=25&location=90210&start_date=1709155580
     body:
       encoding: US-ASCII
       string: ''
@@ -24,36 +24,36 @@ http_interactions:
       - keep-alive
       Content-Type:
       - application/json
-      X-Routing-Service:
-      - routing-main--useast1-7d94c5566-ghnv2; site=public_api_v3
+      Ratelimit-Remaining:
+      - '374.0'
       Ratelimit-Resettime:
-      - '2024-02-27T00:00:00+00:00'
-      X-Zipkin-Id:
-      - 5b51d2c841ad83cd
+      - '2024-02-29T00:00:00+00:00'
+      X-B3-Sampled:
+      - '0'
       Server:
       - envoy
       Ratelimit-Dailylimit:
       - '500.0'
-      X-B3-Sampled:
-      - '0'
-      Ratelimit-Remaining:
-      - '370.0'
+      X-Zipkin-Id:
+      - 99fa98ed644e1a2d
+      X-Routing-Service:
+      - routing-main--useast1-7d94c5566-zkrrw; site=public_api_v3
       X-Mode:
       - ro
       X-Proxied:
-      - 10-65-92-107-useast1aprod
+      - 10-65-180-149-useast1bprod
       X-Extlb:
-      - 10-65-92-107-useast1aprod
+      - 10-65-180-149-useast1bprod
       Cache-Control:
       - max-age=0, no-store, private, no-transform
       Accept-Ranges:
       - bytes
       Date:
-      - Mon, 26 Feb 2024 19:54:48 GMT
+      - Wed, 28 Feb 2024 21:26:20 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-den8249-DEN
+      - cache-pdk-katl1840099-PDK
       X-Cache:
       - MISS
       X-Cache-Hits:
@@ -66,253 +66,316 @@ http_interactions:
       - chunked
     body:
       encoding: ASCII-8BIT
-      string: '{"events": [{"attending_count": 98, "category": "food-and-drink", "cost":
-        15.0, "cost_max": 30.0, "description": "How''s the dining? Let us know! Review
-        Restaurant Week here:\nhttp://www.yelp.com/biz/yelp-restaurant-week-2009-los-angeles\n\no-o-o-o-o\n\nReal
-        People, Real...", "event_site_url": "https://www.yelp.com/events/park-la-brea-1st-annual-yelp-restaurant-week?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "park-la-brea-1st-annual-yelp-restaurant-week", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/pJmXKJ6Anw6fTSw1xi5zZw/o.jpg",
-        "interested_count": 132, "is_canceled": false, "is_free": false, "is_official":
-        false, "latitude": 34.069358, "longitude": -118.350583, "name": "1st Annual
-        Yelp Restaurant Week!", "tickets_url": "", "time_end": null, "time_start":
-        "2009-06-05T12:00:00-07:00", "location": {"address1": "See List Below", "address2":
-        "", "address3": "", "city": "Park La Brea", "zip_code": "90036", "country":
-        "US", "state": "CA", "display_address": ["Park La Brea, CA 90036"], "cross_streets":
-        ""}, "business_id": null}, {"attending_count": 772, "category": "visual-arts",
-        "cost": 12.0, "cost_max": 20.0, "description": "From Beetlejuice to Batman,
-        from Ed Wood to Willy Wonka, the characters that Tim Burton has brought to
-        movie screens are notable for their dark...", "event_site_url": "https://www.yelp.com/events/los-angeles-tim-burton-exhibit-at-lacma-may-29-oct-31-2011?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "los-angeles-tim-burton-exhibit-at-lacma-may-29-oct-31-2011", "image_url":
-        "https://s3-media2.fl.yelpcdn.com/ephoto/kLVznA_spGTYTfU5PU_5Dw/o.jpg", "interested_count":
-        216, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
-        34.063931, "longitude": -118.35923, "name": "Tim Burton Exhibit at LACMA May
-        29- Oct 31, 2011", "tickets_url": "", "time_end": null, "time_start": "2011-05-29T10:00:00-07:00",
-        "location": {"address1": "5905 Wilshire Blvd", "address2": "", "address3":
-        "", "city": "Los Angeles", "zip_code": "90036", "country": "US", "state":
-        "CA", "display_address": ["5905 Wilshire Blvd", "Los Angeles, CA 90036"],
-        "cross_streets": ""}, "business_id": "los-angeles-county-museum-of-art-los-angeles-11"},
-        {"attending_count": 82, "category": "food-and-drink", "cost": null, "cost_max":
-        null, "description": "Ready for another food frenzy? Coming right up! Grab
-        your pals and come on out to 3rd Street (not the Santa Monica one, though)
-        and get Thaied up like...", "event_site_url": "https://www.yelp.com/events/los-angeles-yelp-o-rama-restaurant-cmye?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "los-angeles-yelp-o-rama-restaurant-cmye", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/RSlb3piJrj0OLtZL6zHvPA/o.jpg",
-        "interested_count": 60, "is_canceled": false, "is_free": true, "is_official":
-        false, "latitude": 34.0714891, "longitude": -118.3620243, "name": "Yelp-O-Rama
-        Restaurant CMYE", "tickets_url": "", "time_end": "2010-10-06T21:30:00-07:00",
-        "time_start": "2010-10-06T19:30:00-07:00", "location": {"address1": "7910
-        W 3rd St", "address2": null, "address3": "", "city": "Los Angeles", "zip_code":
-        "90048", "country": "US", "state": "CA", "display_address": ["7910 W 3rd St",
-        "Los Angeles, CA 90048"], "cross_streets": ""}, "business_id": "rama-los-angeles-3"},
-        {"attending_count": 123, "category": "food-and-drink", "cost": null, "cost_max":
-        null, "description": "Free Cone Day @ Ben & Jerry''s.\n\nTuesday, April 12\n12:00pm
-        - 8:00pm\n\nThis is at ALL Ben & Jerry''s not just the one posted above! :)\n\nGet
-        in line as many...", "event_site_url": "https://www.yelp.com/events/los-angeles-free-cone-day-ben-and-jerrys-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "los-angeles-free-cone-day-ben-and-jerrys-ice-cream", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/XX29pYPaa881Le3Ly8p-Ug/o.jpg",
-        "interested_count": 39, "is_canceled": false, "is_free": true, "is_official":
-        false, "latitude": 34.0571327, "longitude": -118.4148498, "name": "FREE Cone
-        Day @ Ben & Jerry''s Ice Cream", "tickets_url": "", "time_end": null, "time_start":
-        "2011-04-12T10:00:00-07:00", "location": {"address1": "Westfield Century City",
-        "address2": "10250 Santa Monica Blvd", "address3": "", "city": "Los Angeles",
-        "zip_code": "90067", "country": "US", "state": "CA", "display_address": ["Westfield
-        Century City", "10250 Santa Monica Blvd", "Los Angeles, CA 90067"], "cross_streets":
-        ""}, "business_id": "ben-and-jerrys-ice-cream-los-angeles"}, {"attending_count":
-        1, "category": "nightlife", "cost": null, "cost_max": null, "description":
-        "---This event is now closed for RSVPs. Plenty of yelpers have extra plus
-        ones, so use the thread below to try and score yourself a spot on the RSVP...",
-        "event_site_url": "https://www.yelp.com/events/los-angeles-yelp-masquerade-ball-at-voyeur?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "los-angeles-yelp-masquerade-ball-at-voyeur", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/J2Nu-MXcSnh0glzzS8e7uA/o.jpg",
-        "interested_count": 257, "is_canceled": false, "is_free": true, "is_official":
-        false, "latitude": 34.0909522, "longitude": -118.3636104, "name": "Yelp Masquerade
-        Ball at Voyeur", "tickets_url": "", "time_end": "2011-04-08T22:00:00-07:00",
-        "time_start": "2011-04-08T19:00:00-07:00", "location": {"address1": "7969
-        Santa Monica Blvd", "address2": "", "address3": "", "city": "Los Angeles",
-        "zip_code": "90046", "country": "US", "state": "CA", "display_address": ["7969
-        Santa Monica Blvd", "Los Angeles, CA 90046"], "cross_streets": ""}, "business_id":
-        "voyeur-los-angeles"}, {"attending_count": 138, "category": "film", "cost":
-        null, "cost_max": null, "description": "\"Alice in Wonderland\" final Friday\n\nTim
-        Burton films under the stars at the Tar Pits.\nFilms start at sundown (between
-        8 and 8:30 pm).\n\n4 Friday Outdoor Film...", "event_site_url": "https://www.yelp.com/events/los-angeles-tim-burton-free-film-screenings-outdooors-at-lacma-fridays-free-jazz-if-you-arrive-early-see-full-schedule-below?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "los-angeles-tim-burton-free-film-screenings-outdooors-at-lacma-fridays-free-jazz-if-you-arrive-early-see-full-schedule-below",
-        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/GIY7Gy9vuIlGgiKNpYoHOg/o.jpg",
-        "interested_count": 174, "is_canceled": false, "is_free": true, "is_official":
-        false, "latitude": 34.063931, "longitude": -118.35923, "name": "Tim Burton
-        Free Film Screenings - Outdooors at LACMA - Fridays + Free Jazz if You Arrive
-        Early.  See Full Schedule Below.", "tickets_url": null, "time_end": "2011-08-26T22:00:00-07:00",
-        "time_start": "2011-08-26T20:00:00-07:00", "location": {"address1": "5905
-        Wilshire Blvd", "address2": "", "address3": "", "city": "Los Angeles", "zip_code":
-        "90036", "country": "US", "state": "CA", "display_address": ["5905 Wilshire
-        Blvd", "Los Angeles, CA 90036"], "cross_streets": ""}, "business_id": "los-angeles-county-museum-of-art-los-angeles-11"},
-        {"attending_count": 80, "category": "festivals-fairs", "cost": null, "cost_max":
-        null, "description": "Brazilian Day in Los Angeles has teamed up with the
-        Brazilian Street Carnaval of Long Beach to put on possibly the biggest and
-        best Brazilian Day yet! \n\nThe...", "event_site_url": "https://www.yelp.com/events/los-angeles-brazilian-carnival-at-the-tar-pits-free?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "los-angeles-brazilian-carnival-at-the-tar-pits-free", "image_url":
-        "https://s3-media2.fl.yelpcdn.com/ephoto/Ypc2wNXRQp46qJvulyoIBQ/o.jpg", "interested_count":
-        101, "is_canceled": false, "is_free": true, "is_official": false, "latitude":
-        34.0630679, "longitude": -118.3554125, "name": "Brazilian Carnival at the
-        Tar Pits - Free", "tickets_url": null, "time_end": "2011-09-10T18:00:00-07:00",
-        "time_start": "2011-09-10T12:00:00-07:00", "location": {"address1": "5801
-        Wilshire Blvd", "address2": "", "address3": "La Brea Tar Pits", "city": "Los
-        Angeles", "zip_code": "90036", "country": "US", "state": "CA", "display_address":
-        ["5801 Wilshire Blvd", "La Brea Tar Pits", "Los Angeles, CA 90036"], "cross_streets":
-        ""}, "business_id": "la-brea-tar-pits-and-museum-los-angeles"}, {"attending_count":
-        1, "category": "festivals-fairs", "cost": null, "cost_max": null, "description":
-        "---RSVPs are now closed.---\nConfirmation emails will go out on Wednesday,
-        May 16.\nYou should receive a confirmation or waitlist email. If you are unsure
-        of...", "event_site_url": "https://www.yelp.com/events/los-angeles-yelps-100-days-of-summer-kickoff-party-3?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "los-angeles-yelps-100-days-of-summer-kickoff-party-3", "image_url":
-        "https://s3-media2.fl.yelpcdn.com/ephoto/Rc5DsjQ6twtEY7GfWgGs4A/o.jpg", "interested_count":
-        467, "is_canceled": false, "is_free": true, "is_official": false, "latitude":
-        34.0977214, "longitude": -118.3688055, "name": "Yelp''s 100 Days of Summer
-        - Kickoff Party 3", "tickets_url": null, "time_end": "2012-05-28T14:00:00-07:00",
-        "time_start": "2012-05-28T11:00:00-07:00", "location": {"address1": "8225
-        Sunset Blvd", "address2": "", "address3": "", "city": "Los Angeles", "zip_code":
-        "90046", "country": "US", "state": "CA", "display_address": ["8225 Sunset
-        Blvd, Los Angeles, CA 90046"], "cross_streets": ""}, "business_id": null},
-        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
-        null, "description": "Come see why yelpers are raving about Beverly Hills
-        newcomer BierBeisl!  Chef and owner Bernhard Mairinger is opening his authentic
-        Austrian restaurant just...", "event_site_url": "https://www.yelp.com/events/beverly-hills-cmye-at-bierbeisl?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "beverly-hills-cmye-at-bierbeisl", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/MBkZVo0LpyAAaTNI0tSFkQ/o.jpg",
-        "interested_count": 160, "is_canceled": false, "is_free": true, "is_official":
-        false, "latitude": 34.069254, "longitude": -118.40687, "name": "CMYE at BierBeisl",
-        "tickets_url": null, "time_end": "2012-07-22T16:30:00-07:00", "time_start":
-        "2012-07-22T15:00:00-07:00", "location": {"address1": "9669 S Santa Monica
-        Blvd", "address2": "", "address3": "", "city": "Beverly Hills", "zip_code":
-        "90210", "country": "US", "state": "CA", "display_address": ["9669 S Santa
-        Monica Blvd", "Beverly Hills, CA 90210"], "cross_streets": ""}, "business_id":
-        "bierbeisl-beverly-hills"}, {"attending_count": 1, "category": "charities",
-        "cost": null, "cost_max": null, "description": "In conjunction with Yelp''s
-        Passport to Beverly Hills http://www.yelp.com/events/beverly-hills-passport-to-beverly-hills,
-        join us for some burgers, organic...", "event_site_url": "https://www.yelp.com/events/beverly-hills-burgers-in-beverly-hills?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "beverly-hills-burgers-in-beverly-hills", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/-DVeDiQYENQ7rVQ4VPYemw/o.jpg",
-        "interested_count": 170, "is_canceled": false, "is_free": true, "is_official":
-        false, "latitude": 34.0623159, "longitude": -118.3994745, "name": "Burgers
-        in Beverly Hills!", "tickets_url": null, "time_end": "2013-05-14T20:00:00-07:00",
-        "time_start": "2013-05-14T18:30:00-07:00", "location": {"address1": "281 S
-        Beverly Dr", "address2": "", "address3": "", "city": "Beverly Hills", "zip_code":
-        "90212", "country": "US", "state": "CA", "display_address": ["281 S Beverly
-        Dr", "Beverly Hills, CA 90212"], "cross_streets": ""}, "business_id": "burger-lounge-beverly-hills"},
-        {"attending_count": 1, "category": "charities", "cost": null, "cost_max":
-        null, "description": "In conjunction with Yelp''s Passport to Beverly Hills
-        http://www.yelp.com/events/beverly-hills-passport-to-beverly-hills, join us
-        for some technologically...", "event_site_url": "https://www.yelp.com/events/beverly-hills-experimental-ice-cream?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "beverly-hills-experimental-ice-cream", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/Pz9FygI-cXaniT6wbCUtRA/o.jpg",
-        "interested_count": 175, "is_canceled": false, "is_free": true, "is_official":
-        false, "latitude": 34.0712164, "longitude": -118.4034718, "name": "Experimental
-        Ice Cream", "tickets_url": null, "time_end": "2013-05-21T22:00:00-07:00",
-        "time_start": "2013-05-21T20:30:00-07:00", "location": {"address1": "9461
-        S Santa Monica Blvd", "address2": "", "address3": "", "city": "Beverly Hills",
-        "zip_code": "90210", "country": "US", "state": "CA", "display_address": ["9461
-        S Santa Monica Blvd", "Beverly Hills, CA 90210"], "cross_streets": ""}, "business_id":
-        "ice-cream-lab-beverly-hills-2"}, {"attending_count": 1, "category": "food-and-drink",
-        "cost": null, "cost_max": null, "description": "In conjunction with Yelp''s
-        Passport to Beverly Hills http://www.yelp.com/events/beverly-hills-passport-to-beverly-hills,
-        join us for some gourmet appetizers...", "event_site_url": "https://www.yelp.com/events/beverly-hills-happy-hour-at-flemings-beverly-hills?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "beverly-hills-happy-hour-at-flemings-beverly-hills", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/Zj4ht8CohilCE9qaSsCqYQ/o.jpg",
-        "interested_count": 305, "is_canceled": false, "is_free": true, "is_official":
-        false, "latitude": 34.0682675, "longitude": -118.3998491, "name": "Happy Hour
-        at Fleming''s Beverly Hills!", "tickets_url": null, "time_end": "2013-05-20T20:30:00-07:00",
-        "time_start": "2013-05-20T18:30:00-07:00", "location": {"address1": "252 N
-        Beverly Dr", "address2": "", "address3": "", "city": "Beverly Hills", "zip_code":
-        "90210", "country": "US", "state": "CA", "display_address": ["252 N Beverly
-        Dr", "Beverly Hills, CA 90210"], "cross_streets": ""}, "business_id": "flemings-prime-steakhouse-and-wine-bar-beverly-hills"},
-        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
-        null, "description": "In conjunction with Yelp''s Passport to Beverly Hills
-        http://www.yelp.com/events/beverly-hills-passport-to-beverly-hills, join us
-        to bring the promotion to...", "event_site_url": "https://www.yelp.com/events/beverly-hills-yelps-passport-to-beverly-hills-chocolate-tasting-vosges-haut-chocolat?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "beverly-hills-yelps-passport-to-beverly-hills-chocolate-tasting-vosges-haut-chocolat",
-        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/2Ojc1GZGHduohfVn_8qsvQ/o.jpg",
-        "interested_count": 158, "is_canceled": false, "is_free": true, "is_official":
-        false, "latitude": 34.0687222033739, "longitude": -118.40085580945, "name":
-        "Yelp''s Passport to Beverly Hills Chocolate Tasting @ Vosges Haut-Chocolat",
-        "tickets_url": null, "time_end": "2013-05-22T20:00:00-07:00", "time_start":
-        "2013-05-22T18:30:00-07:00", "location": {"address1": "311 N Beverly Dr",
-        "address2": "", "address3": "", "city": "Beverly Hills", "zip_code": "90210",
-        "country": "US", "state": "CA", "display_address": ["311 N Beverly Dr", "Beverly
-        Hills, CA 90210"], "cross_streets": ""}, "business_id": "vosges-haut-chocolat-beverly-hills"},
-        {"attending_count": 943, "category": "visual-arts", "cost": 10.0, "cost_max":
-        40.0, "description": "The Rain Room allows you to experience the seemingly
-        impossible with Random International''s Rain Room (2012). This immersive environment
-        features...", "event_site_url": "https://www.yelp.com/events/los-angeles-rain-room?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "los-angeles-rain-room", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/W5OvUIsVIPuhnLpsNjKoTg/o.jpg",
-        "interested_count": 776, "is_canceled": false, "is_free": false, "is_official":
-        false, "latitude": 34.063931, "longitude": -118.35923, "name": "Rain Room",
-        "tickets_url": "http://tx1.lacma.org/default.asp", "time_end": "2015-11-30T17:00:00-08:00",
-        "time_start": "2015-11-01T11:00:00-08:00", "location": {"address1": "5905
-        Wilshire Blvd", "address2": "", "address3": "", "city": "Los Angeles", "zip_code":
-        "90036", "country": "US", "state": "CA", "display_address": ["5905 Wilshire
-        Blvd", "Los Angeles, CA 90036"], "cross_streets": ""}, "business_id": "los-angeles-county-museum-of-art-los-angeles-11"},
-        {"attending_count": 492, "category": "festivals-fairs", "cost": 87.0, "cost_max":
-        95.0, "description": "The Wizarding World of Harry Potter, based on J.K. Rowling''s
-        magical creations, will open at Universal Studios Hollywood on April 7, 2016.\n\nIf
-        you''ve been...", "event_site_url": "https://www.yelp.com/events/universal-city-the-wizarding-world-of-harry-potter-grand-opening-on-april-7-2016?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "universal-city-the-wizarding-world-of-harry-potter-grand-opening-on-april-7-2016",
-        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/7XloL5tPCmSEZC3ig-_d2A/o.jpg",
-        "interested_count": 442, "is_canceled": false, "is_free": false, "is_official":
-        false, "latitude": 34.13621020562252, "longitude": -118.35522638220861, "name":
-        "The Wizarding World of Harry Potter Grand Opening on April 7, 2016", "tickets_url":
-        "http://www.universalstudioshollywood.com/tickets/", "time_end": "2016-05-07T00:00:00-07:00",
-        "time_start": "2016-04-07T08:00:00-07:00", "location": {"address1": "100 Universal
-        City Plz", "address2": "", "address3": "", "city": "Universal City", "zip_code":
-        "91608", "country": "US", "state": "CA", "display_address": ["100 Universal
-        City Plz", "Universal City, CA 91608"], "cross_streets": ""}, "business_id":
-        "universal-studios-hollywood-universal-city"}, {"attending_count": 1353, "category":
-        "visual-arts", "cost": 10.0, "cost_max": 40.0, "description": "*UPDATE* The
-        Rain Room will reopen on Thursday, May 19, for a limited engagement. \n\nThe
-        first block of tickets for this date is SOLD OUT, but the museum...", "event_site_url":
-        "https://www.yelp.com/events/los-angeles-lacma-rain-room-tickets-on-sale-now?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "los-angeles-lacma-rain-room-tickets-on-sale-now", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/P13fMJJMKKZ-4OpMrzPBAA/o.jpg",
-        "interested_count": 576, "is_canceled": false, "is_free": false, "is_official":
-        false, "latitude": 34.063931, "longitude": -118.35923, "name": "LACMA Rain
-        Room Tickets On Sale Now!", "tickets_url": "http://www.lacma.org/public-ticketing-information-rain-room",
-        "time_end": "2016-05-19T00:00:00-07:00", "time_start": "2016-04-25T00:00:00-07:00",
-        "location": {"address1": "5905 Wilshire Blvd", "address2": "", "address3":
-        "", "city": "Los Angeles", "zip_code": "90036", "country": "US", "state":
-        "CA", "display_address": ["5905 Wilshire Blvd", "Los Angeles, CA 90036"],
-        "cross_streets": ""}, "business_id": "los-angeles-county-museum-of-art-los-angeles-11"},
-        {"attending_count": 201, "category": "music", "cost": null, "cost_max": null,
-        "description": "Jazz at LACMA features the art of jazz as practiced by leading
-        Southern California artists. Celebrating over twenty years at LACMA, the program
-        continues to...", "event_site_url": "https://www.yelp.com/events/los-angeles-lacma-jazz-series?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "los-angeles-lacma-jazz-series", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/C6to_1_9L3udX4le-8fOVw/o.jpg",
-        "interested_count": 284, "is_canceled": false, "is_free": true, "is_official":
-        false, "latitude": 34.063931, "longitude": -118.35923, "name": "LACMA Jazz
-        Series", "tickets_url": null, "time_end": "2016-09-02T18:00:00-07:00", "time_start":
-        "2016-08-04T18:00:00-07:00", "location": {"address1": "5905 Wilshire Blvd",
-        "address2": "", "address3": "", "city": "Los Angeles", "zip_code": "90036",
-        "country": "US", "state": "CA", "display_address": ["5905 Wilshire Blvd",
-        "Los Angeles, CA 90036"], "cross_streets": ""}, "business_id": "los-angeles-county-museum-of-art-los-angeles-11"},
-        {"attending_count": 339, "category": "visual-arts", "cost": null, "cost_max":
-        null, "description": "Over thirty museums--presenting art, cultural heritage,
-        natural history, and science--will open their doors and invite visitors to
-        attend their museums free...", "event_site_url": "https://www.yelp.com/events/los-angeles-museums-free-for-all-6?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "los-angeles-museums-free-for-all-6", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/hUUnbeLBwji8mbynMQ8WtA/o.jpg",
-        "interested_count": 166, "is_canceled": false, "is_free": false, "is_official":
-        false, "latitude": 34.0581092683145, "longitude": -118.414823674345, "name":
-        "Museums Free-For-All", "tickets_url": null, "time_end": null, "time_start":
-        "2017-01-29T00:00:00-08:00", "location": {"address1": "2000 Ave Of The Stars",
-        "address2": "", "address3": "", "city": "Los Angeles", "zip_code": "90067",
-        "country": "US", "state": "CA", "display_address": ["2000 Ave Of The Stars",
-        "Los Angeles, CA 90067"], "cross_streets": ""}, "business_id": "annenberg-space-for-photography-los-angeles"},
-        {"attending_count": 1272, "category": "visual-arts", "cost": null, "cost_max":
-        null, "description": "This is an ongoing monthly event for 2018 but Yelp limits
-        event postings for 30 days. It''s also nationwide. Here''s your chance to
-        get your culture on for...", "event_site_url": "https://www.yelp.com/events/los-angeles-free-museum-entrance-every-first-weekend-of-the-month-for-boa-cardholders?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "los-angeles-free-museum-entrance-every-first-weekend-of-the-month-for-boa-cardholders",
-        "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/oa1j1P5mljr8gfrPXkQrBg/o.jpg",
-        "interested_count": 438, "is_canceled": false, "is_free": true, "is_official":
-        false, "latitude": 34.063931, "longitude": -118.35923, "name": "Free museum
-        entrance every first weekend of the month for BOA cardholders", "tickets_url":
-        null, "time_end": "2018-03-04T00:00:00-08:00", "time_start": "2018-02-03T00:00:00-08:00",
-        "location": {"address1": "5905 Wilshire Blvd", "address2": "", "address3":
-        "", "city": "Los Angeles", "zip_code": "90036", "country": "US", "state":
-        "CA", "display_address": ["5905 Wilshire Blvd", "Los Angeles, CA 90036"],
-        "cross_streets": ""}, "business_id": "los-angeles-county-museum-of-art-los-angeles-11"}],
-        "total": 7}'
-  recorded_at: Mon, 26 Feb 2024 19:54:48 GMT
+      string: '{"events": [{"attending_count": 1, "category": "other", "cost": 10.0,
+        "cost_max": null, "description": "This group focuses on training evidence
+        based self defense and physical aptitude as well as a philosophical approach
+        to life and wellbeing.\n\nWe meet twice...", "event_site_url": "https://www.yelp.com/events/los-angeles-bruce-lees-jeet-kune-do-semi-private-group-45?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-bruce-lees-jeet-kune-do-semi-private-group-45", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/sU9NTbLLO94nzni8U1U5WA/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        34.11392292617209, "longitude": -118.40679584637964, "name": "Bruce Lee''s
+        Jeet Kune Do - Semi-Private Group", "tickets_url": "", "time_end": "2024-03-02T11:00:00-08:00",
+        "time_start": "2024-03-02T09:00:00-08:00", "location": {"address1": "Los Angeles",
+        "address2": "", "address3": "", "city": "Los Angeles", "zip_code": "", "country":
+        "US", "state": "CA", "display_address": ["Los Angeles, CA"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 1, "category": "other", "cost":
+        10.0, "cost_max": null, "description": "This group focuses on training evidence
+        based self defense and physical aptitude as well as a philosophical approach
+        to life and wellbeing.\n\nWe meet twice...", "event_site_url": "https://www.yelp.com/events/los-angeles-bruce-lees-jeet-kune-do-semi-private-group-46?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-bruce-lees-jeet-kune-do-semi-private-group-46", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/ephoto/o4y_JizBFU_ZrtHoX4nYjA/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        34.11392292617209, "longitude": -118.40679584637964, "name": "Bruce Lee''s
+        Jeet Kune Do - Semi-Private Group", "tickets_url": "", "time_end": "2024-03-16T11:00:00-07:00",
+        "time_start": "2024-03-16T09:00:00-07:00", "location": {"address1": "Los Angeles",
+        "address2": "", "address3": "", "city": "Los Angeles", "zip_code": "", "country":
+        "US", "state": "CA", "display_address": ["Los Angeles, CA"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 1, "category": "other", "cost":
+        10.0, "cost_max": null, "description": "This group focuses on training evidence
+        based self defense and physical aptitude as well as a philosophical approach
+        to life and wellbeing.\n\nWe meet twice...", "event_site_url": "https://www.yelp.com/events/los-angeles-bruce-lees-jeet-kune-do-semi-private-group-47?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-bruce-lees-jeet-kune-do-semi-private-group-47", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/hy0bQDU3WvUqswlTDRJV8A/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        34.11392292617209, "longitude": -118.40679584637964, "name": "Bruce Lee''s
+        Jeet Kune Do - Semi-Private Group", "tickets_url": "", "time_end": "2024-03-30T11:00:00-07:00",
+        "time_start": "2024-03-30T09:00:00-07:00", "location": {"address1": "Los Angeles",
+        "address2": "", "address3": "", "city": "Los Angeles", "zip_code": "", "country":
+        "US", "state": "CA", "display_address": ["Los Angeles, CA"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 1, "category": "other", "cost":
+        10.0, "cost_max": null, "description": "This group focuses on training evidence
+        based self defense and physical aptitude as well as a philosophical approach
+        to life and wellbeing.\n\nWe meet twice...", "event_site_url": "https://www.yelp.com/events/los-angeles-bruce-lees-jeet-kune-do-semi-private-group-48?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-bruce-lees-jeet-kune-do-semi-private-group-48", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/ephoto/t9UXHUYtHgrJF1IZE39iDQ/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        34.11392292617209, "longitude": -118.40679584637964, "name": "Bruce Lee''s
+        Jeet Kune Do - Semi-Private Group", "tickets_url": "", "time_end": "2024-04-13T11:00:00-07:00",
+        "time_start": "2024-04-13T09:00:00-07:00", "location": {"address1": "Los Angeles",
+        "address2": "", "address3": "", "city": "Los Angeles", "zip_code": "", "country":
+        "US", "state": "CA", "display_address": ["Los Angeles, CA"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 1, "category": "other", "cost":
+        10.0, "cost_max": null, "description": "This group focuses on training evidence
+        based self defense and physical aptitude as well as a philosophical approach
+        to life and wellbeing.\n\nWe meet twice...", "event_site_url": "https://www.yelp.com/events/los-angeles-bruce-lees-jeet-kune-do-semi-private-group-49?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-bruce-lees-jeet-kune-do-semi-private-group-49", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/ephoto/iMTA2h4uOMYouii03BBH_A/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        34.11392292617209, "longitude": -118.40679584637964, "name": "Bruce Lee''s
+        Jeet Kune Do - Semi-Private Group", "tickets_url": "", "time_end": "2024-04-27T11:00:00-07:00",
+        "time_start": "2024-04-27T09:00:00-07:00", "location": {"address1": "Los Angeles",
+        "address2": "", "address3": "", "city": "Los Angeles", "zip_code": "", "country":
+        "US", "state": "CA", "display_address": ["Los Angeles, CA"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 1, "category": "other", "cost":
+        10.0, "cost_max": null, "description": "This group focuses on training evidence
+        based self defense and physical aptitude as well as a philosophical approach
+        to life and wellbeing.\n\nWe meet twice...", "event_site_url": "https://www.yelp.com/events/los-angeles-bruce-lees-jeet-kune-do-semi-private-group-50?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-bruce-lees-jeet-kune-do-semi-private-group-50", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/ephoto/EE_YY6wc81t8D_vJiOTigQ/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        34.11392292617209, "longitude": -118.40679584637964, "name": "Bruce Lee''s
+        Jeet Kune Do - Semi-Private Group", "tickets_url": "", "time_end": "2024-05-11T11:00:00-07:00",
+        "time_start": "2024-05-11T09:00:00-07:00", "location": {"address1": "Los Angeles",
+        "address2": "", "address3": "", "city": "Los Angeles", "zip_code": "", "country":
+        "US", "state": "CA", "display_address": ["Los Angeles, CA"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 1, "category": "other", "cost":
+        10.0, "cost_max": null, "description": "This group focuses on training evidence
+        based self defense and physical aptitude as well as a philosophical approach
+        to life and wellbeing.\n\nWe meet twice...", "event_site_url": "https://www.yelp.com/events/los-angeles-bruce-lees-jeet-kune-do-semi-private-group-51?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-bruce-lees-jeet-kune-do-semi-private-group-51", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/ephoto/jEO60KDCkv0xWb9ymd0Xzw/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        34.11392292617209, "longitude": -118.40679584637964, "name": "Bruce Lee''s
+        Jeet Kune Do - Semi-Private Group", "tickets_url": "", "time_end": "2024-05-25T11:00:00-07:00",
+        "time_start": "2024-05-25T09:00:00-07:00", "location": {"address1": "Los Angeles",
+        "address2": "", "address3": "", "city": "Los Angeles", "zip_code": "", "country":
+        "US", "state": "CA", "display_address": ["Los Angeles, CA"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 1, "category": "other", "cost":
+        10.0, "cost_max": null, "description": "This group focuses on training evidence
+        based self defense and physical aptitude as well as a philosophical approach
+        to life and wellbeing.\n\nWe meet twice...", "event_site_url": "https://www.yelp.com/events/los-angeles-bruce-lees-jeet-kune-do-semi-private-group-52?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-bruce-lees-jeet-kune-do-semi-private-group-52", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/ephoto/qe6YOUc_8ZpATYaZU4_PoQ/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        34.11392292617209, "longitude": -118.40679584637964, "name": "Bruce Lee''s
+        Jeet Kune Do - Semi-Private Group", "tickets_url": "", "time_end": "2024-06-08T11:00:00-07:00",
+        "time_start": "2024-06-08T09:00:00-07:00", "location": {"address1": "Los Angeles",
+        "address2": "", "address3": "", "city": "Los Angeles", "zip_code": "", "country":
+        "US", "state": "CA", "display_address": ["Los Angeles, CA"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 1, "category": "other", "cost":
+        10.0, "cost_max": null, "description": "This group focuses on training evidence
+        based self defense and physical aptitude as well as a philosophical approach
+        to life and wellbeing.\n\nWe meet twice...", "event_site_url": "https://www.yelp.com/events/los-angeles-bruce-lees-jeet-kune-do-semi-private-group-53?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-bruce-lees-jeet-kune-do-semi-private-group-53", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/592rCasAa3wBDuH-CYc51w/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        34.11392292617209, "longitude": -118.40679584637964, "name": "Bruce Lee''s
+        Jeet Kune Do - Semi-Private Group", "tickets_url": "", "time_end": "2024-06-22T11:00:00-07:00",
+        "time_start": "2024-06-22T09:00:00-07:00", "location": {"address1": "Los Angeles",
+        "address2": "", "address3": "", "city": "Los Angeles", "zip_code": "", "country":
+        "US", "state": "CA", "display_address": ["Los Angeles, CA"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 1, "category": "other", "cost":
+        10.0, "cost_max": null, "description": "This group focuses on training evidence
+        based self defense and physical aptitude as well as a philosophical approach
+        to life and wellbeing.\n\nWe meet twice...", "event_site_url": "https://www.yelp.com/events/los-angeles-bruce-lees-jeet-kune-do-semi-private-group-54?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-bruce-lees-jeet-kune-do-semi-private-group-54", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/ephoto/fv653tB4DhZIZS1h_V6b5A/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        34.11392292617209, "longitude": -118.40679584637964, "name": "Bruce Lee''s
+        Jeet Kune Do - Semi-Private Group", "tickets_url": "", "time_end": "2024-07-06T11:00:00-07:00",
+        "time_start": "2024-07-06T09:00:00-07:00", "location": {"address1": "Los Angeles",
+        "address2": "", "address3": "", "city": "Los Angeles", "zip_code": "", "country":
+        "US", "state": "CA", "display_address": ["Los Angeles, CA"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 1, "category": "other", "cost":
+        10.0, "cost_max": null, "description": "This group focuses on training evidence
+        based self defense and physical aptitude as well as a philosophical approach
+        to life and wellbeing.\n\nWe meet twice...", "event_site_url": "https://www.yelp.com/events/los-angeles-bruce-lees-jeet-kune-do-semi-private-group-55?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-bruce-lees-jeet-kune-do-semi-private-group-55", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/ephoto/CJmV5Rrpu5WOKoNNzahBow/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        34.11392292617209, "longitude": -118.40679584637964, "name": "Bruce Lee''s
+        Jeet Kune Do - Semi-Private Group", "tickets_url": "", "time_end": "2024-07-20T11:00:00-07:00",
+        "time_start": "2024-07-20T09:00:00-07:00", "location": {"address1": "Los Angeles",
+        "address2": "", "address3": "", "city": "Los Angeles", "zip_code": "", "country":
+        "US", "state": "CA", "display_address": ["Los Angeles, CA"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 2, "category": "other", "cost":
+        10.0, "cost_max": null, "description": "This group focuses on training evidence
+        based self defense and physical aptitude as well as a philosophical approach
+        to life and wellbeing.\n\nWe meet twice...", "event_site_url": "https://www.yelp.com/events/los-angeles-bruce-lees-jeet-kune-do-semi-private-group-56?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-bruce-lees-jeet-kune-do-semi-private-group-56", "image_url":
+        "https://s3-media4.fl.yelpcdn.com/ephoto/DVN9jET9k1kTg36Io1vTkw/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        34.11392292617209, "longitude": -118.40679584637964, "name": "Bruce Lee''s
+        Jeet Kune Do - Semi-Private Group", "tickets_url": "", "time_end": "2024-08-03T11:00:00-07:00",
+        "time_start": "2024-08-03T09:00:00-07:00", "location": {"address1": "Los Angeles",
+        "address2": "", "address3": "", "city": "Los Angeles", "zip_code": "", "country":
+        "US", "state": "CA", "display_address": ["Los Angeles, CA"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 2, "category": "other", "cost":
+        10.0, "cost_max": null, "description": "This group focuses on training evidence
+        based self defense and physical aptitude as well as a philosophical approach
+        to life and wellbeing.\n\nWe meet twice...", "event_site_url": "https://www.yelp.com/events/los-angeles-bruce-lees-jeet-kune-do-semi-private-group-57?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-bruce-lees-jeet-kune-do-semi-private-group-57", "image_url":
+        "https://s3-media4.fl.yelpcdn.com/ephoto/CYWCLPuvXrUFSKPkd6ZXzg/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        34.11392292617209, "longitude": -118.40679584637964, "name": "Bruce Lee''s
+        Jeet Kune Do - Semi-Private Group", "tickets_url": "", "time_end": "2024-08-17T11:00:00-07:00",
+        "time_start": "2024-08-17T09:00:00-07:00", "location": {"address1": "Los Angeles",
+        "address2": "", "address3": "", "city": "Los Angeles", "zip_code": "", "country":
+        "US", "state": "CA", "display_address": ["Los Angeles, CA"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 2, "category": "other", "cost":
+        10.0, "cost_max": null, "description": "This group focuses on training evidence
+        based self defense and physical aptitude as well as a philosophical approach
+        to life and wellbeing.\n\nWe meet twice...", "event_site_url": "https://www.yelp.com/events/los-angeles-bruce-lees-jeet-kune-do-semi-private-group-58?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-bruce-lees-jeet-kune-do-semi-private-group-58", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/ephoto/s-c2551i1LTxStRuUtKcOw/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        34.11392292617209, "longitude": -118.40679584637964, "name": "Bruce Lee''s
+        Jeet Kune Do - Semi-Private Group", "tickets_url": "", "time_end": "2024-08-31T11:00:00-07:00",
+        "time_start": "2024-08-31T09:00:00-07:00", "location": {"address1": "Los Angeles",
+        "address2": "", "address3": "", "city": "Los Angeles", "zip_code": "", "country":
+        "US", "state": "CA", "display_address": ["Los Angeles, CA"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 2, "category": "other", "cost":
+        10.0, "cost_max": null, "description": "This group focuses on training evidence
+        based self defense and physical aptitude as well as a philosophical approach
+        to life and wellbeing.\n\nWe meet twice...", "event_site_url": "https://www.yelp.com/events/los-angeles-bruce-lees-jeet-kune-do-semi-private-group-59?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-bruce-lees-jeet-kune-do-semi-private-group-59", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/ephoto/HuT5nnFneFpZ1mmTb0l5pw/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        34.11392292617209, "longitude": -118.40679584637964, "name": "Bruce Lee''s
+        Jeet Kune Do - Semi-Private Group", "tickets_url": "", "time_end": "2024-09-14T11:00:00-07:00",
+        "time_start": "2024-09-14T09:00:00-07:00", "location": {"address1": "Los Angeles",
+        "address2": "", "address3": "", "city": "Los Angeles", "zip_code": "", "country":
+        "US", "state": "CA", "display_address": ["Los Angeles, CA"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 2, "category": "other", "cost":
+        10.0, "cost_max": null, "description": "This group focuses on training evidence
+        based self defense and physical aptitude as well as a philosophical approach
+        to life and wellbeing.\n\nWe meet twice...", "event_site_url": "https://www.yelp.com/events/los-angeles-bruce-lees-jeet-kune-do-semi-private-group-60?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-bruce-lees-jeet-kune-do-semi-private-group-60", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/11uMLNsfAYnbIbZkqQ36IQ/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        34.11392292617209, "longitude": -118.40679584637964, "name": "Bruce Lee''s
+        Jeet Kune Do - Semi-Private Group", "tickets_url": "", "time_end": "2024-09-28T11:00:00-07:00",
+        "time_start": "2024-09-28T09:00:00-07:00", "location": {"address1": "Los Angeles",
+        "address2": "", "address3": "", "city": "Los Angeles", "zip_code": "", "country":
+        "US", "state": "CA", "display_address": ["Los Angeles, CA"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 2, "category": "other", "cost":
+        10.0, "cost_max": null, "description": "This group focuses on training evidence
+        based self defense and physical aptitude as well as a philosophical approach
+        to life and wellbeing.\n\nWe meet twice...", "event_site_url": "https://www.yelp.com/events/los-angeles-bruce-lees-jeet-kune-do-semi-private-group-61?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-bruce-lees-jeet-kune-do-semi-private-group-61", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/ephoto/r8l_1nIZGnW0KMrMP0hN-g/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        34.11392292617209, "longitude": -118.40679584637964, "name": "Bruce Lee''s
+        Jeet Kune Do - Semi-Private Group", "tickets_url": "", "time_end": "2024-10-12T11:00:00-07:00",
+        "time_start": "2024-10-12T09:00:00-07:00", "location": {"address1": "Los Angeles",
+        "address2": "", "address3": "", "city": "Los Angeles", "zip_code": "", "country":
+        "US", "state": "CA", "display_address": ["Los Angeles, CA"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 2, "category": "music", "cost":
+        10.0, "cost_max": null, "description": "This group focuses on training evidence
+        based self defense and physical aptitude as well as a philosophical approach
+        to life and wellbeing.\n\nWe meet twice...", "event_site_url": "https://www.yelp.com/events/los-angeles-bruce-lees-jeet-kune-do-semi-private-group-62?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-bruce-lees-jeet-kune-do-semi-private-group-62", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/ephoto/FRNkhIJZs19HsddNCV5XhQ/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        34.11392292617209, "longitude": -118.40679584637964, "name": "Bruce Lee''s
+        Jeet Kune Do - Semi-Private Group", "tickets_url": "", "time_end": "2024-10-26T11:00:00-07:00",
+        "time_start": "2024-10-26T09:00:00-07:00", "location": {"address1": "Los Angeles",
+        "address2": "", "address3": "", "city": "Los Angeles", "zip_code": "", "country":
+        "US", "state": "CA", "display_address": ["Los Angeles, CA"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 1, "category": "other", "cost":
+        10.0, "cost_max": null, "description": "This group focuses on training evidence
+        based self defense and physical aptitude as well as a philosophical approach
+        to life and wellbeing.\n\nWe meet twice...", "event_site_url": "https://www.yelp.com/events/los-angeles-bruce-lees-jeet-kune-do-semi-private-group-63?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-bruce-lees-jeet-kune-do-semi-private-group-63", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/ephoto/3dOsIzxZTEwk8bHQOaQX0g/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        34.11392292617209, "longitude": -118.40679584637964, "name": "Bruce Lee''s
+        Jeet Kune Do - Semi-Private Group", "tickets_url": "", "time_end": "2024-11-09T11:00:00-08:00",
+        "time_start": "2024-11-09T09:00:00-08:00", "location": {"address1": "Los Angeles",
+        "address2": "", "address3": "", "city": "Los Angeles", "zip_code": "", "country":
+        "US", "state": "CA", "display_address": ["Los Angeles, CA"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 2, "category": "other", "cost":
+        10.0, "cost_max": null, "description": "This group focuses on training evidence
+        based self defense and physical aptitude as well as a philosophical approach
+        to life and wellbeing.\n\nWe meet twice...", "event_site_url": "https://www.yelp.com/events/los-angeles-bruce-lees-jeet-kune-do-semi-private-group-64?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-bruce-lees-jeet-kune-do-semi-private-group-64", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/ephoto/skUic0287EaMRMZq0zaWuw/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        34.11392292617209, "longitude": -118.40679584637964, "name": "Bruce Lee''s
+        Jeet Kune Do - Semi-Private Group", "tickets_url": "", "time_end": "2024-11-23T11:00:00-08:00",
+        "time_start": "2024-11-23T09:00:00-08:00", "location": {"address1": "Los Angeles",
+        "address2": "", "address3": "", "city": "Los Angeles", "zip_code": "", "country":
+        "US", "state": "CA", "display_address": ["Los Angeles, CA"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 2, "category": "other", "cost":
+        10.0, "cost_max": null, "description": "This group focuses on training evidence
+        based self defense and physical aptitude as well as a philosophical approach
+        to life and wellbeing.\n\nWe meet twice...", "event_site_url": "https://www.yelp.com/events/los-angeles-bruce-lees-jeet-kune-do-semi-private-group-65?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-bruce-lees-jeet-kune-do-semi-private-group-65", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/ephoto/u5tVugDn4aOMwYpRDNju-A/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        34.11392292617209, "longitude": -118.40679584637964, "name": "Bruce Lee''s
+        Jeet Kune Do - Semi-Private Group", "tickets_url": "", "time_end": "2024-12-07T11:00:00-08:00",
+        "time_start": "2024-12-07T09:00:00-08:00", "location": {"address1": "Los Angeles",
+        "address2": "", "address3": "", "city": "Los Angeles", "zip_code": "", "country":
+        "US", "state": "CA", "display_address": ["Los Angeles, CA"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 1, "category": "other", "cost":
+        10.0, "cost_max": null, "description": "This group focuses on training evidence
+        based self defense and physical aptitude as well as a philosophical approach
+        to life and wellbeing.\n\nWe meet twice...", "event_site_url": "https://www.yelp.com/events/los-angeles-bruce-lees-jeet-kune-do-semi-private-group-66?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "los-angeles-bruce-lees-jeet-kune-do-semi-private-group-66", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/ephoto/oFBpjV2TNJpilBe6kbPXDg/o.jpg", "interested_count":
+        0, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
+        34.11392292617209, "longitude": -118.40679584637964, "name": "Bruce Lee''s
+        Jeet Kune Do - Semi-Private Group", "tickets_url": "", "time_end": "2024-12-21T11:00:00-08:00",
+        "time_start": "2024-12-21T09:00:00-08:00", "location": {"address1": "Los Angeles",
+        "address2": "", "address3": "", "city": "Los Angeles", "zip_code": "", "country":
+        "US", "state": "CA", "display_address": ["Los Angeles, CA"], "cross_streets":
+        ""}, "business_id": null}, {"attending_count": 1, "category": "music", "cost":
+        19.0, "cost_max": 69.0, "description": "Special guest Marc-Andr\u00e9 Hamelin,
+        a pianist \"known for a technical finesse that borders on the supernatural\"
+        (The Seattle Times), headlines the final...", "event_site_url": "https://www.yelp.com/events/beverly-hills-los-angeles-chamber-orchestra-presents-legacy-debussy-hamelin?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "beverly-hills-los-angeles-chamber-orchestra-presents-legacy-debussy-hamelin",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/x9DRI86jsllw4KjNMoKoAA/o.jpg",
+        "interested_count": 1, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 34.0722721, "longitude": -118.4012411, "name": "Los Angeles
+        Chamber Orchestra Presents Legacy: Debussy + Hamelin", "tickets_url": "https://www.laco.org/",
+        "time_end": null, "time_start": "2024-03-02T19:30:00-08:00", "location": {"address1":
+        "9390 N Santa Monica Blvd", "address2": "", "address3": "", "city": "Beverly
+        Hills", "zip_code": "90210", "country": "US", "state": "CA", "display_address":
+        ["9390 N Santa Monica Blvd", "Beverly Hills, CA 90210"], "cross_streets":
+        ""}, "business_id": "wallis-annenberg-center-for-the-performing-arts-beverly-hills-2"},
+        {"attending_count": 1, "category": "music", "cost": 45.0, "cost_max": 115.0,
+        "description": "We Love Boy Bands! is a tribute to the music that melted our
+        hearts and the boys who made us swoon. Just some of what we''ll cover includes
+        nineties legends...", "event_site_url": "https://www.yelp.com/events/beverly-hills-gmclas-we-love-boy-bands?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "beverly-hills-gmclas-we-love-boy-bands", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/Bg0gYVZJG1gTYc0tMSBFjQ/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 34.0643952, "longitude": -118.3748259, "name": "GMCLA''s
+        We Love Boy Bands!", "tickets_url": "https://www.gmcla.org/boybands", "time_end":
+        "2024-03-24T15:30:00-07:00", "time_start": "2024-03-23T20:00:00-07:00", "location":
+        {"address1": "8440 Wilshire Blvd", "address2": "", "address3": "", "city":
+        "Beverly Hills", "zip_code": "90211", "country": "US", "state": "CA", "display_address":
+        ["8440 Wilshire Blvd", "Beverly Hills, CA 90211"], "cross_streets": ""}, "business_id":
+        "saban-theatre-beverly-hills"}, {"attending_count": 1, "category": "kids-family",
+        "cost": null, "cost_max": null, "description": "Join us for a day of shopping
+        incredible local makers and small businesses at the Sunshine Makers Market!
+        We invite everyone to join us on Saturday, March...", "event_site_url": "https://www.yelp.com/events/studio-city-sunshine-makers-market-at-the-shops-at-sportsmens-lodge-where-creativity-meets-community-2?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "studio-city-sunshine-makers-market-at-the-shops-at-sportsmens-lodge-where-creativity-meets-community-2",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/zA2fYYdSpuZIDAVCCUXIPA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": true, "is_official":
+        false, "latitude": 34.144535028826034, "longitude": -118.41328840000001, "name":
+        "Sunshine Makers Market at The Shops at Sportsmen''s Lodge: Where Creativity
+        Meets Community", "tickets_url": "https://www.eventbrite.com/e/sunshine-makers-market-x-shops-at-sportsmens-lodge-tickets-845394837717",
+        "time_end": "2024-03-09T16:00:00-08:00", "time_start": "2024-03-09T10:00:00-08:00",
+        "location": {"address1": "12833 Ventura Blvd", "address2": "", "address3":
+        null, "city": "Studio City", "zip_code": "91604", "country": "US", "state":
+        "CA", "display_address": ["12833 Ventura Blvd", "Studio City, CA 91604"],
+        "cross_streets": ""}, "business_id": "the-shops-at-sportsmen-s-lodge-studio-city"}],
+        "total": 25}'
+  recorded_at: Wed, 28 Feb 2024 21:26:20 GMT
 - request:
     method: get
-    uri: https://api.yelp.com/v3/events?limit=25&location=80212&price=1
+    uri: https://api.yelp.com/v3/events?limit=25&location=80212&start_date=1709155580
     body:
       encoding: US-ASCII
       string: ''
@@ -334,36 +397,36 @@ http_interactions:
       - keep-alive
       Content-Type:
       - application/json
-      Ratelimit-Dailylimit:
-      - '500.0'
+      X-Routing-Service:
+      - routing-main--useast1-7d94c5566-7zwqw; site=public_api_v3
+      Ratelimit-Remaining:
+      - '373.0'
       Ratelimit-Resettime:
-      - '2024-02-27T00:00:00+00:00'
+      - '2024-02-29T00:00:00+00:00'
       X-B3-Sampled:
       - '0'
-      Ratelimit-Remaining:
-      - '369.0'
+      X-Zipkin-Id:
+      - 51a6bacf0e463662
       Server:
       - envoy
-      X-Routing-Service:
-      - routing-main--useast1-7d94c5566-xrwkh; site=public_api_v3
-      X-Zipkin-Id:
-      - 49827e87d4300da6
+      Ratelimit-Dailylimit:
+      - '500.0'
       X-Mode:
       - ro
       X-Proxied:
-      - 10-65-82-75-useast1aprod
+      - 10-65-175-176-useast1bprod
       X-Extlb:
-      - 10-65-82-75-useast1aprod
+      - 10-65-175-176-useast1bprod
       Cache-Control:
       - max-age=0, no-store, private, no-transform
       Accept-Ranges:
       - bytes
       Date:
-      - Mon, 26 Feb 2024 19:54:48 GMT
+      - Wed, 28 Feb 2024 21:26:21 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-den8271-DEN
+      - cache-pdk-katl1840040-PDK
       X-Cache:
       - MISS
       X-Cache-Hits:
@@ -376,291 +439,85 @@ http_interactions:
       - chunked
     body:
       encoding: ASCII-8BIT
-      string: '{"events": [{"attending_count": 19, "category": "food-and-drink", "cost":
-        null, "cost_max": null, "description": "Do you smell that ??? It smells like
-        BBQ, one of the best most fun BBQs EVER!!!!  Doug Y and I are hosting so get
-        your oven mitts, your BBQ tools, a side...", "event_site_url": "https://www.yelp.com/events/denver-yelp-bbq-extravaganza?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "denver-yelp-bbq-extravaganza", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/KVCmmdeWsFJ__2oQIsDyDQ/o.jpg",
-        "interested_count": 30, "is_canceled": false, "is_free": false, "is_official":
-        false, "latitude": 39.7802155, "longitude": -105.0533012, "name": "Yelp BBQ
-        Extravaganza", "tickets_url": "", "time_end": null, "time_start": "2009-08-23T11:00:00-06:00",
-        "location": {"address1": "46TH Ave And Sheridan Blvd", "address2": "", "address3":
-        "", "city": "Denver", "zip_code": "80212", "country": "US", "state": "CO",
-        "display_address": ["46TH Ave And Sheridan Blvd", "Denver, CO 80212"], "cross_streets":
-        ""}, "business_id": "berkeley-park-denver"}, {"attending_count": 1, "category":
-        "nightlife", "cost": null, "cost_max": null, "description": "**The guest list
-        is now closed**\n\nAre you ready to paaaaaaaaarty? You and a guest are invited
-        to Yelpapalooza 2.0, our second annual Denver Yelp open party...", "event_site_url":
-        "https://www.yelp.com/events/denver-yelpapalooza-2-0?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "denver-yelpapalooza-2-0", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/yJTk08Jl1CyTv-LbP4d8ng/o.jpg",
-        "interested_count": 484, "is_canceled": false, "is_free": true, "is_official":
-        false, "latitude": 39.7401642172446, "longitude": -105.016385999975, "name":
-        "Yelpapalooza 2.0", "tickets_url": "", "time_end": "2010-05-12T22:00:00-06:00",
-        "time_start": "2010-05-12T19:00:00-06:00", "location": {"address1": "2027
-        W Colfax Ave", "address2": "", "address3": null, "city": "Denver", "zip_code":
-        "80204", "country": "US", "state": "CO", "display_address": ["2027 W Colfax
-        Ave", "Denver, CO 80204"], "cross_streets": ""}, "business_id": "mile-high-station-denver"},
-        {"attending_count": 23, "category": "nightlife", "cost": 10.0, "cost_max":
-        40.0, "description": "Cool down with tasty brews at the Summer Brew Fest at
-        Mile High Station. This annual fest will celebrate craft beverages and feature
-        live local music, food,...", "event_site_url": "https://www.yelp.com/events/denver-summer-brew-fest-2?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "denver-summer-brew-fest-2", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/McX65_juQdw5qy_aJi4bXQ/o.jpg",
-        "interested_count": 18, "is_canceled": false, "is_free": false, "is_official":
-        false, "latitude": 39.7401642172446, "longitude": -105.016385999975, "name":
-        "Summer Brew Fest", "tickets_url": "", "time_end": "2010-07-23T22:00:00-06:00",
-        "time_start": "2010-07-23T19:00:00-06:00", "location": {"address1": "2027
-        W Colfax Ave", "address2": "", "address3": null, "city": "Denver", "zip_code":
-        "80204", "country": "US", "state": "CO", "display_address": ["2027 W Colfax
-        Ave", "Denver, CO 80204"], "cross_streets": ""}, "business_id": "mile-high-station-denver"},
-        {"attending_count": 21, "category": "nightlife", "cost": null, "cost_max":
-        null, "description": "Hola, yelpers! You know what time it is? Mmmhhmmm, that''s
-        right - it''s Office Hours. \n\nAre you a Yelp newbie and wondering what office
-        hours is all about?...", "event_site_url": "https://www.yelp.com/events/denver-june-office-hours-root-down?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "denver-june-office-hours-root-down", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/4Pr6vVcHquAPt-hWlxn-Ew/o.jpg",
-        "interested_count": 23, "is_canceled": false, "is_free": false, "is_official":
-        false, "latitude": 39.7630546, "longitude": -105.0056336, "name": "June Office
-        Hours @ Root Down!", "tickets_url": "", "time_end": "2010-06-16T18:30:00-06:00",
-        "time_start": "2010-06-16T16:30:00-06:00", "location": {"address1": "1600
-        W 33rd Ave", "address2": "", "address3": "", "city": "Denver", "zip_code":
-        "80211", "country": "US", "state": "CO", "display_address": ["1600 W 33rd
-        Ave", "Denver, CO 80211"], "cross_streets": ""}, "business_id": "root-down-denver"},
-        {"attending_count": 24, "category": "festivals-fairs", "cost": null, "cost_max":
-        null, "description": "Celebrating it''s 10th Anniversary, The Colorado Dragon
-        Boat Festival is a free family-friendly festival highlighting Colorado''s
-        rich Asian Pacific American...", "event_site_url": "https://www.yelp.com/events/denver-colorado-dragon-boat-festival-3?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "denver-colorado-dragon-boat-festival-3", "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/yNycjxZ7xYlLHNCAf94npw/o.jpg",
-        "interested_count": 14, "is_canceled": false, "is_free": true, "is_official":
-        false, "latitude": 39.743979, "longitude": -105.0532371, "name": "Colorado
-        Dragon Boat Festival", "tickets_url": "", "time_end": "2010-07-24T18:00:00-06:00",
-        "time_start": "2010-07-24T10:00:00-06:00", "location": {"address1": "Sheridan
-        Blvd & W 17th Ave", "address2": "", "address3": "", "city": "Denver", "zip_code":
-        "80219", "country": "US", "state": "CO", "display_address": ["Sheridan Blvd
-        & W 17th Ave", "Denver, CO 80219"], "cross_streets": ""}, "business_id": "sloans-lake-park-denver"},
-        {"attending_count": 16, "category": "nightlife", "cost": null, "cost_max":
-        null, "description": "Hey you guys! It''s time for Office Hours.\n\nThis month
-        let''s check out Stingray Lounge, the newest bar from the creators of Bar
-        Car, Jonesy''s and Horseshoe...", "event_site_url": "https://www.yelp.com/events/denver-march-office-hours-at-stingray-lounge?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "denver-march-office-hours-at-stingray-lounge", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/uJQxr2HlDoLq0cItRHeNIg/o.jpg",
-        "interested_count": 25, "is_canceled": false, "is_free": true, "is_official":
-        false, "latitude": 39.7693592, "longitude": -105.0232995, "name": "March Office
-        Hours at Stingray Lounge", "tickets_url": "", "time_end": null, "time_start":
-        "2011-03-23T18:00:00-06:00", "location": {"address1": "2911 W 38th Ave", "address2":
-        "", "address3": "", "city": "Denver", "zip_code": "80211", "country": "US",
-        "state": "CO", "display_address": ["2911 W 38th Ave", "Denver, CO 80211"],
-        "cross_streets": ""}, "business_id": "stingray-lounge-denver"}, {"attending_count":
-        18, "category": "nightlife", "cost": 10.0, "cost_max": 40.0, "description":
-        "100+ Beers from 39+ Breweries\n\nThe Summer Brew Fest at Mile High Station
-        celebrates craft beverages from around Colorado and other U.S. microbrews
-        and...", "event_site_url": "https://www.yelp.com/events/denver-summer-brewfest?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "denver-summer-brewfest", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/xOh7W2e5f5PfVhyytvb0kw/o.jpg",
-        "interested_count": 19, "is_canceled": false, "is_free": false, "is_official":
-        false, "latitude": 39.7401642172446, "longitude": -105.016385999975, "name":
-        "Summer Brewfest", "tickets_url": "http://www.etix.com/ticket/online/venueSearch.jsp?venue_id=6220&cobrand=denverbrewfest",
-        "time_end": "2011-07-22T22:00:00-06:00", "time_start": "2011-07-22T18:00:00-06:00",
-        "location": {"address1": "2027 W Colfax Ave", "address2": "", "address3":
-        null, "city": "Denver", "zip_code": "80204", "country": "US", "state": "CO",
-        "display_address": ["2027 W Colfax Ave", "Denver, CO 80204"], "cross_streets":
-        ""}, "business_id": "mile-high-station-denver"}, {"attending_count": 32, "category":
-        "festivals-fairs", "cost": null, "cost_max": null, "description": "It''s back
-        and better than ever for 2011! \n\nSpend the weekend watching traditional
-        dragon boats races on Sloan''s Lake, enjoying delicious traditional Asian...",
-        "event_site_url": "https://www.yelp.com/events/denver-colorado-dragon-boat-festival-5?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "denver-colorado-dragon-boat-festival-5", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/noTMmPvptF6ivqy0JoEIKg/o.jpg",
-        "interested_count": 19, "is_canceled": false, "is_free": true, "is_official":
-        false, "latitude": 39.743979, "longitude": -105.0532371, "name": "Colorado
-        Dragon Boat Festival", "tickets_url": "", "time_end": "2011-07-31T17:00:00-06:00",
-        "time_start": "2011-07-31T10:00:00-06:00", "location": {"address1": "Sheridan
-        Blvd & W 17th Ave", "address2": "", "address3": "", "city": "Denver", "zip_code":
-        "80219", "country": "US", "state": "CO", "display_address": ["Sheridan Blvd
-        & W 17th Ave", "Denver, CO 80219"], "cross_streets": ""}, "business_id": "sloans-lake-park-denver"},
-        {"attending_count": 16, "category": "food-and-drink", "cost": null, "cost_max":
-        null, "description": "I was thinking something along the lines of:\n\n1pm
-        Tacos Tijuana for 99-cent tacos (44th & Sheridan) http://www.yelp.com/biz/tacos-tijuana-denver\n1:45pm
-        Los...", "event_site_url": "https://www.yelp.com/events/denver-nw-side-taco-tour-uye?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "denver-nw-side-taco-tour-uye", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/ZyAeOzlCLbkmd54zBo2pdQ/o.jpg",
-        "interested_count": 24, "is_canceled": false, "is_free": true, "is_official":
-        false, "latitude": 39.7757569360581, "longitude": -105.053003299742, "name":
-        "NW Side Taco Tour UYE", "tickets_url": "", "time_end": "2011-07-10T15:00:00-06:00",
-        "time_start": "2011-07-10T13:00:00-06:00", "location": {"address1": "4348
-        Sheridan Blvd", "address2": "", "address3": "", "city": "Denver", "zip_code":
-        "80212", "country": "US", "state": "CO", "display_address": ["4348 Sheridan
-        Blvd", "Denver, CO 80212"], "cross_streets": ""}, "business_id": "tacos-tijuana-denver"},
-        {"attending_count": 27, "category": "food-and-drink", "cost": 25.0, "cost_max":
-        null, "description": "**PLEASE NOTE: This dinner has currently SOLD OUT! \n\nOur
-        next Secret Supper will be happening on 2/21 and you can find the details
-        and buy tickets for that...", "event_site_url": "https://www.yelp.com/events/denver-yelps-secret-supper-club-january-edition-sold-out?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "denver-yelps-secret-supper-club-january-edition-sold-out", "image_url":
-        "https://s3-media2.fl.yelpcdn.com/ephoto/4c8O7UEkyh7obCBhhDkVIw/o.jpg", "interested_count":
-        52, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
-        39.7621372, "longitude": -105.0348283, "name": "Yelp''s Secret Supper Club
-        - January Edition (SOLD OUT)", "tickets_url": "http://densecretsupperjanuary.eventbrite.com/",
-        "time_end": null, "time_start": "2012-01-31T19:00:00-07:00", "location": {"address1":
-        "3609 W 32nd Ave", "address2": "", "address3": "", "city": "Denver", "zip_code":
-        "80211", "country": "US", "state": "CO", "display_address": ["3609 W 32nd
-        Ave", "Denver, CO 80211"], "cross_streets": ""}, "business_id": "venue-denver"},
-        {"attending_count": 17, "category": "festivals-fairs", "cost": null, "cost_max":
-        null, "description": "Join the Italian tradition at Festival Italiano at Belmar!  The
-        two-day celebration of Italian culture, food, wine and artisans attracted
-        100,000 guests...", "event_site_url": "https://www.yelp.com/events/lakewood-festival-italiano?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "lakewood-festival-italiano", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/Ifp6G0vdHT-THUjoVuoQdQ/o.jpg",
-        "interested_count": 17, "is_canceled": false, "is_free": true, "is_official":
-        false, "latitude": 39.7093508, "longitude": -105.0787921, "name": "festival
-        italiano", "tickets_url": "", "time_end": "2012-09-09T19:00:00-06:00", "time_start":
-        "2012-09-08T10:00:00-06:00", "location": {"address1": "7337 W Alaska Dr",
-        "address2": "", "address3": "", "city": "Lakewood", "zip_code": "80226", "country":
-        "US", "state": "CO", "display_address": ["7337 W Alaska Dr", "Lakewood, CO
-        80226"], "cross_streets": ""}, "business_id": "belmar-lakewood-2"}, {"attending_count":
-        24, "category": "nightlife", "cost": null, "cost_max": null, "description":
-        "***I changed the event date from 8/9 to 8/23 so that I (and hopefully you!)
-        can attend Carly B''s awesome UYE (Unofficial Yelp Event) for Lawn Games.
-        Details...", "event_site_url": "https://www.yelp.com/events/denver-yelps-august-meet-and-greet-strange-brewing-company?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "denver-yelps-august-meet-and-greet-strange-brewing-company", "image_url":
-        "https://s3-media2.fl.yelpcdn.com/ephoto/-W9tM9tASi0mlx75p6Hf2w/o.jpg", "interested_count":
-        34, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
-        39.7372425522548, "longitude": -105.014891153933, "name": "Yelp''s August
-        Meet-And-Greet @ Strange Brewing Company", "tickets_url": null, "time_end":
-        "2012-08-23T20:00:00-06:00", "time_start": "2012-08-23T17:00:00-06:00", "location":
-        {"address1": "1330 Zuni St", "address2": "Unit M", "address3": "", "city":
-        "Denver", "zip_code": "80204", "country": "US", "state": "CO", "display_address":
-        ["1330 Zuni St", "Unit M", "Denver, CO 80204"], "cross_streets": ""}, "business_id":
-        "strange-craft-beer-company-denver"}, {"attending_count": 11, "category":
-        "food-and-drink", "cost": 7.0, "cost_max": 13.0, "description": "For this
-        month the adventure will be held on a Saturday.  \n\nThey have sat aside an
-        area for us with larger separate tables.  Each table will have their own...",
-        "event_site_url": "https://www.yelp.com/events/denver-january-brunch-adventure?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "denver-january-brunch-adventure", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/0dCYC3uL_F37VMQElJrGgg/o.jpg",
-        "interested_count": 26, "is_canceled": false, "is_free": false, "is_official":
-        false, "latitude": 39.7623585, "longitude": -105.0388221, "name": "January
-        Brunch Adventure", "tickets_url": "", "time_end": "2013-01-12T12:30:00-07:00",
-        "time_start": "2013-01-12T10:30:00-07:00", "location": {"address1": "3927
-        W 32nd Ave", "address2": null, "address3": "", "city": "Denver", "zip_code":
-        "80212", "country": "US", "state": "CO", "display_address": ["3927 W 32nd
-        Ave", "Denver, CO 80212"], "cross_streets": ""}, "business_id": "sassafras-american-eatery-highlands-denver"},
-        {"attending_count": 20, "category": "food-and-drink", "cost": 25.0, "cost_max":
-        null, "description": "**PLEASE NOTE: This brunch has currently SOLD OUT!  Our
-        next Secret Supper will be happening on April 23rd. Please visit here to learn
-        more and purchase a...", "event_site_url": "https://www.yelp.com/events/denver-yelps-secret-supper-march-2013-edition-sold-out?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "denver-yelps-secret-supper-march-2013-edition-sold-out", "image_url":
-        "https://s3-media2.fl.yelpcdn.com/ephoto/o8BzP4_qwFHTMPJ-_5T-kQ/o.jpg", "interested_count":
-        22, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
-        39.7477325, "longitude": -105.0000188, "name": "Yelp''s Secret Supper - March
-        2013 Edition (SOLD OUT)", "tickets_url": null, "time_end": null, "time_start":
-        "2013-03-24T11:00:00-06:00", "location": {"address1": "1317 14th St", "address2":
-        "", "address3": "", "city": "Denver", "zip_code": "80202", "country": "US",
-        "state": "CO", "display_address": ["1317 14th St", "Denver, CO 80202"], "cross_streets":
-        ""}, "business_id": "euclid-hall-bar-and-kitchen-denver"}, {"attending_count":
-        1, "category": "food-and-drink", "cost": 25.0, "cost_max": null, "description":
-        "So, consider this the August Secret Supper. It''s early enough in September,
-        right? :) The actual September Secret Supper will be on September 17th, which...",
-        "event_site_url": "https://www.yelp.com/events/denver-yelps-secret-supper-august-well-kind-of-2013-edition?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "denver-yelps-secret-supper-august-well-kind-of-2013-edition", "image_url":
-        "https://s3-media2.fl.yelpcdn.com/ephoto/xwe0tnjCnRv9iwoLGPp4OA/o.jpg", "interested_count":
-        38, "is_canceled": false, "is_free": false, "is_official": false, "latitude":
-        39.762136, "longitude": -105.011061, "name": "Yelp''s Secret Supper - August
-        (Well, kind of) 2013 Edition", "tickets_url": null, "time_end": null, "time_start":
-        "2013-09-03T18:30:00-06:00", "location": {"address1": "3200 Tejon St", "address2":
-        "", "address3": "", "city": "Denver", "zip_code": "80211", "country": "US",
-        "state": "CO", "display_address": ["3200 Tejon St", "Denver, CO 80211"], "cross_streets":
-        ""}, "business_id": "lohi-steakbar-denver-3"}, {"attending_count": 1, "category":
-        "food-and-drink", "cost": 25.0, "cost_max": null, "description": "**RSVPs
-        will open on Monday, September 16th at 12:00pm**\n\nInstead of paying the
-        $25 upfront to reserve your seats, you will RSVP on this event listing and...",
-        "event_site_url": "https://www.yelp.com/events/denver-yelps-secret-supper-october-2013-edition?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "denver-yelps-secret-supper-october-2013-edition", "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/lDpLo7lCHL8MBdW3Rx-Ilg/o.jpg",
-        "interested_count": 53, "is_canceled": false, "is_free": false, "is_official":
-        false, "latitude": 39.751248413952, "longitude": -105.000414848328, "name":
-        "Yelp''s Secret Supper - October 2013 Edition", "tickets_url": null, "time_end":
-        null, "time_start": "2013-10-15T18:30:00-06:00", "location": {"address1":
-        "1616 16th St", "address2": "", "address3": "", "city": "Denver", "zip_code":
-        "80202", "country": "US", "state": "CO", "display_address": ["1616 16th St",
-        "Denver, CO 80202"], "cross_streets": ""}, "business_id": "blue-sushi-sake-grill-denver"},
-        {"attending_count": 7, "category": "music", "cost": 179.0, "cost_max": 279.0,
-        "description": "+++The Yelp Elite ticket winners have already been selected+++\n\nIn
-        2005, Riot Fest booked a multi-venue weekend of punk and rock in Chicago with
-        bands such...", "event_site_url": "https://www.yelp.com/events/denver-riot-fest?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "denver-riot-fest", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/m8EKpHaE7n32_pTCfEk8QA/o.jpg",
-        "interested_count": 40, "is_canceled": false, "is_free": false, "is_official":
-        false, "latitude": 39.7440009594414, "longitude": -105.020117158794, "name":
-        "Riot Fest", "tickets_url": "http://www.ticketfly.com/purchase/event/577753?utm_source=Riotfest.org&utm_medium=Main%20Page_ticketbutton",
-        "time_end": "2014-09-21T23:00:00-06:00", "time_start": "2014-09-19T16:30:00-06:00",
-        "location": {"address1": "1701 Bryant St", "address2": "Ste 700", "address3":
-        "", "city": "Denver", "zip_code": "80204", "country": "US", "state": "CO",
-        "display_address": ["1701 Bryant St", "Ste 700", "Denver, CO 80204"], "cross_streets":
-        ""}, "business_id": "empower-field-at-mile-high-denver"}, {"attending_count":
-        1, "category": "other", "cost": null, "cost_max": null, "description": "Yelpers,
-        it''s time. I wanna meet y''all in real life!! I''ve gotta pop-up CMYE for
-        you...\n\nJoin me at Zengo Thursday night for 2 complimentary drinks and...",
-        "event_site_url": "https://www.yelp.com/events/denver-meet-your-cm-cmye-zengo?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "denver-meet-your-cm-cmye-zengo", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/E8W_ns0h30PTe8-fxI9NAw/o.jpg",
-        "interested_count": 50, "is_canceled": false, "is_free": true, "is_official":
-        true, "latitude": 39.7550557410351, "longitude": -105.004502209103, "name":
-        "Meet Your CM! CMYE @ Zengo", "tickets_url": null, "time_end": "2016-02-18T21:00:00-07:00",
-        "time_start": "2016-02-18T19:00:00-07:00", "location": {"address1": "1610
-        Little Raven St", "address2": null, "address3": "", "city": "Denver", "zip_code":
-        "80202", "country": "US", "state": "CO", "display_address": ["1610 Little
-        Raven St", "Denver, CO 80202"], "cross_streets": ""}, "business_id": "zengo-denver"},
-        {"attending_count": 1, "category": "food-and-drink", "cost": 10.0, "cost_max":
-        null, "description": "Join us for Yelp''s Yappy Hour benefiting MaxFund! Hosted
-        by Hotel Indigo''s Ambassador and Greetings Guru, Sir Charles Barkly III (aka
-        Barkly), this is a...", "event_site_url": "https://www.yelp.com/events/denver-yelps-yappy-hour-at-hotel-indigo?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "denver-yelps-yappy-hour-at-hotel-indigo", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/hKwbSZgT-3b_mlvP4YieYg/o.jpg",
-        "interested_count": 41, "is_canceled": false, "is_free": false, "is_official":
-        true, "latitude": 39.7555852, "longitude": -105.0000759, "name": "Yelp''s
-        Yappy Hour at Hotel Indigo", "tickets_url": null, "time_end": "2017-09-24T18:00:00-06:00",
-        "time_start": "2017-09-24T16:00:00-06:00", "location": {"address1": "1801
-        Wewatta St", "address2": null, "address3": null, "city": "Denver", "zip_code":
-        "80202", "country": "US", "state": "CO", "display_address": ["1801 Wewatta
-        St", "Denver, CO 80202"], "cross_streets": ""}, "business_id": "hotel-indigo-denver-downtown-union-station-denver-2"},
-        {"attending_count": 35, "category": "sports-active-life", "cost": 23.0, "cost_max":
-        50.0, "description": "Yeah sports! Cheer on the Denver Nuggets against the
-        New York Knicks and enjoy a special VIP experience with your fellow local
-        Yelpers. Tickets must be...", "event_site_url": "https://www.yelp.com/events/denver-yelp-denver-nuggets-x-knicks-game?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "denver-yelp-denver-nuggets-x-knicks-game", "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/haAsfyyFu5xmLYP7-o_TOg/o.jpg",
-        "interested_count": 50, "is_canceled": false, "is_free": false, "is_official":
-        true, "latitude": 39.7485498, "longitude": -105.0077106, "name": "Yelp Denver
-        Nuggets x Knicks Game", "tickets_url": "https://ticketing.axs.com/PickASection.aspx?t=6A4164F08D52BA648CF94F7&og=-1",
-        "time_end": null, "time_start": "2018-01-25T19:00:00-07:00", "location": {"address1":
-        "1000 Chopper Cir", "address2": "", "address3": "", "city": "Denver", "zip_code":
-        "80204", "country": "US", "state": "CO", "display_address": ["1000 Chopper
-        Cir", "Denver, CO 80204"], "cross_streets": ""}, "business_id": "ball-arena-denver"},
-        {"attending_count": 42, "category": "food-and-drink", "cost": null, "cost_max":
-        null, "description": "You''re invited to celebrate CREAM Belmar Grand Opening
-        Celebration! \n\nEveryone gets free ice cream sandwiches from 12 pm - 7 pm.\n\nHave
-        some fun with us and...", "event_site_url": "https://www.yelp.com/events/lakewood-free-ice-cream-sandwiches-at-cream-belmar-grand-opening?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "lakewood-free-ice-cream-sandwiches-at-cream-belmar-grand-opening",
-        "image_url": "https://s3-media3.fl.yelpcdn.com/ephoto/1rpJ8rN_VVjzMCHBxxXLAA/o.jpg",
-        "interested_count": 26, "is_canceled": false, "is_free": true, "is_official":
-        false, "latitude": 39.7093374, "longitude": -105.0790482, "name": "Free Ice
-        Cream Sandwiches at CREAM Belmar Grand Opening", "tickets_url": null, "time_end":
-        "2018-02-17T19:00:00-07:00", "time_start": "2018-02-17T12:00:00-07:00", "location":
-        {"address1": "7357 W Alaska Dr", "address2": "", "address3": "", "city": "Lakewood",
-        "zip_code": "80226", "country": "US", "state": "CO", "display_address": ["7357
-        W Alaska Dr, Lakewood, CO 80226"], "cross_streets": ""}, "business_id": null},
-        {"attending_count": 26, "category": "sports-active-life", "cost": 31.0, "cost_max":
-        75.0, "description": "Yeah sports! Cheer on the Denver Nuggets against the
-        Philadelphia 76ers and enjoy a special VIP experience with your fellow local
-        Yelpers. Tickets must be...", "event_site_url": "https://www.yelp.com/events/denver-yelp-denver-nuggets-x-philadelphia-76ers-game?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "denver-yelp-denver-nuggets-x-philadelphia-76ers-game", "image_url":
-        "https://s3-media3.fl.yelpcdn.com/ephoto/HDLaD5ZuQTPLF9yQmf7swg/o.jpg", "interested_count":
-        32, "is_canceled": false, "is_free": false, "is_official": true, "latitude":
-        39.7485498, "longitude": -105.0077106, "name": "Yelp Denver Nuggets x Philadelphia
-        76ers Game", "tickets_url": "https://nuggets.ksetickets.com/yelp", "time_end":
-        null, "time_start": "2019-01-26T19:00:00-07:00", "location": {"address1":
-        "1000 Chopper Cir", "address2": "", "address3": "", "city": "Denver", "zip_code":
-        "80204", "country": "US", "state": "CO", "display_address": ["1000 Chopper
-        Cir", "Denver, CO 80204"], "cross_streets": ""}, "business_id": "ball-arena-denver"},
-        {"attending_count": 1, "category": "food-and-drink", "cost": null, "cost_max":
-        null, "description": "*You must receive confirmation via email to attend this
-        event.*\n\nBFD, am I right? Oh wait, we''re talking Breakfast For Dinner!
-        First Watch is no stranger to...", "event_site_url": "https://www.yelp.com/events/arvada-yelp-brunches-so-hard-at-first-watch-denver?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
-        "id": "arvada-yelp-brunches-so-hard-at-first-watch-denver", "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/vy-2C2xSrUqCQakuwNu0AA/o.jpg",
-        "interested_count": 72, "is_canceled": false, "is_free": true, "is_official":
-        true, "latitude": 39.78959866, "longitude": -105.08063678, "name": "Yelp Brunches
-        So Hard at First Watch (Denver)", "tickets_url": null, "time_end": "2019-08-28T20:00:00-06:00",
-        "time_start": "2019-08-28T18:00:00-06:00", "location": {"address1": "7450B
-        West 52nd Ave", "address2": "Ste 200", "address3": null, "city": "Arvada",
-        "zip_code": "80002", "country": "US", "state": "CO", "display_address": ["7450B
-        West 52nd Ave", "Ste 200", "Arvada, CO 80002"], "cross_streets": ""}, "business_id":
-        "first-watch-arvada-8"}], "total": 4}'
-  recorded_at: Mon, 26 Feb 2024 19:54:48 GMT
+      string: '{"events": [{"attending_count": 1, "category": "sports-active-life",
+        "cost": 25.0, "cost_max": 135.0, "description": "LLL is back with another
+        night of pro-wrestling and stand up comedy. Featuring Heidi Howitzer, Masha
+        Slamovich, Dark Sheik, The One Called Manders, and...", "event_site_url":
+        "https://www.yelp.com/events/denver-lucha-libre-and-laughs-26?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "denver-lucha-libre-and-laughs-26", "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/93NTTmYtc2si_vI3E5f47A/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 39.7768535, "longitude": -105.0436183, "name": "Lucha Libre
+        & Laughs", "tickets_url": "https://tickets.holdmyticket.com/tickets/427306?_ga=2.20809082.374896195.1706294588-683671424.1596478803",
+        "time_end": null, "time_start": "2024-03-02T20:00:00-07:00", "location": {"address1":
+        "4335 W 44th Ave", "address2": "", "address3": "", "city": "Denver", "zip_code":
+        "80212", "country": "US", "state": "CO", "display_address": ["4335 W 44th
+        Ave", "Denver, CO 80212"], "cross_streets": ""}, "business_id": "the-oriental-theater-denver"},
+        {"attending_count": 1, "category": "music", "cost": null, "cost_max": null,
+        "description": "Lakewood Cultural Center Presents\n\nSpecial EFX 40th\u00a0Anniversary
+        Tour\n\nfeaturing Chieli Minucci & Karen Briggs\n\nTickets start at $25...",
+        "event_site_url": "https://www.yelp.com/events/lakewood-special-efx-40th-anniversary-tour-concert-featuring-chieli-minucci-and-karen-briggs?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "lakewood-special-efx-40th-anniversary-tour-concert-featuring-chieli-minucci-and-karen-briggs",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/jNw9sASwTJJmHvkXQPAAiA/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 39.708398, "longitude": -105.0852013, "name": "Special
+        EFX 40th Anniversary Tour concert featuring Chieli Minucci & Karen Briggs",
+        "tickets_url": "", "time_end": null, "time_start": "2024-03-09T19:30:00-07:00",
+        "location": {"address1": "470 S Allison Pkwy", "address2": "", "address3":
+        "", "city": "Lakewood", "zip_code": "80226", "country": "US", "state": "CO",
+        "display_address": ["470 S Allison Pkwy", "Lakewood, CO 80226"], "cross_streets":
+        ""}, "business_id": "lakewood-cultural-center-lakewood"}, {"attending_count":
+        1, "category": "music", "cost": null, "cost_max": null, "description": "Lakewood
+        Cultural Center Presents\n\nAkropolis Reed Quintet\n\n \n\nTickets start at
+        $25 at Lakewood.org/LCCPresents, 303-987-7845 or the Box Office\n\n\n\nAkropolis...",
+        "event_site_url": "https://www.yelp.com/events/lakewood-lakewood-cultural-center-presents-akropolis-reed-quintet?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "lakewood-lakewood-cultural-center-presents-akropolis-reed-quintet",
+        "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/4rBnNyip5YUAU6nWqBvZ6w/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 39.708398, "longitude": -105.0852013, "name": "Lakewood
+        Cultural Center Presents Akropolis Reed Quintet", "tickets_url": "", "time_end":
+        null, "time_start": "2024-03-15T19:30:00-06:00", "location": {"address1":
+        "470 S Allison Pkwy", "address2": "", "address3": "", "city": "Lakewood",
+        "zip_code": "80226", "country": "US", "state": "CO", "display_address": ["470
+        S Allison Pkwy", "Lakewood, CO 80226"], "cross_streets": ""}, "business_id":
+        "lakewood-cultural-center-lakewood"}, {"attending_count": 1, "category": "music",
+        "cost": null, "cost_max": null, "description": "Colorado Jazz Repertory Orchestra
+        presents\n\nLatin Sounds from Legendary Artists:\n\nJobim, Mendez & More!\n\nMarch
+        2, 2024, at 7:30 p.m. / Arvada Center\n\n\n\nThe...", "event_site_url": "https://www.yelp.com/events/arvada-colorado-jazz-latin-sounds-from-legendary-artists-jobim-mendez-and-more?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "arvada-colorado-jazz-latin-sounds-from-legendary-artists-jobim-mendez-and-more",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/ephoto/IuYfUG-LhsKRasjIOJPfqQ/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 39.8224104, "longitude": -105.0835072, "name": "Colorado
+        Jazz - Latin Sounds from Legendary Artists - Jobim, Mendez & More!", "tickets_url":
+        "https://www.coloradojazz.org/concerts", "time_end": null, "time_start": "2024-03-02T19:30:00-07:00",
+        "location": {"address1": "6901 Wadsworth Blvd", "address2": "", "address3":
+        "", "city": "Arvada", "zip_code": "80003", "country": "US", "state": "CO",
+        "display_address": ["6901 Wadsworth Blvd", "Arvada, CO 80003"], "cross_streets":
+        ""}, "business_id": "arvada-center-for-the-arts-and-humanities-arvada-2"},
+        {"attending_count": 1, "category": "performing-arts", "cost": null, "cost_max":
+        null, "description": "Lakewood Cultural Center and Performance Now Theatre
+        Company co-present\n\nMeredith Willson''s \"The Music Man\"\n\nFridays - Sundays,
+        March 22-April 7\n\nTickets...", "event_site_url": "https://www.yelp.com/events/lakewood-the-music-man-at-lakewood-cultural-center?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "lakewood-the-music-man-at-lakewood-cultural-center", "image_url": "https://s3-media4.fl.yelpcdn.com/ephoto/YUsjbY-9S0S0FwfpLlQc8g/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 39.708398, "longitude": -105.0852013, "name": "\"The Music
+        Man\" at Lakewood Cultural Center", "tickets_url": "", "time_end": "2024-04-07T17:00:00-06:00",
+        "time_start": "2024-03-22T19:30:00-06:00", "location": {"address1": "470 S
+        Allison Pkwy", "address2": "", "address3": "", "city": "Lakewood", "zip_code":
+        "80226", "country": "US", "state": "CO", "display_address": ["470 S Allison
+        Pkwy", "Lakewood, CO 80226"], "cross_streets": ""}, "business_id": "lakewood-cultural-center-lakewood"},
+        {"attending_count": 1, "category": "kids-family", "cost": null, "cost_max":
+        null, "description": "Deceptions: Comedy, Magic & Mind Reading\nwith Jeff
+        Jenson\nSaturday, March 16, 7:00 p.m.\n\nPrepare to be spellbound as Jeff
+        Jenson''s cutting-edge magic,...", "event_site_url": "https://www.yelp.com/events/lakewood-deceptions-comedy-magic-and-mind-reading-with-jeff-jenson-2?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_search&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "lakewood-deceptions-comedy-magic-and-mind-reading-with-jeff-jenson-2",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/ephoto/xlPtTRd_16gTSak4do6Q0g/o.jpg",
+        "interested_count": 0, "is_canceled": false, "is_free": false, "is_official":
+        false, "latitude": 39.74084327227527, "longitude": -105.06833240389824, "name":
+        "Deceptions: Comedy, Magic & Mind Reading with Jeff Jenson", "tickets_url":
+        "", "time_end": null, "time_start": "2024-03-16T19:00:00-06:00", "location":
+        {"address1": "6501 W Colfax Ave", "address2": null, "address3": "", "city":
+        "Lakewood", "zip_code": "80214", "country": "US", "state": "CO", "display_address":
+        ["6501 W Colfax Ave", "Lakewood, CO 80214"], "cross_streets": ""}, "business_id":
+        "40-west-arts-lakewood-3"}], "total": 6}'
+  recorded_at: Wed, 28 Feb 2024 21:26:21 GMT
 recorded_with: VCR 6.2.0

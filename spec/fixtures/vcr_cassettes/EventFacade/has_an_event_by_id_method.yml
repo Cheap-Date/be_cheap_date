@@ -1,0 +1,84 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/events/san-francisco-peace-love-and-yelp-our-3rd-annual-holiday-party
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <YELP>
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Routing-Service:
+      - routing-main--useast1-7d94c5566-gwlb2; site=public_api_v3
+      Ratelimit-Remaining:
+      - '453.0'
+      X-Zipkin-Id:
+      - '0288111b1938dc90'
+      Server:
+      - envoy
+      Ratelimit-Resettime:
+      - '2024-02-29T00:00:00+00:00'
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Dailylimit:
+      - '500.0'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-92-107-useast1aprod
+      X-Extlb:
+      - 10-65-92-107-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Wed, 28 Feb 2024 18:08:11 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-pdk-katl1840099-PDK
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"attending_count": 921, "category": "nightlife", "cost": null, "cost_max":
+        null, "description": "Come join the Yelp Team and all of Yelpland in celebrating
+        our 3rd Annual Yelp Holiday Party! Just some of the \"funny, useful and cool\"
+        thrills will include...", "event_site_url": "https://www.yelp.com/events/san-francisco-peace-love-and-yelp-our-3rd-annual-holiday-party?adjust_creative=GArijE4Sbo30Lu3oAuVkLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_event_lookup&utm_source=GArijE4Sbo30Lu3oAuVkLA",
+        "id": "san-francisco-peace-love-and-yelp-our-3rd-annual-holiday-party", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/ephoto/5Y1VFZBPHF9IIOO_IIpnhQ/o.jpg", "interested_count":
+        73, "is_canceled": false, "is_free": true, "is_official": false, "latitude":
+        37.78574, "longitude": -122.40255, "name": "Peace, Love & Yelp: Our 3rd Annual
+        Holiday Party!", "tickets_url": "", "time_end": "2007-12-05T23:00:00-08:00",
+        "time_start": "2007-12-05T20:30:00-08:00", "location": {"address1": "701 Mission
+        St", "address2": "", "address3": "", "city": "San Francisco", "zip_code":
+        "94103", "country": "US", "state": "CA", "display_address": ["701 Mission
+        St", "San Francisco, CA 94103"], "cross_streets": "Opera Aly & 3rd St"}, "business_id":
+        "yerba-buena-center-for-the-arts-san-francisco"}'
+  recorded_at: Wed, 28 Feb 2024 18:08:11 GMT
+recorded_with: VCR 6.2.0

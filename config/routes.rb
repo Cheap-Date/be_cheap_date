@@ -14,7 +14,7 @@ Rails.application.routes.draw do
       resources :users do
         resources :meetups
       end
-      resources :events, only: [:index]
+      resources :events, only: [:index, :show]
     end
   end
 end

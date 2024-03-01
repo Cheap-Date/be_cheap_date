@@ -6,11 +6,12 @@ class EventSerializer
   include JSONAPI::Serializer
 
   attributes :name,
-             :location, 
+             :location,
              :description,
              :category,
              :cost,
              :cost_max,
              :is_free,
-             :url
+             :url,
+             :id
 end
