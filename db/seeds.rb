@@ -9,3 +9,6 @@
 #   end
 
 # user = User.create!(id: 1, name: "Matt D.", email: "dbag@dbag.com", password: "Ab234")
+
+# matt = User.create!(id: 1, name: "Matt D.", email: "dbag@dbag.com", password: "dbagger")
+# kristen = User.create!(id: 2, name: "Kristen P.", email: "queendbag@paullus.com", password: "swoopster")
