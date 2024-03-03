@@ -27,19 +27,19 @@ http_interactions:
       Ratelimit-Dailylimit:
       - '500.0'
       X-Routing-Service:
-      - routing-main--useast1-b98889cf5-nv5zm; site=public_api_v3
-      Ratelimit-Remaining:
-      - '66.0'
+      - routing-main--useast1-b98889cf5-27wfm; site=public_api_v3
       X-Tracing-Auth:
-      - JMflfTjN4PuZPCU9S_wRqvanu3N2jDlQCRu7qfyzNqY
+      - bLinHzDMjajBrjfLEXDzIUtMlIwjwp5dDUkgpvBalS4
       Ratelimit-Resettime:
-      - '2024-03-02T00:00:00+00:00'
-      X-Zipkin-Id:
-      - 7af1677e90160084
+      - '2024-03-04T00:00:00+00:00'
       Server:
       - envoy
       X-B3-Sampled:
       - '0'
+      X-Zipkin-Id:
+      - 60a593ff7fa4f854
+      Ratelimit-Remaining:
+      - '477.0'
       X-Mode:
       - ro
       X-Proxied:
@@ -51,11 +51,11 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Fri, 01 Mar 2024 17:45:52 GMT
+      - Sun, 03 Mar 2024 00:23:43 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-den8232-DEN
+      - cache-den8229-DEN
       X-Cache:
       - MISS
       X-Cache-Hits:
@@ -82,5 +82,5 @@ http_interactions:
         "94103", "country": "US", "state": "CA", "display_address": ["701 Mission
         St", "San Francisco, CA 94103"], "cross_streets": "Opera Aly & 3rd St"}, "business_id":
         "yerba-buena-center-for-the-arts-san-francisco"}'
-  recorded_at: Fri, 01 Mar 2024 17:45:52 GMT
+  recorded_at: Sun, 03 Mar 2024 00:23:42 GMT
 recorded_with: VCR 6.2.0

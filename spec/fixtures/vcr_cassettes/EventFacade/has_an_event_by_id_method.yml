@@ -24,38 +24,38 @@ http_interactions:
       - keep-alive
       Content-Type:
       - application/json
-      Ratelimit-Dailylimit:
-      - '500.0'
-      X-Zipkin-Id:
-      - be2bd1773d27df53
-      Ratelimit-Remaining:
-      - '74.0'
-      Server:
-      - envoy
-      Ratelimit-Resettime:
-      - '2024-03-02T00:00:00+00:00'
       X-B3-Sampled:
       - '0'
-      X-Tracing-Auth:
-      - "-qSPNAT2T9T0Fz0iVhIF1RhMj5aS31KaIb0wXtZHzx8"
       X-Routing-Service:
-      - routing-main--useast1-b98889cf5-9rmzz; site=public_api_v3
+      - routing-main--useast1-b98889cf5-9qfwb; site=public_api_v3
+      X-Tracing-Auth:
+      - kvz95WRyXqnjlzNEAetDrHVdmTMw-dQXnhwjDxuPd9w
+      Ratelimit-Dailylimit:
+      - '500.0'
+      Ratelimit-Remaining:
+      - '485.0'
+      Ratelimit-Resettime:
+      - '2024-03-04T00:00:00+00:00'
+      X-Zipkin-Id:
+      - d9198ea49cbcd0f3
+      Server:
+      - envoy
       X-Mode:
       - ro
       X-Proxied:
-      - 10-65-122-196-useast1aprod
+      - 10-65-92-107-useast1aprod
       X-Extlb:
-      - 10-65-122-196-useast1aprod
+      - 10-65-92-107-useast1aprod
       Cache-Control:
       - max-age=0, no-store, private, no-transform
       Accept-Ranges:
       - bytes
       Date:
-      - Fri, 01 Mar 2024 17:45:48 GMT
+      - Sun, 03 Mar 2024 00:23:38 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-den8249-DEN
+      - cache-den8243-DEN
       X-Cache:
       - MISS
       X-Cache-Hits:
@@ -82,5 +82,5 @@ http_interactions:
         "94103", "country": "US", "state": "CA", "display_address": ["701 Mission
         St", "San Francisco, CA 94103"], "cross_streets": "Opera Aly & 3rd St"}, "business_id":
         "yerba-buena-center-for-the-arts-san-francisco"}'
-  recorded_at: Fri, 01 Mar 2024 17:45:48 GMT
+  recorded_at: Sun, 03 Mar 2024 00:23:38 GMT
 recorded_with: VCR 6.2.0
